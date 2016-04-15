@@ -1,0 +1,1217 @@
+hexaMBlockConverter::_importMultiBlockGrid_bcsInfo--> reading structured BCS file 
+hexaMBlockConverter::_importMultiBlockGrid_bcsInfo--> reading turbomachinery configuration in .bcs file
+  Turbomachinary configuration found
+The meridional mesh has not been saved in the cgns file by AUTOGRID
+
+ o defining the domain partitioning.
+The mesh contains 0 blocks which are ZR or 3d techno effect
+ o building the mesh.
+hexaMBlockConverter::buildGroupedMesh --> building multidomain mesh -> IN 
+ .. Chosen domain partitioning : 
+ .... domain 0 (cil) has 1 blocks  :  .... Chosen multigrid levels : finest is 0 and coarsest 0
+hexaMBlockConverter::_allocateMeshForAllGroups->IN
+ .. set up external (periodic and interblock) connections
+hexaMBlockConverter::_allocateMeshForAllGroups->OUT
+hexaMBlockConverter::_numberVerticesForAllGroups -> IN
+  assigning a unique number to all vertices 
+ .. numbering nodes for domain 0
+ .... independent vertex numbering in all blocks 
+ .... setup the inverse map 
+ .... mark duplicate connection nodes 
+ .... delete the redundant nodes and renumber the other ones
+defragStorage0D: defragment vertices...
+hexaMBlockConverter::_numberVerticesForAllGroups -> OUT
+hexaMBlockConverter::_computeMeshForAllGroups->IN
+ .. computing coarsest mesh
+hexaMBlockConverter::_computeMeshForAllGroups->OUT
+hexaMBlockConverter::buildGroupedMesh --> building multidomain mesh -> OUT 
+
+    o  createDomainFromMesh:Creating domain from painted triangulation ...
+
+    .  DomainConstruct: --> Creating 6 geometric surfaces
+
+    .  DomainConstruct: --> Creating 12 geometric curves
+
+    .  DomainConstruct: --> Creating 8 geometric vertices
+created domain with name cil
+[BCData] Set all boundary conditions to `SOL'
+[IO] Reading domain 'C:\Users\Pupo\Documents\GitHub\Projects\tes1500\_mesh\mesh1500_UNS(2).dom'
+ 10% done...
+ 20% done...
+ 30% done...
+ 40% done...
+ 50% done...
+ 60% done...
+ 70% done...
+ 80% done...
+ Completed.
+
+[BCData] Set all boundary conditions to `SOL'
+[IO] Reading mesh 'C:\Users\Pupo\Documents\GitHub\Projects\tes1500\_mesh\mesh1500_UNS(2).hex'
+[IO]   created on 04/11/2016
+[IO]   by Hexpress version 5.1
+[IO]   with file format 4.7
+hexaFileMng::importAndInitialize versions = 4.7 4.7
+[IO] Reading block #0
+[IO]   Mesh type: 1
+[IO]   Number of grid levels: 1
+[IO] Reading 24000 vertices
+[IO] Reading 68560 edges
+[IO] Reading 65252 faces
+[IO] Reading 20691 cells
+[IO] Reading ribbon cells
+[IO] Reading relaxed cells info
+[IO] Reading auxilliary smoothing data
+[IO] Reading domain-mesh connection data
+[IO] Reading cell refinement level
+[IO] Reading AutoGrid 5 data
+[IO] Reading FNMB data 'C:\Users\Pupo\Documents\GitHub\Projects\tes1500\_mesh\mesh1500_UNS(2).fnmb
+[IO]   created on 04/11/2016
+[IO]   by Hexpress version 5.1
+[IO]   with file format 2.2
+[IO] Reading NMB data 'C:\Users\Pupo\Documents\GitHub\Projects\tes1500\_mesh\mesh1500_UNS(2).nmb
+[IO]   created on 04/11/2016
+[IO]   by Hexpress version 5.1
+[IO]   with file format 1
+hexaFileMng::import, Reading 0 NMB connections...
+File 'C:\Users\Pupo\Documents\GitHub\Projects\tes1500\_mesh\mesh1500_UNS(2)_cil.dist' does not exist or must be rebuilt.
+Computing distances...
+ 10% done...
+ 20% done...
+ 30% done...
+ 40% done...
+ 50% done...
+ 60% done...
+ 70% done...
+ 80% done...
+ 10% done...
+ 20% done...
+ 30% done...
+ 40% done...
+ 50% done...
+ 60% done...
+ 70% done...
+ 80% done...
+ 90% done...
+Computing curve normals... 
+ Computing additional geometry information for domain ... done
+ save curve normals ... 
+[Adapt] Parameters
+[Adapt] ----------------------------------------------------------------
+[Adapt] Maximum number of refinements:                             1
+[Adapt] Global refinement diffusion:                               2
+[Adapt] Number of cells in gap:                                    7
+[Adapt] Minimum cell size:                                         0
+[Adapt] Maximum cell size:                                         1e+020
+[Adapt] Prevent refenement of exterior cells:                      0
+[Adapt] Isotropic refinement near domain corners:                  1
+[Adapt] Trimming by distance:                                      0
+[Adapt] Iterative dent cell correction:                            0
+[Adapt] ----------------------------------------------------------------
+[Stat] Number of cells/leaf cells: 20691/20691
+Renumbering mesh!
+defragStorage0D: defragment vertices...
+defragStorage1D: defragment-sort edges...
+defragStorage2D: defragment-sort faces...
+defragStorage3D: defragment-sort cells...
+hexaFileMng::export, exporting partition data for C:\Users\Pupo\.numeca\tmp\hex1460378415_11680\cache\mesh1500_UNS(2)_adapt with 1 entries
+PartitionData::exportBinary-->exporting Partition data  
+PartitionData::exportBinary-->Partition Data is empty should be writing 0 entries 0
+[IO] Saving FNMB connections...
+[IO] Saving 0 non matching connection(s)...
+
+Preparing mesh for body fitting...
+
+Done.
+[Snap] Parameters
+[Snap] ----------------------------------------------------------------
+[Snap] New snapping:                                              0
+[Snap] Snap on surfaces:                                          1
+[Snap] Number if initial smoothing iterations:                    25
+[Snap] Capture corners:                                           1
+[Snap] Capture curves:                                            1
+[Snap] Projection on surfaces:                                    1
+[Snap] Buffer on faces not used for trimming:                     0
+[Snap] ----------------------------------------------------------------
+[Snap] Checking if it is possbile to disable buffer insertion
+[Snap] on the domain faces not used for trimming...
+[Snap] Conditions for disabling buffer insertion on domain face 3 are not met.
+[Snap] Buffer will be inserted along the face 3
+hexaSmoother::smoothSurfaceNew(), 25 iterations, used hexpress hybrid smoothing : 0
+{Smooth-2D} Begin 25 iterations, shrink: 0, constrained: 1
+{Smooth-2D} done 5 of 25 iterations
+{Smooth-2D} done 10 of 25 iterations
+{Smooth-2D} done 15 of 25 iterations
+{Smooth-2D} done 20 of 25 iterations
+{Smooth-2D} done 25 of 25 iterations
+{Smooth-2D} Done.
+hexaBFitter::_snapSurface
+ 10% done...
+ 20% done...
+ 30% done...
+ 40% done...
+ 50% done...
+ 60% done...
+ 70% done...
+ 80% done...
+ 90% done...
+hexaBFitter::_snapSurface --> Completed
+
+Computing ribbon faces from candidate cells...
+Filtering ribbon faces list...
+ 10% done...
+ 20% done...
+ 30% done...
+ 40% done...
+ 50% done...
+ 60% done...
+ 70% done...
+ 80% done...
+ 90% done...
+ Completed.
+
+Done.
+
+[Snap] Processing corner 0, ID = 0 (1 of 8)
+[Snap] Processing corner 1, ID = 1 (2 of 8)
+[Snap] Processing corner 2, ID = 2 (3 of 8)
+[Snap] Processing corner 3, ID = 3 (4 of 8)
+[Snap] Processing corner 4, ID = 4 (5 of 8)
+[Snap] Processing corner 6, ID = 6 (6 of 8)
+[Snap] Processing corner 5, ID = 5 (7 of 8)
+[Snap] Processing corner 7, ID = 7 (8 of 8)
+[Snap] OptimalPath uses best first search algorithm.
+[Snap] new quality: 1
+[Snap] Processing curve 1, ID = 1 (1 of 12)
+[Snap] Processing curve 3, ID = 3 (2 of 12)
+[Snap] Processing curve 8, ID = 8 (3 of 12)
+[Snap] Processing curve 9, ID = 9 (4 of 12)
+[Snap] Processing curve 10, ID = 10 (5 of 12)
+[Snap] Processing curve 11, ID = 11 (6 of 12)
+[Snap] Processing curve 5, ID = 5 (7 of 12)
+[Snap] Processing curve 7, ID = 7 (8 of 12)
+[Snap] Processing curve 0, ID = 0 (9 of 12)
+[Snap] Processing curve 2, ID = 2 (10 of 12)
+[Snap] Processing curve 4, ID = 4 (11 of 12)
+[Snap] Processing curve 6, ID = 6 (12 of 12)
+[Snap] ----------------------------------------------------------------
+[Snap] Mesh Hole Detection : 0 sec.
+[Snap] Checking snapped edges
+{Smooth-1D} Begin 25 iterations :
+{Smooth-1D} done 25 of 25 iterations
+{Smooth-1D} Done.
+[Snap] Snap surface mesh using defined connection...
+ 10% done...
+ 20% done...
+ 30% done...
+ 40% done...
+ 50% done...
+ 60% done...
+ 70% done...
+ 80% done...
+ 90% done...
+ completed. 
+
+[Snap] Found 0 marched vertices.
+[Adapt] Found 0 non-conformal edges in snapped list
+[Stat] Number of cells/leaf cells: 20691/20691
+[BufIns] Start buffer insertion (wpc = 1, abntf = 0)
+[BufIns] Inserting buffer A on group '0' composed of 2 topo faces: 5 4 
+[BufIns] Inserting buffer A on group '2' composed of 2 topo faces: 3 2 
+[BufIns] Inserting buffer A on group '4' composed of 2 topo faces: 1 0 
+defragStorage0D: defragment vertices...
+defragStorage1D: defragment-sort edges...
+defragStorage2D: defragment-sort faces...
+defragStorage3D: defragment-sort cells...
+updateTargetSizeBufferlayerEdges...
+[Stat] Number of cells/leaf cells: 27573/27573
+{Smooth-1D} Begin 25 iterations :
+{Smooth-1D} done 25 of 25 iterations
+{Smooth-1D} Done.
+[Smooth-2D] Smooth surface mesh, 25 iterations
+{Smooth-2D} Begin 25 iterations, shrink: 0, constrained: 0
+{Smooth-2D} done 5 of 25 iterations
+{Smooth-2D} done 10 of 25 iterations
+{Smooth-2D} done 15 of 25 iterations
+{Smooth-2D} done 20 of 25 iterations
+{Smooth-2D} done 25 of 25 iterations
+{Smooth-2D} Done.
+{Opti-3D} Smoothing - 25 iterations
+{Opti-3D} Algorithm: Weighted Cell-center-based Laplace
+{Opti-3D} 5 iterations
+{Opti-3D} 10 iterations
+{Opti-3D} 15 iterations
+{Opti-3D} 20 iterations
+{Opti-3D} 25 iterations
+[Stat] Number of cells/leaf cells: 27573/27573
+
+    o  hexaGeoAdapter::removeParents
+hexaGeoAdapter::removeParents -->checked for removal 0 parent cells
+hexaGeoAdapter::removeParents --> Removed 0 parent cells
+
+    o  Repack mesh and renumber ...
+defragStorage0D: defragment vertices...
+defragStorage1D: defragment-sort edges...
+defragStorage2D: defragment-sort faces...
+defragStorage3D: defragment-sort cells...
+[Stat] Number of cells/leaf cells: 27573/27573
+[Stat] Number of cells/leaf cells: 27573/27573
+Renumbering mesh!
+defragStorage0D: defragment vertices...
+defragStorage1D: defragment-sort edges...
+defragStorage2D: defragment-sort faces...
+defragStorage3D: defragment-sort cells...
+hexaFileMng::export, exporting partition data for C:\Users\Pupo\.numeca\tmp\hex1460378415_11680\cache\mesh1500_UNS(2)_snap with 1 entries
+PartitionData::exportBinary-->exporting Partition data  
+PartitionData::exportBinary-->Partition Data is empty should be writing 0 entries 0
+[IO] Saving FNMB connections...
+[IO] Saving 0 non matching connection(s)...
+[Opti-2D] hexaOpti2D::optimize()
+[Opti-2D] ----------------------------------------------------------------
+[Opti-2D] maximum number of smooth-untangle iterations:              10
+[Opti-2D] maximum number of untangling iterations:                   100
+[Opti-2D] maximum number of excluding untangling iterations:         10
+[Opti-2D] number of layers of neighbors to unfix when optimizing:    2
+[Opti-2D] number of optimization iterations:                         5
+[Opti-2D] number of final optimization iterations:                   0
+[Opti-2D] percent of vertices to optimize during final optimization: 0
+[Opti-2D] relax invalid faces:                                       0
+[Opti-2D] ----------------------------------------------------------------
+[Opti-2D] o nbConcave = 0
+[Opti-2D] o FINAL OPTIMIZATION o
+{Opti-2D} o nbConcave = 0
+[Opti-3D] hexaOpti3D::optimize()
+[Opti-3D] ----------------------------------------------------------------
+[Opti-3D] maximum number of smooth-untangle iterations:              20
+[Opti-3D] number of layers of neighbors to unfix when smoothing:     2
+[Opti-3D] maximum allowed displacement in % of average edge length:  0.2
+[Opti-3D] number of smoothing iterations:                            5
+[Opti-3D] maximum number of untangling iterations:                   100
+[Opti-3D] number of layers of neighbors to unfix when optimizing:    1
+[Opti-3D] number of optimization iterations:                         5
+[Opti-3D] number of final optimization iterations:                   7
+[Opti-3D] percent of vertices to optimize during final optimization: 3
+[Opti-3D] relax geometry to eliminate invalid cells:                 0
+[Opti-3D] number of orthogonality optimization iterations:           0
+[Opti-3D] minimal orthogonality threshold:                           10
+[Opti-3D] ----------------------------------------------------------------
+{Opti-3D} o nbConcave  = 8
+{Opti-3D} o nbTwisted  = 12
+{Opti-3D} o nbNegative = 0
+[Opti-3D] extNbInvalidPrePre = 1000000, extNbInvalidPre = 999999, extNbInvalid = 16
+{Opti-3D} <> Optimization cycle 1 of 4 <>
+{Opti-3D} o UNTANGLING o
+[Opti-3D] store new mesh coordinates (last iteration was successful)
+{Opti-3D} Smoothing - 5 iterations
+{Opti-3D} Algorithm: Weighted Cell-center-based Laplace
+{Opti-3D} 5 iterations
+{Opti-3D} Untangling 4 vertices (100 iterations) 
+{Opti-3D} I-1   NB = 0
+[Opti-3D] break, condition: nbInvalid == 0
+{Opti-3D} o nbConcave  = 0
+{Opti-3D} o nbTwisted  = 0
+{Opti-3D} o nbNegative = 0
+[Opti-3D] extNbInvalidPrePre = 999999, extNbInvalidPre = 16, extNbInvalid = 0
+[Opti-3D] break, condition: extNbInvalid == 0 && extIteration > 0
+{Opti-3D} o FINAL OPTIMIZATION o
+{Opti-3D} Optimization (7 iterations, slow mode)
+{Opti-3D} I-1 <> AD = 100% <> Vtx = 2000, 648 <> Time = 0.553 sec.
+{Opti-3D} I-2 <> AD = 50% <> Vtx = 2000, 648 <> Time = 0.437 sec.
+{Opti-3D} I-3 <> AD = 33% <> Vtx = 2000, 648 <> Time = 0.414 sec.
+{Opti-3D} I-4 <> AD = 23% <> Vtx = 2000, 648 <> Time = 0.413 sec.
+{Opti-3D} I-5 <> AD = 18% <> Vtx = 2000, 648 <> Time = 0.419 sec.
+{Opti-3D} I-6 <> AD = 14% <> Vtx = 2000, 648 <> Time = 0.412 sec.
+{Opti-3D} I-7 <> AD = 12% <> Vtx = 2000, 648 <> Time = 0.416 sec.
+{Opti-3D} o nbConcave  = 0
+{Opti-3D} o nbTwisted  = 0
+{Opti-3D} o nbNegative = 0
+{Opti-3D} o nbCollapsedFace = 0
+{Opti-3D} o nbCollapsedEdge = 0
+{Opti-3D} Total time spent for untangling-optimization: 0 min 3 sec.
+[Stat] Number of cells/leaf cells: 27573/27573
+Renumbering mesh!
+defragStorage0D: defragment vertices...
+defragStorage1D: defragment-sort edges...
+defragStorage2D: defragment-sort faces...
+defragStorage3D: defragment-sort cells...
+hexaFileMng::export, exporting partition data for C:\Users\Pupo\.numeca\tmp\hex1460378415_11680\cache\mesh1500_UNS(2)_regularize with 1 entries
+PartitionData::exportBinary-->exporting Partition data  
+PartitionData::exportBinary-->Partition Data is empty should be writing 0 entries 0
+[IO] Saving FNMB connections...
+[IO] Saving 0 non matching connection(s)...
+[IO] Reading mesh 'C:\Users\Pupo\.numeca\tmp\hex1460378415_11680\cache\mesh1500_UNS(2)_snap.hex'
+[IO]   created on 04/11/2016
+[IO]   by Hexpress version 5.1
+[IO]   with file format 4.7
+hexaFileMng::importAndInitialize versions = 4.7 4.7
+[IO] Reading block #0
+[IO]   Mesh type: 1
+[IO]   Number of grid levels: 1
+[IO] Reading 31416 vertices
+[IO] Reading 90268 edges
+[IO] Reading 86426 faces
+[IO] Reading 27573 cells
+[IO] Reading ribbon cells
+[IO] Reading relaxed cells info
+[IO] Reading auxilliary smoothing data
+[IO] Reading domain-mesh connection data
+[IO] Reading cell refinement level
+[IO] Reading AutoGrid 5 data
+[IO] Reading FNMB data 'C:\Users\Pupo\.numeca\tmp\hex1460378415_11680\cache\mesh1500_UNS(2)_snap.fnmb
+[IO]   created on 04/11/2016
+[IO]   by Hexpress version 5.1
+[IO]   with file format 2.2
+[IO] Reading NMB data 'C:\Users\Pupo\.numeca\tmp\hex1460378415_11680\cache\mesh1500_UNS(2)_snap.nmb
+[IO]   created on 04/11/2016
+[IO]   by Hexpress version 5.1
+[IO]   with file format 1
+hexaFileMng::import, Reading 0 NMB connections...
+Renumbering mesh!
+defragStorage0D: defragment vertices...
+defragStorage1D: defragment-sort edges...
+defragStorage2D: defragment-sort faces...
+defragStorage3D: defragment-sort cells...
+hexaFileMng::export, exporting partition data for C:\Users\Pupo\.numeca\tmp\hex1460378415_11680\cache\mesh1500_UNS(2)_regularize with 1 entries
+PartitionData::exportBinary-->exporting Partition data  
+PartitionData::exportBinary-->Partition Data is empty should be writing 0 entries 0
+[IO] Saving FNMB connections...
+[IO] Saving 0 non matching connection(s)...
+[Stat] Number of cells/leaf cells: 27573/27573
+
+    o  Repack mesh and renumber ...
+defragStorage0D: defragment vertices...
+defragStorage1D: defragment-sort edges...
+defragStorage2D: defragment-sort faces...
+defragStorage3D: defragment-sort cells...
+[Stat] Number of cells/leaf cells: 27573/27573
+
+    o  hexaGeoAdapter::removeParents
+hexaGeoAdapter::removeParents -->checked for removal 0 parent cells
+hexaGeoAdapter::removeParents --> Removed 0 parent cells
+
+    o  Repack mesh and renumber 2...
+defragStorage0D: defragment vertices...
+defragStorage1D: defragment-sort edges...
+defragStorage2D: defragment-sort faces...
+defragStorage3D: defragment-sort cells...
+[Stat] Number of cells/leaf cells: 27573/27573
+[IO] Reading mesh 'C:\Users\Pupo\.numeca\tmp\hex1460378415_11680\cache\mesh1500_UNS(2)_adapt.hex'
+[IO]   created on 04/11/2016
+[IO]   by Hexpress version 5.1
+[IO]   with file format 4.7
+hexaFileMng::importAndInitialize versions = 4.7 4.7
+[IO] Reading block #0
+[IO]   Mesh type: 1
+[IO]   Number of grid levels: 1
+[IO] Reading 24000 vertices
+[IO] Reading 68560 edges
+[IO] Reading 65252 faces
+[IO] Reading 20691 cells
+[IO] Reading ribbon cells
+[IO] Reading relaxed cells info
+[IO] Reading auxilliary smoothing data
+[IO] Reading domain-mesh connection data
+[IO] Reading cell refinement level
+[IO] Reading AutoGrid 5 data
+[IO] Reading FNMB data 'C:\Users\Pupo\.numeca\tmp\hex1460378415_11680\cache\mesh1500_UNS(2)_adapt.fnmb
+[IO]   created on 04/11/2016
+[IO]   by Hexpress version 5.1
+[IO]   with file format 2.2
+[IO] Reading NMB data 'C:\Users\Pupo\.numeca\tmp\hex1460378415_11680\cache\mesh1500_UNS(2)_adapt.nmb
+[IO]   created on 04/11/2016
+[IO]   by Hexpress version 5.1
+[IO]   with file format 1
+hexaFileMng::import, Reading 0 NMB connections...
+
+Preparing mesh for body fitting...
+
+Done.
+[Snap] Parameters
+[Snap] ----------------------------------------------------------------
+[Snap] New snapping:                                              0
+[Snap] Snap on surfaces:                                          1
+[Snap] Number if initial smoothing iterations:                    25
+[Snap] Capture corners:                                           1
+[Snap] Capture curves:                                            1
+[Snap] Projection on surfaces:                                    1
+[Snap] Buffer on faces not used for trimming:                     0
+[Snap] ----------------------------------------------------------------
+[Snap] Checking if it is possbile to disable buffer insertion
+[Snap] on the domain faces not used for trimming...
+[Snap] Conditions for disabling buffer insertion on domain face 3 are not met.
+[Snap] Buffer will be inserted along the face 3
+hexaSmoother::smoothSurfaceNew(), 25 iterations, used hexpress hybrid smoothing : 0
+{Smooth-2D} Begin 25 iterations, shrink: 0, constrained: 1
+{Smooth-2D} done 5 of 25 iterations
+{Smooth-2D} done 10 of 25 iterations
+{Smooth-2D} done 15 of 25 iterations
+{Smooth-2D} done 20 of 25 iterations
+{Smooth-2D} done 25 of 25 iterations
+{Smooth-2D} Done.
+hexaBFitter::_snapSurface
+ 10% done...
+ 20% done...
+ 30% done...
+ 40% done...
+ 50% done...
+ 60% done...
+ 70% done...
+ 80% done...
+ 90% done...
+hexaBFitter::_snapSurface --> Completed
+
+Computing ribbon faces from candidate cells...
+Filtering ribbon faces list...
+ 10% done...
+ 20% done...
+ 30% done...
+ 40% done...
+ 50% done...
+ 60% done...
+ 70% done...
+ 80% done...
+ 90% done...
+ Completed.
+
+Done.
+
+[Snap] Processing corner 0, ID = 0 (1 of 8)
+[Snap] Processing corner 1, ID = 1 (2 of 8)
+[Snap] Processing corner 2, ID = 2 (3 of 8)
+[Snap] Processing corner 3, ID = 3 (4 of 8)
+[Snap] Processing corner 4, ID = 4 (5 of 8)
+[Snap] Processing corner 6, ID = 6 (6 of 8)
+[Snap] Processing corner 5, ID = 5 (7 of 8)
+[Snap] Processing corner 7, ID = 7 (8 of 8)
+[Snap] OptimalPath uses best first search algorithm.
+[Snap] new quality: 1
+[Snap] Processing curve 1, ID = 1 (1 of 12)
+[Snap] Processing curve 3, ID = 3 (2 of 12)
+[Snap] Processing curve 8, ID = 8 (3 of 12)
+[Snap] Processing curve 9, ID = 9 (4 of 12)
+[Snap] Processing curve 10, ID = 10 (5 of 12)
+[Snap] Processing curve 11, ID = 11 (6 of 12)
+[Snap] Processing curve 5, ID = 5 (7 of 12)
+[Snap] Processing curve 7, ID = 7 (8 of 12)
+[Snap] Processing curve 0, ID = 0 (9 of 12)
+[Snap] Processing curve 2, ID = 2 (10 of 12)
+[Snap] Processing curve 4, ID = 4 (11 of 12)
+[Snap] Processing curve 6, ID = 6 (12 of 12)
+[Snap] ----------------------------------------------------------------
+[Snap] Mesh Hole Detection : 0 sec.
+[Snap] Checking snapped edges
+{Smooth-1D} Begin 25 iterations :
+{Smooth-1D} done 25 of 25 iterations
+{Smooth-1D} Done.
+[Snap] Snap surface mesh using defined connection...
+ 10% done...
+ 20% done...
+ 30% done...
+ 40% done...
+ 50% done...
+ 60% done...
+ 70% done...
+ 80% done...
+ 90% done...
+ completed. 
+
+[Snap] Found 0 marched vertices.
+[Adapt] Found 0 non-conformal edges in snapped list
+[Stat] Number of cells/leaf cells: 20691/20691
+[BufIns] Start buffer insertion (wpc = 1, abntf = 0)
+[BufIns] Inserting buffer A on group '0' composed of 2 topo faces: 5 4 
+[BufIns] Inserting buffer A on group '2' composed of 2 topo faces: 3 2 
+[BufIns] Inserting buffer A on group '4' composed of 2 topo faces: 1 0 
+defragStorage0D: defragment vertices...
+defragStorage1D: defragment-sort edges...
+defragStorage2D: defragment-sort faces...
+defragStorage3D: defragment-sort cells...
+updateTargetSizeBufferlayerEdges...
+[Stat] Number of cells/leaf cells: 27573/27573
+{Smooth-1D} Begin 25 iterations :
+{Smooth-1D} done 25 of 25 iterations
+{Smooth-1D} Done.
+[Smooth-2D] Smooth surface mesh, 25 iterations
+{Smooth-2D} Begin 25 iterations, shrink: 0, constrained: 0
+{Smooth-2D} done 5 of 25 iterations
+{Smooth-2D} done 10 of 25 iterations
+{Smooth-2D} done 15 of 25 iterations
+{Smooth-2D} done 20 of 25 iterations
+{Smooth-2D} done 25 of 25 iterations
+{Smooth-2D} Done.
+{Opti-3D} Smoothing - 25 iterations
+{Opti-3D} Algorithm: Weighted Cell-center-based Laplace
+{Opti-3D} 5 iterations
+{Opti-3D} 10 iterations
+{Opti-3D} 15 iterations
+{Opti-3D} 20 iterations
+{Opti-3D} 25 iterations
+[Stat] Number of cells/leaf cells: 27573/27573
+
+    o  hexaGeoAdapter::removeParents
+hexaGeoAdapter::removeParents -->checked for removal 0 parent cells
+hexaGeoAdapter::removeParents --> Removed 0 parent cells
+
+    o  Repack mesh and renumber ...
+defragStorage0D: defragment vertices...
+defragStorage1D: defragment-sort edges...
+defragStorage2D: defragment-sort faces...
+defragStorage3D: defragment-sort cells...
+[Stat] Number of cells/leaf cells: 27573/27573
+[Stat] Number of cells/leaf cells: 27573/27573
+Renumbering mesh!
+defragStorage0D: defragment vertices...
+defragStorage1D: defragment-sort edges...
+defragStorage2D: defragment-sort faces...
+defragStorage3D: defragment-sort cells...
+hexaFileMng::export, exporting partition data for C:\Users\Pupo\.numeca\tmp\hex1460378415_11680\cache\mesh1500_UNS(2)_snap with 1 entries
+PartitionData::exportBinary-->exporting Partition data  
+PartitionData::exportBinary-->Partition Data is empty should be writing 0 entries 0
+[IO] Saving FNMB connections...
+[IO] Saving 0 non matching connection(s)...
+Renumbering mesh!
+defragStorage0D: defragment vertices...
+defragStorage1D: defragment-sort edges...
+defragStorage2D: defragment-sort faces...
+defragStorage3D: defragment-sort cells...
+hexaFileMng::export, exporting partition data for C:\Users\Pupo\.numeca\tmp\hex1460378415_11680\cache\mesh1500_UNS(2)_regularize with 1 entries
+PartitionData::exportBinary-->exporting Partition data  
+PartitionData::exportBinary-->Partition Data is empty should be writing 0 entries 0
+[IO] Saving FNMB connections...
+[IO] Saving 0 non matching connection(s)...
+[Stat] Number of cells/leaf cells: 27573/27573
+
+    o  Repack mesh and renumber ...
+defragStorage0D: defragment vertices...
+defragStorage1D: defragment-sort edges...
+defragStorage2D: defragment-sort faces...
+defragStorage3D: defragment-sort cells...
+[Stat] Number of cells/leaf cells: 27573/27573
+
+    o  hexaGeoAdapter::removeParents
+hexaGeoAdapter::removeParents -->checked for removal 0 parent cells
+hexaGeoAdapter::removeParents --> Removed 0 parent cells
+
+    o  Repack mesh and renumber 2...
+defragStorage0D: defragment vertices...
+defragStorage1D: defragment-sort edges...
+defragStorage2D: defragment-sort faces...
+defragStorage3D: defragment-sort cells...
+[Stat] Number of cells/leaf cells: 27573/27573
+HexaProject::saveMeshAndFNMB(), caseName:C:\Users\Pupo\Documents\GitHub\Projects\tes1500\_mesh\mesh1500_UNS(2)
+Renumbering mesh!
+defragStorage0D: defragment vertices...
+defragStorage1D: defragment-sort edges...
+defragStorage2D: defragment-sort faces...
+defragStorage3D: defragment-sort cells...
+hexaFileMng::export, exporting partition data for C:\Users\Pupo\Documents\GitHub\Projects\tes1500\_mesh\mesh1500_UNS(2) with 1 entries
+PartitionData::exportBinary-->exporting Partition data  
+PartitionData::exportBinary-->Partition Data is empty should be writing 0 entries 0
+[IO] Saving FNMB connections...
+[IO] Saving 0 non matching connection(s)...
+[IO] Reading domain 'C:\Users\Pupo\Documents\GitHub\Projects\tes1500\_mesh\mesh1500_UNS(2).dom'
+[BCData] Set all boundary conditions to `SOL'
+[IO] Reading mesh 'C:\Users\Pupo\Documents\GitHub\Projects\tes1500\_mesh\mesh1500_UNS(2).hex'
+[IO]   created on 04/11/2016
+[IO]   by Hexpress version 5.1
+[IO]   with file format 4.7
+hexaFileMng::importAndInitialize versions = 4.7 4.7
+[IO] Reading block #0
+[IO]   Mesh type: 1
+[IO]   Number of grid levels: 1
+[IO] Reading 31416 vertices
+[IO] Reading 90268 edges
+[IO] Reading 86426 faces
+[IO] Reading 27573 cells
+[IO] Reading ribbon cells
+[IO] Reading relaxed cells info
+[IO] Reading auxilliary smoothing data
+[IO] Reading domain-mesh connection data
+[IO] Reading cell refinement level
+[IO] Reading AutoGrid 5 data
+[IO] Reading FNMB data 'C:\Users\Pupo\Documents\GitHub\Projects\tes1500\_mesh\mesh1500_UNS(2).fnmb
+[IO]   created on 04/11/2016
+[IO]   by Hexpress version 5.1
+[IO]   with file format 2.2
+[IO] Reading NMB data 'C:\Users\Pupo\Documents\GitHub\Projects\tes1500\_mesh\mesh1500_UNS(2).nmb
+[IO]   created on 04/11/2016
+[IO]   by Hexpress version 5.1
+[IO]   with file format 1
+hexaFileMng::import, Reading 0 NMB connections...
+[IO] Reading mesh 'C:\Users\Pupo\Documents\GitHub\Projects\tes1500\_mesh\\cache\mesh1500_UNS(2)_regularize.hex'
+[IO]   created on 04/11/2016
+[IO]   by Hexpress version 5.1
+[IO]   with file format 4.7
+hexaFileMng::importAndInitialize versions = 4.7 4.7
+[IO] Reading block #0
+[IO]   Mesh type: 1
+[IO]   Number of grid levels: 1
+[IO] Reading 31416 vertices
+[IO] Reading 90268 edges
+[IO] Reading 86426 faces
+[IO] Reading 27573 cells
+[IO] Reading ribbon cells
+[IO] Reading relaxed cells info
+[IO] Reading auxilliary smoothing data
+[IO] Reading domain-mesh connection data
+[IO] Reading cell refinement level
+[IO] Reading AutoGrid 5 data
+[IO] Reading FNMB data 'C:\Users\Pupo\Documents\GitHub\Projects\tes1500\_mesh\\cache\mesh1500_UNS(2)_regularize.fnmb
+[IO]   created on 04/11/2016
+[IO]   by Hexpress version 5.1
+[IO]   with file format 2.2
+[IO] Reading NMB data 'C:\Users\Pupo\Documents\GitHub\Projects\tes1500\_mesh\\cache\mesh1500_UNS(2)_regularize.nmb
+[IO]   created on 04/11/2016
+[IO]   by Hexpress version 5.1
+[IO]   with file format 1
+hexaFileMng::import, Reading 0 NMB connections...
+[IO] Reading mesh 'C:\Users\Pupo\Documents\GitHub\Projects\tes1500\_mesh\\cache\mesh1500_UNS(2)_snap.hex'
+[IO]   created on 04/11/2016
+[IO]   by Hexpress version 5.1
+[IO]   with file format 4.7
+hexaFileMng::importAndInitialize versions = 4.7 4.7
+[IO] Reading block #0
+[IO]   Mesh type: 1
+[IO]   Number of grid levels: 1
+[IO] Reading 31416 vertices
+[IO] Reading 90268 edges
+[IO] Reading 86426 faces
+[IO] Reading 27573 cells
+[IO] Reading ribbon cells
+[IO] Reading relaxed cells info
+[IO] Reading auxilliary smoothing data
+[IO] Reading domain-mesh connection data
+[IO] Reading cell refinement level
+[IO] Reading AutoGrid 5 data
+[IO] Reading FNMB data 'C:\Users\Pupo\Documents\GitHub\Projects\tes1500\_mesh\\cache\mesh1500_UNS(2)_snap.fnmb
+[IO]   created on 04/11/2016
+[IO]   by Hexpress version 5.1
+[IO]   with file format 2.2
+[IO] Reading NMB data 'C:\Users\Pupo\Documents\GitHub\Projects\tes1500\_mesh\\cache\mesh1500_UNS(2)_snap.nmb
+[IO]   created on 04/11/2016
+[IO]   by Hexpress version 5.1
+[IO]   with file format 1
+hexaFileMng::import, Reading 0 NMB connections...
+[IO] Reading mesh 'C:\Users\Pupo\Documents\GitHub\Projects\tes1500\_mesh\\cache\mesh1500_UNS(2)_adapt.hex'
+[IO]   created on 04/11/2016
+[IO]   by Hexpress version 5.1
+[IO]   with file format 4.7
+hexaFileMng::importAndInitialize versions = 4.7 4.7
+[IO] Reading block #0
+[IO]   Mesh type: 1
+[IO]   Number of grid levels: 1
+[IO] Reading 24000 vertices
+[IO] Reading 68560 edges
+[IO] Reading 65252 faces
+[IO] Reading 20691 cells
+[IO] Reading ribbon cells
+[IO] Reading relaxed cells info
+[IO] Reading auxilliary smoothing data
+[IO] Reading domain-mesh connection data
+[IO] Reading cell refinement level
+[IO] Reading AutoGrid 5 data
+[IO] Reading FNMB data 'C:\Users\Pupo\Documents\GitHub\Projects\tes1500\_mesh\\cache\mesh1500_UNS(2)_adapt.fnmb
+[IO]   created on 04/11/2016
+[IO]   by Hexpress version 5.1
+[IO]   with file format 2.2
+[IO] Reading NMB data 'C:\Users\Pupo\Documents\GitHub\Projects\tes1500\_mesh\\cache\mesh1500_UNS(2)_adapt.nmb
+[IO]   created on 04/11/2016
+[IO]   by Hexpress version 5.1
+[IO]   with file format 1
+hexaFileMng::import, Reading 0 NMB connections...
+
+Preparing mesh for body fitting...
+
+Done.
+[Snap] Parameters
+[Snap] ----------------------------------------------------------------
+[Snap] New snapping:                                              0
+[Snap] Snap on surfaces:                                          1
+[Snap] Number if initial smoothing iterations:                    25
+[Snap] Capture corners:                                           1
+[Snap] Capture curves:                                            1
+[Snap] Projection on surfaces:                                    1
+[Snap] Buffer on faces not used for trimming:                     0
+[Snap] ----------------------------------------------------------------
+ read curve normals ... 
+[Snap] Checking if it is possbile to disable buffer insertion
+[Snap] on the domain faces not used for trimming...
+[Snap] Conditions for disabling buffer insertion on domain face 3 are not met.
+[Snap] Buffer will be inserted along the face 3
+hexaSmoother::smoothSurfaceNew(), 25 iterations, used hexpress hybrid smoothing : 0
+{Smooth-2D} Begin 25 iterations, shrink: 0, constrained: 1
+{Smooth-2D} done 5 of 25 iterations
+{Smooth-2D} done 10 of 25 iterations
+{Smooth-2D} done 15 of 25 iterations
+{Smooth-2D} done 20 of 25 iterations
+{Smooth-2D} done 25 of 25 iterations
+{Smooth-2D} Done.
+hexaBFitter::_snapSurface
+ 10% done...
+ 20% done...
+ 30% done...
+ 40% done...
+ 50% done...
+ 60% done...
+ 70% done...
+ 80% done...
+ 90% done...
+hexaBFitter::_snapSurface --> Completed
+
+Computing ribbon faces from candidate cells...
+Filtering ribbon faces list...
+ 10% done...
+ 20% done...
+ 30% done...
+ 40% done...
+ 50% done...
+ 60% done...
+ 70% done...
+ 80% done...
+ 90% done...
+ Completed.
+
+Done.
+
+[Snap] Processing corner 0, ID = 0 (1 of 8)
+[Snap] Processing corner 1, ID = 1 (2 of 8)
+[Snap] Processing corner 2, ID = 2 (3 of 8)
+[Snap] Processing corner 3, ID = 3 (4 of 8)
+[Snap] Processing corner 4, ID = 4 (5 of 8)
+[Snap] Processing corner 6, ID = 6 (6 of 8)
+[Snap] Processing corner 5, ID = 5 (7 of 8)
+[Snap] Processing corner 7, ID = 7 (8 of 8)
+[Snap] OptimalPath uses best first search algorithm.
+[Snap] new quality: 1
+[Snap] Processing curve 1, ID = 1 (1 of 12)
+[Snap] Processing curve 3, ID = 3 (2 of 12)
+[Snap] Processing curve 8, ID = 8 (3 of 12)
+[Snap] Processing curve 9, ID = 9 (4 of 12)
+[Snap] Processing curve 10, ID = 10 (5 of 12)
+[Snap] Processing curve 11, ID = 11 (6 of 12)
+[Snap] Processing curve 5, ID = 5 (7 of 12)
+[Snap] Processing curve 7, ID = 7 (8 of 12)
+[Snap] Processing curve 0, ID = 0 (9 of 12)
+[Snap] Processing curve 2, ID = 2 (10 of 12)
+[Snap] Processing curve 4, ID = 4 (11 of 12)
+[Snap] Processing curve 6, ID = 6 (12 of 12)
+[Snap] ----------------------------------------------------------------
+[Snap] Mesh Hole Detection : 0 sec.
+[Snap] Checking snapped edges
+{Smooth-1D} Begin 25 iterations :
+{Smooth-1D} done 25 of 25 iterations
+{Smooth-1D} Done.
+[Snap] Snap surface mesh using defined connection...
+ 10% done...
+ 20% done...
+ 30% done...
+ 40% done...
+ 50% done...
+ 60% done...
+ 70% done...
+ 80% done...
+ 90% done...
+ completed. 
+
+[Snap] Found 0 marched vertices.
+[Adapt] Found 0 non-conformal edges in snapped list
+[Stat] Number of cells/leaf cells: 20691/20691
+[BufIns] Start buffer insertion (wpc = 1, abntf = 0)
+[BufIns] Inserting buffer A on group '0' composed of 2 topo faces: 5 4 
+[BufIns] Inserting buffer A on group '2' composed of 2 topo faces: 3 2 
+[BufIns] Inserting buffer A on group '4' composed of 2 topo faces: 1 0 
+defragStorage0D: defragment vertices...
+defragStorage1D: defragment-sort edges...
+defragStorage2D: defragment-sort faces...
+defragStorage3D: defragment-sort cells...
+updateTargetSizeBufferlayerEdges...
+[Stat] Number of cells/leaf cells: 27573/27573
+{Smooth-1D} Begin 25 iterations :
+{Smooth-1D} done 25 of 25 iterations
+{Smooth-1D} Done.
+[Smooth-2D] Smooth surface mesh, 25 iterations
+{Smooth-2D} Begin 25 iterations, shrink: 0, constrained: 0
+{Smooth-2D} done 5 of 25 iterations
+{Smooth-2D} done 10 of 25 iterations
+{Smooth-2D} done 15 of 25 iterations
+{Smooth-2D} done 20 of 25 iterations
+{Smooth-2D} done 25 of 25 iterations
+{Smooth-2D} Done.
+{Opti-3D} Smoothing - 25 iterations
+{Opti-3D} Algorithm: Weighted Cell-center-based Laplace
+{Opti-3D} 5 iterations
+{Opti-3D} 10 iterations
+{Opti-3D} 15 iterations
+{Opti-3D} 20 iterations
+{Opti-3D} 25 iterations
+[Stat] Number of cells/leaf cells: 27573/27573
+
+    o  hexaGeoAdapter::removeParents
+hexaGeoAdapter::removeParents -->checked for removal 0 parent cells
+hexaGeoAdapter::removeParents --> Removed 0 parent cells
+
+    o  Repack mesh and renumber ...
+defragStorage0D: defragment vertices...
+defragStorage1D: defragment-sort edges...
+defragStorage2D: defragment-sort faces...
+defragStorage3D: defragment-sort cells...
+[Stat] Number of cells/leaf cells: 27573/27573
+[Stat] Number of cells/leaf cells: 27573/27573
+Renumbering mesh!
+defragStorage0D: defragment vertices...
+defragStorage1D: defragment-sort edges...
+defragStorage2D: defragment-sort faces...
+defragStorage3D: defragment-sort cells...
+hexaFileMng::export, exporting partition data for C:\Users\Pupo\.numeca\tmp\hex1460384112_11680\cache\mesh1500_UNS(2)_snap with 1 entries
+PartitionData::exportBinary-->exporting Partition data  
+PartitionData::exportBinary-->Partition Data is empty should be writing 0 entries 0
+[IO] Saving FNMB connections...
+[IO] Saving 0 non matching connection(s)...
+Renumbering mesh!
+defragStorage0D: defragment vertices...
+defragStorage1D: defragment-sort edges...
+defragStorage2D: defragment-sort faces...
+defragStorage3D: defragment-sort cells...
+hexaFileMng::export, exporting partition data for C:\Users\Pupo\.numeca\tmp\hex1460384112_11680\cache\mesh1500_UNS(2)_regularize with 1 entries
+PartitionData::exportBinary-->exporting Partition data  
+PartitionData::exportBinary-->Partition Data is empty should be writing 0 entries 0
+[IO] Saving FNMB connections...
+[IO] Saving 0 non matching connection(s)...
+[IO] Reading mesh 'C:\Users\Pupo\.numeca\tmp\hex1460384112_11680\cache\mesh1500_UNS(2)_snap.hex'
+[IO]   created on 04/11/2016
+[IO]   by Hexpress version 5.1
+[IO]   with file format 4.7
+hexaFileMng::importAndInitialize versions = 4.7 4.7
+[IO] Reading block #0
+[IO]   Mesh type: 1
+[IO]   Number of grid levels: 1
+[IO] Reading 31416 vertices
+[IO] Reading 90268 edges
+[IO] Reading 86426 faces
+[IO] Reading 27573 cells
+[IO] Reading ribbon cells
+[IO] Reading relaxed cells info
+[IO] Reading auxilliary smoothing data
+[IO] Reading domain-mesh connection data
+[IO] Reading cell refinement level
+[IO] Reading AutoGrid 5 data
+[IO] Reading FNMB data 'C:\Users\Pupo\.numeca\tmp\hex1460384112_11680\cache\mesh1500_UNS(2)_snap.fnmb
+[IO]   created on 04/11/2016
+[IO]   by Hexpress version 5.1
+[IO]   with file format 2.2
+[IO] Reading NMB data 'C:\Users\Pupo\.numeca\tmp\hex1460384112_11680\cache\mesh1500_UNS(2)_snap.nmb
+[IO]   created on 04/11/2016
+[IO]   by Hexpress version 5.1
+[IO]   with file format 1
+hexaFileMng::import, Reading 0 NMB connections...
+[IO] Reading mesh 'C:\Users\Pupo\Documents\GitHub\Projects\tes1500\_mesh\\cache\mesh1500_UNS(2)_adapt.hex'
+[IO]   created on 04/11/2016
+[IO]   by Hexpress version 5.1
+[IO]   with file format 4.7
+hexaFileMng::importAndInitialize versions = 4.7 4.7
+[IO] Reading block #0
+[IO]   Mesh type: 1
+[IO]   Number of grid levels: 1
+[IO] Reading 24000 vertices
+[IO] Reading 68560 edges
+[IO] Reading 65252 faces
+[IO] Reading 20691 cells
+[IO] Reading ribbon cells
+[IO] Reading relaxed cells info
+[IO] Reading auxilliary smoothing data
+[IO] Reading domain-mesh connection data
+[IO] Reading cell refinement level
+[IO] Reading AutoGrid 5 data
+[IO] Reading FNMB data 'C:\Users\Pupo\Documents\GitHub\Projects\tes1500\_mesh\\cache\mesh1500_UNS(2)_adapt.fnmb
+[IO]   created on 04/11/2016
+[IO]   by Hexpress version 5.1
+[IO]   with file format 2.2
+[IO] Reading NMB data 'C:\Users\Pupo\Documents\GitHub\Projects\tes1500\_mesh\\cache\mesh1500_UNS(2)_adapt.nmb
+[IO]   created on 04/11/2016
+[IO]   by Hexpress version 5.1
+[IO]   with file format 1
+hexaFileMng::import, Reading 0 NMB connections...
+
+Preparing mesh for body fitting...
+
+Done.
+[Snap] Parameters
+[Snap] ----------------------------------------------------------------
+[Snap] New snapping:                                              0
+[Snap] Snap on surfaces:                                          1
+[Snap] Number if initial smoothing iterations:                    25
+[Snap] Capture corners:                                           1
+[Snap] Capture curves:                                            1
+[Snap] Projection on surfaces:                                    1
+[Snap] Buffer on faces not used for trimming:                     0
+[Snap] ----------------------------------------------------------------
+[Snap] Checking if it is possbile to disable buffer insertion
+[Snap] on the domain faces not used for trimming...
+[Snap] Conditions for disabling buffer insertion on domain face 3 are not met.
+[Snap] Buffer will be inserted along the face 3
+hexaSmoother::smoothSurfaceNew(), 25 iterations, used hexpress hybrid smoothing : 0
+{Smooth-2D} Begin 25 iterations, shrink: 0, constrained: 1
+{Smooth-2D} done 5 of 25 iterations
+{Smooth-2D} done 10 of 25 iterations
+{Smooth-2D} done 15 of 25 iterations
+{Smooth-2D} done 20 of 25 iterations
+{Smooth-2D} done 25 of 25 iterations
+{Smooth-2D} Done.
+hexaBFitter::_snapSurface
+ 10% done...
+ 20% done...
+ 30% done...
+ 40% done...
+ 50% done...
+ 60% done...
+ 70% done...
+ 80% done...
+ 90% done...
+hexaBFitter::_snapSurface --> Completed
+
+Computing ribbon faces from candidate cells...
+Filtering ribbon faces list...
+ 10% done...
+ 20% done...
+ 30% done...
+ 40% done...
+ 50% done...
+ 60% done...
+ 70% done...
+ 80% done...
+ 90% done...
+ Completed.
+
+Done.
+
+[Snap] Processing corner 0, ID = 0 (1 of 8)
+[Snap] Processing corner 1, ID = 1 (2 of 8)
+[Snap] Processing corner 2, ID = 2 (3 of 8)
+[Snap] Processing corner 3, ID = 3 (4 of 8)
+[Snap] Processing corner 4, ID = 4 (5 of 8)
+[Snap] Processing corner 6, ID = 6 (6 of 8)
+[Snap] Processing corner 5, ID = 5 (7 of 8)
+[Snap] Processing corner 7, ID = 7 (8 of 8)
+[Snap] OptimalPath uses best first search algorithm.
+[Snap] new quality: 1
+[Snap] Processing curve 1, ID = 1 (1 of 12)
+[Snap] Processing curve 3, ID = 3 (2 of 12)
+[Snap] Processing curve 8, ID = 8 (3 of 12)
+[Snap] Processing curve 9, ID = 9 (4 of 12)
+[Snap] Processing curve 10, ID = 10 (5 of 12)
+[Snap] Processing curve 11, ID = 11 (6 of 12)
+[Snap] Processing curve 5, ID = 5 (7 of 12)
+[Snap] Processing curve 7, ID = 7 (8 of 12)
+[Snap] Processing curve 0, ID = 0 (9 of 12)
+[Snap] Processing curve 2, ID = 2 (10 of 12)
+[Snap] Processing curve 4, ID = 4 (11 of 12)
+[Snap] Processing curve 6, ID = 6 (12 of 12)
+[Snap] ----------------------------------------------------------------
+[Snap] Mesh Hole Detection : 0.001 sec.
+[Snap] Checking snapped edges
+{Smooth-1D} Begin 25 iterations :
+{Smooth-1D} done 25 of 25 iterations
+{Smooth-1D} Done.
+[Snap] Snap surface mesh using defined connection...
+ 10% done...
+ 20% done...
+ 30% done...
+ 40% done...
+ 50% done...
+ 60% done...
+ 70% done...
+ 80% done...
+ 90% done...
+ completed. 
+
+[Snap] Found 0 marched vertices.
+[Adapt] Found 0 non-conformal edges in snapped list
+[Stat] Number of cells/leaf cells: 20691/20691
+[BufIns] Start buffer insertion (wpc = 1, abntf = 0)
+[BufIns] Inserting buffer A on group '0' composed of 2 topo faces: 5 4 
+[BufIns] Inserting buffer A on group '2' composed of 2 topo faces: 3 2 
+[BufIns] Inserting buffer A on group '4' composed of 2 topo faces: 1 0 
+defragStorage0D: defragment vertices...
+defragStorage1D: defragment-sort edges...
+defragStorage2D: defragment-sort faces...
+defragStorage3D: defragment-sort cells...
+updateTargetSizeBufferlayerEdges...
+[Stat] Number of cells/leaf cells: 27573/27573
+{Smooth-1D} Begin 25 iterations :
+{Smooth-1D} done 25 of 25 iterations
+{Smooth-1D} Done.
+[Smooth-2D] Smooth surface mesh, 25 iterations
+{Smooth-2D} Begin 25 iterations, shrink: 0, constrained: 0
+{Smooth-2D} done 5 of 25 iterations
+{Smooth-2D} done 10 of 25 iterations
+{Smooth-2D} done 15 of 25 iterations
+{Smooth-2D} done 20 of 25 iterations
+{Smooth-2D} done 25 of 25 iterations
+{Smooth-2D} Done.
+{Opti-3D} Smoothing - 25 iterations
+{Opti-3D} Algorithm: Weighted Cell-center-based Laplace
+{Opti-3D} 5 iterations
+{Opti-3D} 10 iterations
+{Opti-3D} 15 iterations
+{Opti-3D} 20 iterations
+{Opti-3D} 25 iterations
+[Stat] Number of cells/leaf cells: 27573/27573
+
+    o  hexaGeoAdapter::removeParents
+hexaGeoAdapter::removeParents -->checked for removal 0 parent cells
+hexaGeoAdapter::removeParents --> Removed 0 parent cells
+
+    o  Repack mesh and renumber ...
+defragStorage0D: defragment vertices...
+defragStorage1D: defragment-sort edges...
+defragStorage2D: defragment-sort faces...
+defragStorage3D: defragment-sort cells...
+[Stat] Number of cells/leaf cells: 27573/27573
+[Stat] Number of cells/leaf cells: 27573/27573
+Renumbering mesh!
+defragStorage0D: defragment vertices...
+defragStorage1D: defragment-sort edges...
+defragStorage2D: defragment-sort faces...
+defragStorage3D: defragment-sort cells...
+hexaFileMng::export, exporting partition data for C:\Users\Pupo\.numeca\tmp\hex1460384112_11680\cache\mesh1500_UNS(2)_snap with 1 entries
+PartitionData::exportBinary-->exporting Partition data  
+PartitionData::exportBinary-->Partition Data is empty should be writing 0 entries 0
+[IO] Saving FNMB connections...
+[IO] Saving 0 non matching connection(s)...
+HexaProject::saveMeshAndFNMB(), caseName:C:\Users\Pupo\Documents\GitHub\Projects\tes1500\_mesh\mesh1500_UNS(2)
+Renumbering mesh!
+defragStorage0D: defragment vertices...
+defragStorage1D: defragment-sort edges...
+defragStorage2D: defragment-sort faces...
+defragStorage3D: defragment-sort cells...
+hexaFileMng::export, exporting partition data for C:\Users\Pupo\Documents\GitHub\Projects\tes1500\_mesh\mesh1500_UNS(2) with 1 entries
+PartitionData::exportBinary-->exporting Partition data  
+PartitionData::exportBinary-->Partition Data is empty should be writing 0 entries 0
+[IO] Saving FNMB connections...
+[IO] Saving 0 non matching connection(s)...
+[IO] Reading domain 'C:\Users\Pupo\Documents\GitHub\Projects\tes1500\_mesh\mesh1500_UNS(2).dom'
+[BCData] Set all boundary conditions to `SOL'
+[IO] Reading mesh 'C:\Users\Pupo\Documents\GitHub\Projects\tes1500\_mesh\mesh1500_UNS(2).hex'
+[IO]   created on 04/11/2016
+[IO]   by Hexpress version 5.1
+[IO]   with file format 4.7
+hexaFileMng::importAndInitialize versions = 4.7 4.7
+[IO] Reading block #0
+[IO]   Mesh type: 1
+[IO]   Number of grid levels: 1
+[IO] Reading 31416 vertices
+[IO] Reading 90268 edges
+[IO] Reading 86426 faces
+[IO] Reading 27573 cells
+[IO] Reading ribbon cells
+[IO] Reading relaxed cells info
+[IO] Reading auxilliary smoothing data
+[IO] Reading domain-mesh connection data
+[IO] Reading cell refinement level
+[IO] Reading AutoGrid 5 data
+[IO] Reading FNMB data 'C:\Users\Pupo\Documents\GitHub\Projects\tes1500\_mesh\mesh1500_UNS(2).fnmb
+[IO]   created on 04/11/2016
+[IO]   by Hexpress version 5.1
+[IO]   with file format 2.2
+[IO] Reading NMB data 'C:\Users\Pupo\Documents\GitHub\Projects\tes1500\_mesh\mesh1500_UNS(2).nmb
+[IO]   created on 04/11/2016
+[IO]   by Hexpress version 5.1
+[IO]   with file format 1
+hexaFileMng::import, Reading 0 NMB connections...
+[IO] Reading mesh 'C:\Users\Pupo\Documents\GitHub\Projects\tes1500\_mesh\\cache\mesh1500_UNS(2)_adapt.hex'
+[IO]   created on 04/11/2016
+[IO]   by Hexpress version 5.1
+[IO]   with file format 4.7
+hexaFileMng::importAndInitialize versions = 4.7 4.7
+[IO] Reading block #0
+[IO]   Mesh type: 1
+[IO]   Number of grid levels: 1
+[IO] Reading 24000 vertices
+[IO] Reading 68560 edges
+[IO] Reading 65252 faces
+[IO] Reading 20691 cells
+[IO] Reading ribbon cells
+[IO] Reading relaxed cells info
+[IO] Reading auxilliary smoothing data
+[IO] Reading domain-mesh connection data
+[IO] Reading cell refinement level
+[IO] Reading AutoGrid 5 data
+[IO] Reading FNMB data 'C:\Users\Pupo\Documents\GitHub\Projects\tes1500\_mesh\\cache\mesh1500_UNS(2)_adapt.fnmb
+[IO]   created on 04/11/2016
+[IO]   by Hexpress version 5.1
+[IO]   with file format 2.2
+[IO] Reading NMB data 'C:\Users\Pupo\Documents\GitHub\Projects\tes1500\_mesh\\cache\mesh1500_UNS(2)_adapt.nmb
+[IO]   created on 04/11/2016
+[IO]   by Hexpress version 5.1
+[IO]   with file format 1
+hexaFileMng::import, Reading 0 NMB connections...
+
+ ===> ERROR: in file: ..\..\..\_src\_Hexa\_iggHexa\_UHexa\UHexaProject.C line: 4203 : HexaProject::importMesh, cannot open mesh file C:\Users\Pupo\.numeca\tmp\hex1460384176_11680\mesh1500_UNS(2)_initial_cil.hex
+[IO] Reading domain 'C:\Users\Pupo\Documents\GitHub\Projects\tes1500\_mesh\mesh1500_UNS(2).dom'
+[BCData] Set all boundary conditions to `SOL'
+[IO] Reading domain 'C:\Users\Pupo\Documents\GitHub\Projects\tes1500\_mesh\mesh1500_UNS(2).dom'
+[BCData] Set all boundary conditions to `SOL'
+[IO] Reading mesh 'C:\Users\Pupo\Documents\GitHub\Projects\tes1500\_mesh\mesh1500_UNS(2).hex'
+[IO]   created on 04/11/2016
+[IO]   by Hexpress version 5.1
+[IO]   with file format 4.7
+hexaFileMng::importAndInitialize versions = 4.7 4.7
+[IO] Reading block #0
+[IO]   Mesh type: 1
+[IO]   Number of grid levels: 1
+[IO] Reading 31416 vertices
+[IO] Reading 90268 edges
+[IO] Reading 86426 faces
+[IO] Reading 27573 cells
+[IO] Reading ribbon cells
+[IO] Reading relaxed cells info
+[IO] Reading auxilliary smoothing data
+[IO] Reading domain-mesh connection data
+[IO] Reading cell refinement level
+[IO] Reading AutoGrid 5 data
+[IO] Reading FNMB data 'C:\Users\Pupo\Documents\GitHub\Projects\tes1500\_mesh\mesh1500_UNS(2).fnmb
+[IO]   created on 04/11/2016
+[IO]   by Hexpress version 5.1
+[IO]   with file format 2.2
+[IO] Reading NMB data 'C:\Users\Pupo\Documents\GitHub\Projects\tes1500\_mesh\mesh1500_UNS(2).nmb
+[IO]   created on 04/11/2016
+[IO]   by Hexpress version 5.1
+[IO]   with file format 1
+hexaFileMng::import, Reading 0 NMB connections...
+[IO] Reading domain 'C:\Users\Pupo\Documents\GitHub\Projects\tes1500\_mesh\mesh1500_UNS(2).dom'
+[BCData] Set all boundary conditions to `SOL'
+[IO] Reading mesh 'C:\Users\Pupo\Documents\GitHub\Projects\tes1500\_mesh\mesh1500_UNS(2).hex'
+[IO]   created on 04/11/2016
+[IO]   by Hexpress version 5.1
+[IO]   with file format 4.7
+hexaFileMng::importAndInitialize versions = 4.7 4.7
+[IO] Reading block #0
+[IO]   Mesh type: 1
+[IO]   Number of grid levels: 1
+[IO] Reading 31416 vertices
+[IO] Reading 90268 edges
+[IO] Reading 86426 faces
+[IO] Reading 27573 cells
+[IO] Reading ribbon cells
+[IO] Reading relaxed cells info
+[IO] Reading auxilliary smoothing data
+[IO] Reading domain-mesh connection data
+[IO] Reading cell refinement level
+[IO] Reading AutoGrid 5 data
+[IO] Reading FNMB data 'C:\Users\Pupo\Documents\GitHub\Projects\tes1500\_mesh\mesh1500_UNS(2).fnmb
+[IO]   created on 04/11/2016
+[IO]   by Hexpress version 5.1
+[IO]   with file format 2.2
+[IO] Reading NMB data 'C:\Users\Pupo\Documents\GitHub\Projects\tes1500\_mesh\mesh1500_UNS(2).nmb
+[IO]   created on 04/11/2016
+[IO]   by Hexpress version 5.1
+[IO]   with file format 1
+hexaFileMng::import, Reading 0 NMB connections...
+HexaProject::saveMeshAndFNMB(), caseName:C:\Users\Pupo\Documents\GitHub\Projects\tes1500\_mesh\mesh1500_UNS(2)
+hexaFileMng::export, exporting partition data for C:\Users\Pupo\Documents\GitHub\Projects\tes1500\_mesh\mesh1500_UNS(2) with 1 entries
+PartitionData::exportBinary-->exporting Partition data  
+PartitionData::exportBinary-->Partition Data is empty should be writing 0 entries 0
+[IO] Saving FNMB connections...
+[IO] Saving 0 non matching connection(s)...
+[IO] Reading domain 'C:\Users\Pupo\Documents\GitHub\Projects\tes1500\_mesh\mesh1500_UNS(2).dom'
+[BCData] Set all boundary conditions to `SOL'

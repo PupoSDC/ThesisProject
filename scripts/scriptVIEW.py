@@ -1,0 +1,8 @@
+CFViewBackward(912)
+CutPlaneSave(0,0,0,1,-1,0,0)
+QntFieldScalar('Static Temperature')
+SelectedSurfacesRemove('cil_group_0 Solid')
+SelectedSurfacesRemove('cil_group_1 Solid')
+SclPlotBoundary(0)
+ViewActivate('tes1500_264_1stOrder.run:2')
+PlotPlaneZ()

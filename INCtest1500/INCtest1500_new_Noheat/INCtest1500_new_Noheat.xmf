@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<Computation name="C:/Users/Pupo/Documents/GitHub/Projects/INCtest1500/INCtest1500_new_Noheat/INCtest1500_new_Noheat">
+    <FluidProperties>
+        <string name="Fluid type">Incompressible (density constant)</string>
+        <float name="Specific heat (Cp)" unit="[J/(kg.K)]">1006</float>
+        <float name="Specific heat (Cv)" unit="[J/(kg.K)]">1006</float>
+        <float name="Density" unit="[kg/m3]">1.1751</float>
+    </FluidProperties>
+    <Station name="Inlet">
+        <Condition name="Static conditions">
+            <float name="Static pressure" unit="[Pa]">101325</float>
+            <float name="Static temperature" unit="[K]">300</float>
+            <float name="Enthalpy" unit="[J/kg]">388027</float>
+        </Condition>
+        <Condition name="Stagnation conditions">
+            <float name="Absolute total pressure" unit="[Pa]">101325</float>
+            <float name="Absolute total temperature" unit="[K]">300</float>
+            <float name="Absolute total enthalpy" unit="[J/kg]">388027</float>
+        </Condition>
+        <MassFlow>
+            <float name="Mass flow" unit="[kg/s]">2.51594e-005</float>
+        </MassFlow>
+    </Station>
+    <Station name="Outlet">
+        <Condition name="Static conditions">
+            <float name="Static pressure" unit="[Pa]">101308</float>
+            <float name="Static temperature" unit="[K]">304.301</float>
+            <float name="Enthalpy" unit="[J/kg]">392339</float>
+        </Condition>
+        <Condition name="Stagnation conditions">
+            <float name="Absolute total pressure" unit="[Pa]">101308</float>
+            <float name="Absolute total temperature" unit="[K]">304.301</float>
+            <float name="Absolute total enthalpy" unit="[J/kg]">392339</float>
+        </Condition>
+        <MassFlow>
+            <float name="Mass flow" unit="[kg/s]">2.51595e-005</float>
+        </MassFlow>
+    </Station>
+    <Performance name="Global performance">
+        <float name="Torque" unit="[N.m]">0</float>
+    </Performance>
+</Computation>

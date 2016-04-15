@@ -1,0 +1,20 @@
+NUMBER_OF_BLOCKS 1 
+cil cil FLUID
+100 20 12
+NONE
+1 
+unknown INL 1 1 20 12 
+1 
+unknown SOL 1 1 100 12 
+1 
+unknown MIR 1 1 100 20 
+1 
+unknown MIR 1 1 100 20 
+1 
+unknown SOL 1 1 100 12 
+1 
+unknown OUT 1 1 20 12 
+NUMBER_OF_BLADES  0
+NI_BEGIN NITurbomachineryConfigurationMesh
+BYPASS       0
+NI_END NITurbomachineryConfigurationMesh

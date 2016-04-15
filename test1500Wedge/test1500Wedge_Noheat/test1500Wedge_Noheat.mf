@@ -1,0 +1,47 @@
+==============================================================================
+Global results for project C:/Users/Pupo/Documents/GitHub/Projects/test1500Wedge/test1500Wedge_Noheat/test1500Wedge_Noheat
+==============================================================================
+
+Fluid properties
+================
+
+  The fluid is an ideal gas (constant Cp,Cv and R)
+
+  Specific heat at constant pressure (Cp) = 1006 [J/kg.K]
+  Specific heat at constant volume   (Cv) = 718.571 [J/kg.K]
+  Gas constant                        (R) = 287.429 [J/kg.K]
+  Ratio of specific heats         (Cp/Cv) = 1.4
+
+
+Global results at in and outlet
+-------------------------------
+
+                         inlet         outlet
+
+Geometrical data
+----------------
+
+Static conditions
+-----------------
+
+  Static pressure    = 101307, 101325 [Pa]
+  Static temperature = 299.952, 299.885 [K]
+  Enthalpy           = 301752, 301684 [J/kg]
+
+Stagnation conditions
+---------------------
+
+  Absolute total pressure     = 101325, 101345 [Pa]
+  Absolute total temperature  = 300, 299.901 [K]
+  Absolute total enthalpy     = 301800, 301701 [J/kg]
+
+Mass flow at inlet  = -0.00234585 [kg/s]
+Mass flow at outlet = -0.00235639 [kg/s]
+---------
+
+Global Performance
+-----------------
+
+
+   Torque              = 0 [Nm]
+

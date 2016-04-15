@@ -1,0 +1,120 @@
+LOG file created by OpenLabs version 5.1, on 04/15/2016
+************************
+OpenLabs-->IN, Block: 0
+************************
+
+OpenLabs::buffering-->IN [OpenLabs.C]
+CONSTANTS 	 	 	 	 [ OK ]
+EQUATIONS  	 	 	 	 [ OK ]
+CUSTOM_BOUNDARY_CONDITIONS 	  	 [ OK ]
+ALGEBRAIC_DIFFUSION_COEFFICIENTS   	 [ OK ]
+INITIAL_PROFILES 	  	 	 [ OK ]
+SOURCETERMS  	 	 	 	 [ OK ]
+CUSTOM_FLUID_PROPERTIES 	 	 [ OK ]
+AUXTERM 	 	 	 	 [ OK ]
+ADDITIONAL_INFORMATION 	 	 [ OK ]
+OpenLabs::buffering-->OUT [OpenLabs.C]
+OpenLabs::processInternalInfo-->IN [OpenLabs.C]
+LevelDataStr::buildComputationParameters -> IN 
+Fluid AIR(Perfect) not found in fluidDataList -> create
+preco_pcEpsVLim_ = 0.001
+preco_pcEpsPgr_ = 1
+WARNING: Steady flow activated - DES/LES module deactivated
+ComputationParamManager::_buildComputationParametersFluid-->Initial solution in cylindric coordinates
+---------------------------------------------------------------------------------------------------
+ ComputationParamManager initSolFileNameParallel_:	C:\Users\Pupo\Documents\GitHub\Projects\test1500Wedge\test1500Wedge_Noheat\test1500Wedge_Noheat
+ ComputationParamManager initSolFileName_:		C:\Users\Pupo\Documents\GitHub\Projects\test1500Wedge\test1500Wedge_Noheat\test1500Wedge_Noheat
+----------------------------------------------------------------------------------------------------
+found! iPartPremModel = 0
+Lagrangian spray: 0000000002913CE0
+iLagrangian 0
+Lagrangian spray module not active: 0
+HexaNSParamManager::readFINEdatabase-->WARNING - Archive of solution on intermediate adapted meshes activated 
+HexaNSParamManager::readFINEdatabase-->WARNING - The adaptation option has not been activated  
+HexaNSParamManager::readFINEdatabase-->WARNING - Archive of solution on intermediate adapted meshes deactivated  
+LevelDataStr::buildComputationParameters -> OUT 
+ CondCalc_Prandtl::CondCalc_Prandtl -> IN 
+ CondCalc_Prandtl::CondCalc_Prandtl -> OUT 
+LevelDataStr::constructCfdFluidDatabase--> List of diffusion coefficients caculators
+   Viscosity calculator
+   Thermal Conductivity calculator
+LevelDataStr::setHeatSrcTrmData -> IN 
+LevelDataStr::setHeatSrcTrmData -> OUT 
+_import_numBlocks --> numBlocks:1
+_MaxIndexSolUpConsPointImpl=0
+_MaxIndexSolUpConsNoPointImpl=0
+_MaxIndexSolUpNoConsPointImpl=0
+_MaxIndexSolUpNoConsNoPointImpl=0
+Internal VarName: 
+   StaticPressure
+   Vx
+   Vy
+   Vz
+   StaticTemperature
+   Density
+   Beta_Preco
+   AbsoluteTotalEnergy
+   AbsoluteTotalEnthalpy
+   SoundSpeed
+   Viscosity
+   Conductivity
+   Energy
+   Enthalpy
+   Cp
+   Prandtl
+   Gamma
+   RGas
+   UTau
+   TTau
+OpenLabs::processInternalInfo-->OUT [OpenLabs.C]
+OpenLabs::buildObj-->IN [OpenLabs.C]
+OpenLabs::buildObj-->OUT [OpenLabs.C]
+OpenLabs::checkFormat-->IN [OpenLabs.C]
+OpenLabs::checkFormat-->OUT [OpenLabs.C]
+OpenLabs::analyzeObj-->IN [OpenLabs.C]
+Level of Global Nesting tree:	0
+OpenLabs::checkStructure-->IN [OpenLabs.C]
+Internal and new Variable Names: 
+  StaticPressure
+  Vx
+  Vy
+  Vz
+  StaticTemperature
+  Density
+  Beta_Preco
+  AbsoluteTotalEnergy
+  AbsoluteTotalEnthalpy
+  SoundSpeed
+  Viscosity
+  Conductivity
+  Energy
+  Enthalpy
+  Cp
+  Prandtl
+  Gamma
+  RGas
+  UTau
+  TTau
+  Coord
+  faceN
+  Normal
+  CellVolume
+  CellSurface
+  BFaceSurface
+  dn
+  upcell
+OpenLabs::checkStructure-->OUT [OpenLabs.C]
+OpenLabs::analyzeObj-->OUT [OpenLabs.C]
+OpenLabs::output-->IN [OpenLabs.C]
+OpenLabs::output-->OUT [OpenLabs.C]
+LevelDataStr::~LevelDataStr->IN
+LevelDataStr::~LevelDataStr->OUT
+************************
+OpenLabs-->OUT, Block: 0
+************************
+
+===
+=== OpenLabs library generation
+===
+=== ERROR: Cannot find "Visual Studio" directory 
+=== Abort.

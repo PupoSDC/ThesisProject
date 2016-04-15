@@ -1,0 +1,2832 @@
+MPI initialization...
+  Started MPI on processor 0 with 1 processes.
+MPI initialization done
+putenv s=ALLUSERSPROFILE=C:\ProgramData 
+putenv s=APPDATA=C:\Users\Pupo\AppData\Roaming 
+putenv s=BLT_LIBRARY=D:\NUMECA\FineOpen51_3\_tcl\_system\blt2.4 
+putenv s=CFVIEW_PATH=D:\NUMECA\FineOpen51_3 
+putenv s=CFV_EXE=D:\NUMECA\FineOpen51_3\bin\cfview.exe 
+putenv s=COMMONPROGRAMFILES=C:\Program Files\Common Files 
+putenv s=COMMONPROGRAMFILES(X86)=C:\Program Files (x86)\Common Files 
+putenv s=COMMONPROGRAMW6432=C:\Program Files\Common Files 
+putenv s=COMPUTERNAME=FAB2000 
+putenv s=COMSPEC=C:\WINDOWS\system32\cmd.exe 
+putenv s=CONFIGSETROOT=C:\WINDOWS\ConfigSetRoot 
+putenv s=DRIVER=opengl 
+putenv s=EURANUS_DIR=D:\NUMECA\FineOpen51_3\bin 
+putenv s=EUR_EXE=D:\NUMECA\FineOpen51_3\bin\euranus.exe 
+putenv s=FP_NO_HOST_CHECK=NO 
+putenv s=GRA_EXE=D:\NUMECA\FineOpen51_3\bin\monitor.exe 
+putenv s=HOME=C:\Users\Pupo 
+putenv s=HOMEDRIVE=C: 
+putenv s=HOMEPATH=\Users\Pupo 
+putenv s=HOOPS_RENDERING_OPTIONS=hsr algorithm = hardware z-buffer 
+putenv s=IGG_EXE=D:\NUMECA\FineOpen51_3\bin\igg.exe 
+putenv s=IGG_REVERSEVIDEO=on 
+putenv s=LOCALAPPDATA=C:\Users\Pupo\AppData\Local 
+putenv s=LOGONSERVER=\\MicrosoftAccount 
+putenv s=NI_PVM_USER_DIR=C:\Users\Pupo\.numeca\pvm 
+putenv s=NI_VERSION=open51_3 
+putenv s=NI_VERSIONS_DIR=D:\NUMECA 
+putenv s=NUMBER_OF_PROCESSORS=4 
+putenv s=NUMECA_DIR=D:\NUMECA\FineOpen51_3 
+putenv s=ONLINEHELPCFVIEW_DIR=D:\NUMECA\FineOpen51_3\html\online_help\cfview\ 
+putenv s=ONLINEHELPFINE_DIR=D:\NUMECA\FineOpen51_3\html\online_help\fine\ 
+putenv s=ONLINEHELPHEXA_DIR=D:\NUMECA\FineOpen51_3\html\online_help\hexa\ 
+putenv s=ONLINEHELPHEXPRESS_DIR=/raid/delanaye/hexpress_help/ 
+putenv s=ONLINEHELPIGG_DIR=D:\NUMECA\FineOpen51_3\html\online_help\igg\ 
+putenv s=OS=Windows_NT 
+putenv s=PATH=D:\NUMECA\FineOpen51_3\python64\Lib\site-packages\numpy\core;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x64;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\Doctrine extensions for PHP\;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Users\Pupo\AppData\Local\.meteor\ 
+putenv s=PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY 
+putenv s=PROCESSOR_ARCHITECTURE=AMD64 
+putenv s=PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 69 Stepping 1, GenuineIntel 
+putenv s=PROCESSOR_LEVEL=6 
+putenv s=PROCESSOR_REVISION=4501 
+putenv s=PROGRAMDATA=C:\ProgramData 
+putenv s=PROGRAMFILES=C:\Program Files 
+putenv s=PROGRAMFILES(X86)=C:\Program Files (x86) 
+putenv s=PROGRAMW6432=C:\Program Files 
+putenv s=PSMODULEPATH=C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\ 
+putenv s=PUBLIC=C:\Users\Public 
+putenv s=PVMEPID=10000686 
+putenv s=PVM_ARCH=win32 
+putenv s=PVM_ROOT=D:\NUMECA\pvm 
+putenv s=PVM_RSH=D:\NUMECA\pvm\bin\nirsh.bat 
+putenv s=PVM_TMP=C:\tmp 
+putenv s=PYTHONPATH=D:\NUMECA\FineOpen51_3\python64 
+putenv s=SESSIONNAME=Console 
+putenv s=SHIM_MCCOMPAT=0x800000000 
+putenv s=SYSTEMDRIVE=C: 
+putenv s=SYSTEMROOT=C:\WINDOWS 
+putenv s=TCL_LIBRARY=D:\NUMECA\FineOpen51_3\python64\tcl\tcl8.5 
+putenv s=TCL_PATH=D:\NUMECA\FineOpen51_3\_tcl 
+putenv s=TEMP=C:\Users\Pupo\AppData\Local\Temp 
+putenv s=TIX_LIBRARY=D:\NUMECA\FineOpen51_3\python64\tcl\tix8.4.3 
+putenv s=TK_LIBRARY=D:\NUMECA\FineOpen51_3\python64\tcl\tk8.5 
+putenv s=TMP=C:\Users\Pupo\AppData\Local\Temp 
+putenv s=TMP_DIR=C:\Users\Pupo\.numeca\tmp\ 
+putenv s=USERDOMAIN=FAB2000 
+putenv s=USERDOMAIN_ROAMINGPROFILE=FAB2000 
+putenv s=UPVM Initialized
+PVM Initialization ...
+PVM Initialization done
+MainSolver::main-->version 5.1 double-precision.
+MainSolver::main-->Opening C:\Users\Pupo\Documents\GitHub\Projects\test1500Wedge\test1500Wedge_264_1stOrder\test1500Wedge_264_1stOrder.run
+MainSolver:trying to read project C:\Users\Pupo\Documents\GitHub\Projects\test1500Wedge\test1500Wedge_264_1stOrder\test1500Wedge_264_1stOrder
+MainSolver:hexaNSp_->read(projectName_) Start
+MainSolver:hexaNSp_->read(projectName_) End
+ nbHexstreamProcFromRunFile 1
+ nbTotalProcFromMPI         1
+MainSolver:created project C:\Users\Pupo\Documents\GitHub\Projects\test1500Wedge\test1500Wedge_264_1stOrder\test1500Wedge_264_1stOrder.run
+MainSolver::main-->Reading the database
+               ----------------------------------------------------------------------------- 
+               HexaNSParamManager:: projectName_               C:\Users\Pupo\Documents\GitHub\Projects\test1500Wedge\test1500Wedge_264_1stOrder\test1500Wedge_264_1stOrder
+               HexaNSParamManager:: projectNameOrgForRestart_  C:\Users\Pupo\Documents\GitHub\Projects\test1500Wedge\test1500Wedge_Noheat\test1500Wedge_Noheat
+               HexaNSParamManager:: projectNameForCheck              C:/Users/Pupo/Documents/GitHub/Projects/test1500Wedge/test1500Wedge_264_1stOrder/test1500Wedge_264_1stOrder
+               HexaNSParamManager:: projectNameOrgForRestartForCheck C:/Users/Pupo/Documents/GitHub/Projects/test1500Wedge/test1500Wedge_Noheat/test1500Wedge_Noheat
+               ----------------------------------------------------------------------------- 
+iNLHDecou_ = 0
+ FSI_StlFsiFileName_ undefined
+HexaNSParamManager::readFINEDataBase-->Restart and reset convergence history
+HexaNSParamManager::readFINEDataBase-->FMG deactivated
+MainSolver::main-->Database opened and read successfully
+******************** list of global parameters *************************
+
+Initialisation
+--------------
+meshScaleFactor 	1.000000e-003
+initSol 		1
+iParallel 		0
+PartitionerType 	Serial
+
+Fluid Structure parameters
+--------------------------
+Fluid Structure 		0
+FSI_OOfelie_Thermal_    		-1
+FSI_OOfelie_Dynamic_    		-1
+FSI_OOfelie_Restart_    		-1
+FSI_OOfelie_SteadyMode_ 		-1
+FSI_ModalApproach_ 		0
+FSI_Modal_SteadyMode_ 		-1
+
+Moving meshes parameters
+------------------------
+iMovingGrid 		0
+
+MpCCI parameters
+----------------
+MpCCI coupling 		0
+
+MpCCI parameters
+----------------
+MpCCI reference pressure 		0.000000e+000
+MpCCI Thermal coupling 		0
+MpCCI Dynamic coupling 		0
+
+Time integration parameters
+---------------------------
+nbStage 		4
+fmg_nbStage 		4
+nbGrid 			4
+mgType 			0
+iFMG 			0
+fmg_nbIter 		1000
+fmg_resCri 		-3.500000e+000
+nbSweepfc[0] 		1
+nbSweepcf[0] 		1
+
+P1 Radiation model 
+iP1RadImpl_ 			1
+
+Solid block solver 
+-------------------
+iSolidImpl_ 			1
+iNLH_ 			0
+
+Adaptation parameters
+---------------------
+nbBLRef 		0
+nbViscousLayer 		0
+firstLayerSize 		0.000000e+000
+thickProgress 		0.000000e+000
+yPlus1stCell 		0.000000e+000
+nbTopoInterface 	0
+nbFuRef 		0
+fuRefDir 		1 1 1
+nbLoRef 		0
+nbSensor 		0
+combination 		0
+snsSelect 		
+snsActive 		
+snsAlpha[grid0] 	
+snsBeta[grid0] 		
+smoothFlag 		
+optimizeFlag 		
+
+Time-accurate solver parameters
+-------------------------------
+iTimeAccurate 		0
+ta_iGlobTimeStepping 	0
+nbTaIter 		0
+physTimeStep 		1.000000e-003
+CFL phys. 		2.000000e+000
+ta_physGlobTimeComp_ 	0.000000e+000
+beta1,0,M1 		1.500000e+000 -2.000000e+000 5.000000e-001
+
+Computation steering
+--------------------
+itMax 			100000
+out_CPUperIt 		0
+writeInterval 		1000
+saveAll 		1
+out_displayForcePatchOfGroup_ 	 0
+out_displayFluxBalance_ 	 0
+out_wallForcesPerIt_ 	 0
+out_userDefinedRef_ 		 0
+out_copyFiles_ 	 1
+out_solOnCoarseLevel_ 	 1
+out_derQntFromNode_ 	 0
+resRed 			-8.000000e+000
+resRedAdjoint 			-8.000000e+000
+
+Distance To Wall method
+-----------------------
+  dtw_method_ 		 MarchingMethod
+
+Option Hypersonic Initialization
+
+--------------------------------
+hypInit 		0
+hypInitItMax 		100
+
+Parameters for Frozen Rotor - Domain Scaling
+
+--------------------------------------------
+RS_NbAngularPositions_   	20
+RS_OutputMultiple_       	0
+
+
+Parameters for Condensable Fluid
+
+--------------------------------
+iCondTableClip_   	0
+
+Hexstream - ASCII i/o mode
+epsTolGeo_  		1.000000e-020
+epsTol_	    		1.000000e-020
+ sizeof(hReal)    8
+ sizeof(hReal16)  8
+ sizeof(double)   8
+ sizeof(float)    4
+ sizeof(int)      4
+ sizeof(short)    2
+
+****************** end of list of parameters********************
+
+ nbHexstreamProcFromRunFile 1
+ nbTotalProcFromMPI         1
+ nbHexstreamProcFromMPI 1
+LicenseManager-->Checking module licenses
+LicenseManager-->All licenses checked out!
+-------------------------------------------------------------------------------
+MainSolver:: cleanDirectory -> IN 
+MainSolver:: cleanDirectory -> OUT 
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+main::cleanDirectoryAdjoint -> IN 
+    MainSolver:: tidyFilesAggloAdjoint -> IN 
+      startIndex  0
+      limitIndex  0
+    MainSolver:: tidyFilesAggloAdjoint -> OUT 
+main::cleanDirectoryAdjoint -> OUT 
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+MainSolver:: managementOfFiles -> IN 
+   From HexaNSParamManager iggFileNameParallel_:    C:\Users\Pupo\Documents\GitHub\Projects\test1500Wedge\_mesh\MESH1500wedge_UNS
+   From HexaNSParamManager iggFileName_:            C:\Users\Pupo\Documents\GitHub\Projects\test1500Wedge\_mesh\MESH1500wedge_UNS
+   From HexaNSParamManager projectNameParallel_:    C:/Users/Pupo/Documents/GitHub/Projects/test1500Wedge/test1500Wedge_264_1stOrder/test1500Wedge_264_1stOrder
+   From HexaNSParamManager projectName_:            C:/Users/Pupo/Documents/GitHub/Projects/test1500Wedge/test1500Wedge_264_1stOrder/test1500Wedge_264_1stOrder
+   From HexaNSParamManager initSolFileNameParallel_:C:/Users/Pupo/Documents/GitHub/Projects/test1500Wedge/test1500Wedge_Noheat/test1500Wedge_Noheat
+   From HexaNSParamManager initSolFileName_:        C:/Users/Pupo/Documents/GitHub/Projects/test1500Wedge/test1500Wedge_Noheat/test1500Wedge_Noheat
+   From HexaNSParamManager resFileName_:            C:/Users/Pupo/Documents/GitHub/Projects/test1500Wedge/test1500Wedge_264_1stOrder/test1500Wedge_264_1stOrder.res
+   From HexaNSParamManager GlobalOutFileName_:      C:/Users/Pupo/Documents/GitHub/Projects/test1500Wedge/test1500Wedge_264_1stOrder/test1500Wedge_264_1stOrder.globalout
+   From HexaNSParamManager controlPointsFileName_:  C:/Users/Pupo/Documents/GitHub/Projects/test1500Wedge/test1500Wedge_264_1stOrder/test1500Wedge_264_1stOrder
+
+   MainSolver  srcFileNameParallel:  C:/Users/Pupo/Documents/GitHub/Projects/test1500Wedge/test1500Wedge_Noheat/test1500Wedge_Noheat
+   MainSolver  srcFileName:          C:/Users/Pupo/Documents/GitHub/Projects/test1500Wedge/test1500Wedge_Noheat/test1500Wedge_Noheat
+   MainSolver  destFileNameParallel: C:/Users/Pupo/Documents/GitHub/Projects/test1500Wedge/test1500Wedge_264_1stOrder/test1500Wedge_264_1stOrder
+   MainSolver  destFileName:         C:/Users/Pupo/Documents/GitHub/Projects/test1500Wedge/test1500Wedge_264_1stOrder/test1500Wedge_264_1stOrder
+
+   MainSolver  srcFileNameForCheck:  C:/Users/Pupo/Documents/GitHub/Projects/test1500Wedge/test1500Wedge_Noheat/test1500Wedge_Noheat
+   MainSolver  destFileNameForCheck: C:/Users/Pupo/Documents/GitHub/Projects/test1500Wedge/test1500Wedge_264_1stOrder/test1500Wedge_264_1stOrder
+   MainSolver srcFileName != destFileName 
+    -> MainSolver copying IGG HEX FNMB DOM BCS if they are present 
+    -> MainSolver copying BOUT DTW BTM1 AVG if they are present 
+    MainSolver:: tidyFilesAgglo -> IN 
+      startIndex  0
+      limitIndex  0
+    MainSolver:: tidyFilesAgglo -> OUT 
+    MainSolver:: tidyFilesAggloAdjoint -> IN 
+      startIndex  0
+      limitIndex  0
+    MainSolver:: tidyFilesAggloAdjoint -> OUT 
+MainSolver:: managementOfFiles -> OUT 
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+MainSolver:: checkFiles -> IN 
+ 
+INFO: The computation which is going to be performed has the following main characteristics: 
+INFO:    * Time Configuration: STEADY 
+INFO:    * Initial Solution:   RESTART with 'import of convergence' NOT activated 
+INFO:    *                     RESTART in a DIFFERENT computational directory 
+INFO:    * Number of BLOCKS:   1
+INFO:    * Launching Mode:     SERIAL 
+ 
+INFO: Checking if the global HEX SPH MSH IGG BCS DOM NMB FNMB files are in the computational directory. 
+INFO:     * Global HEX  file is in the computational directory. 
+INFO:     * Global IGG  file is in the computational directory. 
+INFO:     * Global BCS  file is in the computational directory. 
+INFO:     * Global DOM  file is in the computational directory. 
+INFO:     * Global NMB file is in the computational directory. 
+INFO:     * Global FNMB file is in the computational directory. 
+INFO:       | Total Number of [_p] AHEX files found: 0
+INFO:       | Total Number of [_p] FNMB files found: 0
+INFO:       | Total Number of [_p] PMF  files found: 0
+INFO:       | Total Number of [_p] FMF  files found: 0
+INFO:       | Total Number of [_p] VMF  files found: 0
+INFO:       | Total Number of [_p] BOUT files found: 0
+INFO:       | Total Number of [_p] AOUT    files found: 0
+INFO:       | Total Number of [_p] SOL     files found: 0
+ 
+INFO: Checking if the Global BOUT file is in the computational directory. 
+INFO:     * Global BOUT file is in the computational directory. 
+MainSolver:: checkFiles -> OUT 
+-------------------------------------------------------------------------------
+
+    MainSolver:: tidyFilesAgglo -> IN 
+      startIndex  0
+      limitIndex  0
+    MainSolver:: tidyFilesAgglo -> OUT 
+MpCCIAdapter::MpCCIAdapter-->IN
+MpCCIAdapter::MpCCIAdapter-->OUT
+MainSolver::main-->Solver has started
+MainSolver:: steadySolve -> IN 
+MainSolver::steadySolve-->Start solving the testcase on current grid
+
+
+
+MultiBlockManager::buildMultiBlockDataStructure -> IN 
+_import_numBlocks --> numBlocks:1
+MultiBlockManager::buildMultiBlockDataStructure-->Computational domain contains 1 block(s)
+[IO] Reading domain 'C:/Users/Pupo/Documents/GitHub/Projects/test1500Wedge/test1500Wedge_264_1stOrder/test1500Wedge_264_1stOrder.dom'
+Orienting domain surfaces
+ 10% done...
+ 20% done...
+ 30% done...
+ 40% done...
+ 50% done...
+ 60% done...
+ 70% done...
+ 80% done...
+ Completed.
+
+[BCData] Set all boundary conditions to `SOL'
+hexaFileMng::hexaFileMng [0] -> IN 
+hexaFileMng::_deepInit [0] -> IN 
+hexaFileMng::_deepInit [0] -> OUT 
+hexaFileMng::hexaFileMng [0] -> OUT 
+hexaFileMng::importAndInitialize -> IN 
+hexaFileMng::importAndInitialize, opening file 'C:/Users/Pupo/Documents/GitHub/Projects/test1500Wedge/test1500Wedge_264_1stOrder/test1500Wedge_264_1stOrder.hex' in binary mode.
+[IO] File 'C:/Users/Pupo/Documents/GitHub/Projects/test1500Wedge/test1500Wedge_264_1stOrder/test1500Wedge_264_1stOrder.hxp' not found.
+[IO] Reading mesh 'C:/Users/Pupo/Documents/GitHub/Projects/test1500Wedge/test1500Wedge_264_1stOrder/test1500Wedge_264_1stOrder.hex'
+[IO]   created on 04/12/2016
+[IO]   by Hexpress version 5.1
+[IO]   with file format 4.700000e+000
+hexaFileMng::importAndInitialize versions = 4.700000e+000 4.700000e+000
+ ... will read 1 blocks 
+[IO] Reading block #0
+ ... name: cil
+[IO]   Mesh type: 1
+[IO]   Number of grid levels: 1
+[IO] Reading 4000 vertices
+[IO] Reading 9760 edges
+[IO] Reading 7642 faces
+[IO] Reading 1881 cells
+[IO] Reading ribbon cells
+[IO] Reading relaxed cells info
+[IO] Reading domain-mesh connection data
+[IO] Auxilliary file is missing. 
+[IO] Reading cell refinement level
+[IO] Reading AutoGrid 5 data
+hexaFileMng::importAndInitializeFnmb -> IN 
+hexaFileMng::importAndInitialize, opening file 'C:/Users/Pupo/Documents/GitHub/Projects/test1500Wedge/test1500Wedge_264_1stOrder/test1500Wedge_264_1stOrder.fnmb' in binary mode.
+[IO] Reading FNMB data 'C:/Users/Pupo/Documents/GitHub/Projects/test1500Wedge/test1500Wedge_264_1stOrder/test1500Wedge_264_1stOrder.fnmb
+[IO]   created on 04/12/2016
+[IO]   by Hexpress version 5.1
+[IO]   with file format 2.200000e+000
+ in if (_fileFnmbVersion >= 2.0 - eps_) 
+ flag_char 1 NoMoreFNMB
+ flag_char == NoMoreFNMB 
+  end of while 
+hexaFileMng::importAndInitializeFnmb -> OUT 
+hexaFileMng::importAndInitializeNmbOpen -> IN 
+hexaFileMng::importAndInitializeNmbOpen, opening file 'C:/Users/Pupo/Documents/GitHub/Projects/test1500Wedge/test1500Wedge_264_1stOrder/test1500Wedge_264_1stOrder.nmb' in binary mode.
+[IO] Reading NMB data 'C:/Users/Pupo/Documents/GitHub/Projects/test1500Wedge/test1500Wedge_264_1stOrder/test1500Wedge_264_1stOrder.nmb
+[IO]   created on 04/12/2016
+[IO]   by Hexpress version 5.1
+[IO]   with file format 1.000000e+000
+hexaFileMng::importAndInitializeNmbClose -> IN 
+hexaFileMng::importAndInitializeFnmbClose -> OUT 
+MultiBlockManager::buildMultiBlockDataStructure-->PreProcessing harmonic data
+MultiBlockManager::buildMultiBlockDataStructure-->Building data structure
+MultiBlockManager::buildMultiBlockDataStructure-->Build parameter data structure for block 0
+BlockDataStr::buildBlockComputationParameters -> IN 
+LevelDataStr::buildComputationParameters -> IN 
+Fluid AIR(Perfect) not found in fluidDataList -> create
+preco_pcEpsVLim_ = 1.000000e-003
+preco_pcEpsPgr_ = 1.000000e+000
+WARNING: Steady flow activated - DES/LES module deactivated
+ComputationParamManager::_buildComputationParametersFluid-->Initial solution in cylindric coordinates
+---------------------------------------------------------------------------------------------------
+ ComputationParamManager initSolFileNameParallel_:	C:/Users/Pupo/Documents/GitHub/Projects/test1500Wedge/test1500Wedge_Noheat/test1500Wedge_Noheat
+ ComputationParamManager initSolFileName_:		C:\Users\Pupo\Documents\GitHub\Projects\test1500Wedge\test1500Wedge_Noheat\test1500Wedge_Noheat
+----------------------------------------------------------------------------------------------------
+found! iPartPremModel = 0
+Lagrangian spray: 00000000033E6770
+iLagrangian 0
+Lagrangian spray module not active: 0
+HexaNSParamManager::readFINEdatabase-->WARNING - Archive of solution on intermediate adapted meshes activated 
+HexaNSParamManager::readFINEdatabase-->WARNING - The adaptation option has not been activated  
+HexaNSParamManager::readFINEdatabase-->WARNING - Archive of solution on intermediate adapted meshes deactivated  
+LevelDataStr::buildComputationParameters -> OUT 
+LevelDataStr::buildComputationParameters -> IN 
+Found fluid AIR(Perfect) in fluidDataList
+preco_pcEpsVLim_ = 1.000000e-003
+preco_pcEpsPgr_ = 1.000000e+000
+WARNING: Steady flow activated - DES/LES module deactivated
+ComputationParamManager::_buildComputationParametersFluid-->Initial solution in cylindric coordinates
+---------------------------------------------------------------------------------------------------
+ ComputationParamManager initSolFileNameParallel_:	C:/Users/Pupo/Documents/GitHub/Projects/test1500Wedge/test1500Wedge_Noheat/test1500Wedge_Noheat
+ ComputationParamManager initSolFileName_:		C:\Users\Pupo\Documents\GitHub\Projects\test1500Wedge\test1500Wedge_Noheat\test1500Wedge_Noheat
+----------------------------------------------------------------------------------------------------
+found! iPartPremModel = 0
+Lagrangian spray: 00000000033E6770
+iLagrangian 0
+Lagrangian spray module not active: 0
+HexaNSParamManager::readFINEdatabase-->WARNING - Archive of solution on intermediate adapted meshes activated 
+HexaNSParamManager::readFINEdatabase-->WARNING - The adaptation option has not been activated  
+HexaNSParamManager::readFINEdatabase-->WARNING - Archive of solution on intermediate adapted meshes deactivated  
+LevelDataStr::buildComputationParameters -> OUT 
+LevelDataStr::buildComputationParameters -> IN 
+Found fluid AIR(Perfect) in fluidDataList
+preco_pcEpsVLim_ = 1.000000e-003
+preco_pcEpsPgr_ = 1.000000e+000
+WARNING: Steady flow activated - DES/LES module deactivated
+ComputationParamManager::_buildComputationParametersFluid-->Initial solution in cylindric coordinates
+---------------------------------------------------------------------------------------------------
+ ComputationParamManager initSolFileNameParallel_:	C:/Users/Pupo/Documents/GitHub/Projects/test1500Wedge/test1500Wedge_Noheat/test1500Wedge_Noheat
+ ComputationParamManager initSolFileName_:		C:\Users\Pupo\Documents\GitHub\Projects\test1500Wedge\test1500Wedge_Noheat\test1500Wedge_Noheat
+----------------------------------------------------------------------------------------------------
+found! iPartPremModel = 0
+Lagrangian spray: 00000000033E6770
+iLagrangian 0
+Lagrangian spray module not active: 0
+HexaNSParamManager::readFINEdatabase-->WARNING - Archive of solution on intermediate adapted meshes activated 
+HexaNSParamManager::readFINEdatabase-->WARNING - The adaptation option has not been activated  
+HexaNSParamManager::readFINEdatabase-->WARNING - Archive of solution on intermediate adapted meshes deactivated  
+LevelDataStr::buildComputationParameters -> OUT 
+LevelDataStr::buildComputationParameters -> IN 
+Found fluid AIR(Perfect) in fluidDataList
+preco_pcEpsVLim_ = 1.000000e-003
+preco_pcEpsPgr_ = 1.000000e+000
+WARNING: Steady flow activated - DES/LES module deactivated
+ComputationParamManager::_buildComputationParametersFluid-->Initial solution in cylindric coordinates
+---------------------------------------------------------------------------------------------------
+ ComputationParamManager initSolFileNameParallel_:	C:/Users/Pupo/Documents/GitHub/Projects/test1500Wedge/test1500Wedge_Noheat/test1500Wedge_Noheat
+ ComputationParamManager initSolFileName_:		C:\Users\Pupo\Documents\GitHub\Projects\test1500Wedge\test1500Wedge_Noheat\test1500Wedge_Noheat
+----------------------------------------------------------------------------------------------------
+found! iPartPremModel = 0
+Lagrangian spray: 00000000033E6770
+iLagrangian 0
+Lagrangian spray module not active: 0
+HexaNSParamManager::readFINEdatabase-->WARNING - Archive of solution on intermediate adapted meshes activated 
+HexaNSParamManager::readFINEdatabase-->WARNING - The adaptation option has not been activated  
+HexaNSParamManager::readFINEdatabase-->WARNING - Archive of solution on intermediate adapted meshes deactivated  
+LevelDataStr::buildComputationParameters -> OUT 
+LevelDataStr::managementOfOutputQuantities() -> IN [LevelOutputQuantitiesManagement.C]
+   hexaOutputs 00000000033D3DA0
+LevelDataStr::managementOfOutputQuantities() -> OUT [LevelOutputQuantitiesManagement.C]
+LevelDataStr::setHeatSrcTrmData -> IN 
+LevelDataStr::setHeatSrcTrmData -> OUT 
+LevelDataStr::setHeatSrcTrmData -> IN 
+LevelDataStr::setHeatSrcTrmData -> OUT 
+LevelDataStr::setHeatSrcTrmData -> IN 
+LevelDataStr::setHeatSrcTrmData -> OUT 
+LevelDataStr::setHeatSrcTrmData -> IN 
+LevelDataStr::setHeatSrcTrmData -> OUT 
+BlockDataStr::buildBlockComputationParameters -> OUT 
+******************** list of parameters for block 0*************************
+
+Initialisation
+--------------
+Block nr. 0 is a FLUID  Block 
+nDim_[0] nDim_[_iBlock] 2
+computeDistToWall 	0
+
+Physical model and ref. values
+------------------------------
+model 			2
+turbModelA 		0
+turbModel1 		0
+turbModel2 		0
+turbModel7 		0
+turbModel8 		0
+turbModelL 		0
+Fluid is Perfect Gas
+pRef 			1.013250e+005
+TRef 			3.000000e+002
+rhoRef 			1.200000e+000
+gammaGas 		1.400000e+000
+cp 			1.006000e+003
+RGaz 			2.874286e+002
+cv 			7.185714e+002
+TRefBCpAdapt 3.000000e+002
+Sutherland law with muInf 		1.716000e-005
+  Tinf_        2.931110e+002
+  rhoInf_      0.000000e+000
+  Tsutherland_ 1.105550e+002
+conductivity based on Prandtl
+Prandtl 		7.080000e-001
+velRef 			1.000000e-001
+LRef 			1.000000e+000
+ReRef 			6.993007e+003 based on velRef, LRef, rhoRef 
+PrandtlTurb 		1.000000e+000
+
+Gravity constants
+------------------
+Gravity 		1
+Gravity vector 		0.000000e+000	0.000000e+000	-9.810000e+000
+Reference coord. 	0.000000e+000	0.000000e+000	0.000000e+000
+
+Turbomachinery / polar project parameters
+-----------------------------------------
+iRotating 		0
+rot_Omega 		0.000000e+000
+rot_iVelSy_ 		1
+rot_OmegSy_ 		0.000000e+000
+rot_Center_ 		0.000000e+000	0.000000e+000	0.000000e+000
+rot_Axis_ 		0.000000e+000	0.000000e+000	1.000000e+000
+iGhostCylindExtrapol 		1
+bc_wallSpecTreatment_ 	0
+
+Space discretization parameters
+-------------------------------
+spaceScheme 		1
+spaceSchemeOrder 	1
+i2ndOrder_ 	1
+dissipation on EXT      boundaries 	2 ==> YES
+dissipation on WALL/MIR boundaries 	2 ==> NO
+  -> Special Treatment for NS WALL 	     YES
+artDiss2ndCoef 		1.000000e+000
+artDiss4thCoef 		1.000000e-001
+expMartinelli 		5.000000e-001
+vFluxModel 		1
+spc_iDiamond 		1
+spc_TswitchInArtDissip_ 	0
+spc_RhoswitchInArtDissip_ 	0
+spc_XhiInArtDissip_ 	0.000000e+000
+spc_expMart_Tetra_ 		1
+spc_expMart_Pyram_ 		1
+spc_secDiffSF_Tetra_ 		5.000000e-001
+spc_secDiffSF_Pyram_ 		4.000000e-001
+spc_secDiffSF_Prism_ 	7.000000e-001
+
+Time integration parameters
+---------------------------
+cfl              	2.800000e+000
+drcoeff[i]       	2.500000e-001 3.333333e-001 5.000000e-001 1.000000e+000 
+iCalcArtifDissip 	1 1 0 0 
+iCalcVFluxes     	1 0 0 0 
+iCPUBooster      	0
+iResSmoo         	2
+iResSmooVersion  	3
+iCorrSmoo        	2
+iFluxAverage     	1
+iFluxAverageFMG 	0
+iCstInterpol     	0
+
+Turbulence parameters
+---------------------
+mavRes 			9.500000e-001
+mavRem 			9.500000e-001
+KEpsProd 		0
+  ==>  Linearized Production Term (default)
+Roughness model 	0
+turb_ProdWithDiamondGrad_ 	0
+turb_mutMuLimit_ 		5.000000e+003
+iTransition 		0
+nbTrip 			0
+
+Preconditioning parameters
+--------------------------
+iPreconditioning_ 	1
+iBetaInit_        	0
+betaParam_        	3.000000e+000
+alphaParam_       	-1.000000e+000
+qReference_       	-4.000000e-001
+gauge TReference_ 	3.000000e+002
+gauge pReference_ 	1.013250e+005
+iIncompressible_  	0
+
+Solver output parameters
+------------------------
+momPtCoord 		0.000000e+000 0.000000e+000 0.000000e+000
+out_liftDir_ 		0.000000e+000 0.000000e+000 1.000000e+000 (normalized)
+out_dragDir_ 		1.000000e+000 0.000000e+000 0.000000e+000 (normalized)
+out_momAxis_ 		0.000000e+000 0.000000e+000 1.000000e+000 (normalized)
+out_effDef_ 		1
+resOnCFV 		1
+snsOnCFV 		0
+toDisplay 		0
+toDisplay 		0
+out_CoolingForceTorqueInPM_ 0
+out_gaugeForceTorque_ 	0
+out_forceTorqueAreaDefined_ 0
+out_massVolRef_ 	 1.200000e+000
+out_lengthRef_ 	 1.000000e+000
+out_areaRef_ 		 1.000000e+000
+out_velRef_ 		 1.000000e-001
+out_pRef_ 		 1.013250e+005
+out_TRef_ 		 2.930000e+002
+
+Initial solution
+----------------
+iCylInitSol 		1
+uFree 			0.000000e+000
+vFree 			0.000000e+000
+wFree 			0.000000e+000
+pFree 			1.013250e+005
+TFree 			3.000000e+002
+
+Chemistry parameters
+--------------------
+iChemistry_ 		0
+
+Combustion parameters
+---------------------
+iCombustion_ 		0
+
+Radiation parameters
+---------------------
+iRadiation_ 		0
+
+Porous Media parameters
+-----------------------
+iPorMed_               		0
+iPorMedModel_          		0
+iPorMed_Darcy_Opt_     		0
+iPorMed_Ergun_Opt_     		0
+darcy_Porosity_        		0.000000e+000
+ergun_Porosity_        		0.000000e+000
+darcy_specificSurfArea_		0.000000e+000
+ergun_specificSurfArea_		0.000000e+000
+constInErgunModel_     		0.000000e+000
+iImposedFlowDirPorMed_ 		0
+iHeatSrcPorMed_        		0
+heatTransfCoefPorMed_  		0.000000e+000
+exchSurfPorMed_        		0.000000e+000
+skinTemp_              		0.000000e+000
+darcy_kPrim_           		0.000000e+000
+ergun_kPrim_           		0.000000e+000
+kSec_                  		0.000000e+000
+constInIntegralLaw_    		0.000000e+000
+thickPorMed_           		0.000000e+000
+areaRatio_             		0.000000e+000
+exponentIntegralLaw_   		0.000000e+000
+iSkinTempImposedProfile_ 		0
+iTempInterpolationPorMed_		0
+
+Option AsFT
+-----------
+iAsFT 		0
+
+Option Hypersonic Initialization
+
+--------------------------------
+hypInit                	0
+hypInitCfl             	2.000000e+000
+hypInitItMax           	100
+hypInitResSmoo         	0
+tm_iResSmooOrg         	2
+tm_iResSmooVersionOrg_ 	3
+tm_nbStageOrg_         	4
+tm_cflOrg              	2.800000e+000
+drcoeffOrg[i]          	2.500000e-001 3.333333e-001 5.000000e-001 1.000000e+000 
+spaceSchemeOrg         	1
+spaceSchemeOrderOrg    	1
+turb_mavResOrg         	9.500000e-001
+turb_mavRemOrg         	9.500000e-001
+turb_mutMuLimitOrg     	5.000000e+003
+iCalcArtifDissipOrg    	1 1 0 0 
+spc_i2ndOrderOrg_      	1
+
+****************** end of list of parameters ********************
+
+  iggFileName C:/Users/Pupo/Documents/GitHub/Projects/test1500Wedge/test1500Wedge_264_1stOrder/test1500Wedge_264_1stOrder.igg
+... iBlock 0
+ End DO Loop for block 0
+   ... Group 0 is NOT ON 
+   ... Group 1 is NOT ON 
+   ... Group 2 is NOT ON 
+   ... Group 3 is NOT ON 
+   ... Group 4 is NOT ON 
+   ... Group 5 is NOT ON 
+MultiBlockManager::buildMultiBlockDataStructure-->Build 1st geometric data structure for block 0
+BlockDataStr::buildGeoDataStructure -> IN 
+hexaAggloLocalGreedy::hexaAggloLocalGreedy [Second Option] -> IN 
+[Mesh] Remove multigrid levels - number of levels to keep : 1
+  ... nbCellToBeRemoved 0
+  ... nbFaceMax 7642
+  ... nbFace    7642
+  ... nbCell    1881
+  ... nbCellMax 1881
+defragStorage0D: defragment vertices...
+defragStorage1D: defragment-sort edges...
+defragStorage2D: defragment-sort faces...
+defragStorage3D: defragment-sort cells...
+  ... nbFaceMax 7642
+  ... nbFace    7642
+  ... nbCell    1881
+  ... nbCellMax 1881
+hexaViscousLayer::hexaViscousLayer nr. 2 -> IN 
+{VL} Initialization.
+hexaViscousLayer::hexaViscousLayer nr. 2 -> OUT 
+... dimension = 2
+hexaAggloLocalGreedy::hexaAggloLocalGreedy [Second Option] -> OUT 
+
+BlockDataStr::_constructBlockGeoData-->IN [GeoBlockDataManager.C]
+BlockDataStr::_constructBlockGeoData-->Loading grid data structure
+BlockDataStr::_importNbElement-->IN [GeoBlockDataManager.C]
+BlockDataStr::_importNbElement--> Block 0 contains 1881 cells and 4000 vertices
+BlockDataStr::_importNbElement-->OUT [GeoBlockDataManager.C]
+BlockDataStr::_createMGLevelAgglo-->IN [GeoDataManagerMGLevelAgglo.C]
+BlockDataStr::_createMGLevelAgglo-->Creating agglomerated MG levels
+BlockDataStr::_createMGLevelAgglo-->Number of grid levels to generate = 4
+hexaAggloLocalGreedy::agglomerate-->IN Second OPTION 
+hexaAggloLocalGreedy::agglomerate ->IN First OPTION
+[Mesh] Remove multigrid levels - number of levels to keep : 1
+  ... nbCellToBeRemoved 0
+  ... nbFaceMax 7642
+  ... nbFace    7642
+  ... nbCell    1881
+  ... nbCellMax 1881
+defragStorage0D: defragment vertices...
+defragStorage1D: defragment-sort edges...
+defragStorage2D: defragment-sort faces...
+defragStorage3D: defragment-sort cells...
+  ... nbFaceMax 7642
+  ... nbFace    7642
+  ... nbCell    1881
+  ... nbCellMax 1881
+ -> hexaAggloLocalGreedy::agglomerate--> number of grids to agglomerate = 4
+ -> hexaAggloLocalGreedy::agglomerate-->put leaf Hex cells on finest grid level
+hexaAggloLocalGreedy::_putHexaLeafOnAggloLevel -> IN 
+... nbFaceMax 7642
+... nbFace    7642
+... nbCell    1881
+... nbAggloCell 1881
+hexaAggloLocalGreedy::_putHexaLeafOnAggloLevel-->store aggloFaces & aggloFace->aggloCell
+... _nbAggloFaceOnFinestLevel 7642
+hexaAggloLocalGreedy::_putHexaLeafOnAggloLevel-->store topoFace->aggloFace
+hexaAggloLocalGreedy::_putHexaLeafOnAggloLevel-->store aggloCell->aggloFace
+hexaAggloLocalGreedy::_putHexaLeafOnAggloLevel -> OUT 
+hexaAggloLocalGreedy::_preprocessVLStructure -> IN 
+  ... Allocation and Initialisation Start 
+  ... Allocation and Initialisation End 
+  ... Definition of VLStructure Start 
+  ... Definition of VLStructure End 
+  ... Definition of VLStructure for coarse level Start 
+  ... Definition of VLStructure for coarse level End 
+  ... Definition of VLStructure for parent Start 
+  ... Definition of VLStructure for parent End 
+hexaAggloLocalGreedy::_preprocessVLStructure -> OUT 
+hexaAggloLocalGreedy::_calcSurfaceAndVolume-->calculating area & volume
+hexaAggloLocalGreedy::_calcSurfaceAndVolume-->calculated area and volume in 3.000000e-003 seconds
+ -> hexaAggloLocalGreedy::agglomerate-->agglomerating level 1 of nbLevel 4
+ hexaAggloLocalGreedy::_agglomerateFromLevel -> IN level 0
+    _hasBeenAgglomerated allocated 
+
+  hexaAggloLocalGreedy::_agglomerateFromLevel-->Agglomerating EULER zone 
+   hexaAggloLocalGreedy::_agglomerateZoneFromLevel -> IN 
+    hexaAggloLocalGreedy::_agglomerateFromLevel-->iteration 1 time = 1.000000e-003 seconds 
+    hexaAggloLocalGreedy::_agglomerateFromLevel-->iteration 2 time = 1.000000e-003 seconds 
+    hexaAggloLocalGreedy::_agglomerateFromLevel-->iteration 3 time = 0.000000e+000 seconds 
+    hexaAggloLocalGreedy::_agglomerateFromLevel-->iteration 4 time = 1.000000e-003 seconds 
+    hexaAggloLocalGreedy::_agglomerateFromLevel-->iteration 5 time = 1.000000e-003 seconds 
+    hexaAggloLocalGreedy::_agglomerateFromLevel-->iteration 6 time = 0.000000e+000 seconds 
+hexaAggloLocalGreedy::_removeHolesOnLevel -> IN 
+  hexaAggloLocalGreedy::_removeHolesOnLevel-->Building list of regular holes
+  hexaAggloLocalGreedy::_removeHolesOnLevel-->nbHoles = 0
+  hexaAggloLocalGreedy::_removeHolesOnLevel-->new nbAggloCell = 2381
+ hexaAggloLocalGreedy::_removeHolesOnLevel-->holes and/or islands removed in 1 loop(s)
+hexaAggloLocalGreedy::_removeHolesOnLevel -> OUT 
+   hexaAggloLocalGreedy::_agglomerateZoneFromLevel -> OUT 
+  hexaAggloLocalGreedy::_agglomerateFromLevel-->agglomerating faces
+  hexaAggloLocalGreedy::_agglomerateFacesFromLevelNEW -> IN 
+   ... level   0
+   ... levelP1 1
+     ... nbFace 7642
+     ... nbCell 2381
+   hexaAggloLocalGreedy::_agglomerateFacesFromLevelNEW-->STEP 1 - VL normal face agglomeration - performed
+   hexaAggloLocalGreedy::_agglomerateFacesFromLevelNEW-->STEP 2 - counting of faces to be agglomerated for each cell - performed
+   hexaAggloLocalGreedy::_agglomerateFacesFromLevelNEW-->STEP 3 - face agglomeration in each cell - performed
+   hexaAggloLocalGreedy::_agglomerateFacesFromLevelNEW-->set cell->face connectivity
+   hexaAggloLocalGreedy::_agglomerateFacesFromLevelNEW-->set topoFace->bFace connectivities
+    _mesh->getNbAggloFace() 9823
+    _mesh->getNbFace() 7642
+  hexaAggloLocalGreedy::_agglomerateFacesFromLevelNEW -> OUT 
+ hexaAggloLocalGreedy::_agglomerateFromLevel -> OUT 
+hexaAggloLocalGreedy::_calcSurfaceAndVolume-->calculating area & volume
+hexaAggloLocalGreedy::_calcSurfaceAndVolume-->calculated area and volume in 0.000000e+000 seconds
+ -> hexaAggloLocalGreedy::agglomerate-->agglomerating level 2 of nbLevel 4
+ hexaAggloLocalGreedy::_agglomerateFromLevel -> IN level 1
+    _hasBeenAgglomerated allocated 
+
+  hexaAggloLocalGreedy::_agglomerateFromLevel-->Agglomerating EULER zone 
+   hexaAggloLocalGreedy::_agglomerateZoneFromLevel -> IN 
+    hexaAggloLocalGreedy::_agglomerateFromLevel-->iteration 1 time = 0.000000e+000 seconds 
+    hexaAggloLocalGreedy::_agglomerateFromLevel-->iteration 2 time = 1.000000e-003 seconds 
+    hexaAggloLocalGreedy::_agglomerateFromLevel-->iteration 3 time = 0.000000e+000 seconds 
+hexaAggloLocalGreedy::_removeHolesOnLevel -> IN 
+  hexaAggloLocalGreedy::_removeHolesOnLevel-->Building list of regular holes
+  hexaAggloLocalGreedy::_removeHolesOnLevel-->nbHoles = 0
+  hexaAggloLocalGreedy::_removeHolesOnLevel-->new nbAggloCell = 2508
+ hexaAggloLocalGreedy::_removeHolesOnLevel-->holes and/or islands removed in 1 loop(s)
+hexaAggloLocalGreedy::_removeHolesOnLevel -> OUT 
+   hexaAggloLocalGreedy::_agglomerateZoneFromLevel -> OUT 
+  hexaAggloLocalGreedy::_agglomerateFromLevel-->agglomerating faces
+  hexaAggloLocalGreedy::_agglomerateFacesFromLevelNEW -> IN 
+   ... level   1
+   ... levelP1 2
+     ... nbFace 9823
+     ... nbCell 2508
+   hexaAggloLocalGreedy::_agglomerateFacesFromLevelNEW-->STEP 1 - VL normal face agglomeration - performed
+   hexaAggloLocalGreedy::_agglomerateFacesFromLevelNEW-->STEP 2 - counting of faces to be agglomerated for each cell - performed
+   hexaAggloLocalGreedy::_agglomerateFacesFromLevelNEW-->STEP 3 - face agglomeration in each cell - performed
+   hexaAggloLocalGreedy::_agglomerateFacesFromLevelNEW-->set cell->face connectivity
+   hexaAggloLocalGreedy::_agglomerateFacesFromLevelNEW-->set topoFace->bFace connectivities
+    _mesh->getNbAggloFace() 10400
+    _mesh->getNbFace() 7642
+  hexaAggloLocalGreedy::_agglomerateFacesFromLevelNEW -> OUT 
+ hexaAggloLocalGreedy::_agglomerateFromLevel -> OUT 
+hexaAggloLocalGreedy::_calcSurfaceAndVolume-->calculating area & volume
+hexaAggloLocalGreedy::_calcSurfaceAndVolume-->calculated area and volume in 0.000000e+000 seconds
+ -> hexaAggloLocalGreedy::agglomerate-->agglomerating level 3 of nbLevel 4
+ hexaAggloLocalGreedy::_agglomerateFromLevel -> IN level 2
+    _hasBeenAgglomerated allocated 
+
+  hexaAggloLocalGreedy::_agglomerateFromLevel-->Agglomerating EULER zone 
+   hexaAggloLocalGreedy::_agglomerateZoneFromLevel -> IN 
+    hexaAggloLocalGreedy::_agglomerateFromLevel-->iteration 1 time = 1.000000e-003 seconds 
+    hexaAggloLocalGreedy::_agglomerateFromLevel-->iteration 2 time = 0.000000e+000 seconds 
+hexaAggloLocalGreedy::_removeHolesOnLevel -> IN 
+  hexaAggloLocalGreedy::_removeHolesOnLevel-->Building list of regular holes
+  hexaAggloLocalGreedy::_removeHolesOnLevel-->nbHoles = 0
+  hexaAggloLocalGreedy::_removeHolesOnLevel-->new nbAggloCell = 2546
+ hexaAggloLocalGreedy::_removeHolesOnLevel-->holes and/or islands removed in 1 loop(s)
+hexaAggloLocalGreedy::_removeHolesOnLevel -> OUT 
+   hexaAggloLocalGreedy::_agglomerateZoneFromLevel -> OUT 
+  hexaAggloLocalGreedy::_agglomerateFromLevel-->agglomerating faces
+  hexaAggloLocalGreedy::_agglomerateFacesFromLevelNEW -> IN 
+   ... level   2
+   ... levelP1 3
+     ... nbFace 10400
+     ... nbCell 2546
+   hexaAggloLocalGreedy::_agglomerateFacesFromLevelNEW-->STEP 1 - VL normal face agglomeration - performed
+   hexaAggloLocalGreedy::_agglomerateFacesFromLevelNEW-->STEP 2 - counting of faces to be agglomerated for each cell - performed
+   hexaAggloLocalGreedy::_agglomerateFacesFromLevelNEW-->STEP 3 - face agglomeration in each cell - performed
+   hexaAggloLocalGreedy::_agglomerateFacesFromLevelNEW-->set cell->face connectivity
+   hexaAggloLocalGreedy::_agglomerateFacesFromLevelNEW-->set topoFace->bFace connectivities
+    _mesh->getNbAggloFace() 10584
+    _mesh->getNbFace() 7642
+  hexaAggloLocalGreedy::_agglomerateFacesFromLevelNEW -> OUT 
+ hexaAggloLocalGreedy::_agglomerateFromLevel -> OUT 
+hexaAggloLocalGreedy::_calcSurfaceAndVolume-->calculating area & volume
+hexaAggloLocalGreedy::_calcSurfaceAndVolume-->calculated area and volume in 0.000000e+000 seconds
+ -> hexaAggloLocalGreedy::agglomerate-->reordering topoFace->face data
+ nbAggloCell = 2546
+ -> hexaAggloLocalGreedy::agglomerate-->1881 cells on level 0
+ -> hexaAggloLocalGreedy::agglomerate-->500 cells on level 1 (ratio = 3.762000e+000)
+ -> hexaAggloLocalGreedy::agglomerate-->127 cells on level 2 (ratio = 3.937008e+000)
+ -> hexaAggloLocalGreedy::agglomerate-->38 cells on level 3 (ratio = 3.342105e+000)
+[Mesh] Remove multigrid levels - number of levels to keep : 1
+nbAvailableLevel, firstLevel = 1, 0
+[Mesh] Remove multigrid levels - number of cells to remove : 0
+[Mesh] Remove multigrid levels - completed.
+  ... nbCellToBeRemoved (S) 0
+  ... nbFaceMax 7642
+  ... nbFace    7642
+  ... nbCell    1881
+  ... nbCellMax 1881
+defragStorage0D: defragment vertices...
+defragStorage1D: defragment-sort edges...
+defragStorage2D: defragment-sort faces...
+defragStorage3D: defragment-sort cells...
+  ... nbFaceMax 7642
+  ... nbFace    7642
+  ... nbCell    1881
+  ... nbCellMax 1881
+AggloParallel::agglomerate in 3.100000e-002 seconds
+hexaAggloLocalGreedy::agglomerate ->OUT First OPTION
+hexaAggloLocalGreedy::agglomerate-->OUT Second OPTION
+
+BlockDataStr::BuildBlockGhostCells->IN
+size = 2546
+1881
+GhostCells::GhostCells->IN
+GhostCells::GhostCells->OUT
+Allocating bvgCells_MG with size 2546
+GhostCells::GhostCells->IN
+GhostCells::GhostCells->OUT
+Allocating bvgCells_MG with size 2546
+GhostCells::GhostCells->IN
+GhostCells::GhostCells->OUT
+Allocating bvgCells_MG with size 2546
+GhostCells::GhostCells->IN
+GhostCells::GhostCells->OUT
+Allocating bvgCells_MG with size 2546
+BlockDataStr::BuildBlockGhostCells->OUT
+BlockDataStr::_addMatchingGhostCells number of matching connections = 0
+BlockDataStr::_createMGLevelAgglo-->1881 cells on level 3
+BlockDataStr::_createMGLevelAgglo-->500 cells on level 2 (ratio = 3.762)
+BlockDataStr::_createMGLevelAgglo-->127 cells on level 1 (ratio = 3.93700787401575)
+BlockDataStr::_createMGLevelAgglo-->38 cells on level 0 (ratio = 3.34210526315789)
+BlockDataStr::_createMGLevelAgglo-->Creating agglomerated cell hierarchy for the MG
+BlockDataStr::_createMGLevelAgglo-->Creating agglomerated BFaces & hierarchy on GS
+BlockDataStr::_createMGLevelAgglo-->OUT [GeoDataManagerMGLevelAgglo.C]
+LevelDataStr::_createFaceDataAgglo-->IN [GeoDataManagerFaceDataAgglo.C]
+   PartitionFileReader::readFmfFile: File C:/Users/Pupo/Documents/GitHub/Projects/test1500Wedge/test1500Wedge_264_1stOrder/test1500Wedge_264_1stOrder_p0.fmf does not exist 
+LevelDataStr::_createFaceMGData-->Building face data on each MG level
+LevelDataStr::_createFaceMGData-->storing aggloFaces data
+LevelDataStr::_createFaceMGData-->store internal and boundary faces data per MGlevel
+LevelDataStr::_createFaceMGData-->number of faces on level 3  = 3644
+LevelDataStr::_createFaceMGData-->number of bfaces on level 3 = 3998
+LevelDataStr::_createFaceMGData-->store internal and boundary faces data per MGlevel
+LevelDataStr::_createFaceMGData-->number of faces on level 2  = 1061
+LevelDataStr::_createFaceMGData-->number of bfaces on level 2 = 1120
+LevelDataStr::_createFaceMGData-->store internal and boundary faces data per MGlevel
+LevelDataStr::_createFaceMGData-->number of faces on level 1  = 263
+LevelDataStr::_createFaceMGData-->number of bfaces on level 1 = 314
+LevelDataStr::_createFaceMGData-->store internal and boundary faces data per MGlevel
+LevelDataStr::_createFaceMGData-->number of faces on level 0  = 76
+LevelDataStr::_createFaceMGData-->number of bfaces on level 0 = 108
+LevelDataStr::_createFaceGlobalData-->Building face normals & inversion of some boundary normals
+LevelDataStr::_createFaceMGData-->Computing local face positioning in cells
+LevelDataStr::_createFaceMGData -> construct _bfaceGSBFace 
+LevelDataStr::_createFaceMGData-->Computing local face positioning in cells 2
+LevelDataStr::_createFaceMGData-->Computing local face positioning in cells 3
+HEXPRESS/HYBRID grid: 
+  On level 0, number of HEXA  cells: 38
+  On level 0, number of TETRA cells: 0
+  On level 0, number of PRISM cells: 0
+  On level 0, number of PYRAM cells: 0
+LevelDataStr::_createFaceMGData-->Computing local face positioning in cells 3
+HEXPRESS/HYBRID grid: 
+  On level 1, number of HEXA  cells: 127
+  On level 1, number of TETRA cells: 0
+  On level 1, number of PRISM cells: 0
+  On level 1, number of PYRAM cells: 0
+LevelDataStr::_createFaceMGData-->Computing local face positioning in cells 3
+HEXPRESS/HYBRID grid: 
+  On level 2, number of HEXA  cells: 500
+  On level 2, number of TETRA cells: 0
+  On level 2, number of PRISM cells: 0
+  On level 2, number of PYRAM cells: 0
+LevelDataStr::_createFaceMGData-->Computing face positions
+LevelDataStr::_createFaceMGData-->store face->node
+LevelDataStr::_createFaceDataAgglo->Create Connection _bFaceGSBFace 
+LevelDataStr::_createFaceDataAgglo->Create directionnal weights :begin
+LevelDataStr::_createFaceDataAgglo-->OUT [GeoDataManagerFaceDataAgglo.C]
+LevelDataStr::_createCellDataAgglo-->Building cell data
+Edge 0 has 99 segments
+Edge 1 has 99 segments
+Edge 2 has 1 segments
+Edge 3 has 1 segments
+Edge 4 has 99 segments
+Edge 5 has 99 segments
+Edge 6 has 1 segments
+Edge 7 has 1 segments
+Edge 8 has 19 segments
+Edge 9 has 19 segments
+Edge 10 has 19 segments
+Edge 11 has 19 segments
+LevelDataStr::_createNodeData-->IN [GeoDataManagerNodeData.C]
+LevelDataStr::_createNodeData-->Building node coordinates
+  _nbLevelCell[mg_nbLevel_-1] 1881 nbNonGhostCell 1881
+  _nbLevelCell[mg_nbLevel_-1] 1881 nbNonGhostCell 1881
+  _nbNode 4000 _nbNonGhostNode 4000
+  _nbNode 4000 _nbNonGhostNode 4000
+LevelDataStr::_createNodeData-->OUT [GeoDataManagerNodeData.C]
+BlockDataStr::_createBFaceParentAgglo-->IN [GeoDataManagerMGLevelAgglo.C]
+BlockDataStr::_createBFaceParentAgglo-->Re-creating boundary face hierarchy for the MG
+BlockDataStr::_constructBlockGeoData-->OUT [GeoBlockDataManager.C]
+BlockDataStr::resortBlockBvgCellsAndGhostIDCells->IN
+GhostCells::resortIDCells->IN
+GhostCells::resortIDCells->OUT
+GhostCells::resortIDCells->IN
+GhostCells::resortIDCells->OUT
+GhostCells::resortIDCells->IN
+GhostCells::resortIDCells->OUT
+GhostCells::resortIDCells->IN
+GhostCells::resortIDCells->OUT
+BlockDataStr::resortBlockBvgCellsAndGhostIDCells->OUT
+BlockDataStr::buildGeoDataStructure -> OUT 
+hexaAggloLocalGreedy::~hexaAggloLocalGreedy -> IN 
+hexaAggloLocalGreedy::~hexaAggloLocalGreedy -> OUT 
+
+MultiBlockManager::buildMultiBlockDataStructure-->Build 2nd geometric data structure for block 0
+BlockDataStr::completeGeoDataStructure -> IN 
+BlockDataStr::_createConnections-->Creating all matching and non matching connections
+ Nb of BC 6
+LevelDataStr::buildConnectionsAndGhostCoordiantes -> IN 
+LevelDataStr::_constructGhostCoordinatesAgglo-->Creating dummy cell coordinates
+LevelDataStr::_constructGhostCoordinatesAgglo-->correction for full non-matching connections (if existing)
+LevelDataStr::_constructGhostCoordinatesAgglo-->correction for non-matching connections (if existing)
+LevelDataStr::buildConnectionsAndGhostCoordiantes -> OUT 
+LevelDataStr::buildConnectionsAndGhostCoordiantes -> IN 
+LevelDataStr::_constructGhostCoordinatesAgglo-->Creating dummy cell coordinates
+LevelDataStr::_constructGhostCoordinatesAgglo-->correction for full non-matching connections (if existing)
+LevelDataStr::_constructGhostCoordinatesAgglo-->correction for non-matching connections (if existing)
+LevelDataStr::buildConnectionsAndGhostCoordiantes -> OUT 
+LevelDataStr::buildConnectionsAndGhostCoordiantes -> IN 
+LevelDataStr::_constructGhostCoordinatesAgglo-->Creating dummy cell coordinates
+LevelDataStr::_constructGhostCoordinatesAgglo-->correction for full non-matching connections (if existing)
+LevelDataStr::_constructGhostCoordinatesAgglo-->correction for non-matching connections (if existing)
+LevelDataStr::buildConnectionsAndGhostCoordiantes -> OUT 
+LevelDataStr::buildConnectionsAndGhostCoordiantes -> IN 
+LevelDataStr::_constructGhostCoordinatesAgglo-->Creating dummy cell coordinates
+LevelDataStr::_constructGhostCoordinatesAgglo-->correction for full non-matching connections (if existing)
+LevelDataStr::_constructGhostCoordinatesAgglo-->correction for non-matching connections (if existing)
+LevelDataStr::buildConnectionsAndGhostCoordiantes -> OUT 
+BlockDataStr::completeGeoDataStructure -> OUT 
+MultiBlockManager::buildMultiBlockDataStructure medionalMeshList = 000000000361FBC0
+TurboInitialSolution::processTurboInitialSolution -> IN 
+rank = 0
+TurboInitialSolution::processTurboInitialSolution -> OUT 
+Deleting _listOfHexaMatching of size 0
+BlockDataStr::_constructBCFromFINE -> IN [BCFINEDataManager.C] 
+BlockDataStr::_constructBCFromFINE-->Reading bc data
+BlockDataStr::_constructBCFromFINE -> OUT
+DTW Calculation performed in 0h 0m 0.00s
+DTW Calculation performed in 0h 0m 0.00s
+DTW Calculation performed in 0h 0m 0.00s
+DTW Calculation performed in 0h 0m 0.00s
+LevelDataStr::_createFaceMGData-->Create array containing cell normals cross products
+ CondCalc_Prandtl::CondCalc_Prandtl -> IN 
+ CondCalc_Prandtl::CondCalc_Prandtl -> OUT 
+LevelDataStr::constructCfdFluidDatabase--> List of diffusion coefficients caculators
+   Viscosity calculator
+   Thermal Conductivity calculator
+ Building solution from C:/Users/Pupo/Documents/GitHub/Projects/test1500Wedge/test1500Wedge_264_1stOrder/test1500Wedge_264_1stOrder.bout
+LevelCfdDataManager _iBlock 0
+ BOUT file version         = 1
+ Name of the block         = cil
+ Number of cells           = 1881
+LevelDataStr::_createFaceMGData-->Create array containing cell normals cross products
+ CondCalc_Prandtl::CondCalc_Prandtl -> IN 
+ CondCalc_Prandtl::CondCalc_Prandtl -> OUT 
+LevelDataStr::constructCfdFluidDatabase--> List of diffusion coefficients caculators
+   Viscosity calculator
+   Thermal Conductivity calculator
+ Building solution from C:/Users/Pupo/Documents/GitHub/Projects/test1500Wedge/test1500Wedge_264_1stOrder/test1500Wedge_264_1stOrder.bout
+LevelCfdDataManager _iBlock 0
+ BOUT file version         = 1
+ Name of the block         = cil
+ Number of cells           = 1881
+LevelDataStr::_createFaceMGData-->Create array containing cell normals cross products
+ CondCalc_Prandtl::CondCalc_Prandtl -> IN 
+ CondCalc_Prandtl::CondCalc_Prandtl -> OUT 
+LevelDataStr::constructCfdFluidDatabase--> List of diffusion coefficients caculators
+   Viscosity calculator
+   Thermal Conductivity calculator
+ Building solution from C:/Users/Pupo/Documents/GitHub/Projects/test1500Wedge/test1500Wedge_264_1stOrder/test1500Wedge_264_1stOrder.bout
+LevelCfdDataManager _iBlock 0
+ BOUT file version         = 1
+ Name of the block         = cil
+ Number of cells           = 1881
+LevelDataStr::_constructInterpolData-->Creating node weights
+  _nbInternalNode 0
+  nbBoundaryNode 4000
+LevelDataStr::_createFaceMGData-->Create array containing cell normals cross products
+ CondCalc_Prandtl::CondCalc_Prandtl -> IN 
+ CondCalc_Prandtl::CondCalc_Prandtl -> OUT 
+LevelDataStr::constructCfdFluidDatabase--> List of diffusion coefficients caculators
+   Viscosity calculator
+   Thermal Conductivity calculator
+ Building solution from C:/Users/Pupo/Documents/GitHub/Projects/test1500Wedge/test1500Wedge_264_1stOrder/test1500Wedge_264_1stOrder.bout
+LevelCfdDataManager _iBlock 0
+ BOUT file version         = 1
+ Name of the block         = cil
+ Number of cells           = 1881
+LevelDataStr::_constructReconstMatrix-->IN [ReconstructMatrixManager.C]
+BlockDataStr::_constructMpCCI() [MpCCIDataManager.C] -> IN  
+BlockDataStr::_constructMpCCI() [MpCCIDataManager.C] -> MpCCI is Off: builder is disabled
+BlockDataStr::_constructMpCCI() [MpCCIDataManager.C] -> OUT 
+BlockDataStr::_constructFluidStructure() [FluidStructureDataManager.C] -> IN
+BlockDataStr::_constructFluidStructure() [FluidStructureDataManager.C] -> IN. Block 0.
+BlockDataStr::_constructFluidStructure() [FluidStructureDataManager.C] -> OUT 
+MultiBlockManager::buildMultiBlockDataStructure-->number of bfaces on level 0 = 108
+MultiBlockManager::buildMultiBlockDataStructure -> OUT 
+
+CfdSolver::solve-->IN 
+SteadySolver::solve-->Computing solution on fine grid
+CfdSolver::_initializeAlgoSteady-> IN 
+ThermoQuantitiesCalculator::ThermoQuantitiesCalculator IN
+ iLevel 0
+ThermoQuantitiesCalculator::ThermoQuantitiesCalculator OUT
+BCDataStructureManager::_constructBCFromFineForFluidBlock-->Creating BCs for fluid block 0 with 6 patches
+BCDataStructureManager::BCDataStructureManager-->OUT
+Using IJK residual smoothing.
+ResidualSmoothing::ResidualSmoothing -> IN 
+ _MaxIndexResSmoo=5
+iind=0 _indexResSmoo=0
+iind=1 _indexResSmoo=1
+iind=2 _indexResSmoo=2
+iind=3 _indexResSmoo=3
+iind=4 _indexResSmoo=4
+ResidualSmoothing::ResidualSmoothing -> OUT 
+ThermoQuantitiesCalculator::ThermoQuantitiesCalculator IN
+ iLevel 0
+ThermoQuantitiesCalculator::ThermoQuantitiesCalculator OUT
+Computing Central Scalar fluxes with the following : rot_iVelSy, gravity, fluxAveraging,  with included turbulence model.
+NVFluxEulerCentralScalarDissipPrecondNEW::NVFluxEulerCentralScalarDissipPrecondNEW-->IN
+NVFluxEulerCentralScalarDissipPrecondNEW::NVFluxEulerCentralScalarDissipPrecondNEW-->OUT
+_MaxIndexUpwindNoConserv=0 _MaxIndexUpwindConserv=0 _MaxIndexHighOrderUpwindConserv=0 _MaxIndexCentralScalar=0
+NVFluxScalar::NVFluxScalar before itr.reset
+NVFluxScalar::NVFluxScalar-->OUT
+VFluxNSLam::VFluxNSLam-->IN
+_MaxIndexType1=0
+_MaxIndexGauss=0
+_MaxIndexSolUpConsPointImpl=0
+_MaxIndexSolUpConsNoPointImpl=0
+_MaxIndexSolUpNoConsPointImpl=0
+_MaxIndexSolUpNoConsNoPointImpl=0
+PrecondResScalar::PrecondResScalar _MaxIndexUpwindConserv = 0
+ThermoQuantitiesCalculator::ThermoQuantitiesCalculator IN
+ iLevel 1
+ThermoQuantitiesCalculator::ThermoQuantitiesCalculator OUT
+BCDataStructureManager::_constructBCFromFineForFluidBlock-->Creating BCs for fluid block 0 with 6 patches
+BCDataStructureManager::BCDataStructureManager-->OUT
+Using IJK residual smoothing.
+ResidualSmoothing::ResidualSmoothing -> IN 
+ _MaxIndexResSmoo=5
+iind=0 _indexResSmoo=0
+iind=1 _indexResSmoo=1
+iind=2 _indexResSmoo=2
+iind=3 _indexResSmoo=3
+iind=4 _indexResSmoo=4
+ResidualSmoothing::ResidualSmoothing -> OUT 
+ThermoQuantitiesCalculator::ThermoQuantitiesCalculator IN
+ iLevel 1
+ThermoQuantitiesCalculator::ThermoQuantitiesCalculator OUT
+Computing Central Scalar fluxes with the following : rot_iVelSy, gravity, fluxAveraging,  with included turbulence model.
+NVFluxEulerCentralScalarDissipPrecondNEW::NVFluxEulerCentralScalarDissipPrecondNEW-->IN
+NVFluxEulerCentralScalarDissipPrecondNEW::NVFluxEulerCentralScalarDissipPrecondNEW-->OUT
+_MaxIndexUpwindNoConserv=0 _MaxIndexUpwindConserv=0 _MaxIndexHighOrderUpwindConserv=0 _MaxIndexCentralScalar=0
+NVFluxScalar::NVFluxScalar before itr.reset
+NVFluxScalar::NVFluxScalar-->OUT
+VFluxNSLam::VFluxNSLam-->IN
+_MaxIndexType1=0
+_MaxIndexGauss=0
+_MaxIndexSolUpConsPointImpl=0
+_MaxIndexSolUpConsNoPointImpl=0
+_MaxIndexSolUpNoConsPointImpl=0
+_MaxIndexSolUpNoConsNoPointImpl=0
+PrecondResScalar::PrecondResScalar _MaxIndexUpwindConserv = 0
+ThermoQuantitiesCalculator::ThermoQuantitiesCalculator IN
+ iLevel 2
+ThermoQuantitiesCalculator::ThermoQuantitiesCalculator OUT
+BCDataStructureManager::_constructBCFromFineForFluidBlock-->Creating BCs for fluid block 0 with 6 patches
+BCDataStructureManager::BCDataStructureManager-->OUT
+Using IJK residual smoothing.
+ResidualSmoothing::ResidualSmoothing -> IN 
+ _MaxIndexResSmoo=5
+iind=0 _indexResSmoo=0
+iind=1 _indexResSmoo=1
+iind=2 _indexResSmoo=2
+iind=3 _indexResSmoo=3
+iind=4 _indexResSmoo=4
+ResidualSmoothing::ResidualSmoothing -> OUT 
+ThermoQuantitiesCalculator::ThermoQuantitiesCalculator IN
+ iLevel 2
+ThermoQuantitiesCalculator::ThermoQuantitiesCalculator OUT
+Computing Central Scalar fluxes with the following : rot_iVelSy, gravity, fluxAveraging,  with included turbulence model.
+NVFluxEulerCentralScalarDissipPrecondNEW::NVFluxEulerCentralScalarDissipPrecondNEW-->IN
+NVFluxEulerCentralScalarDissipPrecondNEW::NVFluxEulerCentralScalarDissipPrecondNEW-->OUT
+_MaxIndexUpwindNoConserv=0 _MaxIndexUpwindConserv=0 _MaxIndexHighOrderUpwindConserv=0 _MaxIndexCentralScalar=0
+NVFluxScalar::NVFluxScalar before itr.reset
+NVFluxScalar::NVFluxScalar-->OUT
+VFluxNSLam::VFluxNSLam-->IN
+_MaxIndexType1=0
+_MaxIndexGauss=0
+_MaxIndexSolUpConsPointImpl=0
+_MaxIndexSolUpConsNoPointImpl=0
+_MaxIndexSolUpNoConsPointImpl=0
+_MaxIndexSolUpNoConsNoPointImpl=0
+PrecondResScalar::PrecondResScalar _MaxIndexUpwindConserv = 0
+ThermoQuantitiesCalculator::ThermoQuantitiesCalculator IN
+ iLevel 3
+ThermoQuantitiesCalculator::ThermoQuantitiesCalculator OUT
+BCDataStructureManager::_constructBCFromFineForFluidBlock-->Creating BCs for fluid block 0 with 6 patches
+BCDataStructureManager::BCDataStructureManager-->OUT
+Using IJK residual smoothing.
+ResidualSmoothing::ResidualSmoothing -> IN 
+ _MaxIndexResSmoo=5
+iind=0 _indexResSmoo=0
+iind=1 _indexResSmoo=1
+iind=2 _indexResSmoo=2
+iind=3 _indexResSmoo=3
+iind=4 _indexResSmoo=4
+ResidualSmoothing::ResidualSmoothing -> OUT 
+ThermoQuantitiesCalculator::ThermoQuantitiesCalculator IN
+ iLevel 3
+ThermoQuantitiesCalculator::ThermoQuantitiesCalculator OUT
+Computing Central Scalar fluxes with the following : rot_iVelSy, gravity, fluxAveraging,  with included turbulence model.
+NVFluxEulerCentralScalarDissipPrecondNEW::NVFluxEulerCentralScalarDissipPrecondNEW-->IN
+NVFluxEulerCentralScalarDissipPrecondNEW::NVFluxEulerCentralScalarDissipPrecondNEW-->OUT
+_MaxIndexUpwindNoConserv=0 _MaxIndexUpwindConserv=0 _MaxIndexHighOrderUpwindConserv=0 _MaxIndexCentralScalar=0
+NVFluxScalar::NVFluxScalar before itr.reset
+NVFluxScalar::NVFluxScalar-->OUT
+VFluxNSLam::VFluxNSLam-->IN
+_MaxIndexType1=0
+_MaxIndexGauss=0
+_MaxIndexSolUpConsPointImpl=0
+_MaxIndexSolUpConsNoPointImpl=0
+_MaxIndexSolUpNoConsPointImpl=0
+_MaxIndexSolUpNoConsNoPointImpl=0
+PrecondResScalar::PrecondResScalar _MaxIndexUpwindConserv = 0
+MGRestriction::MGRestriction--> IN
+MGRestrictionQuadratic::MGRestrictionQuadratic--> IN
+BasicSolverOutput::constructor-->IN iLevel = 3
+BasicSolverOutput::_createControlSurfaceDataForFluidBlock-->IN
+BasicSolverOutput::_createControlSurfaceDataForFluidBlock-->OUT
+BasicSolverOutput::constructor-->OUT
+GlobalOutput::GlobalOutput --> IN
+GlobalOutput::GlobalOutput, _local2GlobalIndexOfCtrlPoints:
+Proc 0 has 0 point(s)
+globalIndex:
+GlobalOutput::GlobalOutput --> OUT
+CfdSolver::_initializeAlgoSteady-> OUT 
+SvZ: Starting stage-loop in BasicSolver: ta_iter_ = 0 , nbStage = 1 , stageStart = 0
+ta_iter_ 0 ta_nbIter_ 0 iStage 1
+2nd order backward method for TA iteration 0
+ BasicSolver::_solveCycle 
+BasicSolverOutput::writeBout-->writing the solution in .bout file--> IN 
+ BasicSolverOutput::writeBout : Saving BOUT file -> IN
+ BasicSolverOutput::writeBout : Saving BOUT file -> OUT
+BasicSolverOutput::writeBout-->writing the solution in .BOUT file--> OUT 
+BasicSolverOutput::writeSolOld-->IN 
+BasicSolverOutput::writeSolOld-->Output of solution to files for block 0 (fluid)
+BasicSolverOutput::_writeCFViewNew-->writing the solution for CFView (.d*.s*)--> IN 
+BasicSolverOutput::_writeCFViewNew-->writing the solution for CFView (.d*.s*)--> OUT 
+ BasicSolverOutput::writeSolOld-->Finished output to files for block 0
+BasicSolverOutput::writeSolOld-->OUT 
+BasicSolverOutput::writeSol-->IN 
+BasicSolverOutput::writeSol-->Output of solution to files for block 0 (fluid)
+ BasicSolverOutput::writeSol-->Finished output to files for block 0
+BasicSolverOutput::writeSol-->OUT 
+GlobalOutput::writeXMFFile before barrier
+GlobalOutput::writeXMFFile after barrier
+GlobalOutput::writeMFFile --> writing global quantities in .mf file
+GlobalOutput::writeWallFile --> writing forces and moments in .wall file
+BasicSolverOutput::maxAndAverageResCalculation-->Reset residual for normalization
+iter  adapt_id  local	var	avRes	 	 	maxRes	 	 	cellID
+1	0	1	Mass	0.000000e+000	0.000000e+000	1.853834e+000	1862
+2	0	2	Mass	5.199313e-001	4.973214e-001	5.826292e+000	1862
+3	0	3	Mass	4.390505e-001	3.952667e-001	4.606144e+000	1844
+4	0	4	Mass	4.808872e-001	3.832322e-001	4.480258e+000	1844
+5	0	5	Mass	5.624467e-001	4.092725e-001	4.757112e+000	1824
+6	0	6	Mass	5.027060e-001	4.039587e-001	4.699261e+000	1862
+7	0	7	Mass	3.834274e-001	2.860051e-001	3.581590e+000	1862
+8	0	8	Mass	2.801655e-001	1.769662e-001	2.786358e+000	1824
+9	0	9	Mass	2.120907e-001	1.294013e-001	2.497308e+000	1824
+10	0	10	Mass	1.824516e-001	1.166747e-001	2.425189e+000	1824
+11	0	11	Mass	1.563158e-001	1.000526e-001	2.334121e+000	1843
+12	0	12	Mass	1.149707e-001	6.088770e-002	2.132841e+000	1843
+13	0	13	Mass	5.973080e-002	-5.510747e-004	1.851483e+000	1843
+14	0	14	Mass	-3.030619e-003	-7.351442e-002	1.565151e+000	1843
+15	0	15	Mass	-6.769115e-002	-1.485635e-001	1.316762e+000	1843
+16	0	16	Mass	-1.318396e-001	-2.186310e-001	1.120572e+000	1824
+17	0	17	Mass	-1.950627e-001	-2.763867e-001	9.810340e-001	1824
+18	0	18	Mass	-2.576882e-001	-3.331059e-001	8.609242e-001	1824
+19	0	19	Mass	-3.194537e-001	-3.898300e-001	7.555110e-001	1824
+20	0	20	Mass	-3.796399e-001	-4.460811e-001	6.637274e-001	1824
+21	0	21	Mass	-4.376795e-001	-5.010032e-001	5.848811e-001	1824
+22	0	22	Mass	-4.934468e-001	-5.541030e-001	5.175684e-001	1824
+23	0	23	Mass	-5.472158e-001	-6.054329e-001	4.598730e-001	1824
+24	0	24	Mass	-5.994456e-001	-6.554152e-001	4.098789e-001	1824
+25	0	25	Mass	-6.505590e-001	-7.045654e-001	3.660205e-001	1824
+26	0	26	Mass	-7.008158e-001	-7.532553e-001	3.272016e-001	1824
+27	0	27	Mass	-7.502868e-001	-8.016266e-001	2.927145e-001	1824
+28	0	28	Mass	-7.988864e-001	-8.495349e-001	2.621416e-001	1824
+29	0	29	Mass	-8.464572e-001	-8.967249e-001	2.351505e-001	1824
+30	0	30	Mass	-8.928407e-001	-9.429608e-001	2.114024e-001	1824
+31	0	31	Mass	-9.379092e-001	-9.881046e-001	1.905312e-001	1824
+32	0	32	Mass	-9.815591e-001	-1.032143e+000	1.721584e-001	1824
+33	0	33	Mass	-1.023683e+000	-1.075163e+000	1.559221e-001	1824
+34	0	34	Mass	-1.064144e+000	-1.117307e+000	1.415023e-001	1824
+35	0	35	Mass	-1.102765e+000	-1.158706e+000	1.286366e-001	1824
+36	0	36	Mass	-1.139344e+000	-1.199437e+000	1.171206e-001	1824
+37	0	37	Mass	-1.173674e+000	-1.239500e+000	1.067998e-001	1824
+38	0	38	Mass	-1.205571e+000	-1.278817e+000	9.755596e-002	1824
+39	0	39	Mass	-1.234895e+000	-1.317249e+000	8.929380e-002	1824
+40	0	40	Mass	-1.261560e+000	-1.354622e+000	8.193117e-002	1824
+41	0	41	Mass	-1.285536e+000	-1.390744e+000	7.539221e-002	1824
+42	0	42	Mass	-1.306842e+000	-1.425435e+000	6.960423e-002	1824
+43	0	43	Mass	-1.325543e+000	-1.458532e+000	6.449690e-002	1824
+44	0	44	Mass	-1.341736e+000	-1.489900e+000	6.000268e-002	1824
+45	0	45	Mass	-1.355545e+000	-1.519437e+000	5.605749e-002	1824
+46	0	46	Mass	-1.367110e+000	-1.547074e+000	5.260131e-002	1824
+47	0	47	Mass	-1.376581e+000	-1.572778e+000	4.957845e-002	1824
+48	0	48	Mass	-1.384115e+000	-1.596548e+000	4.693779e-002	1824
+49	0	49	Mass	-1.389863e+000	-1.612158e+000	4.528068e-002	1482
+50	0	50	Mass	-1.393975e+000	-1.620260e+000	4.444374e-002	1482
+51	0	51	Mass	-1.396595e+000	-1.626832e+000	4.377631e-002	1482
+52	0	52	Mass	-1.397859e+000	-1.632034e+000	4.325503e-002	1178
+53	0	53	Mass	-1.397897e+000	-1.632606e+000	4.319815e-002	1178
+54	0	54	Mass	-1.396832e+000	-1.632057e+000	4.325274e-002	1140
+55	0	55	Mass	-1.394779e+000	-1.630093e+000	4.344882e-002	988
+56	0	56	Mass	-1.391846e+000	-1.626779e+000	4.378162e-002	988
+57	0	57	Mass	-1.388138e+000	-1.622670e+000	4.419779e-002	988
+58	0	58	Mass	-1.383751e+000	-1.614534e+000	4.503363e-002	0
+59	0	59	Mass	-1.378780e+000	-1.603192e+000	4.622518e-002	0
+60	0	60	Mass	-1.373312e+000	-1.591350e+000	4.750298e-002	0
+61	0	61	Mass	-1.367431e+000	-1.579102e+000	4.886177e-002	0
+62	0	62	Mass	-1.361217e+000	-1.566546e+000	5.029494e-002	0
+63	0	63	Mass	-1.354745e+000	-1.553782e+000	5.179516e-002	0
+64	0	64	Mass	-1.348085e+000	-1.540897e+000	5.335481e-002	0
+65	0	65	Mass	-1.341306e+000	-1.527973e+000	5.496646e-002	0
+66	0	66	Mass	-1.334464e+000	-1.515077e+000	5.662315e-002	0
+67	0	67	Mass	-1.327613e+000	-1.502263e+000	5.831872e-002	0
+68	0	68	Mass	-1.320796e+000	-1.489573e+000	6.004794e-002	0
+69	0	69	Mass	-1.314051e+000	-1.477036e+000	6.180653e-002	0
+70	0	70	Mass	-1.307409e+000	-1.464674e+000	6.359116e-002	0
+71	0	71	Mass	-1.300893e+000	-1.452498e+000	6.539933e-002	0
+72	0	72	Mass	-1.294517e+000	-1.440513e+000	6.722924e-002	0
+73	0	73	Mass	-1.288294e+000	-1.428720e+000	6.907973e-002	0
+74	0	74	Mass	-1.282227e+000	-1.417118e+000	7.095008e-002	0
+75	0	75	Mass	-1.276318e+000	-1.405701e+000	7.283998e-002	0
+76	0	76	Mass	-1.270561e+000	-1.394463e+000	7.474939e-002	0
+77	0	77	Mass	-1.264951e+000	-1.383397e+000	7.667855e-002	0
+78	0	78	Mass	-1.259480e+000	-1.372494e+000	7.862788e-002	0
+79	0	79	Mass	-1.254137e+000	-1.361747e+000	8.059791e-002	0
+80	0	80	Mass	-1.248912e+000	-1.351147e+000	8.258929e-002	0
+81	0	81	Mass	-1.243791e+000	-1.340686e+000	8.460276e-002	0
+82	0	82	Mass	-1.238762e+000	-1.330356e+000	8.663935e-002	0
+83	0	83	Mass	-1.233811e+000	-1.320147e+000	8.870012e-002	0
+84	0	84	Mass	-1.228927e+000	-1.310052e+000	9.078595e-002	0
+85	0	85	Mass	-1.224095e+000	-1.300066e+000	9.289764e-002	0
+86	0	86	Mass	-1.219305e+000	-1.290182e+000	9.503613e-002	0
+87	0	87	Mass	-1.214543e+000	-1.280394e+000	9.720231e-002	0
+88	0	88	Mass	-1.209800e+000	-1.270698e+000	9.939684e-002	0
+89	0	89	Mass	-1.205065e+000	-1.261091e+000	1.016201e-001	0
+90	0	90	Mass	-1.200329e+000	-1.251573e+000	1.038719e-001	0
+91	0	91	Mass	-1.195585e+000	-1.242141e+000	1.061523e-001	0
+92	0	92	Mass	-1.190827e+000	-1.232798e+000	1.084608e-001	0
+93	0	93	Mass	-1.186051e+000	-1.223544e+000	1.107966e-001	0
+94	0	94	Mass	-1.181252e+000	-1.214383e+000	1.131585e-001	0
+95	0	95	Mass	-1.176429e+000	-1.205320e+000	1.155448e-001	0
+96	0	96	Mass	-1.171581e+000	-1.196361e+000	1.179532e-001	0
+97	0	97	Mass	-1.166710e+000	-1.187511e+000	1.203814e-001	0
+98	0	98	Mass	-1.161816e+000	-1.178777e+000	1.228269e-001	0
+99	0	99	Mass	-1.156902e+000	-1.170165e+000	1.252868e-001	0
+100	0	100	Mass	-1.151973e+000	-1.161680e+000	1.277587e-001	0
+101	0	101	Mass	-1.147031e+000	-1.153327e+000	1.302399e-001	0
+102	0	102	Mass	-1.142085e+000	-1.145109e+000	1.327277e-001	0
+103	0	103	Mass	-1.137139e+000	-1.137033e+000	1.352191e-001	0
+104	0	104	Mass	-1.132202e+000	-1.129102e+000	1.377109e-001	0
+105	0	105	Mass	-1.127281e+000	-1.121321e+000	1.402004e-001	0
+106	0	106	Mass	-1.122386e+000	-1.113691e+000	1.426854e-001	0
+107	0	107	Mass	-1.117525e+000	-1.106213e+000	1.451637e-001	0
+108	0	108	Mass	-1.112709e+000	-1.098885e+000	1.476338e-001	0
+109	0	109	Mass	-1.107949e+000	-1.091707e+000	1.500943e-001	0
+110	0	110	Mass	-1.103256e+000	-1.084677e+000	1.525435e-001	0
+111	0	111	Mass	-1.098644e+000	-1.077807e+000	1.549758e-001	0
+112	0	112	Mass	-1.094125e+000	-1.071091e+000	1.573910e-001	0
+113	0	113	Mass	-1.089713e+000	-1.064516e+000	1.597919e-001	0
+114	0	114	Mass	-1.085421e+000	-1.058072e+000	1.621805e-001	0
+115	0	115	Mass	-1.081264e+000	-1.051756e+000	1.645564e-001	0
+116	0	116	Mass	-1.077257e+000	-1.045571e+000	1.669167e-001	0
+117	0	117	Mass	-1.073416e+000	-1.039520e+000	1.692585e-001	0
+118	0	118	Mass	-1.069757e+000	-1.033603e+000	1.715803e-001	0
+119	0	119	Mass	-1.066294e+000	-1.027820e+000	1.738803e-001	0
+120	0	120	Mass	-1.063041e+000	-1.022167e+000	1.761587e-001	0
+121	0	121	Mass	-1.060014e+000	-1.016639e+000	1.784153e-001	0
+122	0	122	Mass	-1.057227e+000	-1.011237e+000	1.806482e-001	0
+123	0	123	Mass	-1.054696e+000	-1.005968e+000	1.828531e-001	0
+124	0	124	Mass	-1.052434e+000	-1.000838e+000	1.850260e-001	0
+125	0	125	Mass	-1.050456e+000	-9.958499e-001	1.871634e-001	0
+126	0	126	Mass	-1.048775e+000	-9.910071e-001	1.892621e-001	0
+127	0	127	Mass	-1.047402e+000	-9.863086e-001	1.913208e-001	0
+128	0	128	Mass	-1.046351e+000	-9.817523e-001	1.933385e-001	0
+129	0	129	Mass	-1.045633e+000	-9.773408e-001	1.953125e-001	0
+130	0	130	Mass	-1.045261e+000	-9.730800e-001	1.972381e-001	0
+131	0	131	Mass	-1.045244e+000	-9.689711e-001	1.991131e-001	0
+132	0	132	Mass	-1.045591e+000	-9.650114e-001	2.009368e-001	0
+133	0	133	Mass	-1.046315e+000	-9.612019e-001	2.027071e-001	0
+134	0	134	Mass	-1.047425e+000	-9.575488e-001	2.044194e-001	0
+135	0	135	Mass	-1.048931e+000	-9.540642e-001	2.060661e-001	0
+136	0	136	Mass	-1.050843e+000	-9.507609e-001	2.076395e-001	0
+137	0	137	Mass	-1.053169e+000	-9.476470e-001	2.091336e-001	0
+138	0	138	Mass	-1.055918e+000	-9.447257e-001	2.105451e-001	0
+139	0	139	Mass	-1.059096e+000	-9.419964e-001	2.118724e-001	0
+140	0	140	Mass	-1.062709e+000	-9.394553e-001	2.131157e-001	0
+141	0	141	Mass	-1.066764e+000	-9.370958e-001	2.142767e-001	0
+142	0	142	Mass	-1.071267e+000	-9.349165e-001	2.153547e-001	0
+143	0	143	Mass	-1.076224e+000	-9.329180e-001	2.163480e-001	0
+144	0	144	Mass	-1.081640e+000	-9.311013e-001	2.172549e-001	0
+145	0	145	Mass	-1.087529e+000	-9.294803e-001	2.180673e-001	0
+146	0	146	Mass	-1.093899e+000	-9.280964e-001	2.187633e-001	0
+147	0	147	Mass	-1.100754e+000	-9.269927e-001	2.193200e-001	0
+148	0	148	Mass	-1.108097e+000	-9.261874e-001	2.197270e-001	0
+149	0	149	Mass	-1.115923e+000	-9.256677e-001	2.199901e-001	0
+150	0	150	Mass	-1.124225e+000	-9.253911e-001	2.201302e-001	0
+151	0	151	Mass	-1.132995e+000	-9.253040e-001	2.201744e-001	0
+152	0	152	Mass	-1.142222e+000	-9.253637e-001	2.201441e-001	0
+153	0	153	Mass	-1.151896e+000	-9.255452e-001	2.200522e-001	0
+154	0	154	Mass	-1.162004e+000	-9.258416e-001	2.199020e-001	0
+155	0	155	Mass	-1.172530e+000	-9.262578e-001	2.196914e-001	0
+156	0	156	Mass	-1.183460e+000	-9.268031e-001	2.194157e-001	0
+157	0	157	Mass	-1.194771e+000	-9.274892e-001	2.190693e-001	0
+158	0	158	Mass	-1.206440e+000	-9.283287e-001	2.186463e-001	0
+159	0	159	Mass	-1.218441e+000	-9.293359e-001	2.181398e-001	0
+160	0	160	Mass	-1.230742e+000	-9.305281e-001	2.175418e-001	0
+161	0	161	Mass	-1.243307e+000	-9.319271e-001	2.168422e-001	0
+162	0	162	Mass	-1.256095e+000	-9.335571e-001	2.160298e-001	0
+163	0	163	Mass	-1.269055e+000	-9.354403e-001	2.150951e-001	0
+164	0	164	Mass	-1.282129e+000	-9.375937e-001	2.140312e-001	0
+165	0	165	Mass	-1.295251e+000	-9.400274e-001	2.128352e-001	0
+166	0	166	Mass	-1.308348e+000	-9.427467e-001	2.115067e-001	0
+167	0	167	Mass	-1.321333e+000	-9.457516e-001	2.100483e-001	0
+168	0	168	Mass	-1.334114e+000	-9.490376e-001	2.084650e-001	0
+169	0	169	Mass	-1.346588e+000	-9.525965e-001	2.067637e-001	0
+170	0	170	Mass	-1.358650e+000	-9.564185e-001	2.049521e-001	0
+171	0	171	Mass	-1.370193e+000	-9.604930e-001	2.030382e-001	0
+172	0	172	Mass	-1.381109e+000	-9.648093e-001	2.010303e-001	0
+173	0	173	Mass	-1.391299e+000	-9.693568e-001	1.989363e-001	0
+174	0	174	Mass	-1.400674e+000	-9.741268e-001	1.967632e-001	0
+175	0	175	Mass	-1.409160e+000	-9.791132e-001	1.945170e-001	0
+176	0	176	Mass	-1.416704e+000	-9.843127e-001	1.922021e-001	0
+177	0	177	Mass	-1.423272e+000	-9.897251e-001	1.898216e-001	0
+178	0	178	Mass	-1.428854e+000	-9.953516e-001	1.873782e-001	0
+179	0	179	Mass	-1.433467e+000	-1.001194e+000	1.848742e-001	0
+180	0	180	Mass	-1.437145e+000	-1.007255e+000	1.823121e-001	0
+181	0	181	Mass	-1.439945e+000	-1.013535e+000	1.796950e-001	0
+182	0	182	Mass	-1.441940e+000	-1.020032e+000	1.770267e-001	0
+183	0	183	Mass	-1.443212e+000	-1.026744e+000	1.743117e-001	0
+184	0	184	Mass	-1.443855e+000	-1.033667e+000	1.715551e-001	0
+185	0	185	Mass	-1.443975e+000	-1.040814e+000	1.687552e-001	0
+186	0	186	Mass	-1.443669e+000	-1.048173e+000	1.659197e-001	0
+187	0	187	Mass	-1.443035e+000	-1.055729e+000	1.630578e-001	0
+188	0	188	Mass	-1.442166e+000	-1.063470e+000	1.601773e-001	0
+189	0	189	Mass	-1.441153e+000	-1.071385e+000	1.572846e-001	0
+190	0	190	Mass	-1.440077e+000	-1.079467e+000	1.543845e-001	0
+191	0	191	Mass	-1.439016e+000	-1.087713e+000	1.514810e-001	0
+192	0	192	Mass	-1.438036e+000	-1.096117e+000	1.485777e-001	0
+193	0	193	Mass	-1.437197e+000	-1.104678e+000	1.456775e-001	0
+194	0	194	Mass	-1.436553e+000	-1.113393e+000	1.427833e-001	0
+195	0	195	Mass	-1.436146e+000	-1.122261e+000	1.398975e-001	0
+196	0	196	Mass	-1.436014e+000	-1.131278e+000	1.370228e-001	0
+197	0	197	Mass	-1.436186e+000	-1.140441e+000	1.341619e-001	0
+198	0	198	Mass	-1.436687e+000	-1.149747e+000	1.313180e-001	0
+199	0	199	Mass	-1.437535e+000	-1.159187e+000	1.284942e-001	0
+200	0	200	Mass	-1.438744e+000	-1.168756e+000	1.256942e-001	0
+201	0	201	Mass	-1.440322e+000	-1.178442e+000	1.229217e-001	0
+202	0	202	Mass	-1.442274e+000	-1.188235e+000	1.201810e-001	0
+203	0	203	Mass	-1.444602e+000	-1.198122e+000	1.174759e-001	0
+204	0	204	Mass	-1.447307e+000	-1.208091e+000	1.148101e-001	0
+205	0	205	Mass	-1.450385e+000	-1.218129e+000	1.121867e-001	0
+206	0	206	Mass	-1.453833e+000	-1.228228e+000	1.096081e-001	0
+207	0	207	Mass	-1.457644e+000	-1.238378e+000	1.070761e-001	0
+208	0	208	Mass	-1.461812e+000	-1.248572e+000	1.045920e-001	0
+209	0	209	Mass	-1.466329e+000	-1.258805e+000	1.021566e-001	0
+210	0	210	Mass	-1.471185e+000	-1.269069e+000	9.977035e-002	0
+211	0	211	Mass	-1.476368e+000	-1.279361e+000	9.743385e-002	0
+212	0	212	Mass	-1.481867e+000	-1.289674e+000	9.514748e-002	0
+213	0	213	Mass	-1.487669e+000	-1.300000e+000	9.291168e-002	0
+214	0	214	Mass	-1.493761e+000	-1.310335e+000	9.072690e-002	0
+215	0	215	Mass	-1.500128e+000	-1.320669e+000	8.859348e-002	0
+216	0	216	Mass	-1.506756e+000	-1.330996e+000	8.651168e-002	0
+217	0	217	Mass	-1.513631e+000	-1.341308e+000	8.448167e-002	0
+218	0	218	Mass	-1.520738e+000	-1.351598e+000	8.250356e-002	0
+219	0	219	Mass	-1.528063e+000	-1.361857e+000	8.057743e-002	0
+220	0	220	Mass	-1.535590e+000	-1.372079e+000	7.870318e-002	0
+221	0	221	Mass	-1.543307e+000	-1.382254e+000	7.688054e-002	0
+222	0	222	Mass	-1.551199e+000	-1.392379e+000	7.510901e-002	0
+223	0	223	Mass	-1.559253e+000	-1.402447e+000	7.338786e-002	0
+224	0	224	Mass	-1.567457e+000	-1.412454e+000	7.171618e-002	0
+225	0	225	Mass	-1.575799e+000	-1.422396e+000	7.009296e-002	0
+226	0	226	Mass	-1.584268e+000	-1.432272e+000	6.851706e-002	0
+227	0	227	Mass	-1.592853e+000	-1.442078e+000	6.698738e-002	0
+228	0	228	Mass	-1.601544e+000	-1.451809e+000	6.550310e-002	0
+229	0	229	Mass	-1.610334e+000	-1.461474e+000	6.406150e-002	0
+230	0	230	Mass	-1.619214e+000	-1.471064e+000	6.266242e-002	0
+231	0	231	Mass	-1.628177e+000	-1.480576e+000	6.130490e-002	0
+232	0	232	Mass	-1.637218e+000	-1.490011e+000	5.998736e-002	0
+233	0	233	Mass	-1.646332e+000	-1.499373e+000	5.870806e-002	0
+234	0	234	Mass	-1.655514e+000	-1.508665e+000	5.746538e-002	0
+235	0	235	Mass	-1.664761e+000	-1.517887e+000	5.625789e-002	0
+236	0	236	Mass	-1.674071e+000	-1.527043e+000	5.508429e-002	0
+237	0	237	Mass	-1.683441e+000	-1.536133e+000	5.394338e-002	0
+238	0	238	Mass	-1.692872e+000	-1.545157e+000	5.283405e-002	0
+239	0	239	Mass	-1.702362e+000	-1.554117e+000	5.175519e-002	0
+240	0	240	Mass	-1.711913e+000	-1.563015e+000	5.070558e-002	0
+241	0	241	Mass	-1.721526e+000	-1.571856e+000	4.968384e-002	0
+242	0	242	Mass	-1.731204e+000	-1.580643e+000	4.868862e-002	0
+243	0	243	Mass	-1.740948e+000	-1.589382e+000	4.771868e-002	0
+244	0	244	Mass	-1.750763e+000	-1.598076e+000	4.677292e-002	0
+245	0	245	Mass	-1.760651e+000	-1.606728e+000	4.585038e-002	0
+246	0	246	Mass	-1.770617e+000	-1.615339e+000	4.495020e-002	0
+247	0	247	Mass	-1.780664e+000	-1.623912e+000	4.407157e-002	0
+248	0	248	Mass	-1.790799e+000	-1.632449e+000	4.321374e-002	0
+249	0	249	Mass	-1.801024e+000	-1.640951e+000	4.237602e-002	0
+250	0	250	Mass	-1.811346e+000	-1.649419e+000	4.155773e-002	0
+251	0	251	Mass	-1.821768e+000	-1.657855e+000	4.075827e-002	0
+252	0	252	Mass	-1.832297e+000	-1.666260e+000	3.997707e-002	0
+253	0	253	Mass	-1.842936e+000	-1.674634e+000	3.921362e-002	0
+254	0	254	Mass	-1.853690e+000	-1.682977e+000	3.846744e-002	0
+255	0	255	Mass	-1.864563e+000	-1.691290e+000	3.773813e-002	0
+256	0	256	Mass	-1.875560e+000	-1.699572e+000	3.702530e-002	0
+257	0	257	Mass	-1.886683e+000	-1.707822e+000	3.632862e-002	0
+258	0	258	Mass	-1.897936e+000	-1.716038e+000	3.564780e-002	0
+259	0	259	Mass	-1.909320e+000	-1.724219e+000	3.498256e-002	0
+260	0	260	Mass	-1.920837e+000	-1.732363e+000	3.433269e-002	0
+261	0	261	Mass	-1.932487e+000	-1.740467e+000	3.369796e-002	0
+262	0	262	Mass	-1.944269e+000	-1.748529e+000	3.307820e-002	0
+263	0	263	Mass	-1.956182e+000	-1.756544e+000	3.247329e-002	0
+264	0	264	Mass	-1.968222e+000	-1.764509e+000	3.188321e-002	0
+265	0	265	Mass	-1.980386e+000	-1.772419e+000	3.130776e-002	0
+266	0	266	Mass	-1.992667e+000	-1.780272e+000	3.074671e-002	0
+267	0	267	Mass	-2.005059e+000	-1.788067e+000	3.019978e-002	0
+268	0	268	Mass	-2.017553e+000	-1.795801e+000	2.966675e-002	0
+269	0	269	Mass	-2.030139e+000	-1.803470e+000	2.914749e-002	0
+270	0	270	Mass	-2.042805e+000	-1.811070e+000	2.864186e-002	0
+271	0	271	Mass	-2.055537e+000	-1.818596e+000	2.814976e-002	0
+272	0	272	Mass	-2.068322e+000	-1.826045e+000	2.767105e-002	0
+273	0	273	Mass	-2.081142e+000	-1.833413e+000	2.720556e-002	0
+274	0	274	Mass	-2.093980e+000	-1.840697e+000	2.675310e-002	0
+275	0	275	Mass	-2.106817e+000	-1.847893e+000	2.631347e-002	0
+276	0	276	Mass	-2.119633e+000	-1.854998e+000	2.588644e-002	0
+277	0	277	Mass	-2.132408e+000	-1.862011e+000	2.547178e-002	0
+278	0	278	Mass	-2.145120e+000	-1.868930e+000	2.506923e-002	0
+279	0	279	Mass	-2.157747e+000	-1.875751e+000	2.467853e-002	0
+280	0	280	Mass	-2.170269e+000	-1.882475e+000	2.429939e-002	0
+281	0	281	Mass	-2.182663e+000	-1.889101e+000	2.393151e-002	0
+282	0	282	Mass	-2.194911e+000	-1.895627e+000	2.357455e-002	0
+283	0	283	Mass	-2.206991e+000	-1.902055e+000	2.322821e-002	0
+284	0	284	Mass	-2.218888e+000	-1.908385e+000	2.289210e-002	0
+285	0	285	Mass	-2.230585e+000	-1.914618e+000	2.256589e-002	0
+286	0	286	Mass	-2.242068e+000	-1.920757e+000	2.224919e-002	0
+287	0	287	Mass	-2.253325e+000	-1.926802e+000	2.194163e-002	0
+288	0	288	Mass	-2.264348e+000	-1.932757e+000	2.164279e-002	0
+289	0	289	Mass	-2.275129e+000	-1.938626e+000	2.135229e-002	0
+290	0	290	Mass	-2.285665e+000	-1.944412e+000	2.106971e-002	0
+291	0	291	Mass	-2.295955e+000	-1.950120e+000	2.079462e-002	0
+292	0	292	Mass	-2.306000e+000	-1.955753e+000	2.052663e-002	0
+293	0	293	Mass	-2.315803e+000	-1.961317e+000	2.026532e-002	0
+294	0	294	Mass	-2.325371e+000	-1.966818e+000	2.001028e-002	0
+295	0	295	Mass	-2.334711e+000	-1.972260e+000	1.976110e-002	0
+296	0	296	Mass	-2.343831e+000	-1.977649e+000	1.951738e-002	0
+297	0	297	Mass	-2.352744e+000	-1.982992e+000	1.927874e-002	0
+298	0	298	Mass	-2.361459e+000	-1.988295e+000	1.904479e-002	0
+299	0	299	Mass	-2.369990e+000	-1.993563e+000	1.881515e-002	0
+300	0	300	Mass	-2.378349e+000	-1.998803e+000	1.858949e-002	0
+301	0	301	Mass	-2.386549e+000	-2.004022e+000	1.836746e-002	0
+302	0	302	Mass	-2.394601e+000	-2.009224e+000	1.814876e-002	0
+303	0	303	Mass	-2.402520e+000	-2.014416e+000	1.793309e-002	0
+304	0	304	Mass	-2.410317e+000	-2.019603e+000	1.772016e-002	0
+305	0	305	Mass	-2.418004e+000	-2.024791e+000	1.750974e-002	0
+306	0	306	Mass	-2.425591e+000	-2.029985e+000	1.730159e-002	0
+307	0	307	Mass	-2.433090e+000	-2.035189e+000	1.709551e-002	0
+308	0	308	Mass	-2.440510e+000	-2.040407e+000	1.689133e-002	0
+309	0	309	Mass	-2.447861e+000	-2.045644e+000	1.668888e-002	0
+310	0	310	Mass	-2.455152e+000	-2.050902e+000	1.648803e-002	0
+311	0	311	Mass	-2.462389e+000	-2.056185e+000	1.628868e-002	0
+312	0	312	Mass	-2.469583e+000	-2.061495e+000	1.609074e-002	0
+313	0	313	Mass	-2.476738e+000	-2.066834e+000	1.589414e-002	0
+314	0	314	Mass	-2.483863e+000	-2.072203e+000	1.569885e-002	0
+315	0	315	Mass	-2.490962e+000	-2.077603e+000	1.550486e-002	0
+316	0	316	Mass	-2.498042e+000	-2.083035e+000	1.531215e-002	0
+317	0	317	Mass	-2.505107e+000	-2.088497e+000	1.512076e-002	0
+318	0	318	Mass	-2.512161e+000	-2.093990e+000	1.493074e-002	0
+319	0	319	Mass	-2.519208e+000	-2.099511e+000	1.474211e-002	0
+320	0	320	Mass	-2.526250e+000	-2.105060e+000	1.455495e-002	0
+321	0	321	Mass	-2.533289e+000	-2.110634e+000	1.436932e-002	0
+322	0	322	Mass	-2.540326e+000	-2.116231e+000	1.418533e-002	0
+323	0	323	Mass	-2.547360e+000	-2.121848e+000	1.400305e-002	0
+324	0	324	Mass	-2.554390e+000	-2.127481e+000	1.382262e-002	0
+325	0	325	Mass	-2.561414e+000	-2.133126e+000	1.364411e-002	0
+326	0	326	Mass	-2.568427e+000	-2.138779e+000	1.346765e-002	0
+327	0	327	Mass	-2.575424e+000	-2.144437e+000	1.329334e-002	0
+328	0	328	Mass	-2.582401e+000	-2.150095e+000	1.312128e-002	0
+329	0	329	Mass	-2.589349e+000	-2.155748e+000	1.295158e-002	0
+330	0	330	Mass	-2.596261e+000	-2.161392e+000	1.278435e-002	0
+331	0	331	Mass	-2.603126e+000	-2.167022e+000	1.261968e-002	0
+332	0	332	Mass	-2.609936e+000	-2.172634e+000	1.245766e-002	0
+333	0	333	Mass	-2.616681e+000	-2.178223e+000	1.229837e-002	0
+334	0	334	Mass	-2.623349e+000	-2.183785e+000	1.214188e-002	0
+335	0	335	Mass	-2.629930e+000	-2.189314e+000	1.198827e-002	0
+336	0	336	Mass	-2.636415e+000	-2.194808e+000	1.183758e-002	0
+337	0	337	Mass	-2.642793e+000	-2.200261e+000	1.168986e-002	0
+338	0	338	Mass	-2.649055e+000	-2.205672e+000	1.154513e-002	0
+339	0	339	Mass	-2.655195e+000	-2.211035e+000	1.140343e-002	0
+340	0	340	Mass	-2.661206e+000	-2.216350e+000	1.126474e-002	0
+341	0	341	Mass	-2.667084e+000	-2.221612e+000	1.112908e-002	0
+342	0	342	Mass	-2.672826e+000	-2.226820e+000	1.099640e-002	0
+343	0	343	Mass	-2.678432e+000	-2.231973e+000	1.086669e-002	0
+344	0	344	Mass	-2.683901e+000	-2.237071e+000	1.073990e-002	0
+345	0	345	Mass	-2.689239e+000	-2.242111e+000	1.061598e-002	0
+346	0	346	Mass	-2.694450e+000	-2.247094e+000	1.049487e-002	0
+347	0	347	Mass	-2.699541e+000	-2.252020e+000	1.037650e-002	0
+348	0	348	Mass	-2.704521e+000	-2.256891e+000	1.026078e-002	0
+349	0	349	Mass	-2.709400e+000	-2.261707e+000	1.014761e-002	0
+350	0	350	Mass	-2.714189e+000	-2.266471e+000	1.003691e-002	0
+351	0	351	Mass	-2.718900e+000	-2.271185e+000	9.928551e-003	0
+352	0	352	Mass	-2.723547e+000	-2.275852e+000	9.822430e-003	0
+353	0	353	Mass	-2.728141e+000	-2.280475e+000	9.718423e-003	0
+354	0	354	Mass	-2.732697e+000	-2.285058e+000	9.616412e-003	0
+355	0	355	Mass	-2.737226e+000	-2.289604e+000	9.516274e-003	0
+356	0	356	Mass	-2.741742e+000	-2.294118e+000	9.417875e-003	0
+357	0	357	Mass	-2.746255e+000	-2.298604e+000	9.321089e-003	0
+358	0	358	Mass	-2.750775e+000	-2.303067e+000	9.225788e-003	0
+359	0	359	Mass	-2.755313e+000	-2.307513e+000	9.131838e-003	0
+360	0	360	Mass	-2.759876e+000	-2.311944e+000	9.039125e-003	0
+361	0	361	Mass	-2.764470e+000	-2.316368e+000	8.947530e-003	0
+362	0	362	Mass	-2.769102e+000	-2.320787e+000	8.856944e-003	0
+363	0	363	Mass	-2.773777e+000	-2.325208e+000	8.767246e-003	0
+364	0	364	Mass	-2.778497e+000	-2.329634e+000	8.678334e-003	0
+365	0	365	Mass	-2.783264e+000	-2.334072e+000	8.590107e-003	0
+366	0	366	Mass	-2.788079e+000	-2.338526e+000	8.502471e-003	0
+367	0	367	Mass	-2.792943e+000	-2.342999e+000	8.415351e-003	0
+368	0	368	Mass	-2.797855e+000	-2.347495e+000	8.328670e-003	0
+369	0	369	Mass	-2.802813e+000	-2.352019e+000	8.242360e-003	0
+370	0	370	Mass	-2.807817e+000	-2.356574e+000	8.156359e-003	0
+371	0	371	Mass	-2.812864e+000	-2.361164e+000	8.070616e-003	0
+372	0	372	Mass	-2.817950e+000	-2.365791e+000	7.985093e-003	0
+373	0	373	Mass	-2.823075e+000	-2.370456e+000	7.899768e-003	0
+374	0	374	Mass	-2.828235e+000	-2.375163e+000	7.814625e-003	0
+375	0	375	Mass	-2.833428e+000	-2.379911e+000	7.729653e-003	0
+376	0	376	Mass	-2.838651e+000	-2.384702e+000	7.644841e-003	0
+377	0	377	Mass	-2.843903e+000	-2.389538e+000	7.560187e-003	0
+378	0	378	Mass	-2.849182e+000	-2.394418e+000	7.475716e-003	0
+379	0	379	Mass	-2.854485e+000	-2.399341e+000	7.391454e-003	0
+380	0	380	Mass	-2.859811e+000	-2.404307e+000	7.307423e-003	0
+381	0	381	Mass	-2.865157e+000	-2.409313e+000	7.223661e-003	0
+382	0	382	Mass	-2.870523e+000	-2.414360e+000	7.140203e-003	0
+383	0	383	Mass	-2.875906e+000	-2.419444e+000	7.057102e-003	0
+384	0	384	Mass	-2.881304e+000	-2.424563e+000	6.974408e-003	0
+385	0	385	Mass	-2.886715e+000	-2.429714e+000	6.892176e-003	0
+386	0	386	Mass	-2.892135e+000	-2.434894e+000	6.810458e-003	0
+387	0	387	Mass	-2.897563e+000	-2.440100e+000	6.729317e-003	0
+388	0	388	Mass	-2.902993e+000	-2.445327e+000	6.648805e-003	0
+389	0	389	Mass	-2.908422e+000	-2.450572e+000	6.568994e-003	0
+390	0	390	Mass	-2.913845e+000	-2.455830e+000	6.489936e-003	0
+391	0	391	Mass	-2.919256e+000	-2.461098e+000	6.411692e-003	0
+392	0	392	Mass	-2.924650e+000	-2.466370e+000	6.334324e-003	0
+393	0	393	Mass	-2.930021e+000	-2.471643e+000	6.257887e-003	0
+394	0	394	Mass	-2.935360e+000	-2.476911e+000	6.182435e-003	0
+395	0	395	Mass	-2.940664e+000	-2.482171e+000	6.108009e-003	0
+396	0	396	Mass	-2.945923e+000	-2.487418e+000	6.034663e-003	0
+397	0	397	Mass	-2.951131e+000	-2.492648e+000	5.962430e-003	0
+398	0	398	Mass	-2.956282e+000	-2.497855e+000	5.891358e-003	0
+399	0	399	Mass	-2.961369e+000	-2.503037e+000	5.821481e-003	0
+400	0	400	Mass	-2.966388e+000	-2.508190e+000	5.752824e-003	0
+401	0	401	Mass	-2.971334e+000	-2.513309e+000	5.685404e-003	0
+402	0	402	Mass	-2.976204e+000	-2.518394e+000	5.619231e-003	0
+403	0	403	Mass	-2.980995e+000	-2.523440e+000	5.554321e-003	0
+404	0	404	Mass	-2.985706e+000	-2.528445e+000	5.490681e-003	0
+405	0	405	Mass	-2.990339e+000	-2.533407e+000	5.428300e-003	0
+406	0	406	Mass	-2.994894e+000	-2.538326e+000	5.367169e-003	0
+407	0	407	Mass	-2.999377e+000	-2.543200e+000	5.307270e-003	0
+408	0	408	Mass	-3.003789e+000	-2.548028e+000	5.248593e-003	0
+409	0	409	Mass	-3.008137e+000	-2.552810e+000	5.191119e-003	0
+410	0	410	Mass	-3.012428e+000	-2.557546e+000	5.134815e-003	0
+411	0	411	Mass	-3.016671e+000	-2.562237e+000	5.079646e-003	0
+412	0	412	Mass	-3.020873e+000	-2.566885e+000	5.025575e-003	0
+413	0	413	Mass	-3.025045e+000	-2.571491e+000	4.972556e-003	0
+414	0	414	Mass	-3.029195e+000	-2.576057e+000	4.920549e-003	0
+415	0	415	Mass	-3.033333e+000	-2.580586e+000	4.869508e-003	0
+416	0	416	Mass	-3.037468e+000	-2.585080e+000	4.819380e-003	0
+417	0	417	Mass	-3.041611e+000	-2.589542e+000	4.770119e-003	0
+418	0	418	Mass	-3.045770e+000	-2.593976e+000	4.721665e-003	0
+419	0	419	Mass	-3.049954e+000	-2.598385e+000	4.673967e-003	0
+420	0	420	Mass	-3.054170e+000	-2.602774e+000	4.626974e-003	0
+421	0	421	Mass	-3.058425e+000	-2.607147e+000	4.580620e-003	0
+422	0	422	Mass	-3.062725e+000	-2.611507e+000	4.534860e-003	0
+423	0	423	Mass	-3.067075e+000	-2.615859e+000	4.489642e-003	0
+424	0	424	Mass	-3.071478e+000	-2.620207e+000	4.444915e-003	0
+425	0	425	Mass	-3.075936e+000	-2.624556e+000	4.400631e-003	0
+426	0	426	Mass	-3.080452e+000	-2.628909e+000	4.356741e-003	0
+427	0	427	Mass	-3.085026e+000	-2.633271e+000	4.313200e-003	0
+428	0	428	Mass	-3.089659e+000	-2.637646e+000	4.269966e-003	0
+429	0	429	Mass	-3.094350e+000	-2.642039e+000	4.227000e-003	0
+430	0	430	Mass	-3.099097e+000	-2.646451e+000	4.184269e-003	0
+431	0	431	Mass	-3.103897e+000	-2.650888e+000	4.141740e-003	0
+432	0	432	Mass	-3.108748e+000	-2.655352e+000	4.099383e-003	0
+433	0	433	Mass	-3.113648e+000	-2.659847e+000	4.057177e-003	0
+434	0	434	Mass	-3.118592e+000	-2.664374e+000	4.015104e-003	0
+435	0	435	Mass	-3.123579e+000	-2.668936e+000	3.973144e-003	0
+436	0	436	Mass	-3.128604e+000	-2.673536e+000	3.931289e-003	0
+437	0	437	Mass	-3.133663e+000	-2.678173e+000	3.889536e-003	0
+438	0	438	Mass	-3.138754e+000	-2.682850e+000	3.847875e-003	0
+439	0	439	Mass	-3.143874e+000	-2.687567e+000	3.806308e-003	0
+440	0	440	Mass	-3.149019e+000	-2.692325e+000	3.764834e-003	0
+441	0	441	Mass	-3.154188e+000	-2.697124e+000	3.723463e-003	0
+442	0	442	Mass	-3.159377e+000	-2.701963e+000	3.682204e-003	0
+443	0	443	Mass	-3.164584e+000	-2.706842e+000	3.641071e-003	0
+444	0	444	Mass	-3.169806e+000	-2.711758e+000	3.600083e-003	0
+445	0	445	Mass	-3.175042e+000	-2.716711e+000	3.559261e-003	0
+446	0	446	Mass	-3.180288e+000	-2.721699e+000	3.518618e-003	0
+447	0	447	Mass	-3.185542e+000	-2.726719e+000	3.478179e-003	0
+448	0	448	Mass	-3.190802e+000	-2.731769e+000	3.437968e-003	0
+449	0	449	Mass	-3.196064e+000	-2.736845e+000	3.398019e-003	0
+450	0	450	Mass	-3.201325e+000	-2.741945e+000	3.358351e-003	0
+451	0	451	Mass	-3.206582e+000	-2.747064e+000	3.318996e-003	0
+452	0	452	Mass	-3.211830e+000	-2.752199e+000	3.279985e-003	0
+453	0	453	Mass	-3.217066e+000	-2.757346e+000	3.241338e-003	0
+454	0	454	Mass	-3.222287e+000	-2.762505e+000	3.203069e-003	0
+455	0	455	Mass	-3.227486e+000	-2.767668e+000	3.165210e-003	0
+456	0	456	Mass	-3.232659e+000	-2.772833e+000	3.127791e-003	0
+457	0	457	Mass	-3.237801e+000	-2.777995e+000	3.090833e-003	0
+458	0	458	Mass	-3.242905e+000	-2.783150e+000	3.054366e-003	0
+459	0	459	Mass	-3.247967e+000	-2.788294e+000	3.018402e-003	0
+460	0	460	Mass	-3.252982e+000	-2.793422e+000	2.982967e-003	0
+461	0	461	Mass	-3.257943e+000	-2.798532e+000	2.948076e-003	0
+462	0	462	Mass	-3.262849e+000	-2.803620e+000	2.913741e-003	0
+463	0	463	Mass	-3.267695e+000	-2.808683e+000	2.879971e-003	0
+464	0	464	Mass	-3.272479e+000	-2.813717e+000	2.846776e-003	0
+465	0	465	Mass	-3.277200e+000	-2.818722e+000	2.814159e-003	0
+466	0	466	Mass	-3.281855e+000	-2.823695e+000	2.782122e-003	0
+467	0	467	Mass	-3.286445e+000	-2.828632e+000	2.750673e-003	0
+468	0	468	Mass	-3.290970e+000	-2.833531e+000	2.719817e-003	0
+469	0	469	Mass	-3.295433e+000	-2.838392e+000	2.689545e-003	0
+470	0	470	Mass	-3.299838e+000	-2.843214e+000	2.659846e-003	0
+471	0	471	Mass	-3.304189e+000	-2.847997e+000	2.630717e-003	0
+472	0	472	Mass	-3.308490e+000	-2.852739e+000	2.602148e-003	0
+473	0	473	Mass	-3.312749e+000	-2.857442e+000	2.574121e-003	0
+474	0	474	Mass	-3.316972e+000	-2.862107e+000	2.546618e-003	0
+475	0	475	Mass	-3.321166e+000	-2.866735e+000	2.519626e-003	0
+476	0	476	Mass	-3.325339e+000	-2.871326e+000	2.493132e-003	0
+477	0	477	Mass	-3.329500e+000	-2.875882e+000	2.467111e-003	0
+478	0	478	Mass	-3.333655e+000	-2.880405e+000	2.441549e-003	0
+479	0	479	Mass	-3.337812e+000	-2.884899e+000	2.416418e-003	0
+480	0	480	Mass	-3.341981e+000	-2.889364e+000	2.391699e-003	0
+481	0	481	Mass	-3.346168e+000	-2.893805e+000	2.367367e-003	0
+482	0	482	Mass	-3.350381e+000	-2.898225e+000	2.343399e-003	0
+483	0	483	Mass	-3.354629e+000	-2.902628e+000	2.319756e-003	0
+484	0	484	Mass	-3.358912e+000	-2.907019e+000	2.296424e-003	0
+485	0	485	Mass	-3.363237e+000	-2.911399e+000	2.273378e-003	0
+486	0	486	Mass	-3.367610e+000	-2.915773e+000	2.250599e-003	0
+487	0	487	Mass	-3.372031e+000	-2.920144e+000	2.228061e-003	0
+488	0	488	Mass	-3.376504e+000	-2.924516e+000	2.205744e-003	0
+489	0	489	Mass	-3.381029e+000	-2.928892e+000	2.183627e-003	0
+490	0	490	Mass	-3.385608e+000	-2.933277e+000	2.161691e-003	0
+491	0	491	Mass	-3.390241e+000	-2.937675e+000	2.139914e-003	0
+492	0	492	Mass	-3.394925e+000	-2.942088e+000	2.118279e-003	0
+493	0	493	Mass	-3.399660e+000	-2.946519e+000	2.096776e-003	0
+494	0	494	Mass	-3.404444e+000	-2.950971e+000	2.075388e-003	0
+495	0	495	Mass	-3.409276e+000	-2.955450e+000	2.054098e-003	0
+496	0	496	Mass	-3.414150e+000	-2.959954e+000	2.032902e-003	0
+497	0	497	Mass	-3.419065e+000	-2.964488e+000	2.011791e-003	0
+498	0	498	Mass	-3.424019e+000	-2.969051e+000	1.990764e-003	0
+499	0	499	Mass	-3.429007e+000	-2.973647e+000	1.969808e-003	0
+500	0	500	Mass	-3.434030e+000	-2.978277e+000	1.948919e-003	0
+501	0	501	Mass	-3.439082e+000	-2.982943e+000	1.928090e-003	0
+502	0	502	Mass	-3.444160e+000	-2.987646e+000	1.907325e-003	0
+503	0	503	Mass	-3.449261e+000	-2.992384e+000	1.886629e-003	0
+504	0	504	Mass	-3.454382e+000	-2.997159e+000	1.866002e-003	0
+505	0	505	Mass	-3.459520e+000	-3.001968e+000	1.845451e-003	0
+506	0	506	Mass	-3.464676e+000	-3.006813e+000	1.824977e-003	0
+507	0	507	Mass	-3.469844e+000	-3.011694e+000	1.804583e-003	0
+508	0	508	Mass	-3.475022e+000	-3.016607e+000	1.784282e-003	0
+509	0	509	Mass	-3.480206e+000	-3.021550e+000	1.764092e-003	0
+510	0	510	Mass	-3.485396e+000	-3.026519e+000	1.744023e-003	0
+511	0	511	Mass	-3.490588e+000	-3.031516e+000	1.724071e-003	0
+512	0	512	Mass	-3.495779e+000	-3.036535e+000	1.704261e-003	0
+513	0	513	Mass	-3.500967e+000	-3.041575e+000	1.684597e-003	0
+514	0	514	Mass	-3.506148e+000	-3.046633e+000	1.665091e-003	0
+515	0	515	Mass	-3.511317e+000	-3.051705e+000	1.645758e-003	0
+516	0	516	Mass	-3.516471e+000	-3.056788e+000	1.626608e-003	0
+517	0	517	Mass	-3.521608e+000	-3.061880e+000	1.607649e-003	0
+518	0	518	Mass	-3.526722e+000	-3.066975e+000	1.588897e-003	0
+519	0	519	Mass	-3.531812e+000	-3.072073e+000	1.570355e-003	0
+520	0	520	Mass	-3.536870e+000	-3.077168e+000	1.552039e-003	0
+521	0	521	Mass	-3.541893e+000	-3.082257e+000	1.533959e-003	0
+522	0	522	Mass	-3.546876e+000	-3.087335e+000	1.516127e-003	0
+523	0	523	Mass	-3.551818e+000	-3.092402e+000	1.498540e-003	0
+524	0	524	Mass	-3.556713e+000	-3.097454e+000	1.481211e-003	0
+525	0	525	Mass	-3.561556e+000	-3.102485e+000	1.464149e-003	0
+526	0	526	Mass	-3.566348e+000	-3.107496e+000	1.447355e-003	0
+527	0	527	Mass	-3.571086e+000	-3.112481e+000	1.430835e-003	0
+528	0	528	Mass	-3.575766e+000	-3.117438e+000	1.414597e-003	0
+529	0	529	Mass	-3.580390e+000	-3.122364e+000	1.398643e-003	0
+530	0	530	Mass	-3.584959e+000	-3.127259e+000	1.382967e-003	0
+531	0	531	Mass	-3.589476e+000	-3.132123e+000	1.367565e-003	0
+532	0	532	Mass	-3.593943e+000	-3.136955e+000	1.352432e-003	0
+533	0	533	Mass	-3.598361e+000	-3.141756e+000	1.337566e-003	0
+534	0	534	Mass	-3.602734e+000	-3.146523e+000	1.322963e-003	0
+535	0	535	Mass	-3.607064e+000	-3.151253e+000	1.308632e-003	0
+536	0	536	Mass	-3.611359e+000	-3.155948e+000	1.294561e-003	0
+537	0	537	Mass	-3.615626e+000	-3.160609e+000	1.280741e-003	0
+538	0	538	Mass	-3.619871e+000	-3.165236e+000	1.267169e-003	0
+539	0	539	Mass	-3.624097e+000	-3.169832e+000	1.253831e-003	0
+540	0	540	Mass	-3.628317e+000	-3.174398e+000	1.240716e-003	0
+541	0	541	Mass	-3.632534e+000	-3.178937e+000	1.227817e-003	0
+542	0	542	Mass	-3.636755e+000	-3.183451e+000	1.215121e-003	0
+543	0	543	Mass	-3.640985e+000	-3.187940e+000	1.202626e-003	0
+544	0	544	Mass	-3.645234e+000	-3.192409e+000	1.190314e-003	0
+545	0	545	Mass	-3.649504e+000	-3.196861e+000	1.178176e-003	0
+546	0	546	Mass	-3.653803e+000	-3.201296e+000	1.166204e-003	0
+547	0	547	Mass	-3.658132e+000	-3.205717e+000	1.154393e-003	0
+548	0	548	Mass	-3.662500e+000	-3.210128e+000	1.142727e-003	0
+549	0	549	Mass	-3.666907e+000	-3.214536e+000	1.131188e-003	0
+550	0	550	Mass	-3.671360e+000	-3.218942e+000	1.119771e-003	0
+551	0	551	Mass	-3.675858e+000	-3.223350e+000	1.108463e-003	0
+552	0	552	Mass	-3.680402e+000	-3.227762e+000	1.097258e-003	0
+553	0	553	Mass	-3.684994e+000	-3.232182e+000	1.086147e-003	0
+554	0	554	Mass	-3.689630e+000	-3.236612e+000	1.075124e-003	0
+555	0	555	Mass	-3.694312e+000	-3.241054e+000	1.064184e-003	0
+556	0	556	Mass	-3.699041e+000	-3.245515e+000	1.053309e-003	0
+557	0	557	Mass	-3.703813e+000	-3.249993e+000	1.042504e-003	0
+558	0	558	Mass	-3.708627e+000	-3.254495e+000	1.031753e-003	0
+559	0	559	Mass	-3.713481e+000	-3.259021e+000	1.021057e-003	0
+560	0	560	Mass	-3.718375e+000	-3.263573e+000	1.010411e-003	0
+561	0	561	Mass	-3.723304e+000	-3.268152e+000	9.998131e-004	0
+562	0	562	Mass	-3.728265e+000	-3.272761e+000	9.892582e-004	0
+563	0	563	Mass	-3.733251e+000	-3.277399e+000	9.787496e-004	0
+564	0	564	Mass	-3.738263e+000	-3.282065e+000	9.682908e-004	0
+565	0	565	Mass	-3.743303e+000	-3.286765e+000	9.578678e-004	0
+566	0	566	Mass	-3.748361e+000	-3.291498e+000	9.474870e-004	0
+567	0	567	Mass	-3.753438e+000	-3.296260e+000	9.371529e-004	0
+568	0	568	Mass	-3.758530e+000	-3.301053e+000	9.268687e-004	0
+569	0	569	Mass	-3.763636e+000	-3.305876e+000	9.166326e-004	0
+570	0	570	Mass	-3.768755e+000	-3.310730e+000	9.064441e-004	0
+571	0	571	Mass	-3.773881e+000	-3.315610e+000	8.963147e-004	0
+572	0	572	Mass	-3.779015e+000	-3.320520e+000	8.862390e-004	0
+573	0	573	Mass	-3.784151e+000	-3.325456e+000	8.762227e-004	0
+574	0	574	Mass	-3.789284e+000	-3.330413e+000	8.662798e-004	0
+575	0	575	Mass	-3.794418e+000	-3.335389e+000	8.564100e-004	0
+576	0	576	Mass	-3.799547e+000	-3.340381e+000	8.466217e-004	0
+577	0	577	Mass	-3.804666e+000	-3.345389e+000	8.369154e-004	0
+578	0	578	Mass	-3.809779e+000	-3.350415e+000	8.272864e-004	0
+579	0	579	Mass	-3.814877e+000	-3.355451e+000	8.177482e-004	0
+580	0	580	Mass	-3.819955e+000	-3.360494e+000	8.083076e-004	0
+581	0	581	Mass	-3.825012e+000	-3.365540e+000	7.989702e-004	0
+582	0	582	Mass	-3.830042e+000	-3.370587e+000	7.897389e-004	0
+583	0	583	Mass	-3.835043e+000	-3.375629e+000	7.806232e-004	0
+584	0	584	Mass	-3.840012e+000	-3.380666e+000	7.716218e-004	0
+585	0	585	Mass	-3.844945e+000	-3.385695e+000	7.627383e-004	0
+586	0	586	Mass	-3.849838e+000	-3.390712e+000	7.539775e-004	0
+587	0	587	Mass	-3.854691e+000	-3.395717e+000	7.453393e-004	0
+588	0	588	Mass	-3.859505e+000	-3.400707e+000	7.368245e-004	0
+589	0	589	Mass	-3.864271e+000	-3.405675e+000	7.284439e-004	0
+590	0	590	Mass	-3.868987e+000	-3.410617e+000	7.202014e-004	0
+591	0	591	Mass	-3.873654e+000	-3.415536e+000	7.120898e-004	0
+592	0	592	Mass	-3.878275e+000	-3.420431e+000	7.041081e-004	0
+593	0	593	Mass	-3.882850e+000	-3.425305e+000	6.962508e-004	0
+594	0	594	Mass	-3.887381e+000	-3.430150e+000	6.885270e-004	0
+595	0	595	Mass	-3.891867e+000	-3.434966e+000	6.809336e-004	0
+596	0	596	Mass	-3.896313e+000	-3.439753e+000	6.734691e-004	0
+597	0	597	Mass	-3.900718e+000	-3.444508e+000	6.661364e-004	0
+598	0	598	Mass	-3.905091e+000	-3.449233e+000	6.589277e-004	0
+599	0	599	Mass	-3.909437e+000	-3.453929e+000	6.518415e-004	0
+600	0	600	Mass	-3.913758e+000	-3.458591e+000	6.448812e-004	0
+601	0	601	Mass	-3.918058e+000	-3.463225e+000	6.380372e-004	0
+602	0	602	Mass	-3.922344e+000	-3.467827e+000	6.313117e-004	0
+603	0	603	Mass	-3.926622e+000	-3.472406e+000	6.246898e-004	0
+604	0	604	Mass	-3.930902e+000	-3.476964e+000	6.181690e-004	0
+605	0	605	Mass	-3.935188e+000	-3.481499e+000	6.117465e-004	0
+606	0	606	Mass	-3.939481e+000	-3.486015e+000	6.054186e-004	0
+607	0	607	Mass	-3.943787e+000	-3.490516e+000	5.991762e-004	0
+608	0	608	Mass	-3.948111e+000	-3.494997e+000	5.930259e-004	0
+609	0	609	Mass	-3.952463e+000	-3.499466e+000	5.869549e-004	0
+610	0	610	Mass	-3.956841e+000	-3.503923e+000	5.809618e-004	0
+611	0	611	Mass	-3.961251e+000	-3.508371e+000	5.750423e-004	0
+612	0	612	Mass	-3.965695e+000	-3.512814e+000	5.691897e-004	0
+613	0	613	Mass	-3.970179e+000	-3.517257e+000	5.633955e-004	0
+614	0	614	Mass	-3.974703e+000	-3.521699e+000	5.576630e-004	0
+615	0	615	Mass	-3.979266e+000	-3.526146e+000	5.519822e-004	0
+616	0	616	Mass	-3.983872e+000	-3.530602e+000	5.463477e-004	0
+617	0	617	Mass	-3.988517e+000	-3.535068e+000	5.407581e-004	0
+618	0	618	Mass	-3.993202e+000	-3.539544e+000	5.352127e-004	0
+619	0	619	Mass	-3.997924e+000	-3.544034e+000	5.297079e-004	0
+620	0	620	Mass	-4.002686e+000	-3.548544e+000	5.242361e-004	0
+621	0	621	Mass	-4.007484e+000	-3.553070e+000	5.188013e-004	0
+622	0	622	Mass	-4.012318e+000	-3.557617e+000	5.133970e-004	0
+623	0	623	Mass	-4.017183e+000	-3.562187e+000	5.080234e-004	0
+624	0	624	Mass	-4.022082e+000	-3.566778e+000	5.026813e-004	0
+625	0	625	Mass	-4.027010e+000	-3.571394e+000	4.973663e-004	0
+626	0	626	Mass	-4.031966e+000	-3.576040e+000	4.920742e-004	0
+627	0	627	Mass	-4.036946e+000	-3.580712e+000	4.868089e-004	0
+628	0	628	Mass	-4.041949e+000	-3.585411e+000	4.815701e-004	0
+629	0	629	Mass	-4.046968e+000	-3.590141e+000	4.763542e-004	0
+630	0	630	Mass	-4.052004e+000	-3.594894e+000	4.711687e-004	0
+631	0	631	Mass	-4.057056e+000	-3.599676e+000	4.660097e-004	0
+632	0	632	Mass	-4.062125e+000	-3.604489e+000	4.608741e-004	0
+633	0	633	Mass	-4.067200e+000	-3.609327e+000	4.557682e-004	0
+634	0	634	Mass	-4.072285e+000	-3.614192e+000	4.506910e-004	0
+635	0	635	Mass	-4.077370e+000	-3.619078e+000	4.456485e-004	0
+636	0	636	Mass	-4.082461e+000	-3.623989e+000	4.406381e-004	0
+637	0	637	Mass	-4.087549e+000	-3.628916e+000	4.356667e-004	0
+638	0	638	Mass	-4.092632e+000	-3.633857e+000	4.307383e-004	0
+639	0	639	Mass	-4.097709e+000	-3.638811e+000	4.258530e-004	0
+640	0	640	Mass	-4.102777e+000	-3.643777e+000	4.210110e-004	0
+641	0	641	Mass	-4.107834e+000	-3.648759e+000	4.162097e-004	0
+642	0	642	Mass	-4.112878e+000	-3.653753e+000	4.114506e-004	0
+643	0	643	Mass	-4.117904e+000	-3.658748e+000	4.067451e-004	0
+644	0	644	Mass	-4.122914e+000	-3.663750e+000	4.020873e-004	0
+645	0	645	Mass	-4.127906e+000	-3.668756e+000	3.974794e-004	0
+646	0	646	Mass	-4.132869e+000	-3.673759e+000	3.929269e-004	0
+647	0	647	Mass	-4.137802e+000	-3.678761e+000	3.884270e-004	0
+648	0	648	Mass	-4.142703e+000	-3.683758e+000	3.839833e-004	0
+649	0	649	Mass	-4.147562e+000	-3.688734e+000	3.796091e-004	0
+650	0	650	Mass	-4.152378e+000	-3.693692e+000	3.753004e-004	0
+651	0	651	Mass	-4.157164e+000	-3.698642e+000	3.710469e-004	0
+652	0	652	Mass	-4.161917e+000	-3.703575e+000	3.668558e-004	0
+653	0	653	Mass	-4.166623e+000	-3.708487e+000	3.627303e-004	0
+654	0	654	Mass	-4.171294e+000	-3.713385e+000	3.586623e-004	0
+655	0	655	Mass	-4.175921e+000	-3.718263e+000	3.546565e-004	0
+656	0	656	Mass	-4.180502e+000	-3.723107e+000	3.507230e-004	0
+657	0	657	Mass	-4.185048e+000	-3.727930e+000	3.468496e-004	0
+658	0	658	Mass	-4.189557e+000	-3.732728e+000	3.430382e-004	0
+659	0	659	Mass	-4.194034e+000	-3.737499e+000	3.392907e-004	0
+660	0	660	Mass	-4.198482e+000	-3.742243e+000	3.356044e-004	0
+661	0	661	Mass	-4.202901e+000	-3.746972e+000	3.319700e-004	0
+662	0	662	Mass	-4.207292e+000	-3.751669e+000	3.283986e-004	0
+663	0	663	Mass	-4.211665e+000	-3.756343e+000	3.248833e-004	0
+664	0	664	Mass	-4.216021e+000	-3.760990e+000	3.214262e-004	0
+665	0	665	Mass	-4.220359e+000	-3.765609e+000	3.180253e-004	0
+666	0	666	Mass	-4.224693e+000	-3.770202e+000	3.146795e-004	0
+667	0	667	Mass	-4.229031e+000	-3.774786e+000	3.113760e-004	0
+668	0	668	Mass	-4.233372e+000	-3.779344e+000	3.081248e-004	0
+669	0	669	Mass	-4.237718e+000	-3.783879e+000	3.049243e-004	0
+670	0	670	Mass	-4.242075e+000	-3.788394e+000	3.017707e-004	0
+671	0	671	Mass	-4.246448e+000	-3.792894e+000	2.986600e-004	0
+672	0	672	Mass	-4.250847e+000	-3.797385e+000	2.955875e-004	0
+673	0	673	Mass	-4.255274e+000	-3.801877e+000	2.925457e-004	0
+674	0	674	Mass	-4.259729e+000	-3.806367e+000	2.895371e-004	0
+675	0	675	Mass	-4.264210e+000	-3.810852e+000	2.865619e-004	0
+676	0	676	Mass	-4.268721e+000	-3.815328e+000	2.836237e-004	0
+677	0	677	Mass	-4.273263e+000	-3.819806e+000	2.807145e-004	0
+678	0	678	Mass	-4.277844e+000	-3.824286e+000	2.778334e-004	0
+679	0	679	Mass	-4.282464e+000	-3.828780e+000	2.749737e-004	0
+680	0	680	Mass	-4.287121e+000	-3.833284e+000	2.721366e-004	0
+681	0	681	Mass	-4.291811e+000	-3.837793e+000	2.693255e-004	0
+682	0	682	Mass	-4.296536e+000	-3.842321e+000	2.665324e-004	0
+683	0	683	Mass	-4.301286e+000	-3.846851e+000	2.637663e-004	0
+684	0	684	Mass	-4.306061e+000	-3.851388e+000	2.610253e-004	0
+685	0	685	Mass	-4.310869e+000	-3.855942e+000	2.583026e-004	0
+686	0	686	Mass	-4.315719e+000	-3.860525e+000	2.555911e-004	0
+687	0	687	Mass	-4.320599e+000	-3.865140e+000	2.528898e-004	0
+688	0	688	Mass	-4.325502e+000	-3.869771e+000	2.502072e-004	0
+689	0	689	Mass	-4.330432e+000	-3.874437e+000	2.475333e-004	0
+690	0	690	Mass	-4.335386e+000	-3.879121e+000	2.448783e-004	0
+691	0	691	Mass	-4.340352e+000	-3.883822e+000	2.422414e-004	0
+692	0	692	Mass	-4.345340e+000	-3.888547e+000	2.396205e-004	0
+693	0	693	Mass	-4.350342e+000	-3.893305e+000	2.370098e-004	0
+694	0	694	Mass	-4.355356e+000	-3.898078e+000	2.344188e-004	0
+695	0	695	Mass	-4.360378e+000	-3.902873e+000	2.318449e-004	0
+696	0	696	Mass	-4.365415e+000	-3.907690e+000	2.292879e-004	0
+697	0	697	Mass	-4.370462e+000	-3.912540e+000	2.267413e-004	0
+698	0	698	Mass	-4.375508e+000	-3.917414e+000	2.242111e-004	0
+699	0	699	Mass	-4.380547e+000	-3.922296e+000	2.217048e-004	0
+700	0	700	Mass	-4.385595e+000	-3.927194e+000	2.192183e-004	0
+701	0	701	Mass	-4.390638e+000	-3.932106e+000	2.167526e-004	0
+702	0	702	Mass	-4.395684e+000	-3.937040e+000	2.143041e-004	0
+703	0	703	Mass	-4.400709e+000	-3.941979e+000	2.118807e-004	0
+704	0	704	Mass	-4.405718e+000	-3.946921e+000	2.094837e-004	0
+705	0	705	Mass	-4.410716e+000	-3.951873e+000	2.071084e-004	0
+706	0	706	Mass	-4.415700e+000	-3.956840e+000	2.047533e-004	0
+707	0	707	Mass	-4.420666e+000	-3.961808e+000	2.024245e-004	0
+708	0	708	Mass	-4.425615e+000	-3.966778e+000	2.001210e-004	0
+709	0	709	Mass	-4.430541e+000	-3.971738e+000	1.978485e-004	0
+710	0	710	Mass	-4.435446e+000	-3.976697e+000	1.956023e-004	0
+711	0	711	Mass	-4.440324e+000	-3.981661e+000	1.933791e-004	0
+712	0	712	Mass	-4.445164e+000	-3.986610e+000	1.911879e-004	0
+713	0	713	Mass	-4.449973e+000	-3.991547e+000	1.890269e-004	0
+714	0	714	Mass	-4.454738e+000	-3.996466e+000	1.868983e-004	0
+715	0	715	Mass	-4.459466e+000	-4.001366e+000	1.848011e-004	0
+716	0	716	Mass	-4.464165e+000	-4.006250e+000	1.827347e-004	0
+717	0	717	Mass	-4.468826e+000	-4.011106e+000	1.807029e-004	0
+718	0	718	Mass	-4.473457e+000	-4.015941e+000	1.787023e-004	0
+719	0	719	Mass	-4.478057e+000	-4.020773e+000	1.767250e-004	0
+720	0	720	Mass	-4.482633e+000	-4.025600e+000	1.747714e-004	0
+721	0	721	Mass	-4.487175e+000	-4.030396e+000	1.728520e-004	0
+722	0	722	Mass	-4.491685e+000	-4.035179e+000	1.709591e-004	0
+723	0	723	Mass	-4.496160e+000	-4.039927e+000	1.691002e-004	0
+724	0	724	Mass	-4.500609e+000	-4.044641e+000	1.672746e-004	0
+725	0	725	Mass	-4.505036e+000	-4.049323e+000	1.654807e-004	0
+726	0	726	Mass	-4.509465e+000	-4.054000e+000	1.637084e-004	0
+727	0	727	Mass	-4.513875e+000	-4.058656e+000	1.619626e-004	0
+728	0	728	Mass	-4.518267e+000	-4.063284e+000	1.602459e-004	0
+729	0	729	Mass	-4.522652e+000	-4.067896e+000	1.585533e-004	0
+730	0	730	Mass	-4.527042e+000	-4.072506e+000	1.568790e-004	0
+731	0	731	Mass	-4.531425e+000	-4.077091e+000	1.552314e-004	0
+732	0	732	Mass	-4.535799e+000	-4.081640e+000	1.536142e-004	0
+733	0	733	Mass	-4.540205e+000	-4.086171e+000	1.520198e-004	0
+734	0	734	Mass	-4.544636e+000	-4.090706e+000	1.504404e-004	0
+735	0	735	Mass	-4.549090e+000	-4.095233e+000	1.488806e-004	0
+736	0	736	Mass	-4.553570e+000	-4.099754e+000	1.473388e-004	0
+737	0	737	Mass	-4.558064e+000	-4.104284e+000	1.458097e-004	0
+738	0	738	Mass	-4.562564e+000	-4.108796e+000	1.443028e-004	0
+739	0	739	Mass	-4.567101e+000	-4.113297e+000	1.428149e-004	0
+740	0	740	Mass	-4.571667e+000	-4.117802e+000	1.413412e-004	0
+741	0	741	Mass	-4.576259e+000	-4.122312e+000	1.398811e-004	0
+742	0	742	Mass	-4.580887e+000	-4.126836e+000	1.384316e-004	0
+743	0	743	Mass	-4.585537e+000	-4.131357e+000	1.369977e-004	0
+744	0	744	Mass	-4.590217e+000	-4.135887e+000	1.355764e-004	0
+745	0	745	Mass	-4.594932e+000	-4.140429e+000	1.341657e-004	0
+746	0	746	Mass	-4.599703e+000	-4.145003e+000	1.327601e-004	0
+747	0	747	Mass	-4.604497e+000	-4.149585e+000	1.313667e-004	0
+748	0	748	Mass	-4.609305e+000	-4.154179e+000	1.299845e-004	0
+749	0	749	Mass	-4.614125e+000	-4.158783e+000	1.286140e-004	0
+750	0	750	Mass	-4.618979e+000	-4.163398e+000	1.272543e-004	0
+751	0	751	Mass	-4.623858e+000	-4.168025e+000	1.259058e-004	0
+752	0	752	Mass	-4.628760e+000	-4.172696e+000	1.245588e-004	0
+753	0	753	Mass	-4.633677e+000	-4.177393e+000	1.232189e-004	0
+754	0	754	Mass	-4.638612e+000	-4.182096e+000	1.218918e-004	0
+755	0	755	Mass	-4.643561e+000	-4.186807e+000	1.205769e-004	0
+756	0	756	Mass	-4.648535e+000	-4.191561e+000	1.192640e-004	0
+757	0	757	Mass	-4.653518e+000	-4.196337e+000	1.179598e-004	0
+758	0	758	Mass	-4.658527e+000	-4.201135e+000	1.166636e-004	0
+759	0	759	Mass	-4.663518e+000	-4.205938e+000	1.153805e-004	0
+760	0	760	Mass	-4.668511e+000	-4.210769e+000	1.141041e-004	0
+761	0	761	Mass	-4.673510e+000	-4.215624e+000	1.128357e-004	0
+762	0	762	Mass	-4.678510e+000	-4.220494e+000	1.115776e-004	0
+763	0	763	Mass	-4.683497e+000	-4.225363e+000	1.103336e-004	0
+764	0	764	Mass	-4.688502e+000	-4.230225e+000	1.091053e-004	0
+765	0	765	Mass	-4.693511e+000	-4.235109e+000	1.078852e-004	0
+766	0	766	Mass	-4.698521e+000	-4.240025e+000	1.066708e-004	0
+767	0	767	Mass	-4.703503e+000	-4.244950e+000	1.054680e-004	0
+768	0	768	Mass	-4.708470e+000	-4.249889e+000	1.042755e-004	0
+769	0	769	Mass	-4.713406e+000	-4.254814e+000	1.030995e-004	0
+770	0	770	Mass	-4.718342e+000	-4.259746e+000	1.019354e-004	0
+771	0	771	Mass	-4.723254e+000	-4.264673e+000	1.007853e-004	0
+772	0	772	Mass	-4.728151e+000	-4.269594e+000	9.964999e-005	0
+773	0	773	Mass	-4.733030e+000	-4.274527e+000	9.852445e-005	0
+774	0	774	Mass	-4.737872e+000	-4.279470e+000	9.740933e-005	0
+775	0	775	Mass	-4.742685e+000	-4.284398e+000	9.631035e-005	0
+776	0	776	Mass	-4.747479e+000	-4.289307e+000	9.522779e-005	0
+777	0	777	Mass	-4.752266e+000	-4.294222e+000	9.415618e-005	0
+778	0	778	Mass	-4.757035e+000	-4.299134e+000	9.309717e-005	0
+779	0	779	Mass	-4.761740e+000	-4.303998e+000	9.206047e-005	0
+780	0	780	Mass	-4.766438e+000	-4.308872e+000	9.103289e-005	0
+781	0	781	Mass	-4.771048e+000	-4.313685e+000	9.002964e-005	0
+782	0	782	Mass	-4.775655e+000	-4.318499e+000	8.903727e-005	0
+783	0	783	Mass	-4.780240e+000	-4.323296e+000	8.805915e-005	0
+784	0	784	Mass	-4.784807e+000	-4.328080e+000	8.709456e-005	0
+785	0	785	Mass	-4.789331e+000	-4.332833e+000	8.614645e-005	0
+786	0	786	Mass	-4.793848e+000	-4.337573e+000	8.521135e-005	0
+787	0	787	Mass	-4.798325e+000	-4.342302e+000	8.428867e-005	0
+788	0	788	Mass	-4.802779e+000	-4.346996e+000	8.338250e-005	0
+789	0	789	Mass	-4.807205e+000	-4.351649e+000	8.249382e-005	0
+790	0	790	Mass	-4.811626e+000	-4.356293e+000	8.161641e-005	0
+791	0	791	Mass	-4.816049e+000	-4.360899e+000	8.075541e-005	0
+792	0	792	Mass	-4.820482e+000	-4.365515e+000	7.990169e-005	0
+793	0	793	Mass	-4.824920e+000	-4.370115e+000	7.905979e-005	0
+794	0	794	Mass	-4.829391e+000	-4.374719e+000	7.822604e-005	0
+795	0	795	Mass	-4.833834e+000	-4.379310e+000	7.740346e-005	0
+796	0	796	Mass	-4.838300e+000	-4.383900e+000	7.658971e-005	0
+797	0	797	Mass	-4.842803e+000	-4.388498e+000	7.578320e-005	0
+798	0	798	Mass	-4.847281e+000	-4.393071e+000	7.498930e-005	0
+799	0	799	Mass	-4.851790e+000	-4.397625e+000	7.420717e-005	0
+800	0	800	Mass	-4.856299e+000	-4.402160e+000	7.343637e-005	0
+801	0	801	Mass	-4.860830e+000	-4.406689e+000	7.267451e-005	0
+802	0	802	Mass	-4.865399e+000	-4.411242e+000	7.191657e-005	0
+803	0	803	Mass	-4.869955e+000	-4.415787e+000	7.116778e-005	0
+804	0	804	Mass	-4.874556e+000	-4.420327e+000	7.042773e-005	0
+805	0	805	Mass	-4.879164e+000	-4.424849e+000	6.969821e-005	0
+806	0	806	Mass	-4.883825e+000	-4.429363e+000	6.897748e-005	0
+807	0	807	Mass	-4.888499e+000	-4.433873e+000	6.826499e-005	0
+808	0	808	Mass	-4.893231e+000	-4.438436e+000	6.755154e-005	0
+809	0	809	Mass	-4.898018e+000	-4.443042e+000	6.683880e-005	0
+810	0	810	Mass	-4.902825e+000	-4.447685e+000	6.612808e-005	0
+811	0	811	Mass	-4.907624e+000	-4.452320e+000	6.542613e-005	0
+812	0	812	Mass	-4.912412e+000	-4.456924e+000	6.473610e-005	0
+813	0	813	Mass	-4.917276e+000	-4.461585e+000	6.404512e-005	0
+814	0	814	Mass	-4.922107e+000	-4.466214e+000	6.336606e-005	0
+815	0	815	Mass	-4.926977e+000	-4.470863e+000	6.269138e-005	0
+816	0	816	Mass	-4.931854e+000	-4.475540e+000	6.201981e-005	0
+817	0	817	Mass	-4.936731e+000	-4.480231e+000	6.135361e-005	0
+818	0	818	Mass	-4.941679e+000	-4.484963e+000	6.068874e-005	0
+819	0	819	Mass	-4.946650e+000	-4.489721e+000	6.002749e-005	0
+820	0	820	Mass	-4.951623e+000	-4.494501e+000	5.937036e-005	0
+821	0	821	Mass	-4.956576e+000	-4.499277e+000	5.872109e-005	0
+822	0	822	Mass	-4.961562e+000	-4.504100e+000	5.807260e-005	0
+823	0	823	Mass	-4.966527e+000	-4.508931e+000	5.743019e-005	0
+824	0	824	Mass	-4.971489e+000	-4.513763e+000	5.679464e-005	0
+825	0	825	Mass	-4.976452e+000	-4.518604e+000	5.616508e-005	0
+826	0	826	Mass	-4.981422e+000	-4.523449e+000	5.554200e-005	0
+827	0	827	Mass	-4.986388e+000	-4.528309e+000	5.492394e-005	0
+828	0	828	Mass	-4.991377e+000	-4.533196e+000	5.430939e-005	0
+829	0	829	Mass	-4.996337e+000	-4.538086e+000	5.370124e-005	0
+830	0	830	Mass	-5.001274e+000	-4.542984e+000	5.309907e-005	0
+831	0	831	Mass	-5.006169e+000	-4.547889e+000	5.250269e-005	0
+832	0	832	Mass	-5.011093e+000	-4.552758e+000	5.191741e-005	0
+833	0	833	Mass	-5.016005e+000	-4.557629e+000	5.133828e-005	0
+834	0	834	Mass	-5.020878e+000	-4.562528e+000	5.076249e-005	0
+835	0	835	Mass	-5.025709e+000	-4.567422e+000	5.019366e-005	0
+836	0	836	Mass	-5.030576e+000	-4.572297e+000	4.963337e-005	0
+837	0	837	Mass	-5.035405e+000	-4.577208e+000	4.907534e-005	0
+838	0	838	Mass	-5.040207e+000	-4.582124e+000	4.852294e-005	0
+839	0	839	Mass	-5.044977e+000	-4.586979e+000	4.798349e-005	0
+840	0	840	Mass	-5.049779e+000	-4.591888e+000	4.744417e-005	0
+841	0	841	Mass	-5.054534e+000	-4.596760e+000	4.691490e-005	0
+842	0	842	Mass	-5.059267e+000	-4.601674e+000	4.638702e-005	0
+843	0	843	Mass	-5.064000e+000	-4.606586e+000	4.586533e-005	0
+844	0	844	Mass	-5.068630e+000	-4.611449e+000	4.535461e-005	0
+845	0	845	Mass	-5.073212e+000	-4.616249e+000	4.485612e-005	0
+846	0	846	Mass	-5.077786e+000	-4.621007e+000	4.436736e-005	0
+847	0	847	Mass	-5.082360e+000	-4.625719e+000	4.388863e-005	0
+848	0	848	Mass	-5.086942e+000	-4.630443e+000	4.341382e-005	0
+849	0	849	Mass	-5.091474e+000	-4.635157e+000	4.294513e-005	0
+850	0	850	Mass	-5.095979e+000	-4.639867e+000	4.248192e-005	0
+851	0	851	Mass	-5.100520e+000	-4.644575e+000	4.202387e-005	0
+852	0	852	Mass	-5.104989e+000	-4.649265e+000	4.157250e-005	0
+853	0	853	Mass	-5.109507e+000	-4.653981e+000	4.112343e-005	0
+854	0	854	Mass	-5.113924e+000	-4.658655e+000	4.068327e-005	0
+855	0	855	Mass	-5.118372e+000	-4.663316e+000	4.024896e-005	0
+856	0	856	Mass	-5.122860e+000	-4.667936e+000	3.982305e-005	0
+857	0	857	Mass	-5.127348e+000	-4.672496e+000	3.940710e-005	0
+858	0	858	Mass	-5.131800e+000	-4.677053e+000	3.899584e-005	0
+859	0	859	Mass	-5.136292e+000	-4.681613e+000	3.858852e-005	0
+860	0	860	Mass	-5.140777e+000	-4.686166e+000	3.818609e-005	0
+861	0	861	Mass	-5.145361e+000	-4.690795e+000	3.778124e-005	0
+862	0	862	Mass	-5.149945e+000	-4.695386e+000	3.738395e-005	0
+863	0	863	Mass	-5.154464e+000	-4.700000e+000	3.698886e-005	0
+864	0	864	Mass	-5.159042e+000	-4.704607e+000	3.659856e-005	0
+865	0	865	Mass	-5.163628e+000	-4.709175e+000	3.621558e-005	0
+866	0	866	Mass	-5.168214e+000	-4.713708e+000	3.583954e-005	0
+867	0	867	Mass	-5.172785e+000	-4.718241e+000	3.546744e-005	0
+868	0	868	Mass	-5.177381e+000	-4.722763e+000	3.510004e-005	0
+869	0	869	Mass	-5.182030e+000	-4.727331e+000	3.473279e-005	0
+870	0	870	Mass	-5.186737e+000	-4.731929e+000	3.436704e-005	0
+871	0	871	Mass	-5.191462e+000	-4.736535e+000	3.400444e-005	0
+872	0	872	Mass	-5.196192e+000	-4.741109e+000	3.364823e-005	0
+873	0	873	Mass	-5.201014e+000	-4.745727e+000	3.329234e-005	0
+874	0	874	Mass	-5.205812e+000	-4.750330e+000	3.294134e-005	0
+875	0	875	Mass	-5.210656e+000	-4.755008e+000	3.258837e-005	0
+876	0	876	Mass	-5.215469e+000	-4.759658e+000	3.224134e-005	0
+877	0	877	Mass	-5.220248e+000	-4.764292e+000	3.189912e-005	0
+878	0	878	Mass	-5.225083e+000	-4.768894e+000	3.156286e-005	0
+879	0	879	Mass	-5.229949e+000	-4.773535e+000	3.122740e-005	0
+880	0	880	Mass	-5.234913e+000	-4.778333e+000	3.088431e-005	0
+881	0	881	Mass	-5.239913e+000	-4.783211e+000	3.053936e-005	0
+882	0	882	Mass	-5.244818e+000	-4.788007e+000	3.020396e-005	0
+883	0	883	Mass	-5.249685e+000	-4.792713e+000	2.987841e-005	0
+884	0	884	Mass	-5.254554e+000	-4.797422e+000	2.955619e-005	0
+885	0	885	Mass	-5.259426e+000	-4.802095e+000	2.923992e-005	0
+886	0	886	Mass	-5.264432e+000	-4.806955e+000	2.891452e-005	0
+887	0	887	Mass	-5.269352e+000	-4.811841e+000	2.859106e-005	0
+888	0	888	Mass	-5.274258e+000	-4.816650e+000	2.827618e-005	0
+889	0	889	Mass	-5.279189e+000	-4.821416e+000	2.796755e-005	0
+890	0	890	Mass	-5.284225e+000	-4.826234e+000	2.765901e-005	0
+891	0	891	Mass	-5.289128e+000	-4.831087e+000	2.735166e-005	0
+892	0	892	Mass	-5.294071e+000	-4.835991e+000	2.704456e-005	0
+893	0	893	Mass	-5.298982e+000	-4.840882e+000	2.674170e-005	0
+894	0	894	Mass	-5.303931e+000	-4.845803e+000	2.644040e-005	0
+895	0	895	Mass	-5.308814e+000	-4.850638e+000	2.614763e-005	0
+896	0	896	Mass	-5.313740e+000	-4.855487e+000	2.585735e-005	0
+897	0	897	Mass	-5.318737e+000	-4.860484e+000	2.556153e-005	0
+898	0	898	Mass	-5.323567e+000	-4.865495e+000	2.526826e-005	0
+899	0	899	Mass	-5.328458e+000	-4.870563e+000	2.497511e-005	0
+900	0	900	Mass	-5.333244e+000	-4.875457e+000	2.469525e-005	0
+901	0	901	Mass	-5.338025e+000	-4.880247e+000	2.442441e-005	0
+902	0	902	Mass	-5.342639e+000	-4.884936e+000	2.416210e-005	0
+903	0	903	Mass	-5.347339e+000	-4.889709e+000	2.389800e-005	0
+904	0	904	Mass	-5.351983e+000	-4.894480e+000	2.363692e-005	0
+905	0	905	Mass	-5.356652e+000	-4.899275e+000	2.337740e-005	0
+906	0	906	Mass	-5.361269e+000	-4.904062e+000	2.312112e-005	0
+907	0	907	Mass	-5.365909e+000	-4.908820e+000	2.286921e-005	0
+908	0	908	Mass	-5.370564e+000	-4.913604e+000	2.261867e-005	0
+909	0	909	Mass	-5.375178e+000	-4.918310e+000	2.237489e-005	0
+910	0	910	Mass	-5.379922e+000	-4.923131e+000	2.212789e-005	0
+911	0	911	Mass	-5.384566e+000	-4.927956e+000	2.188339e-005	0
+912	0	912	Mass	-5.389179e+000	-4.932833e+000	2.163905e-005	0
+913	0	913	Mass	-5.393789e+000	-4.937635e+000	2.140108e-005	0
+914	0	914	Mass	-5.398390e+000	-4.942386e+000	2.116824e-005	0
+915	0	915	Mass	-5.402963e+000	-4.947155e+000	2.093705e-005	0
+916	0	916	Mass	-5.407417e+000	-4.951814e+000	2.071365e-005	0
+917	0	917	Mass	-5.411871e+000	-4.956398e+000	2.049616e-005	0
+918	0	918	Mass	-5.416307e+000	-4.960958e+000	2.028209e-005	0
+919	0	919	Mass	-5.420788e+000	-4.965549e+000	2.006884e-005	0
+920	0	920	Mass	-5.425362e+000	-4.970295e+000	1.985069e-005	0
+921	0	921	Mass	-5.429856e+000	-4.974981e+000	1.963765e-005	0
+922	0	922	Mass	-5.434255e+000	-4.979481e+000	1.943523e-005	0
+923	0	923	Mass	-5.438741e+000	-4.983962e+000	1.923572e-005	0
+924	0	924	Mass	-5.443323e+000	-4.988437e+000	1.903853e-005	0
+925	0	925	Mass	-5.447991e+000	-4.993080e+000	1.883608e-005	0
+926	0	926	Mass	-5.452578e+000	-4.997775e+000	1.863357e-005	0
+927	0	927	Mass	-5.457186e+000	-5.002454e+000	1.843390e-005	0
+928	0	928	Mass	-5.461699e+000	-5.007151e+000	1.823560e-005	0
+929	0	929	Mass	-5.466135e+000	-5.011642e+000	1.804798e-005	0
+930	0	930	Mass	-5.470644e+000	-5.016010e+000	1.786737e-005	0
+931	0	931	Mass	-5.475350e+000	-5.020524e+000	1.768262e-005	0
+932	0	932	Mass	-5.480094e+000	-5.025021e+000	1.750049e-005	0
+933	0	933	Mass	-5.484932e+000	-5.029631e+000	1.731568e-005	0
+934	0	934	Mass	-5.489738e+000	-5.034405e+000	1.712638e-005	0
+935	0	935	Mass	-5.494501e+000	-5.039111e+000	1.694180e-005	0
+936	0	936	Mass	-5.499194e+000	-5.043807e+000	1.675962e-005	0
+937	0	937	Mass	-5.503866e+000	-5.048354e+000	1.658506e-005	0
+938	0	938	Mass	-5.508569e+000	-5.052912e+000	1.641191e-005	0
+939	0	939	Mass	-5.513346e+000	-5.057532e+000	1.623825e-005	0
+940	0	940	Mass	-5.518245e+000	-5.062175e+000	1.606557e-005	0
+941	0	941	Mass	-5.523274e+000	-5.066882e+000	1.589237e-005	0
+942	0	942	Mass	-5.528149e+000	-5.071576e+000	1.572152e-005	0
+943	0	943	Mass	-5.533060e+000	-5.076350e+000	1.554964e-005	0
+944	0	944	Mass	-5.538007e+000	-5.081314e+000	1.537294e-005	0
+945	0	945	Mass	-5.542838e+000	-5.086124e+000	1.520361e-005	0
+946	0	946	Mass	-5.547675e+000	-5.090794e+000	1.504101e-005	0
+947	0	947	Mass	-5.552508e+000	-5.095347e+000	1.488416e-005	0
+948	0	948	Mass	-5.557495e+000	-5.100110e+000	1.472181e-005	0
+949	0	949	Mass	-5.562579e+000	-5.105131e+000	1.455258e-005	0
+950	0	950	Mass	-5.567430e+000	-5.109971e+000	1.439131e-005	0
+951	0	951	Mass	-5.572289e+000	-5.114821e+000	1.423148e-005	0
+952	0	952	Mass	-5.577281e+000	-5.119608e+000	1.407547e-005	0
+953	0	953	Mass	-5.582285e+000	-5.124415e+000	1.392053e-005	0
+954	0	954	Mass	-5.587290e+000	-5.129338e+000	1.376361e-005	0
+955	0	955	Mass	-5.592090e+000	-5.134185e+000	1.361088e-005	0
+956	0	956	Mass	-5.596838e+000	-5.138983e+000	1.346134e-005	0
+957	0	957	Mass	-5.601614e+000	-5.143824e+000	1.331210e-005	0
+958	0	958	Mass	-5.606433e+000	-5.148632e+000	1.316554e-005	0
+959	0	959	Mass	-5.611345e+000	-5.153507e+000	1.301857e-005	0
+960	0	960	Mass	-5.616044e+000	-5.158288e+000	1.287607e-005	0
+961	0	961	Mass	-5.620694e+000	-5.163017e+000	1.273660e-005	0
+962	0	962	Mass	-5.625569e+000	-5.167787e+000	1.259750e-005	0
+963	0	963	Mass	-5.630471e+000	-5.172599e+000	1.245866e-005	0
+964	0	964	Mass	-5.635299e+000	-5.177454e+000	1.232017e-005	0
+965	0	965	Mass	-5.640103e+000	-5.182348e+000	1.218212e-005	0
+966	0	966	Mass	-5.644894e+000	-5.187215e+000	1.204635e-005	0
+967	0	967	Mass	-5.649577e+000	-5.192106e+000	1.191145e-005	0
+968	0	968	Mass	-5.654345e+000	-5.197017e+000	1.177753e-005	0
+969	0	969	Mass	-5.659141e+000	-5.201938e+000	1.164482e-005	0
+970	0	970	Mass	-5.663961e+000	-5.206936e+000	1.151157e-005	0
+971	0	971	Mass	-5.668534e+000	-5.211640e+000	1.138757e-005	0
+972	0	972	Mass	-5.673276e+000	-5.216442e+000	1.126235e-005	0
+973	0	973	Mass	-5.677723e+000	-5.221097e+000	1.114228e-005	0
+974	0	974	Mass	-5.682165e+000	-5.225806e+000	1.102210e-005	0
+975	0	975	Mass	-5.686619e+000	-5.230459e+000	1.090466e-005	0
+976	0	976	Mass	-5.691268e+000	-5.235023e+000	1.079066e-005	0
+977	0	977	Mass	-5.695910e+000	-5.239798e+000	1.067267e-005	0
+978	0	978	Mass	-5.700686e+000	-5.244778e+000	1.055099e-005	0
+979	0	979	Mass	-5.705122e+000	-5.249419e+000	1.043882e-005	0
+980	0	980	Mass	-5.709552e+000	-5.253886e+000	1.033202e-005	0
+981	0	981	Mass	-5.713837e+000	-5.258319e+000	1.022708e-005	0
+982	0	982	Mass	-5.718420e+000	-5.263030e+000	1.011675e-005	0
+983	0	983	Mass	-5.722935e+000	-5.267681e+000	1.000899e-005	0
+984	0	984	Mass	-5.727862e+000	-5.272506e+000	9.898396e-006	0
+985	0	985	Mass	-5.732571e+000	-5.277139e+000	9.793351e-006	0
+986	0	986	Mass	-5.737063e+000	-5.281742e+000	9.690112e-006	0
+987	0	987	Mass	-5.741625e+000	-5.286539e+000	9.583670e-006	0
+988	0	988	Mass	-5.746120e+000	-5.291197e+000	9.481427e-006	0
+989	0	989	Mass	-5.750812e+000	-5.295898e+000	9.379346e-006	0
+990	0	990	Mass	-5.755319e+000	-5.300564e+000	9.279111e-006	0
+991	0	991	Mass	-5.759983e+000	-5.305201e+000	9.180563e-006	0
+992	0	992	Mass	-5.764425e+000	-5.309680e+000	9.086375e-006	0
+993	0	993	Mass	-5.768891e+000	-5.314060e+000	8.995202e-006	0
+994	0	994	Mass	-5.773581e+000	-5.318419e+000	8.905370e-006	0
+995	0	995	Mass	-5.778306e+000	-5.322965e+000	8.812629e-006	0
+996	0	996	Mass	-5.782927e+000	-5.327421e+000	8.722672e-006	0
+997	0	997	Mass	-5.787694e+000	-5.332230e+000	8.626628e-006	0
+998	0	998	Mass	-5.792564e+000	-5.337197e+000	8.528521e-006	0
+999	0	999	Mass	-5.797228e+000	-5.341875e+000	8.437143e-006	0
+1000	0	1000	Mass	-5.801843e+000	-5.346411e+000	8.349496e-006	0
+BasicSolverOutput::writeBout-->writing the solution in .bout file--> IN 
+ BasicSolverOutput::writeBout : Saving BOUT file -> IN
+ BasicSolverOutput::writeBout : Saving BOUT file -> OUT
+BasicSolverOutput::writeBout-->writing the solution in .BOUT file--> OUT 
+BasicSolverOutput::writeSolOld-->IN 
+BasicSolverOutput::writeSolOld-->Output of solution to files for block 0 (fluid)
+BasicSolverOutput::_writeCFViewNew-->writing the solution for CFView (.d*.s*)--> IN 
+BasicSolverOutput::_writeCFViewNew-->writing the solution for CFView (.d*.s*)--> OUT 
+ BasicSolverOutput::writeSolOld-->Finished output to files for block 0
+BasicSolverOutput::writeSolOld-->OUT 
+BasicSolverOutput::writeSol-->IN 
+BasicSolverOutput::writeSol-->Output of solution to files for block 0 (fluid)
+ BasicSolverOutput::writeSol-->Finished output to files for block 0
+BasicSolverOutput::writeSol-->OUT 
+GlobalOutput::writeXMFFile before barrier
+GlobalOutput::writeXMFFile after barrier
+GlobalOutput::writeMFFile --> writing global quantities in .mf file
+GlobalOutput::writeWallFile --> writing forces and moments in .wall file
+1001	0	1001	Mass	-5.806800e+000	-5.351063e+000	8.260518e-006	0
+1002	0	1002	Mass	-5.811649e+000	-5.355769e+000	8.171493e-006	0
+1003	0	1003	Mass	-5.816457e+000	-5.360355e+000	8.085671e-006	0
+1004	0	1004	Mass	-5.821195e+000	-5.364978e+000	8.000059e-006	0
+1005	0	1005	Mass	-5.826127e+000	-5.369728e+000	7.913033e-006	0
+1006	0	1006	Mass	-5.831017e+000	-5.374632e+000	7.824187e-006	0
+1007	0	1007	Mass	-5.835963e+000	-5.379350e+000	7.739648e-006	0
+1008	0	1008	Mass	-5.840915e+000	-5.384073e+000	7.655933e-006	0
+1009	0	1009	Mass	-5.845683e+000	-5.388828e+000	7.572568e-006	0
+1010	0	1010	Mass	-5.850271e+000	-5.393324e+000	7.494566e-006	0
+1011	0	1011	Mass	-5.854790e+000	-5.397751e+000	7.418570e-006	0
+1012	0	1012	Mass	-5.859699e+000	-5.402306e+000	7.341155e-006	0
+1013	0	1013	Mass	-5.864880e+000	-5.407171e+000	7.259380e-006	0
+1014	0	1014	Mass	-5.869945e+000	-5.412365e+000	7.173075e-006	0
+1015	0	1015	Mass	-5.874890e+000	-5.417448e+000	7.089623e-006	0
+1016	0	1016	Mass	-5.879685e+000	-5.422322e+000	7.010497e-006	0
+1017	0	1017	Mass	-5.884913e+000	-5.427117e+000	6.933528e-006	0
+1018	0	1018	Mass	-5.890056e+000	-5.431904e+000	6.857522e-006	0
+1019	0	1019	Mass	-5.894879e+000	-5.436778e+000	6.780985e-006	0
+1020	0	1020	Mass	-5.899455e+000	-5.441421e+000	6.708875e-006	0
+1021	0	1021	Mass	-5.904049e+000	-5.446283e+000	6.634181e-006	0
+1022	0	1022	Mass	-5.908919e+000	-5.451228e+000	6.559081e-006	0
+1023	0	1023	Mass	-5.913693e+000	-5.456144e+000	6.485258e-006	0
+1024	0	1024	Mass	-5.918609e+000	-5.461200e+000	6.410189e-006	0
+1025	0	1025	Mass	-5.923537e+000	-5.465935e+000	6.340674e-006	0
+1026	0	1026	Mass	-5.928458e+000	-5.470745e+000	6.270836e-006	0
+1027	0	1027	Mass	-5.933219e+000	-5.475398e+000	6.204010e-006	0
+1028	0	1028	Mass	-5.937844e+000	-5.480319e+000	6.134115e-006	0
+1029	0	1029	Mass	-5.942505e+000	-5.485209e+000	6.065434e-006	0
+1030	0	1030	Mass	-5.947422e+000	-5.490233e+000	5.995675e-006	0
+1031	0	1031	Mass	-5.952324e+000	-5.495281e+000	5.926383e-006	0
+1032	0	1032	Mass	-5.957265e+000	-5.500025e+000	5.861999e-006	0
+1033	0	1033	Mass	-5.961581e+000	-5.504374e+000	5.803595e-006	0
+1034	0	1034	Mass	-5.966721e+000	-5.509421e+000	5.736534e-006	0
+1035	0	1035	Mass	-5.971475e+000	-5.514545e+000	5.669246e-006	0
+1036	0	1036	Mass	-5.976022e+000	-5.519399e+000	5.606241e-006	0
+1037	0	1037	Mass	-5.980229e+000	-5.524124e+000	5.545572e-006	0
+1038	0	1038	Mass	-5.984682e+000	-5.528814e+000	5.486009e-006	0
+1039	0	1039	Mass	-5.988687e+000	-5.533204e+000	5.430836e-006	0
+1040	0	1040	Mass	-5.993062e+000	-5.537532e+000	5.376981e-006	0
+1041	0	1041	Mass	-5.997766e+000	-5.542055e+000	5.321272e-006	0
+1042	0	1042	Mass	-6.002413e+000	-5.546555e+000	5.266428e-006	0
+1043	0	1043	Mass	-6.006834e+000	-5.550853e+000	5.214559e-006	0
+1044	0	1044	Mass	-6.011155e+000	-5.555052e+000	5.164390e-006	0
+1045	0	1045	Mass	-6.015872e+000	-5.559586e+000	5.110752e-006	0
+1046	0	1046	Mass	-6.020997e+000	-5.565107e+000	5.046197e-006	0
+1047	0	1047	Mass	-6.026071e+000	-5.570549e+000	4.983358e-006	0
+1048	0	1048	Mass	-6.030774e+000	-5.575513e+000	4.926719e-006	0
+1049	0	1049	Mass	-6.035082e+000	-5.580066e+000	4.875334e-006	0
+1050	0	1050	Mass	-6.039321e+000	-5.584156e+000	4.829639e-006	0
+1051	0	1051	Mass	-6.043610e+000	-5.588609e+000	4.780370e-006	0
+1052	0	1052	Mass	-6.048105e+000	-5.592936e+000	4.732983e-006	0
+1053	0	1053	Mass	-6.052773e+000	-5.597685e+000	4.681513e-006	0
+1054	0	1054	Mass	-6.057673e+000	-5.602431e+000	4.630628e-006	0
+1055	0	1055	Mass	-6.062213e+000	-5.606648e+000	4.585877e-006	0
+1056	0	1056	Mass	-6.067300e+000	-5.611392e+000	4.536064e-006	0
+1057	0	1057	Mass	-6.071867e+000	-5.616102e+000	4.487127e-006	0
+1058	0	1058	Mass	-6.076110e+000	-5.620733e+000	4.439539e-006	0
+1059	0	1059	Mass	-6.080938e+000	-5.625502e+000	4.391054e-006	0
+1060	0	1060	Mass	-6.085900e+000	-5.630327e+000	4.342541e-006	0
+1061	0	1061	Mass	-6.090790e+000	-5.635209e+000	4.293993e-006	0
+1062	0	1062	Mass	-6.096054e+000	-5.640419e+000	4.242795e-006	0
+1063	0	1063	Mass	-6.101055e+000	-5.645650e+000	4.191995e-006	0
+1064	0	1064	Mass	-6.105645e+000	-5.649975e+000	4.150459e-006	0
+1065	0	1065	Mass	-6.110423e+000	-5.654574e+000	4.106738e-006	0
+1066	0	1066	Mass	-6.114779e+000	-5.658828e+000	4.066710e-006	0
+1067	0	1067	Mass	-6.119254e+000	-5.663583e+000	4.022425e-006	0
+1068	0	1068	Mass	-6.123621e+000	-5.667877e+000	3.982848e-006	0
+1069	0	1069	Mass	-6.128618e+000	-5.672672e+000	3.939118e-006	0
+1070	0	1070	Mass	-6.133199e+000	-5.677153e+000	3.898685e-006	0
+1071	0	1071	Mass	-6.138273e+000	-5.681403e+000	3.860715e-006	0
+1072	0	1072	Mass	-6.143289e+000	-5.686264e+000	3.817742e-006	0
+1073	0	1073	Mass	-6.148214e+000	-5.691019e+000	3.776175e-006	0
+1074	0	1074	Mass	-6.153146e+000	-5.695979e+000	3.733290e-006	0
+1075	0	1075	Mass	-6.158146e+000	-5.700955e+000	3.690758e-006	0
+1076	0	1076	Mass	-6.163015e+000	-5.705796e+000	3.649848e-006	0
+1077	0	1077	Mass	-6.168122e+000	-5.710651e+000	3.609276e-006	0
+1078	0	1078	Mass	-6.173239e+000	-5.715341e+000	3.570508e-006	0
+1079	0	1079	Mass	-6.177580e+000	-5.719827e+000	3.533818e-006	0
+1080	0	1080	Mass	-6.182594e+000	-5.724873e+000	3.492994e-006	0
+1081	0	1081	Mass	-6.187791e+000	-5.730384e+000	3.448951e-006	0
+1082	0	1082	Mass	-6.192732e+000	-5.735651e+000	3.407375e-006	0
+1083	0	1083	Mass	-6.196905e+000	-5.740140e+000	3.372333e-006	0
+1084	0	1084	Mass	-6.201536e+000	-5.744559e+000	3.338192e-006	0
+1085	0	1085	Mass	-6.206524e+000	-5.749501e+000	3.300424e-006	0
+1086	0	1086	Mass	-6.211749e+000	-5.754056e+000	3.265991e-006	0
+1087	0	1087	Mass	-6.216312e+000	-5.758291e+000	3.234296e-006	0
+1088	0	1088	Mass	-6.220718e+000	-5.762583e+000	3.202487e-006	0
+1089	0	1089	Mass	-6.225182e+000	-5.766808e+000	3.171483e-006	0
+1090	0	1090	Mass	-6.229988e+000	-5.772256e+000	3.131949e-006	0
+1091	0	1091	Mass	-6.234827e+000	-5.777041e+000	3.097631e-006	0
+1092	0	1092	Mass	-6.239892e+000	-5.782102e+000	3.061742e-006	0
+1093	0	1093	Mass	-6.244606e+000	-5.787084e+000	3.026820e-006	0
+1094	0	1094	Mass	-6.249313e+000	-5.791684e+000	2.994929e-006	0
+1095	0	1095	Mass	-6.254383e+000	-5.796736e+000	2.960297e-006	0
+1096	0	1096	Mass	-6.259434e+000	-5.801791e+000	2.926036e-006	0
+1097	0	1097	Mass	-6.264472e+000	-5.807046e+000	2.890847e-006	0
+1098	0	1098	Mass	-6.268683e+000	-5.811960e+000	2.858317e-006	0
+1099	0	1099	Mass	-6.273258e+000	-5.817393e+000	2.822785e-006	0
+1100	0	1100	Mass	-6.278327e+000	-5.821950e+000	2.793324e-006	0
+1101	0	1101	Mass	-6.283306e+000	-5.826829e+000	2.762115e-006	0
+1102	0	1102	Mass	-6.287280e+000	-5.830797e+000	2.736992e-006	0
+1103	0	1103	Mass	-6.290990e+000	-5.834967e+000	2.710837e-006	0
+1104	0	1104	Mass	-6.295183e+000	-5.838913e+000	2.686318e-006	0
+1105	0	1105	Mass	-6.299134e+000	-5.843600e+000	2.657484e-006	0
+1106	0	1106	Mass	-6.303365e+000	-5.848156e+000	2.629753e-006	0
+1107	0	1107	Mass	-6.307986e+000	-5.852810e+000	2.601721e-006	0
+1108	0	1108	Mass	-6.312615e+000	-5.856591e+000	2.579171e-006	0
+1109	0	1109	Mass	-6.318221e+000	-5.861297e+000	2.551374e-006	0
+1110	0	1110	Mass	-6.323763e+000	-5.866749e+000	2.519543e-006	0
+1111	0	1111	Mass	-6.329924e+000	-5.873192e+000	2.482440e-006	0
+1112	0	1112	Mass	-6.334424e+000	-5.878918e+000	2.449928e-006	0
+1113	0	1113	Mass	-6.338999e+000	-5.883957e+000	2.421665e-006	0
+1114	0	1114	Mass	-6.343555e+000	-5.888245e+000	2.397869e-006	0
+1115	0	1115	Mass	-6.347892e+000	-5.892601e+000	2.373939e-006	0
+1116	0	1116	Mass	-6.352056e+000	-5.896908e+000	2.350514e-006	0
+1117	0	1117	Mass	-6.356288e+000	-5.901013e+000	2.328402e-006	0
+1118	0	1118	Mass	-6.361545e+000	-5.906819e+000	2.297479e-006	0
+1119	0	1119	Mass	-6.366151e+000	-5.911443e+000	2.273149e-006	0
+1120	0	1120	Mass	-6.369937e+000	-5.915699e+000	2.250983e-006	0
+1121	0	1121	Mass	-6.373200e+000	-5.918490e+000	2.236561e-006	0
+1122	0	1122	Mass	-6.377604e+000	-5.922372e+000	2.216657e-006	0
+1123	0	1123	Mass	-6.382981e+000	-5.927189e+000	2.192207e-006	0
+1124	0	1124	Mass	-6.387691e+000	-5.931277e+000	2.171671e-006	0
+1125	0	1125	Mass	-6.392704e+000	-5.936283e+000	2.146781e-006	0
+1126	0	1126	Mass	-6.398228e+000	-5.941329e+000	2.121982e-006	0
+1127	0	1127	Mass	-6.402819e+000	-5.945650e+000	2.100974e-006	0
+1128	0	1128	Mass	-6.408408e+000	-5.951140e+000	2.074584e-006	0
+1129	0	1129	Mass	-6.413541e+000	-5.956919e+000	2.047159e-006	0
+1130	0	1130	Mass	-6.418798e+000	-5.963138e+000	2.018056e-006	0
+1131	0	1131	Mass	-6.423196e+000	-5.968525e+000	1.993178e-006	0
+1132	0	1132	Mass	-6.427851e+000	-5.972662e+000	1.974278e-006	0
+1133	0	1133	Mass	-6.431817e+000	-5.975900e+000	1.959613e-006	0
+1134	0	1134	Mass	-6.435890e+000	-5.979601e+000	1.942987e-006	0
+1135	0	1135	Mass	-6.440710e+000	-5.984563e+000	1.920915e-006	0
+1136	0	1136	Mass	-6.445467e+000	-5.988377e+000	1.904117e-006	0
+1137	0	1137	Mass	-6.450179e+000	-5.993322e+000	1.882559e-006	0
+1138	0	1138	Mass	-6.454931e+000	-5.998021e+000	1.862301e-006	0
+1139	0	1139	Mass	-6.460686e+000	-6.003181e+000	1.840304e-006	0
+1140	0	1140	Mass	-6.466578e+000	-6.007545e+000	1.821907e-006	0
+1141	0	1141	Mass	-6.472158e+000	-6.013489e+000	1.797139e-006	0
+1142	0	1142	Mass	-6.477171e+000	-6.019159e+000	1.773828e-006	0
+1143	0	1143	Mass	-6.481435e+000	-6.024205e+000	1.753339e-006	0
+1144	0	1144	Mass	-6.486560e+000	-6.028481e+000	1.736159e-006	0
+1145	0	1145	Mass	-6.491015e+000	-6.032865e+000	1.718722e-006	0
+1146	0	1146	Mass	-6.495477e+000	-6.037726e+000	1.699591e-006	0
+1147	0	1147	Mass	-6.500224e+000	-6.043417e+000	1.677466e-006	0
+1148	0	1148	Mass	-6.503792e+000	-6.048441e+000	1.658171e-006	0
+1149	0	1149	Mass	-6.507818e+000	-6.052014e+000	1.644588e-006	0
+1150	0	1150	Mass	-6.513802e+000	-6.055482e+000	1.631508e-006	0
+1151	0	1151	Mass	-6.519840e+000	-6.060693e+000	1.612046e-006	0
+1152	0	1152	Mass	-6.524183e+000	-6.066097e+000	1.592111e-006	0
+1153	0	1153	Mass	-6.528262e+000	-6.070647e+000	1.575521e-006	0
+1154	0	1154	Mass	-6.531928e+000	-6.075114e+000	1.559398e-006	0
+1155	0	1155	Mass	-6.535899e+000	-6.079241e+000	1.544650e-006	0
+1156	0	1156	Mass	-6.541015e+000	-6.083562e+000	1.529358e-006	0
+1157	0	1157	Mass	-6.547740e+000	-6.090013e+000	1.506807e-006	0
+1158	0	1158	Mass	-6.552307e+000	-6.096573e+000	1.484220e-006	0
+1159	0	1159	Mass	-6.556481e+000	-6.101005e+000	1.469149e-006	0
+1160	0	1160	Mass	-6.560086e+000	-6.104549e+000	1.457207e-006	0
+1161	0	1161	Mass	-6.564270e+000	-6.109473e+000	1.440779e-006	0
+1162	0	1162	Mass	-6.569819e+000	-6.113443e+000	1.427669e-006	0
+1163	0	1163	Mass	-6.574155e+000	-6.117082e+000	1.415759e-006	0
+1164	0	1164	Mass	-6.581405e+000	-6.122531e+000	1.398105e-006	0
+1165	0	1165	Mass	-6.585243e+000	-6.126940e+000	1.383982e-006	0
+1166	0	1166	Mass	-6.590398e+000	-6.133202e+000	1.364171e-006	0
+1167	0	1167	Mass	-6.595593e+000	-6.140085e+000	1.342722e-006	0
+1168	0	1168	Mass	-6.599126e+000	-6.145230e+000	1.326907e-006	0
+1169	0	1169	Mass	-6.603312e+000	-6.149453e+000	1.314068e-006	0
+1170	0	1170	Mass	-6.607522e+000	-6.152529e+000	1.304793e-006	0
+1171	0	1171	Mass	-6.612956e+000	-6.158314e+000	1.287529e-006	0
+1172	0	1172	Mass	-6.617656e+000	-6.161836e+000	1.277130e-006	0
+1173	0	1173	Mass	-6.623241e+000	-6.166507e+000	1.263467e-006	0
+1174	0	1174	Mass	-6.627060e+000	-6.170525e+000	1.251831e-006	0
+1175	0	1175	Mass	-6.630979e+000	-6.175642e+000	1.237168e-006	0
+1176	0	1176	Mass	-6.634847e+000	-6.179524e+000	1.226159e-006	0
+1177	0	1177	Mass	-6.638641e+000	-6.182657e+000	1.217344e-006	0
+1178	0	1178	Mass	-6.642668e+000	-6.186700e+000	1.206066e-006	0
+1179	0	1179	Mass	-6.647760e+000	-6.191602e+000	1.192528e-006	0
+1180	0	1180	Mass	-6.652701e+000	-6.196932e+000	1.177982e-006	0
+1181	0	1181	Mass	-6.658353e+000	-6.202344e+000	1.163394e-006	0
+1182	0	1182	Mass	-6.664507e+000	-6.208360e+000	1.147390e-006	0
+1183	0	1183	Mass	-6.668261e+000	-6.212170e+000	1.137368e-006	0
+1184	0	1184	Mass	-6.673575e+000	-6.216545e+000	1.125967e-006	0
+1185	0	1185	Mass	-6.679423e+000	-6.222897e+000	1.109619e-006	0
+1186	0	1186	Mass	-6.682058e+000	-6.226476e+000	1.100511e-006	0
+1187	0	1187	Mass	-6.685999e+000	-6.230579e+000	1.090163e-006	0
+1188	0	1188	Mass	-6.689874e+000	-6.234532e+000	1.080287e-006	0
+1189	0	1189	Mass	-6.695208e+000	-6.237788e+000	1.072218e-006	0
+1190	0	1190	Mass	-6.700972e+000	-6.243780e+000	1.057525e-006	0
+1191	0	1191	Mass	-6.706466e+000	-6.249258e+000	1.044270e-006	0
+1192	0	1192	Mass	-6.710568e+000	-6.254797e+000	1.031035e-006	0
+1193	0	1193	Mass	-6.714825e+000	-6.259969e+000	1.018830e-006	0
+1194	0	1194	Mass	-6.719799e+000	-6.264352e+000	1.008600e-006	0
+1195	0	1195	Mass	-6.724437e+000	-6.269515e+000	9.966797e-007	0
+1196	0	1196	Mass	-6.728313e+000	-6.271859e+000	9.913156e-007	0
+1197	0	1197	Mass	-6.736111e+000	-6.278045e+000	9.772948e-007	0
+1198	0	1198	Mass	-6.742869e+000	-6.285131e+000	9.614782e-007	0
+1199	0	1199	Mass	-6.748466e+000	-6.290856e+000	9.488883e-007	0
+1200	0	1200	Mass	-6.749215e+000	-6.293363e+000	9.434255e-007	0
+1201	0	1201	Mass	-6.752017e+000	-6.297055e+000	9.354400e-007	0
+1202	0	1202	Mass	-6.754317e+000	-6.299959e+000	9.292054e-007	0
+1203	0	1203	Mass	-6.760708e+000	-6.302999e+000	9.227236e-007	0
+1204	0	1204	Mass	-6.765091e+000	-6.305785e+000	9.168241e-007	0
+1205	0	1205	Mass	-6.772974e+000	-6.312143e+000	9.035002e-007	0
+1206	0	1206	Mass	-6.780310e+000	-6.320600e+000	8.860758e-007	0
+1207	0	1207	Mass	-6.786865e+000	-6.328189e+000	8.707263e-007	0
+1208	0	1208	Mass	-6.793268e+000	-6.335658e+000	8.558790e-007	0
+1209	0	1209	Mass	-6.796955e+000	-6.340545e+000	8.463035e-007	0
+1210	0	1210	Mass	-6.798097e+000	-6.343424e+000	8.407103e-007	0
+1211	0	1211	Mass	-6.798678e+000	-6.346120e+000	8.355078e-007	0
+1212	0	1212	Mass	-6.804111e+000	-6.349857e+000	8.283499e-007	0
+1213	0	1213	Mass	-6.809819e+000	-6.356124e+000	8.164826e-007	0
+1214	0	1214	Mass	-6.814824e+000	-6.360373e+000	8.085336e-007	0
+1215	0	1215	Mass	-6.818150e+000	-6.363201e+000	8.032857e-007	0
+1216	0	1216	Mass	-6.825558e+000	-6.366439e+000	7.973186e-007	0
+1217	0	1217	Mass	-6.830974e+000	-6.371172e+000	7.886759e-007	0
+1218	0	1218	Mass	-6.836729e+000	-6.378478e+000	7.755203e-007	0
+1219	0	1219	Mass	-6.841612e+000	-6.384566e+000	7.647240e-007	0
+1220	0	1220	Mass	-6.846237e+000	-6.387704e+000	7.592183e-007	0
+1221	0	1221	Mass	-6.848065e+000	-6.391376e+000	7.528267e-007	0
+1222	0	1222	Mass	-6.852523e+000	-6.396619e+000	7.437917e-007	0
+1223	0	1223	Mass	-6.857056e+000	-6.400166e+000	7.377429e-007	0
+1224	0	1224	Mass	-6.860915e+000	-6.402445e+000	7.338807e-007	0
+1225	0	1225	Mass	-6.868044e+000	-6.408142e+000	7.243167e-007	0
+1226	0	1226	Mass	-6.872483e+000	-6.414610e+000	7.136092e-007	0
+1227	0	1227	Mass	-6.877313e+000	-6.422487e+000	7.007836e-007	0
+1228	0	1228	Mass	-6.882718e+000	-6.428049e+000	6.918655e-007	0
+1229	0	1229	Mass	-6.886867e+000	-6.432236e+000	6.852282e-007	0
+1230	0	1230	Mass	-6.892330e+000	-6.434773e+000	6.812360e-007	0
+1231	0	1231	Mass	-6.897531e+000	-6.437745e+000	6.765897e-007	0
+1232	0	1232	Mass	-6.904998e+000	-6.446224e+000	6.635093e-007	0
+1233	0	1233	Mass	-6.907631e+000	-6.452005e+000	6.547354e-007	0
+1234	0	1234	Mass	-6.913546e+000	-6.459458e+000	6.435955e-007	0
+1235	0	1235	Mass	-6.915845e+000	-6.462144e+000	6.396269e-007	0
+1236	0	1236	Mass	-6.918547e+000	-6.466134e+000	6.337778e-007	0
+1237	0	1237	Mass	-6.921018e+000	-6.469137e+000	6.294101e-007	0
+1238	0	1238	Mass	-6.924749e+000	-6.470768e+000	6.270506e-007	0
+1239	0	1239	Mass	-6.931860e+000	-6.473854e+000	6.226107e-007	0
+1240	0	1240	Mass	-6.937601e+000	-6.481851e+000	6.112520e-007	0
+1241	0	1241	Mass	-6.945181e+000	-6.488937e+000	6.013590e-007	0
+1242	0	1242	Mass	-6.949131e+000	-6.491716e+000	5.975230e-007	0
+1243	0	1243	Mass	-6.954951e+000	-6.497565e+000	5.895296e-007	0
+1244	0	1244	Mass	-6.958765e+000	-6.500706e+000	5.852816e-007	0
+1245	0	1245	Mass	-6.960818e+000	-6.505808e+000	5.784461e-007	0
+1246	0	1246	Mass	-6.962285e+000	-6.509050e+000	5.741439e-007	0
+1247	0	1247	Mass	-6.966666e+000	-6.514059e+000	5.675605e-007	0
+1248	0	1248	Mass	-6.971074e+000	-6.518075e+000	5.623355e-007	0
+1249	0	1249	Mass	-6.976439e+000	-6.521276e+000	5.582060e-007	0
+1250	0	1250	Mass	-6.981614e+000	-6.526962e+000	5.509461e-007	0
+1251	0	1251	Mass	-6.985438e+000	-6.531429e+000	5.453080e-007	0
+1252	0	1252	Mass	-6.988725e+000	-6.534098e+000	5.419672e-007	0
+1253	0	1253	Mass	-6.991074e+000	-6.538081e+000	5.370193e-007	0
+1254	0	1254	Mass	-6.994215e+000	-6.540773e+000	5.337012e-007	0
+1255	0	1255	Mass	-7.005744e+000	-6.544226e+000	5.294744e-007	0
+1256	0	1256	Mass	-7.014621e+000	-6.549908e+000	5.225916e-007	0
+1257	0	1257	Mass	-7.021400e+000	-6.558320e+000	5.125675e-007	0
+1258	0	1258	Mass	-7.026251e+000	-6.565545e+000	5.041101e-007	0
+1259	0	1259	Mass	-7.033253e+000	-6.576310e+000	4.917682e-007	0
+1260	0	1260	Mass	-7.035806e+000	-6.583187e+000	4.840429e-007	0
+1261	0	1261	Mass	-7.040772e+000	-6.585643e+000	4.813132e-007	0
+1262	0	1262	Mass	-7.047418e+000	-6.592427e+000	4.738537e-007	0
+1263	0	1263	Mass	-7.050093e+000	-6.597127e+000	4.687526e-007	0
+1264	0	1264	Mass	-7.053443e+000	-6.597770e+000	4.680591e-007	0
+1265	0	1265	Mass	-7.060347e+000	-6.601131e+000	4.644510e-007	0
+1266	0	1266	Mass	-7.063815e+000	-6.603849e+000	4.615530e-007	0
+1267	0	1267	Mass	-7.069591e+000	-6.608086e+000	4.570721e-007	0
+1268	0	1268	Mass	-7.073629e+000	-6.616479e+000	4.483235e-007	0
+1269	0	1269	Mass	-7.069442e+000	-6.616323e+000	4.484848e-007	0
+1270	0	1270	Mass	-7.071824e+000	-6.619585e+000	4.451289e-007	0
+1271	0	1271	Mass	-7.076229e+000	-6.621168e+000	4.435098e-007	0
+1272	0	1272	Mass	-7.084654e+000	-6.625035e+000	4.395781e-007	0
+1273	0	1273	Mass	-7.094430e+000	-6.635225e+000	4.293837e-007	0
+1274	0	1274	Mass	-7.103119e+000	-6.643596e+000	4.211864e-007	0
+1275	0	1275	Mass	-7.109239e+000	-6.652395e+000	4.127392e-007	0
+1276	0	1276	Mass	-7.119665e+000	-6.663145e+000	4.026484e-007	0
+1277	0	1277	Mass	-7.122537e+000	-6.668965e+000	3.972885e-007	0
+1278	0	1278	Mass	-7.124022e+000	-6.672260e+000	3.942858e-007	0
+1279	0	1279	Mass	-7.130418e+000	-6.674886e+000	3.919088e-007	0
+1280	0	1280	Mass	-7.132909e+000	-6.679829e+000	3.874733e-007	0
+1281	0	1281	Mass	-7.131903e+000	-6.677381e+000	3.896637e-007	0
+1282	0	1282	Mass	-7.127550e+000	-6.674459e+000	3.922941e-007	0
+1283	0	1283	Mass	-7.134427e+000	-6.676396e+000	3.905488e-007	0
+1284	0	1284	Mass	-7.144773e+000	-6.682568e+000	3.850374e-007	0
+1285	0	1285	Mass	-7.157866e+000	-6.693440e+000	3.755182e-007	0
+1286	0	1286	Mass	-7.162892e+000	-6.703096e+000	3.672606e-007	0
+1287	0	1287	Mass	-7.167187e+000	-6.708608e+000	3.626289e-007	0
+1288	0	1288	Mass	-7.174507e+000	-6.717853e+000	3.549915e-007	0
+1289	0	1289	Mass	-7.174385e+000	-6.721130e+000	3.523228e-007	0
+1290	0	1290	Mass	-7.174457e+000	-6.725527e+000	3.487736e-007	0
+1291	0	1291	Mass	-7.178467e+000	-6.724260e+000	3.497931e-007	0
+1292	0	1292	Mass	-7.179301e+000	-6.727099e+000	3.475133e-007	0
+1293	0	1293	Mass	-7.186351e+000	-6.727769e+000	3.469777e-007	0
+1294	0	1294	Mass	-7.191188e+000	-6.731356e+000	3.441241e-007	0
+1295	0	1295	Mass	-7.197054e+000	-6.741880e+000	3.358852e-007	0
+1296	0	1296	Mass	-7.200258e+000	-6.747321e+000	3.317030e-007	0
+1297	0	1297	Mass	-7.204710e+000	-6.754925e+000	3.259462e-007	0
+1298	0	1298	Mass	-7.206877e+000	-6.754493e+000	3.262706e-007	0
+1299	0	1299	Mass	-7.216913e+000	-6.758269e+000	3.234462e-007	0
+1300	0	1300	Mass	-7.224788e+000	-6.763368e+000	3.196704e-007	0
+1301	0	1301	Mass	-7.225608e+000	-6.768421e+000	3.159729e-007	0
+1302	0	1302	Mass	-7.230095e+000	-6.773588e+000	3.122362e-007	0
+1303	0	1303	Mass	-7.236905e+000	-6.778327e+000	3.088471e-007	0
+1304	0	1304	Mass	-7.242467e+000	-6.791515e+000	2.996095e-007	0
+1305	0	1305	Mass	-7.242857e+000	-6.792806e+000	2.987205e-007	0
+1306	0	1306	Mass	-7.244374e+000	-6.791978e+000	2.992906e-007	0
+1307	0	1307	Mass	-7.251857e+000	-6.794012e+000	2.978919e-007	0
+1308	0	1308	Mass	-7.261193e+000	-6.797596e+000	2.954437e-007	0
+1309	0	1309	Mass	-7.268411e+000	-6.809470e+000	2.874757e-007	0
+1310	0	1310	Mass	-7.271102e+000	-6.819150e+000	2.811386e-007	0
+1311	0	1311	Mass	-7.278913e+000	-6.824332e+000	2.778041e-007	0
+1312	0	1312	Mass	-7.281433e+000	-6.831556e+000	2.732217e-007	0
+1313	0	1313	Mass	-7.284635e+000	-6.832681e+000	2.725145e-007	0
+1314	0	1314	Mass	-7.289170e+000	-6.834107e+000	2.716211e-007	0
+1315	0	1315	Mass	-7.293841e+000	-6.839857e+000	2.680485e-007	0
+1316	0	1316	Mass	-7.297236e+000	-6.839938e+000	2.679987e-007	0
+1317	0	1317	Mass	-7.294644e+000	-6.840888e+000	2.674133e-007	0
+1318	0	1318	Mass	-7.294359e+000	-6.838943e+000	2.686134e-007	0
+1319	0	1319	Mass	-7.298044e+000	-6.837609e+000	2.694401e-007	0
+1320	0	1320	Mass	-7.310490e+000	-6.847722e+000	2.632382e-007	0
+1321	0	1321	Mass	-7.323581e+000	-6.859009e+000	2.564850e-007	0
+1322	0	1322	Mass	-7.330565e+000	-6.865177e+000	2.528681e-007	0
+1323	0	1323	Mass	-7.343533e+000	-6.880281e+000	2.442246e-007	0
+1324	0	1324	Mass	-7.356449e+000	-6.896217e+000	2.354255e-007	0
+1325	0	1325	Mass	-7.357103e+000	-6.899804e+000	2.334894e-007	0
+1326	0	1326	Mass	-7.357285e+000	-6.905764e+000	2.303068e-007	0
+1327	0	1327	Mass	-7.358611e+000	-6.910635e+000	2.277382e-007	0
+1328	0	1328	Mass	-7.358282e+000	-6.909151e+000	2.285174e-007	0
+1329	0	1329	Mass	-7.353789e+000	-6.910951e+000	2.275726e-007	0
+1330	0	1330	Mass	-7.354147e+000	-6.911896e+000	2.270780e-007	0
+1331	0	1331	Mass	-7.354589e+000	-6.902829e+000	2.318687e-007	0
+1332	0	1332	Mass	-7.353115e+000	-6.906351e+000	2.299956e-007	0
+1333	0	1333	Mass	-7.354261e+000	-6.903137e+000	2.317039e-007	0
+1334	0	1334	Mass	-7.365478e+000	-6.905620e+000	2.303833e-007	0
+1335	0	1335	Mass	-7.371631e+000	-6.906266e+000	2.300407e-007	0
+1336	0	1336	Mass	-7.391811e+000	-6.925975e+000	2.198345e-007	0
+1337	0	1337	Mass	-7.399308e+000	-6.935567e+000	2.150324e-007	0
+1338	0	1338	Mass	-7.408338e+000	-6.946151e+000	2.098550e-007	0
+1339	0	1339	Mass	-7.409759e+000	-6.953274e+000	2.064412e-007	0
+1340	0	1340	Mass	-7.411148e+000	-6.952655e+000	2.067359e-007	0
+1341	0	1341	Mass	-7.419063e+000	-6.956959e+000	2.046970e-007	0
+1342	0	1342	Mass	-7.428439e+000	-6.966884e+000	2.000721e-007	0
+1343	0	1343	Mass	-7.437351e+000	-6.985684e+000	1.915962e-007	0
+1344	0	1344	Mass	-7.443635e+000	-6.997915e+000	1.862756e-007	0
+1345	0	1345	Mass	-7.443069e+000	-6.999317e+000	1.856750e-007	0
+1346	0	1346	Mass	-7.447928e+000	-6.992656e+000	1.885450e-007	0
+1347	0	1347	Mass	-7.459381e+000	-6.999541e+000	1.855795e-007	0
+1348	0	1348	Mass	-7.456964e+000	-6.993104e+000	1.883503e-007	0
+1349	0	1349	Mass	-7.452726e+000	-6.992145e+000	1.887669e-007	0
+1350	0	1350	Mass	-7.454977e+000	-7.002388e+000	1.843668e-007	0
+1351	0	1351	Mass	-7.455329e+000	-7.004842e+000	1.833280e-007	0
+1352	0	1352	Mass	-7.453977e+000	-7.001053e+000	1.849345e-007	0
+1353	0	1353	Mass	-7.458207e+000	-7.004536e+000	1.834573e-007	0
+1354	0	1354	Mass	-7.463444e+000	-7.001100e+000	1.849145e-007	0
+1355	0	1355	Mass	-7.461819e+000	-7.009389e+000	1.814185e-007	0
+1356	0	1356	Mass	-7.473668e+000	-7.019849e+000	1.771014e-007	0
+1357	0	1357	Mass	-7.480877e+000	-7.023652e+000	1.755571e-007	0
+1358	0	1358	Mass	-7.493165e+000	-7.028180e+000	1.737365e-007	0
+1359	0	1359	Mass	-7.500096e+000	-7.038572e+000	1.696286e-007	0
+1360	0	1360	Mass	-7.514003e+000	-7.056843e+000	1.626402e-007	0
+1361	0	1361	Mass	-7.518333e+000	-7.065289e+000	1.595079e-007	0
+1362	0	1362	Mass	-7.528398e+000	-7.068098e+000	1.584793e-007	0
+1363	0	1363	Mass	-7.530388e+000	-7.072858e+000	1.567518e-007	0
+1364	0	1364	Mass	-7.526038e+000	-7.081564e+000	1.536411e-007	0
+1365	0	1365	Mass	-7.530850e+000	-7.085548e+000	1.522380e-007	0
+1366	0	1366	Mass	-7.541923e+000	-7.088094e+000	1.513481e-007	0
+1367	0	1367	Mass	-7.551384e+000	-7.090011e+000	1.506816e-007	0
+1368	0	1368	Mass	-7.560635e+000	-7.103891e+000	1.459419e-007	0
+1369	0	1369	Mass	-7.573211e+000	-7.109306e+000	1.441336e-007	0
+1370	0	1370	Mass	-7.579548e+000	-7.122715e+000	1.397513e-007	0
+1371	0	1371	Mass	-7.571370e+000	-7.122045e+000	1.399670e-007	0
+1372	0	1372	Mass	-7.562784e+000	-7.127279e+000	1.382905e-007	0
+1373	0	1373	Mass	-7.535250e+000	-7.106881e+000	1.449405e-007	0
+1374	0	1374	Mass	-7.551749e+000	-7.111005e+000	1.435707e-007	0
+1375	0	1375	Mass	-7.574744e+000	-7.118264e+000	1.411908e-007	0
+1376	0	1376	Mass	-7.587850e+000	-7.128533e+000	1.378915e-007	0
+1377	0	1377	Mass	-7.579282e+000	-7.120279e+000	1.405372e-007	0
+1378	0	1378	Mass	-7.575780e+000	-7.119289e+000	1.408581e-007	0
+1379	0	1379	Mass	-7.581635e+000	-7.128664e+000	1.378500e-007	0
+1380	0	1380	Mass	-7.591197e+000	-7.141362e+000	1.338779e-007	0
+1381	0	1381	Mass	-7.597304e+000	-7.139102e+000	1.345764e-007	0
+1382	0	1382	Mass	-7.606424e+000	-7.137596e+000	1.350440e-007	0
+1383	0	1383	Mass	-7.617759e+000	-7.135336e+000	1.357485e-007	0
+1384	0	1384	Mass	-7.625085e+000	-7.149591e+000	1.313650e-007	0
+1385	0	1385	Mass	-7.631029e+000	-7.171821e+000	1.248101e-007	0
+1386	0	1386	Mass	-7.640631e+000	-7.191986e+000	1.191473e-007	0
+1387	0	1387	Mass	-7.649368e+000	-7.208346e+000	1.147427e-007	0
+1388	0	1388	Mass	-7.646854e+000	-7.206697e+000	1.151792e-007	0
+1389	0	1389	Mass	-7.653908e+000	-7.202745e+000	1.162320e-007	0
+1390	0	1390	Mass	-7.654543e+000	-7.204463e+000	1.157732e-007	0
+1391	0	1391	Mass	-7.661437e+000	-7.221425e+000	1.113386e-007	0
+1392	0	1392	Mass	-7.661011e+000	-7.213839e+000	1.133006e-007	0
+1393	0	1393	Mass	-7.665113e+000	-7.212488e+000	1.136536e-007	0
+1394	0	1394	Mass	-7.650789e+000	-7.198476e+000	1.173803e-007	0
+1395	0	1395	Mass	-7.648501e+000	-7.199353e+000	1.171433e-007	0
+1396	0	1396	Mass	-7.650555e+000	-7.203964e+000	1.159062e-007	0
+1397	0	1397	Mass	-7.652332e+000	-7.207998e+000	1.148347e-007	0
+1398	0	1398	Mass	-7.662773e+000	-7.212672e+000	1.136054e-007	0
+1399	0	1399	Mass	-7.672432e+000	-7.214010e+000	1.132559e-007	0
+1400	0	1400	Mass	-7.688391e+000	-7.224965e+000	1.104348e-007	0
+1401	0	1401	Mass	-7.697765e+000	-7.234484e+000	1.080405e-007	0
+1402	0	1402	Mass	-7.705123e+000	-7.231022e+000	1.089053e-007	0
+1403	0	1403	Mass	-7.717992e+000	-7.235974e+000	1.076704e-007	0
+1404	0	1404	Mass	-7.728402e+000	-7.261658e+000	1.014875e-007	0
+1405	0	1405	Mass	-7.720192e+000	-7.263099e+000	1.011515e-007	0
+1406	0	1406	Mass	-7.719488e+000	-7.268385e+000	9.992758e-008	0
+1407	0	1407	Mass	-7.726547e+000	-7.267933e+000	1.000317e-007	0
+1408	0	1408	Mass	-7.730360e+000	-7.280257e+000	9.723309e-008	0
+1409	0	1409	Mass	-7.731573e+000	-7.285321e+000	9.610574e-008	0
+1410	0	1410	Mass	-7.737486e+000	-7.281424e+000	9.697209e-008	0
+1411	0	1411	Mass	-7.755283e+000	-7.302238e+000	9.243417e-008	0
+1412	0	1412	Mass	-7.756158e+000	-7.317035e+000	8.933789e-008	0
+1413	0	1413	Mass	-7.765508e+000	-7.317402e+000	8.926240e-008	0
+1414	0	1414	Mass	-7.773446e+000	-7.313261e+000	9.011755e-008	0
+1415	0	1415	Mass	-7.779285e+000	-7.312950e+000	9.018216e-008	0
+1416	0	1416	Mass	-7.780249e+000	-7.307676e+000	9.128403e-008	0
+1417	0	1417	Mass	-7.780983e+000	-7.326774e+000	8.735672e-008	0
+1418	0	1418	Mass	-7.752637e+000	-7.313566e+000	9.005427e-008	0
+1419	0	1419	Mass	-7.761283e+000	-7.305245e+000	9.179650e-008	0
+1420	0	1420	Mass	-7.789625e+000	-7.340554e+000	8.462860e-008	0
+1421	0	1421	Mass	-7.810435e+000	-7.370292e+000	7.902752e-008	0
+1422	0	1422	Mass	-7.800797e+000	-7.353090e+000	8.222069e-008	0
+1423	0	1423	Mass	-7.790591e+000	-7.342021e+000	8.434308e-008	0
+1424	0	1424	Mass	-7.790533e+000	-7.331190e+000	8.647313e-008	0
+1425	0	1425	Mass	-7.808092e+000	-7.338960e+000	8.493976e-008	0
+1426	0	1426	Mass	-7.814023e+000	-7.347742e+000	8.323934e-008	0
+1427	0	1427	Mass	-7.833285e+000	-7.374988e+000	7.817771e-008	0
+1428	0	1428	Mass	-7.827200e+000	-7.370134e+000	7.905639e-008	0
+1429	0	1429	Mass	-7.826069e+000	-7.364790e+000	8.003523e-008	0
+1430	0	1430	Mass	-7.848746e+000	-7.393725e+000	7.487649e-008	0
+1431	0	1431	Mass	-7.861063e+000	-7.406951e+000	7.263063e-008	0
+1432	0	1432	Mass	-7.862208e+000	-7.408638e+000	7.234903e-008	0
+1433	0	1433	Mass	-7.854589e+000	-7.407493e+000	7.254002e-008	0
+1434	0	1434	Mass	-7.862847e+000	-7.418903e+000	7.065910e-008	0
+1435	0	1435	Mass	-7.858861e+000	-7.416137e+000	7.111053e-008	0
+1436	0	1436	Mass	-7.849021e+000	-7.399197e+000	7.393897e-008	0
+1437	0	1437	Mass	-7.861867e+000	-7.400655e+000	7.369115e-008	0
+1438	0	1438	Mass	-7.885028e+000	-7.406663e+000	7.267883e-008	0
+1439	0	1439	Mass	-7.903981e+000	-7.431919e+000	6.857277e-008	0
+1440	0	1440	Mass	-7.920745e+000	-7.444341e+000	6.663919e-008	0
+1441	0	1441	Mass	-7.910067e+000	-7.446909e+000	6.624634e-008	0
+1442	0	1442	Mass	-7.888845e+000	-7.451689e+000	6.552126e-008	0
+1443	0	1443	Mass	-7.881236e+000	-7.444726e+000	6.658021e-008	0
+1444	0	1444	Mass	-7.869335e+000	-7.436501e+000	6.785307e-008	0
+1445	0	1445	Mass	-7.871431e+000	-7.434457e+000	6.817328e-008	0
+1446	0	1446	Mass	-7.881629e+000	-7.432070e+000	6.854892e-008	0
+1447	0	1447	Mass	-7.886504e+000	-7.434436e+000	6.817645e-008	0
+1448	0	1448	Mass	-7.907970e+000	-7.430255e+000	6.883604e-008	0
+1449	0	1449	Mass	-7.915130e+000	-7.441782e+000	6.703306e-008	0
+1450	0	1450	Mass	-7.944209e+000	-7.495118e+000	5.928614e-008	0
+1451	0	1451	Mass	-7.961727e+000	-7.516623e+000	5.642186e-008	0
+1452	0	1452	Mass	-7.965722e+000	-7.502428e+000	5.829659e-008	0
+1453	0	1453	Mass	-7.989687e+000	-7.518506e+000	5.617782e-008	0
+1454	0	1454	Mass	-7.989073e+000	-7.521784e+000	5.575535e-008	0
+1455	0	1455	Mass	-7.993127e+000	-7.536562e+000	5.389010e-008	0
+1456	0	1456	Mass	-7.955717e+000	-7.547481e+000	5.255209e-008	0
+1457	0	1457	Mass	-7.934717e+000	-7.517422e+000	5.631822e-008	0
+1458	0	1458	Mass	-7.933624e+000	-7.526341e+000	5.517338e-008	0
+1459	0	1459	Mass	-7.919280e+000	-7.496718e+000	5.906803e-008	0
+1460	0	1460	Mass	-7.922630e+000	-7.474784e+000	6.212788e-008	0
+1461	0	1461	Mass	-7.933945e+000	-7.473254e+000	6.234721e-008	0
+1462	0	1462	Mass	-7.951857e+000	-7.480793e+000	6.127422e-008	0
+1463	0	1463	Mass	-7.947905e+000	-7.508886e+000	5.743606e-008	0
+1464	0	1464	Mass	-7.964281e+000	-7.505422e+000	5.789608e-008	0
+1465	0	1465	Mass	-8.000730e+000	-7.519549e+000	5.604302e-008	0
+CfdSolver::_solveCycle-->Solution is converged
+BasicSolverOutput::writeBout-->writing the solution in .bout file--> IN 
+ BasicSolverOutput::writeBout : Saving BOUT file -> IN
+ BasicSolverOutput::writeBout : Saving BOUT file -> OUT
+BasicSolverOutput::writeBout-->writing the solution in .BOUT file--> OUT 
+BasicSolverOutput::writeSolOld-->IN 
+BasicSolverOutput::writeSolOld-->Output of solution to files for block 0 (fluid)
+BasicSolverOutput::_writeCFViewNew-->writing the solution for CFView (.d*.s*)--> IN 
+BasicSolverOutput::_writeCFViewNew-->writing the solution for CFView (.d*.s*)--> OUT 
+ BasicSolverOutput::writeSolOld-->Finished output to files for block 0
+BasicSolverOutput::writeSolOld-->OUT 
+BasicSolverOutput::writeSol-->IN 
+BasicSolverOutput::writeSol-->Output of solution to files for block 0 (fluid)
+ BasicSolverOutput::writeSol-->Finished output to files for block 0
+BasicSolverOutput::writeSol-->OUT 
+GlobalOutput::writeXMFFile before barrier
+GlobalOutput::writeXMFFile after barrier
+GlobalOutput::writeMFFile --> writing global quantities in .mf file
+GlobalOutput::writeWallFile --> writing forces and moments in .wall file
+CfdEqSystem::~CfdEqSystem-->IN
+ThermoQuantitiesCalculator::~ThermoQuantitiesCalculator IN
+ThermoQuantitiesCalculator::~ThermoQuantitiesCalculator OUT
+NVFluxEulerCentralScalarDissipPrecondNEW::~NVFluxEulerCentralScalarDissipPrecondNEW-->IN
+NVFluxEulerCentralScalarDissipPrecondNEW::~NVFluxEulerCentralScalarDissipPrecondNEW-->OUT
+ResidualSmoothing::~ResidualSmoothing -> IN
+ResidualSmoothing::~ResidualSmoothing -> OUT
+ThermoQuantitiesCalculator::~ThermoQuantitiesCalculator IN
+ThermoQuantitiesCalculator::~ThermoQuantitiesCalculator OUT
+CfdEqSystem::~CfdEqSystem-->OUT
+CfdEqSystem::~CfdEqSystem-->IN
+ThermoQuantitiesCalculator::~ThermoQuantitiesCalculator IN
+ThermoQuantitiesCalculator::~ThermoQuantitiesCalculator OUT
+NVFluxEulerCentralScalarDissipPrecondNEW::~NVFluxEulerCentralScalarDissipPrecondNEW-->IN
+NVFluxEulerCentralScalarDissipPrecondNEW::~NVFluxEulerCentralScalarDissipPrecondNEW-->OUT
+ResidualSmoothing::~ResidualSmoothing -> IN
+ResidualSmoothing::~ResidualSmoothing -> OUT
+ThermoQuantitiesCalculator::~ThermoQuantitiesCalculator IN
+ThermoQuantitiesCalculator::~ThermoQuantitiesCalculator OUT
+CfdEqSystem::~CfdEqSystem-->OUT
+CfdEqSystem::~CfdEqSystem-->IN
+ThermoQuantitiesCalculator::~ThermoQuantitiesCalculator IN
+ThermoQuantitiesCalculator::~ThermoQuantitiesCalculator OUT
+NVFluxEulerCentralScalarDissipPrecondNEW::~NVFluxEulerCentralScalarDissipPrecondNEW-->IN
+NVFluxEulerCentralScalarDissipPrecondNEW::~NVFluxEulerCentralScalarDissipPrecondNEW-->OUT
+ResidualSmoothing::~ResidualSmoothing -> IN
+ResidualSmoothing::~ResidualSmoothing -> OUT
+ThermoQuantitiesCalculator::~ThermoQuantitiesCalculator IN
+ThermoQuantitiesCalculator::~ThermoQuantitiesCalculator OUT
+CfdEqSystem::~CfdEqSystem-->OUT
+CfdEqSystem::~CfdEqSystem-->IN
+ThermoQuantitiesCalculator::~ThermoQuantitiesCalculator IN
+ThermoQuantitiesCalculator::~ThermoQuantitiesCalculator OUT
+NVFluxEulerCentralScalarDissipPrecondNEW::~NVFluxEulerCentralScalarDissipPrecondNEW-->IN
+NVFluxEulerCentralScalarDissipPrecondNEW::~NVFluxEulerCentralScalarDissipPrecondNEW-->OUT
+ResidualSmoothing::~ResidualSmoothing -> IN
+ResidualSmoothing::~ResidualSmoothing -> OUT
+ThermoQuantitiesCalculator::~ThermoQuantitiesCalculator IN
+ThermoQuantitiesCalculator::~ThermoQuantitiesCalculator OUT
+CfdEqSystem::~CfdEqSystem-->OUT
+CfdSolver::solve-->OUT 
+MultiBlockManager::~MultiBlockManager() IN 
+BlockDataStr::destroyConnectionsAndBc-> IN 
+BlockDataStr::destroyConnectionsAndBc-> OUT 
+BlockDataStr::~BlockDataStr->IN
+BlockDataStr::_deleteFluidStructure() [FluidStructureDataManager.C] -> IN  
+BlockDataStr::_deleteFluidStructure() [FluidStructureDataManager.C] -> OUT 
+LevelDataStr::~LevelDataStr->IN
+LevelDataStr::destroyDataStructure-> IN 
+LevelDataStr::_deleteInterpol -> IN [InterpolDataManager.C] 
+LevelDataStr::_deleteInterpol -> OUT 
+LevelDataStr::destroyDataStructure-> OUT 
+GhostCells::~GhostCells->IN
+GhostCells::~GhostCells->OUT
+LevelDataStr::~LevelDataStr->OUT
+LevelDataStr::~LevelDataStr->IN
+LevelDataStr::destroyDataStructure-> IN 
+LevelDataStr::destroyDataStructure-> OUT 
+GhostCells::~GhostCells->IN
+GhostCells::~GhostCells->OUT
+LevelDataStr::~LevelDataStr->OUT
+LevelDataStr::~LevelDataStr->IN
+LevelDataStr::destroyDataStructure-> IN 
+LevelDataStr::destroyDataStructure-> OUT 
+GhostCells::~GhostCells->IN
+GhostCells::~GhostCells->OUT
+LevelDataStr::~LevelDataStr->OUT
+LevelDataStr::~LevelDataStr->IN
+LevelDataStr::destroyDataStructure-> IN 
+LevelDataStr::destroyDataStructure-> OUT 
+GhostCells::~GhostCells->IN
+GhostCells::~GhostCells->OUT
+LevelDataStr::~LevelDataStr->OUT
+BlockDataStr::~BlockDataStr->OUT
+MultiBlockManager::~MultiBlockManager() OUT 
+MainSolver::steadySolve-->CFD calculations done on current grid
+MainSolver:: steadySolve -> OUT 
+MainSolver::main-->Input data deleted
+MainSolver::main-->Computation successfully performed in 0h 1m 44.984s 
+SERNAME=Pupo 
+putenv s=USERPROFILE=C:\Users\Pupo 
+putenv s=VBOX_MSI_INSTALL_PATH=D:\VB\ 
+putenv s=VS140COMNTOOLS=D:\VS2015\Common7\Tools\ 
+putenv s=WINDIR=C:\WINDOWS 
