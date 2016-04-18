@@ -1,1 +1,0 @@
-D:\NUMECA\FineOpen51_3\bin64\hexstreamdpx86_64.exe "C:\Users\Pupo\Documents\GitHub\Projects\test1500Wedge\test1500Wedge_264_2ndOrder\test1500Wedge_264_2ndOrder.run" -steering "C:\Users\Pupo\Documents\GitHub\Projects\test1500Wedge\test1500Wedge_264_2ndOrder\test1500Wedge_264_2ndOrder.steering" -niversion "open51_3" -print "none" -batch 

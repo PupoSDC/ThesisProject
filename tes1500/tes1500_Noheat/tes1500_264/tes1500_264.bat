@@ -1,1 +1,0 @@
-D:\NUMECA\FineOpen51_3\bin64\hexstreamdpx86_64.exe "C:\Users\Pupo\Documents\GitHub\Projects\tes1500\tes1500_264\tes1500_264.run" -steering "C:\Users\Pupo\Documents\GitHub\Projects\tes1500\tes1500_264\tes1500_264.steering" -niversion "open51_3" -print "none" -batch 
