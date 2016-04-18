@@ -1,0 +1,23 @@
+##############################
+# Empty OpenLabs Resource
+# (c) NUMECA Int.
+##############################
+
+
+=>CONSTANTS
+
+=>EQUATIONS
+
+=>CUSTOM_BOUNDARY_CONDITIONS
+
+=>ALGEBRAIC_DIFFUSION_COEFFICIENTS
+
+=>INITIAL_PROFILES
+
+=>SOURCETERMS
+
+=>CUSTOM_FLUID_PROPERTIES 
+
+=>AUXTERMS
+
+=>ADDITIONAL_INFORMATION

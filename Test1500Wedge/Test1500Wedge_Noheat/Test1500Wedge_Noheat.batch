@@ -1,0 +1,2 @@
+#! /bin/sh
+hexstreamdp "/home/pedro/Documents/ThesisProject/Test1500Wedge/Test1500Wedge_Noheat/Test1500Wedge_Noheat.run" -steering "/home/pedro/Documents/ThesisProject/Test1500Wedge/Test1500Wedge_Noheat/Test1500Wedge_Noheat.steering" -niversion "open51_3" 
