@@ -9,9 +9,9 @@
     </FluidProperties>
     <Station name="Inlet">
         <Condition name="Static conditions">
-            <float name="Static pressure" unit="[Pa]">101317</float>
-            <float name="Static temperature" unit="[K]">299.994</float>
-            <float name="Enthalpy" unit="[J/kg]">301794</float>
+            <float name="Static pressure" unit="[Pa]">101325</float>
+            <float name="Static temperature" unit="[K]">300</float>
+            <float name="Enthalpy" unit="[J/kg]">301800</float>
         </Condition>
         <Condition name="Stagnation conditions">
             <float name="Absolute total pressure" unit="[Pa]">101325</float>
@@ -19,22 +19,22 @@
             <float name="Absolute total enthalpy" unit="[J/kg]">301800</float>
         </Condition>
         <MassFlow>
-            <float name="Mass flow" unit="[kg/s]">0.00234013</float>
+            <float name="Mass flow" unit="[kg/s]">-2.43765e-10</float>
         </MassFlow>
     </Station>
     <Station name="Outlet">
         <Condition name="Static conditions">
-            <float name="Static pressure" unit="[Pa]">101300</float>
-            <float name="Static temperature" unit="[K]">299.979</float>
-            <float name="Enthalpy" unit="[J/kg]">301779</float>
+            <float name="Static pressure" unit="[Pa]">101308</float>
+            <float name="Static temperature" unit="[K]">299.996</float>
+            <float name="Enthalpy" unit="[J/kg]">301796</float>
         </Condition>
         <Condition name="Stagnation conditions">
             <float name="Absolute total pressure" unit="[Pa]">101308</float>
-            <float name="Absolute total temperature" unit="[K]">299.985</float>
-            <float name="Absolute total enthalpy" unit="[J/kg]">301785</float>
+            <float name="Absolute total temperature" unit="[K]">299.996</float>
+            <float name="Absolute total enthalpy" unit="[J/kg]">301796</float>
         </Condition>
         <MassFlow>
-            <float name="Mass flow" unit="[kg/s]">0.00234013</float>
+            <float name="Mass flow" unit="[kg/s]">-2.50772e-10</float>
         </MassFlow>
     </Station>
     <Performance name="Global performance">

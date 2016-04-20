@@ -1,4 +1,4 @@
-LOG file created by OpenLabs version 5.1, on 04/18/2016
+LOG file created by OpenLabs version 5.1, on 04/20/2016
 ************************
 OpenLabs-->IN, Block: 0
 ************************
@@ -15,7 +15,7 @@ ComputationParamManager::_buildComputationParametersFluid-->Initial solution in 
  ComputationParamManager initSolFileName_:		/home/pedro/Documents/ThesisProject/Test1500Wedge/Test1500Wedge_Noheat/Test1500Wedge_Noheat
 ----------------------------------------------------------------------------------------------------
 found! iPartPremModel = 0
-Lagrangian spray: 0x4297230
+Lagrangian spray: 0x4288230
 iLagrangian 0
 Lagrangian spray module not active: 0
 HexaNSParamManager::readFINEdatabase-->WARNING - Archive of solution on intermediate adapted meshes activated 

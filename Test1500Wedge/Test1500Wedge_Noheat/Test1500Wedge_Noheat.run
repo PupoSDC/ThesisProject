@@ -14,7 +14,7 @@ LAST_USED_COMPUTATION_INDEX    0
   NI_BEGIN computation
     VERSION                          1100
     NAME                             Noheat
-    POINTER                          212924144
+    POINTER                          210229520
     COARSE_FLAG                      1 1 1
     RELATIVE_REFERENCE_RUN_FILE      undefined
     ACTIVE                           0
@@ -10344,7 +10344,7 @@ THERMODYNAMIC_TABLES_PATH                  __undefined__
 #*****************************************************************************
 #                                                                             
     NI_BEGIN OPENLABS_RESOURCE
-      BUILD_STATUS 0
+      BUILD_STATUS 1
       NI_BEGIN RESOURCE_CONTENT
 ##############################
 # Empty OpenLabs Resource
@@ -10358,10 +10358,8 @@ THERMODYNAMIC_TABLES_PATH                  __undefined__
 
 =>CUSTOM_BOUNDARY_CONDITIONS
 @ CUSTOMIZED_BOUNDARY_CONDITION: outlet
-->EXPRESSION: 101300
+->EXPRESSION: 101325 - 9.81*AverageDensity *1.5 
 ->ExistingBC: "Static Pressure" , cil_group_4
-
-
 
 =>ALGEBRAIC_DIFFUSION_COEFFICIENTS
 
@@ -10372,6 +10370,13 @@ THERMODYNAMIC_TABLES_PATH                  __undefined__
 =>CUSTOM_FLUID_PROPERTIES 
 
 =>AUXTERMS
+@AverageDensity = SumDensity / Volume
+
+=>GLOBAL_QUANTITIES:
+@SumDensity = INTEG3D(Density) 
+->ExportHistoryToFile: </home/pedro/Documents/d>
+@Volume = INTEG3D(1)
+->ExportHistoryToFile: </home/pedro/Documents/e>
 
 =>ADDITIONAL_INFORMATION
       NI_END RESOURCE_CONTENT

@@ -10,10 +10,8 @@
 
 =>CUSTOM_BOUNDARY_CONDITIONS
 @ CUSTOMIZED_BOUNDARY_CONDITION: outlet
-->EXPRESSION: 101300
+->EXPRESSION: 101325 - 9.81*AverageDensity *1.5 
 ->ExistingBC: "Static Pressure" , cil_group_4
-
-
 
 =>ALGEBRAIC_DIFFUSION_COEFFICIENTS
 
@@ -24,5 +22,12 @@
 =>CUSTOM_FLUID_PROPERTIES 
 
 =>AUXTERMS
+@AverageDensity = SumDensity / Volume
+
+=>GLOBAL_QUANTITIES:
+@SumDensity = INTEG3D(Density) 
+->ExportHistoryToFile: </home/pedro/Documents/d>
+@Volume = INTEG3D(1)
+->ExportHistoryToFile: </home/pedro/Documents/e>
 
 =>ADDITIONAL_INFORMATION

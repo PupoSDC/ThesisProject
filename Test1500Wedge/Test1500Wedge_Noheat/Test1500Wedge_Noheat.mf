@@ -24,19 +24,19 @@ Geometrical data
 Static conditions
 -----------------
 
-  Static pressure    = 101317, 101300 [Pa]
-  Static temperature = 299.994, 299.979 [K]
-  Enthalpy           = 301794, 301779 [J/kg]
+  Static pressure    = 101325, 101308 [Pa]
+  Static temperature = 300, 299.996 [K]
+  Enthalpy           = 301800, 301796 [J/kg]
 
 Stagnation conditions
 ---------------------
 
   Absolute total pressure     = 101325, 101308 [Pa]
-  Absolute total temperature  = 300, 299.985 [K]
-  Absolute total enthalpy     = 301800, 301785 [J/kg]
+  Absolute total temperature  = 300, 299.996 [K]
+  Absolute total enthalpy     = 301800, 301796 [J/kg]
 
-Mass flow at inlet  = 0.00234013 [kg/s]
-Mass flow at outlet = 0.00234013 [kg/s]
+Mass flow at inlet  = -2.43765e-10 [kg/s]
+Mass flow at outlet = -2.50772e-10 [kg/s]
 ---------
 
 Global Performance
@@ -45,3 +45,9 @@ Global Performance
 
    Torque              = 0 [Nm]
 
+
+OpenLabs: Global Quantities
+---------------------------
+
+SumDensity = 0.000979939
+Volume = 0.000833999
