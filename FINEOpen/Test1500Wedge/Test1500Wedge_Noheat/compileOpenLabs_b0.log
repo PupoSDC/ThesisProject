@@ -1,0 +1,131 @@
+LOG file created by OpenLabs version 5.1, on 04/29/2016
+************************
+OpenLabs-->IN, Block: 0
+************************
+
+OpenLabs::buffering-->IN [OpenLabs.C]
+CONSTANTS 	 	 	 	 [ OK ]
+EQUATIONS  	 	 	 	 [ OK ]
+CUSTOM_BOUNDARY_CONDITIONS 	  	 [ OK ]
+ALGEBRAIC_DIFFUSION_COEFFICIENTS   	 [ OK ]
+INITIAL_PROFILES 	  	 	 [ OK ]
+SOURCETERMS  	 	 	 	 [ OK ]
+CUSTOM_FLUID_PROPERTIES 	 	 [ OK ]
+AUXTERM 	 	 	 	 [ OK ]
+GLOBAL_QUANTITIES 	 	 	 	 [ OK ]
+ADDITIONAL_INFORMATION 	 	 [ OK ]
+OpenLabs::buffering-->OUT [OpenLabs.C]
+OpenLabs::processInternalInfo-->IN [OpenLabs.C]
+LevelDataStr::buildComputationParameters -> IN 
+Fluid AIR(Perfect) not found in fluidDataList -> create
+preco_pcEpsVLim_ = 0.001
+preco_pcEpsPgr_ = 1
+WARNING: Steady flow activated - DES/LES module deactivated
+ComputationParamManager::_buildComputationParametersFluid-->Initial solution in cylindric coordinates
+---------------------------------------------------------------------------------------------------
+ ComputationParamManager initSolFileNameParallel_:	/home/pedro/Documents/ThesisProject/Test1500Wedge/Test1500Wedge_Noheat/Test1500Wedge_Noheat
+ ComputationParamManager initSolFileName_:		/home/pedro/Documents/ThesisProject/Test1500Wedge/Test1500Wedge_Noheat/Test1500Wedge_Noheat
+----------------------------------------------------------------------------------------------------
+found! iPartPremModel = 0
+Lagrangian spray: 0x3cd4a60
+iLagrangian 0
+Lagrangian spray module not active: 0
+HexaNSParamManager::readFINEdatabase-->WARNING - Archive of solution on intermediate adapted meshes activated 
+HexaNSParamManager::readFINEdatabase-->WARNING - The adaptation option has not been activated  
+HexaNSParamManager::readFINEdatabase-->WARNING - Archive of solution on intermediate adapted meshes deactivated  
+LevelDataStr::buildComputationParameters -> OUT 
+ CondCalc_Prandtl::CondCalc_Prandtl -> IN 
+ CondCalc_Prandtl::CondCalc_Prandtl -> OUT 
+LevelDataStr::constructCfdFluidDatabase--> List of diffusion coefficients caculators
+   Viscosity calculator
+   Thermal Conductivity calculator
+LevelDataStr::setHeatSrcTrmData -> IN 
+LevelDataStr::setHeatSrcTrmData -> OUT 
+_import_numBlocks --> numBlocks:1
+_MaxIndexSolUpConsPointImpl=0
+_MaxIndexSolUpConsNoPointImpl=0
+_MaxIndexSolUpNoConsPointImpl=0
+_MaxIndexSolUpNoConsNoPointImpl=0
+Internal VarName: 
+   StaticPressure
+   Vx
+   Vy
+   Vz
+   StaticTemperature
+   Density
+   Beta_Preco
+   AbsoluteTotalEnergy
+   AbsoluteTotalEnthalpy
+   SoundSpeed
+   Viscosity
+   Conductivity
+   Energy
+   Enthalpy
+   Cp
+   Prandtl
+   Gamma
+   RGas
+   UTau
+   TTau
+OpenLabs::processInternalInfo-->OUT [OpenLabs.C]
+OpenLabs::buildObj-->IN [OpenLabs.C]
+OpenLabs::buildObj-->OUT [OpenLabs.C]
+OpenLabs::checkFormat-->IN [OpenLabs.C]
+OpenLabs::checkFormat-->OUT [OpenLabs.C]
+OpenLabs::analyzeObj-->IN [OpenLabs.C]
+Hierarchy information	outlet isSlave:0 isMaster:1 slaveName:AverageDensity
+Hierarchy information	AverageDensity isSlave:1 isMaster:1 slaveName:SumDensity,Volume
+Hierarchy information	SumDensity isSlave:1 isMaster:0 slaveName:
+Hierarchy information	Volume isSlave:1 isMaster:0 slaveName:
+Level of Global Nesting tree:	3
+	0: SumDensity,Volume
+	1: AverageDensity
+	2: outlet
+OpenLabs::checkStructure-->IN [OpenLabs.C]
+Internal and new Variable Names: 
+  StaticPressure
+  Vx
+  Vy
+  Vz
+  StaticTemperature
+  Density
+  Beta_Preco
+  AbsoluteTotalEnergy
+  AbsoluteTotalEnthalpy
+  SoundSpeed
+  Viscosity
+  Conductivity
+  Energy
+  Enthalpy
+  Cp
+  Prandtl
+  Gamma
+  RGas
+  UTau
+  TTau
+  Coord
+  faceN
+  Normal
+  CellVolume
+  CellSurface
+  BFaceSurface
+  dn
+  upcell
+OpenLabs::checkStructure-->OUT [OpenLabs.C]
+OpenLabs::analyzeObj-->OUT [OpenLabs.C]
+OpenLabs::output-->IN [OpenLabs.C]
+OpenLabs::output-->OUT [OpenLabs.C]
+LevelDataStr::~LevelDataStr->IN
+LevelDataStr::~LevelDataStr->OUT
+************************
+OpenLabs-->OUT, Block: 0
+************************
+
+===
+=== OpenLabs library generation
+===
+=== Compiling /home/pedro/.numeca/tmp/.tmp216863952/wsxghjlyp.C , precision: double ...
+g++ -O2 -Os -Wno-deprecated -fno-implicit-templates -fpic  -DLINUX_GCC_4_0 -D__ANSI_CPP__ -D__ANSI_CC__  -DCOMPILE_INSTANCIATE -DNO_CATIA -DHEXA_ONLY -DHEXANS -DNI_MPI -DfloaT=float -I/usr/numeca/fineopen51_3/_lib_i/_incl/ -I/usr/numeca/fineopen51_3/_lib_i/_extlibs/_rw_rev5 -I/usr/numeca/fineopen51_3/_lib_i/_extlibs/_fusion-dev2-1.3 -I/usr/numeca/fineopen51_3/_lib_i/_extlibs/LINUX/_mpich-1.2.5/include -c /home/pedro/.numeca/tmp/.tmp216863952/wsxghjlyp.C -o /home/pedro/.numeca/tmp/.tmp216863952/wsxghjlyp.o -DhReal16=double -DhReal=double
+=== Generating library /home/pedro/.numeca/tmp/.tmp216863952/libOL_b0.so ...
+g++ -O2 -shared -o /home/pedro/.numeca/tmp/.tmp216863952/libOL_b0.so /home/pedro/.numeca/tmp/.tmp216863952/wsxghjlyp.o
+=== Library built successfully.

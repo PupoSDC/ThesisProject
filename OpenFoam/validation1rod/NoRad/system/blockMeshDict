@@ -1,0 +1,61 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  3.0.1                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      blockMeshDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+convertToMeters 0.001;
+
+vertices
+(   
+    (0 0 0)                                         //0
+    (3.196954309061945 -0.1395820395690752 -1500)   //1  
+    (3.196954309061945 -0.1395820395690752 0)       //2 
+    (0 0 1500)                                      //3   
+    (3.196954309061945  0.1395820395690752 -1500)   //4
+    (3.196954309061945 0.1395820395690752  0    )   //5
+
+    (112.89244903874993 -4.928990772282968 -1500)   //6  
+    (112.89244903874993 4.928990772282968  -1500)   //7
+    (112.89244903874993 -4.928990772282968 0)       //8 
+    (112.89244903874993 4.928990772282968  0)       //9
+);
+ 
+blocks
+(
+    hex (1 6 7 4 2 8 9 5) (40 1 100) simpleGrading (12 1 1)
+);
+ 
+edges
+(
+    arc 1 4 (3.2 0 -1500)
+    arc 2 5 (3.2 0 0)
+);
+ 
+boundary
+(
+    //CHTLeftWedge  {     type wedge; faces ((0 1 2 3));}
+    //CHTRightWedge {     type wedge; faces ((0 4 5 3));}
+    LeftWedge     {     type wedge; faces ((1 6 8 2));}
+    RightWedge    {     type wedge; faces ((4 5 9 7));}
+
+    Inlet   {           type patch; faces ((1 4 7 6));}
+    Outlet  {           type patch; faces ((2 8 9 5));}
+
+    //axis    {           type empty; faces ((0 3 3 0));}
+
+    Outterwall    {     type wall;  faces ((6 7 9 8));}
+    Innerwall     {     type wall;  faces ((1 2 5 4));}
+);
+ 
+mergePatchPairs();

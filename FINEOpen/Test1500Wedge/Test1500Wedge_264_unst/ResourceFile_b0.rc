@@ -1,0 +1,32 @@
+##############################
+# Empty OpenLabs Resource
+# (c) NUMECA Int.
+##############################
+
+
+=>CONSTANTS
+
+=>EQUATIONS
+
+=>CUSTOM_BOUNDARY_CONDITIONS
+@ CUSTOMIZED_BOUNDARY_CONDITION: outlet
+->EXPRESSION: 101325 - 9.81*AverageDensity *1.5 
+->ExistingBC: "Static Pressure" , cil_group_4
+
+=>ALGEBRAIC_DIFFUSION_COEFFICIENTS
+
+=>INITIAL_PROFILES
+
+=>SOURCETERMS
+
+=>CUSTOM_FLUID_PROPERTIES 
+
+=>AUXTERMS
+@AverageDensity = SumDensity / Volume
+
+=>GLOBAL_QUANTITIES:
+@SumDensity = INTEG3D(Density) 
+@Volume = INTEG3D(1)
+
+
+=>ADDITIONAL_INFORMATION

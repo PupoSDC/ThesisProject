@@ -1,0 +1,142 @@
+hexaMBlockConverter::_importMultiBlockGrid_bcsInfo--> reading structured BCS file 
+hexaMBlockConverter::_importMultiBlockGrid_bcsInfo--> reading turbomachinery configuration in .bcs file
+  Turbomachinary configuration found
+The meridional mesh has not been saved in the cgns file by AUTOGRID
+
+ o defining the domain partitioning.
+The mesh contains 0 blocks which are ZR or 3d techno effect
+ o building the mesh.
+hexaMBlockConverter::buildGroupedMesh --> building multidomain mesh -> IN 
+ .. Chosen domain partitioning : 
+ .... domain 0 (cil) has 2 blocks  :  .... Chosen multigrid levels : finest is 0 and coarsest 0
+hexaMBlockConverter::_allocateMeshForAllGroups->IN
+ .. set up external (periodic and interblock) connections
+hexaMBlockConverter::_allocateMeshForAllGroups->OUT
+hexaMBlockConverter::_numberVerticesForAllGroups -> IN
+  assigning a unique number to all vertices 
+ .. numbering nodes for domain 0
+ .... independent vertex numbering in all blocks 
+ .... setup the inverse map 
+ .... mark duplicate connection nodes 
+ .... delete the redundant nodes and renumber the other ones
+defragStorage0D: defragment vertices...
+hexaMBlockConverter::_numberVerticesForAllGroups -> OUT
+hexaMBlockConverter::_computeMeshForAllGroups->IN
+ .. computing coarsest mesh
+hexaMBlockConverter::_computeMeshForAllGroups->OUT
+hexaMBlockConverter::buildGroupedMesh --> building multidomain mesh -> OUT 
+
+    o  createDomainFromMesh:Creating domain from painted triangulation ...
+
+    .  DomainConstruct: --> Creating 12 geometric surfaces
+
+    .  DomainConstruct: --> Creating 24 geometric curves
+
+    .  DomainConstruct: --> Creating 16 geometric vertices
+Surface: 6, curve: 13
+changed orientation from 1 to -1
+
+ ===> WARNING: Domain::checkTopology() failed to check curve 14 of surface 6 (degenerated segment)
+
+ ===> WARNING: Domain::checkTopology() failed to check curve 15 of surface 6 (degenerated segment)
+
+ ===> WARNING: Domain::checkTopology() failed to check curve 15 of surface 10 (degenerated segment)
+
+ ===> WARNING: Domain::checkTopology() failed to check curve 14 of surface 11 (degenerated segment)
+created domain with name cil
+[BCData] Set all boundary conditions to `SOL'
+[IO] Reading domain '/home/pedro/Documents/ThesisProject/Test1500WedgeCHT/_mesh/MESH1500wedge_CHT_UNS(4).dom'
+
+ ===> WARNING: Found inverted triangles on face 0, triangle 0
+ 10% done...
+ 20% done...
+ 30% done...
+ 40% done...
+ 50% done...
+ 60% done...
+ 70% done...
+ 80% done...
+ 90% done...
+ Completed.
+
+
+ ===> WARNING:Domain::_setEdgeNeighbors(), wrong topology orientation, edge: 13 connected to faces with same orientation: 6 and 9
+
+ ===> WARNING:Domain::_setEdgeNeighbors(), wrong topology orientation, edge: 17 connected to faces with same orientation: 7 and 9
+
+ ===> WARNING:Domain::_setEdgeNeighbors(), wrong topology orientation, edge: 16 connected to faces with same orientation: 7 and 8
+
+ ===> WARNING:Domain::_setEdgeNeighbors(), wrong topology orientation, edge: 12 connected to faces with same orientation: 6 and 8
+
+ ===> WARNING:Domain::_setEdgeNeighbors(), wrong topology orientation, edge: 13 connected to faces with same orientation: 6 and 9
+
+ ===> ERROR: in file: _src/_Hexa/_iggHexa/_Kernel/DomainCheckOrientation.C line: 242 : Domain::_setEdgeNeighbors(), topology problem, cannot re-orient again faces: 6 and 9
+Surface: 0, curve: 0
+changed orientation from -1 to 1
+Surface: 0, curve: 1
+changed orientation from 1 to -1
+Surface: 0, curve: 2
+changed orientation from 1 to -1
+Surface: 0, curve: 3
+changed orientation from -1 to 1
+Surface: 6, curve: 12
+changed orientation from 1 to -1
+
+ ===> WARNING: Domain::checkTopology() failed to check curve 13 of surface 6 (no neighbor face found)
+
+ ===> WARNING: Domain::checkTopology() failed to check curve 14 of surface 6 (degenerated segment)
+
+ ===> WARNING: Domain::checkTopology() failed to check curve 15 of surface 6 (degenerated segment)
+Surface: 7, curve: 16
+changed orientation from -1 to 1
+
+ ===> WARNING: Domain::checkTopology() failed to check curve 17 of surface 7 (no neighbor face found)
+
+ ===> WARNING: Domain::checkTopology() failed to check curve 18 of surface 7 (no neighbor face found)
+
+ ===> WARNING: Domain::checkTopology() failed to check curve 19 of surface 7 (no neighbor face found)
+Surface: 8, curve: 12
+changed orientation from -1 to 1
+Surface: 8, curve: 16
+changed orientation from 1 to -1
+
+ ===> WARNING: Domain::checkTopology() failed to check curve 20 of surface 8 (no neighbor face found)
+
+ ===> WARNING: Domain::checkTopology() failed to check curve 21 of surface 8 (no neighbor face found)
+Surface: 9, curve: 13
+changed orientation from 1 to -1
+Surface: 9, curve: 17
+changed orientation from -1 to 1
+
+ ===> WARNING: Domain::checkTopology() failed to check curve 22 of surface 9 (no neighbor face found)
+
+ ===> WARNING: Domain::checkTopology() failed to check curve 23 of surface 9 (no neighbor face found)
+
+ ===> WARNING: Domain::checkTopology() failed to check curve 15 of surface 10 (degenerated segment)
+
+ ===> WARNING: Domain::checkTopology() failed to check curve 19 of surface 10 (no neighbor face found)
+
+ ===> WARNING: Domain::checkTopology() failed to check curve 21 of surface 10 (no neighbor face found)
+
+ ===> WARNING: Domain::checkTopology() failed to check curve 23 of surface 10 (no neighbor face found)
+
+ ===> WARNING: Domain::checkTopology() failed to check curve 14 of surface 11 (degenerated segment)
+
+ ===> WARNING: Domain::checkTopology() failed to check curve 22 of surface 11 (no neighbor face found)
+
+ ===> ERROR: in file: _src/_Hexa/_iggHexa/_Kernel/DomainSupport.C line: 581 :  Failure in topo face group construction, seed face: 6
+
+ ===> ERROR: in file: _src/_Hexa/_iggHexa/_Kernel/DomainSupport.C line: 581 :  Failure in topo face group construction, seed face: 9
+
+ ===> ERROR: in file: _src/_Hexa/_iggHexa/_Kernel/DomainSupport.C line: 581 :  Failure in topo face group construction, seed face: 10
+
+ ===> ERROR: in file: _src/_Hexa/_iggHexa/_Kernel/DomainSupport.C line: 581 :  Failure in topo face group construction, seed face: 11
+
+ ===> ERROR: in file: _src/_Hexa/_iggHexa/_Kernel/DomainSupport.C line: 540 :  Incorrect topo face group 
+
+ ===> ERROR: in file: _src/_Hexa/_iggHexa/_Kernel/DomainSupport.C line: 540 :  Incorrect topo face group 
+
+ ===> ERROR: in file: _src/_Hexa/_iggHexa/_Kernel/DomainSupport.C line: 540 :  Incorrect topo face group 
+
+ ===> ERROR: in file: _src/_Hexa/_iggHexa/_Kernel/DomainSupport.C line: 540 :  Incorrect topo face group 
+[BCData] Set all boundary conditions to `SOL'

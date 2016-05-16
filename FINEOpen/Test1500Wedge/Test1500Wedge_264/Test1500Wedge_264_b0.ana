@@ -1,0 +1,80 @@
+ANALYZED-FILE
+========================================================= 
+=>CONSTANTS
+ @ phys_Prandtl_ = 0.708
+ @ phys_cp_ = 1006
+ @ rhoRef_ = 1.2
+ @ TRef_ = 300
+ @ pRef_ = 101325
+ @ phys_gammaGaz_ = 1.4
+ @ muRef_ = 1.716E-05
+ @ Tinf_ = 293.111
+ @ Tsuther_ = 110.555
+ @ gravity_vect_x = 0
+ @ gravity_vect_y = 0
+ @ gravity_vect_z = -9.81
+ @ gravity_coord_x = 0
+ @ gravity_coord_y = 0
+ @ gravity_coord_z = 0
+
+=>CFD_VARIABLES
+ @ StaticPressure
+ @ Vx (VrCylinder)
+ @ Vy (VtCylinder)
+ @ Vz (VaCylinder)
+ @ StaticTemperature
+ @ Density
+ @ Beta_Preco
+ @ AbsoluteTotalEnergy
+ @ AbsoluteTotalEnthalpy
+ @ SoundSpeed
+ @ Viscosity
+ @ Conductivity
+ @ Energy
+ @ Enthalpy
+ @ Cp
+ @ Prandtl
+ @ Gamma
+ @ RGas
+ @ UTau # only available when a turbulence model with wall functions is selected or when a user-defined wall function is added
+ @ TTau # only available when a turbulence model with wall functions is selected or when a user-defined wall function is added
+
+=>GEOMETRIC_VARIABLES
+ @ xCoord, yCoord, zCoord  (rCoord, tCoord, aCoord) 
+ @ xfaceN, yfaceN, zfaceN
+ @ BFaceSurface
+ @ CellVolume
+ @ distanceToWall
+ @ dn #only avaiable in boundary conditions#
+
+
+=>FLUID_PROPERTIES 
+@EOS_DATABASE: Perfect gas
+@TRANSP_PROPERTY_CALCULATOR: Viscosity calculator
+@TRANSP_PROPERTY_CALCULATOR: Thermal Conductivity calculator
+
+=>EQUATIONS
+
+@ PDE: ContinuityEquation
+@ PDE: MomentumXEquation
+@ PDE: MomentumYEquation
+@ PDE: MomentumZEquation
+@ PDE: EnergyEquation
+
+=>INTERNAL_BOUNDARY_CONDITIONS
+@ InternalBC_SOL: cil_group_0 [0] 
+->Imposed_Physical_Variables: "Heat-Flux" 
+@ InternalBC_SOL: cil_group_1 [1] 
+@ InternalBC_OUT: cil_group_4 [4] 
+->Imposed_Physical_Variables: "Static Pressure" 
+@ InternalBC_INL: cil_group_5 [5] 
+->Imposed_Physical_Variables: "Absolute Total Pressure", "Absolute Total Temperature" 
+
+
+=>ALGEBRAIC_DIFFUSION_COEFFICIENTS
+@ ALGDIFFCOEFF: EffectiveViscosity
+@ ALGDIFFCOEFF: EffectiveConductivity
+
+=>SOURCETERMS
+@ SOURCE: GravityTerm
+

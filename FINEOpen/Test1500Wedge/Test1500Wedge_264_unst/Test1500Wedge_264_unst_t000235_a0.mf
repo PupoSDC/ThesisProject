@@ -1,0 +1,53 @@
+==============================================================================
+Global results for project /home/pedro/Documents/ThesisProject/Test1500Wedge/Test1500Wedge_264_unst/Test1500Wedge_264_unst
+==============================================================================
+
+Fluid properties
+================
+
+  The fluid is an ideal gas (constant Cp,Cv and R)
+
+  Specific heat at constant pressure (Cp) = 1006 [J/kg.K]
+  Specific heat at constant volume   (Cv) = 718.571 [J/kg.K]
+  Gas constant                        (R) = 287.429 [J/kg.K]
+  Ratio of specific heats         (Cp/Cv) = 1.4
+
+
+Global results at in and outlet
+-------------------------------
+
+                         inlet         outlet
+
+Geometrical data
+----------------
+
+Static conditions
+-----------------
+
+  Static pressure    = 101325, 101308 [Pa]
+  Static temperature = 300, 303.922 [K]
+  Enthalpy           = 301800, 305745 [J/kg]
+
+Stagnation conditions
+---------------------
+
+  Absolute total pressure     = 101325, 101308 [Pa]
+  Absolute total temperature  = 300, 303.922 [K]
+  Absolute total enthalpy     = 301800, 305745 [J/kg]
+
+Mass flow at inlet  = -1.93786e-06 [kg/s]
+Mass flow at outlet = -1.74735e-06 [kg/s]
+---------
+
+Global Performance
+-----------------
+
+
+   Torque              = 0 [Nm]
+
+
+OpenLabs: Global Quantities
+---------------------------
+
+SumDensity = 0.000979045
+Volume = 0.000833999

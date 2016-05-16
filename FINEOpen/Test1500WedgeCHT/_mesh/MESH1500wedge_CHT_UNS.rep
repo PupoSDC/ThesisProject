@@ -1,0 +1,27 @@
+o IGG structured mesh file /home/pedro/Documents/ThesisProject/IGGMESH/MESH1500wedge_CHT/MESH1500wedge_CHT.igg successfully converted.
+Defragment-sort...
+Defragment-sort...
+TIMER: total generation time: 0 sec.
+o Saving project in /home/pedro/Documents/ThesisProject/Test1500WedgeCHT/_mesh/MESH1500wedge_CHT_UNS.igg
+Defragment-sort...
+
+------------------------------------------------------------------
+HEXPRESS version 5.1 started on 04/24/2016 15:40:27
+------------------------------------------------------------------
+
+o Opening project /home/pedro/Documents/ThesisProject/Test1500WedgeCHT/_mesh/MESH1500wedge_CHT_UNS.igg
+o Project version: 2.200000
+TIMER: Domain orientation: 0.028939 sec.
+o Domain 'cil' faceting settings:
+  Minimum length:                    N/A
+  Maximum length:                    N/A
+  Curve chordal tolerance:           N/A
+  Surface plane tolerance:           N/A
+  Curve resolution:                  N/A
+  Surface resolution:                N/A
+  Reverse triangulation orientation: N/A
+  Merge tolerance:                   N/A
+
+TIMER: total generation time: 0 sec.
+o Saving project in /home/pedro/Documents/ThesisProject/Test1500WedgeCHT/_mesh/MESH1500wedge_CHT_UNS.igg
+Defragment-sort...

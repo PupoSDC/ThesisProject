@@ -1,0 +1,101 @@
+hexaMBlockConverter::_importMultiBlockGrid_bcsInfo--> reading structured BCS file 
+hexaMBlockConverter::_importMultiBlockGrid_bcsInfo--> reading turbomachinery configuration in .bcs file
+  Turbomachinary configuration found
+The meridional mesh has not been saved in the cgns file by AUTOGRID
+
+ o defining the domain partitioning.
+The mesh contains 0 blocks which are ZR or 3d techno effect
+ o building the mesh.
+hexaMBlockConverter::buildGroupedMesh --> building multidomain mesh -> IN 
+ .. Chosen domain partitioning : 
+ .... domain 0 (cil) has 2 blocks  :  .... Chosen multigrid levels : finest is 0 and coarsest 0
+hexaMBlockConverter::_allocateMeshForAllGroups->IN
+ .. set up external (periodic and interblock) connections
+hexaMBlockConverter::_allocateMeshForAllGroups->OUT
+hexaMBlockConverter::_numberVerticesForAllGroups -> IN
+  assigning a unique number to all vertices 
+ .. numbering nodes for domain 0
+ .... independent vertex numbering in all blocks 
+ .... setup the inverse map 
+ .... mark duplicate connection nodes 
+ .... delete the redundant nodes and renumber the other ones
+defragStorage0D: defragment vertices...
+hexaMBlockConverter::_numberVerticesForAllGroups -> OUT
+hexaMBlockConverter::_computeMeshForAllGroups->IN
+ .. computing coarsest mesh
+hexaMBlockConverter::_computeMeshForAllGroups->OUT
+hexaMBlockConverter::buildGroupedMesh --> building multidomain mesh -> OUT 
+
+    o  createDomainFromMesh:Creating domain from painted triangulation ...
+
+    .  DomainConstruct: --> Creating 10 geometric surfaces
+
+    .  DomainConstruct: --> Creating 20 geometric curves
+
+    .  DomainConstruct: --> Creating 12 geometric vertices
+created domain with name cil
+[BCData] Set all boundary conditions to `SOL'
+[IO] Reading domain '/home/pedro/Documents/ThesisProject/Test1500WedgeCHT/_mesh/Test1500WedgeCHT_UNS.dom'
+ 10% done...
+ 20% done...
+ 30% done...
+ 40% done...
+ 50% done...
+ 60% done...
+ 70% done...
+ 80% done...
+ Completed.
+
+[BCData] Set all boundary conditions to `SOL'
+[IO] Reading domain '/home/pedro/Documents/ThesisProject/Test1500WedgeCHT/_mesh/Test1500WedgeCHT_UNS.dom'
+ 10% done...
+ 20% done...
+ 30% done...
+ 40% done...
+ 50% done...
+ 60% done...
+ 70% done...
+ 80% done...
+ Completed.
+
+[BCData] Set all boundary conditions to `SOL'
+[IO] Reading mesh '/home/pedro/Documents/ThesisProject/Test1500WedgeCHT/_mesh/Test1500WedgeCHT_UNS.hex'
+[IO]   created on 04/24/2016
+[IO]   by Hexpress version 5.1
+[IO]   with file format 4.7
+hexaFileMng::importAndInitialize versions = 4.7 4.7
+[IO] Reading block #0
+[IO]   Mesh type: 1
+[IO]   Number of grid levels: 1
+[IO] Reading 4800 vertices
+[IO] Reading 11752 edges
+[IO] Reading 9230 faces
+[IO] Reading 2277 cells
+[IO] Reading ribbon cells
+[IO] Reading relaxed cells info
+[IO] Reading auxilliary smoothing data
+[IO] Reading domain-mesh connection data
+[IO] Reading cell refinement level
+[IO] Reading AutoGrid 5 data
+[IO] Reading FNMB data '/home/pedro/Documents/ThesisProject/Test1500WedgeCHT/_mesh/Test1500WedgeCHT_UNS.fnmb
+[IO]   created on 04/24/2016
+[IO]   by Hexpress version 5.1
+[IO]   with file format 2.2
+[IO] Reading NMB data '/home/pedro/Documents/ThesisProject/Test1500WedgeCHT/_mesh/Test1500WedgeCHT_UNS.nmb
+[IO]   created on 04/24/2016
+[IO]   by Hexpress version 5.1
+[IO]   with file format 1
+hexaFileMng::import, Reading 0 NMB connections...
+HexaProject::saveMeshAndFNMB(), caseName:/home/pedro/Documents/ThesisProject/Test1500WedgeCHT/_mesh/Test1500WedgeCHT_UNS
+Renumbering mesh!
+defragStorage0D: defragment vertices...
+defragStorage1D: defragment-sort edges...
+defragStorage2D: defragment-sort faces...
+defragStorage3D: defragment-sort cells...
+hexaFileMng::export, exporting partition data for /home/pedro/Documents/ThesisProject/Test1500WedgeCHT/_mesh/Test1500WedgeCHT_UNS with 1 entries
+PartitionData::exportBinary-->exporting Partition data  
+PartitionData::exportBinary-->Partition Data is empty should be writing 0 entries 0
+[IO] Saving FNMB connections...
+[IO] Saving 0 non matching connection(s)...
+[IO] Reading domain '/home/pedro/Documents/ThesisProject/Test1500WedgeCHT/_mesh/Test1500WedgeCHT_UNS.dom'
+[BCData] Set all boundary conditions to `SOL'

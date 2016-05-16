@@ -1,0 +1,32 @@
+Unstructured adapted mesh from HexaNS
+Initial mesh : unstructured or (multiblock) structured
+Full or local adaptation with anisotropic refinement/hierarchical coarsening
+Project Name : /home/pedro/Documents/ThesisProject/Test1500Wedge/Test1500Wedge_264_unst/Test1500Wedge_264_unst
+File created with Hexstream version: 5.1
+
+3D HexaNS CARTESIAN NONE
+
+4
+ |Static Temperature| |Static Pressure| |Static enthalpy| |Density|
+1
+ |Vxyz|
+0
+0
+
+1
+  0 0
+/home/pedro/Documents/ThesisProject/Test1500Wedge/Test1500Wedge_264_unst/Test1500Wedge_264_unst.hex
+/home/pedro/Documents/ThesisProject/Test1500Wedge/Test1500Wedge_264_unst/Test1500Wedge_264_unst.bcs
+
+/home/pedro/Documents/ThesisProject/Test1500Wedge/Test1500Wedge_264_unst/Test1500Wedge_264_unst_t000570_a0.d1.s1
+/home/pedro/Documents/ThesisProject/Test1500Wedge/Test1500Wedge_264_unst/Test1500Wedge_264_unst_t000570_a0.d1.s2
+/home/pedro/Documents/ThesisProject/Test1500Wedge/Test1500Wedge_264_unst/Test1500Wedge_264_unst_t000570_a0.d1.s3
+/home/pedro/Documents/ThesisProject/Test1500Wedge/Test1500Wedge_264_unst/Test1500Wedge_264_unst_t000570_a0.d1.s4
+
+/home/pedro/Documents/ThesisProject/Test1500Wedge/Test1500Wedge_264_unst/Test1500Wedge_264_unst_t000570_a0.d1.v1
+
+
+0
+0
+
+0

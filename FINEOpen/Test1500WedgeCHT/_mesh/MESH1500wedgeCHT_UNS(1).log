@@ -1,0 +1,70 @@
+hexaMBlockConverter::_importMultiBlockGrid_bcsInfo--> reading structured BCS file 
+hexaMBlockConverter::_importMultiBlockGrid_bcsInfo--> reading turbomachinery configuration in .bcs file
+  Turbomachinary configuration found
+The meridional mesh has not been saved in the cgns file by AUTOGRID
+
+ o defining the domain partitioning.
+The mesh contains 0 blocks which are ZR or 3d techno effect
+ o building the mesh.
+hexaMBlockConverter::buildGroupedMesh --> building multidomain mesh -> IN 
+ .. Chosen domain partitioning : 
+ .... domain 0 (cil) has 2 blocks  :  .... Chosen multigrid levels : finest is 0 and coarsest 0
+hexaMBlockConverter::_allocateMeshForAllGroups->IN
+ .. set up external (periodic and interblock) connections
+hexaMBlockConverter::_allocateMeshForAllGroups->OUT
+hexaMBlockConverter::_numberVerticesForAllGroups -> IN
+  assigning a unique number to all vertices 
+ .. numbering nodes for domain 0
+ .... independent vertex numbering in all blocks 
+ .... setup the inverse map 
+ .... mark duplicate connection nodes 
+ .... delete the redundant nodes and renumber the other ones
+defragStorage0D: defragment vertices...
+hexaMBlockConverter::_numberVerticesForAllGroups -> OUT
+hexaMBlockConverter::_computeMeshForAllGroups->IN
+ .. computing coarsest mesh
+hexaMBlockConverter::_computeMeshForAllGroups->OUT
+hexaMBlockConverter::buildGroupedMesh --> building multidomain mesh -> OUT 
+
+    o  createDomainFromMesh:Creating domain from painted triangulation ...
+
+    .  DomainConstruct: --> Creating 12 geometric surfaces
+
+    .  DomainConstruct: --> Creating 24 geometric curves
+
+    .  DomainConstruct: --> Creating 16 geometric vertices
+created domain with name cil
+[BCData] Set all boundary conditions to `SOL'
+[IO] Reading domain '/home/pedro/Documents/ThesisProject/Test1500WedgeCHT/_mesh/MESH1500wedgeCHT_UNS(1).dom'
+
+ ===> WARNING: Found inverted triangles on face 0, triangle 0
+ 10% done...
+ 20% done...
+ 30% done...
+ 40% done...
+ 50% done...
+ 60% done...
+ 70% done...
+ 80% done...
+ 90% done...
+ Completed.
+
+Surface: 0, curve: 0
+changed orientation from -1 to 1
+Surface: 0, curve: 1
+changed orientation from 1 to -1
+Surface: 0, curve: 2
+changed orientation from 1 to -1
+Surface: 0, curve: 3
+changed orientation from -1 to 1
+
+ ===> WARNING:Domain::_setEdgeNeighbors(), wrong topology orientation, edge: 0 connected to faces with same orientation: 0 and 2
+
+ ===> WARNING:Domain::_setEdgeNeighbors(), wrong topology orientation, edge: 4 connected to faces with same orientation: 1 and 2
+
+ ===> WARNING:Domain::_setEdgeNeighbors(), wrong topology orientation, edge: 1 connected to faces with same orientation: 0 and 3
+
+ ===> WARNING:Domain::_setEdgeNeighbors(), wrong topology orientation, edge: 3 connected to faces with same orientation: 0 and 4
+
+ ===> WARNING:Domain::_setEdgeNeighbors(), wrong topology orientation, edge: 2 connected to faces with same orientation: 0 and 5
+[BCData] Set all boundary conditions to `SOL'

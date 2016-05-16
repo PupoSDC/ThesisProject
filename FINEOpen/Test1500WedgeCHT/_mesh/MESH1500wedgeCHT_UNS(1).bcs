@@ -1,0 +1,22 @@
+Version 2.2
+NUMBER_OF_BLOCKS 1
+cil
+0 0 0
+1
+Periodicity_1
+NONE 
+NUMBER_OF_FACES 1
+12
+cil_group_0 SOL 0 0 0 0 
+cil_group_1 SOL 0 0 0 0 
+cil_group_2 MIR 0 0 0 0 
+cil_group_3 MIR 0 0 0 0 
+cil_group_4 OUT 0 0 0 0 
+cil_group_5 INL 0 0 0 0 
+cil_group_6 MIR 0 0 0 0 
+cil_group_7 SOL 0 0 0 0 
+cil_group_8 MIR 0 0 0 0 
+cil_group_9 MIR 0 0 0 0 
+cil_group_10 OUT 0 0 0 0 
+cil_group_11 INL 0 0 0 0 
+0
