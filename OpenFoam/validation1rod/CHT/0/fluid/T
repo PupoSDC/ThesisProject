@@ -10,7 +10,6 @@ FoamFile
     version     2.0;
     format      ascii;
     class       volScalarField;
-    location    "0/fluid";
     object      T;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
@@ -20,10 +19,13 @@ dimensions      [0 0 0 1 0 0 0];
 internalField   uniform 293.7;
 
 boundaryField
-{
-    Inlet       { type fixedValue; value uniform 293.7; }
-    
-    fluid_to_solid     
+{   
+
+   Inlet         { type totalTemperature; T0 uniform 293.7; gamma 1.4; }
+   Outlet        { type inletOutlet; inletValue uniform 293.7; value uniform 293.7; }
+   Outterwall    { type zeroGradient; }
+   
+   "fluid_to_.*"                
     {
         type            compressible::turbulentTemperatureRadCoupledMixed;
         Tnbr            T;
@@ -33,12 +35,7 @@ boundaryField
         kappaName       none;
         value           uniform 293.7;
     }
-   
-    Outlet      { type zeroGradient; }
-    Outterwall  { type zeroGradient; }
-    LeftWedge   { type wedge; }
-    RightWedge  { type wedge; }
+
+   "symmetry.*"    { type symmetry; }
 }
 
-
-// ************************************************************************* //

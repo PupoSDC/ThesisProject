@@ -30,7 +30,7 @@ boundaryField
         value           uniform 0;
     }
 
-    fluid_to_solid
+    "fluid_to_.*"
     {
         type            greyDiffusiveRadiation;
         T               T;
@@ -39,6 +39,5 @@ boundaryField
         value           uniform 0;
     }
 
-    LeftWedge   { type wedge; }
-    RightWedge  { type wedge; }    
+    "symmetry.*"     { type symmetry; } 
 }

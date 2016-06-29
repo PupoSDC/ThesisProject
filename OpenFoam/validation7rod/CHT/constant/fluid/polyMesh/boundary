@@ -1,0 +1,74 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  3.0.1                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       polyBoundaryMesh;
+    location    "constant/fluid/polyMesh";
+    object      boundary;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+7
+(
+    Outterwall
+    {
+        type            patch;
+        nFaces          1800;
+        startFace       472680;
+    }
+    symmetryleft
+    {
+        type            symmetry;
+        inGroups        1(symmetry);
+        nFaces          10800;
+        startFace       474480;
+    }
+    symmetryrigt
+    {
+        type            symmetry;
+        inGroups        1(symmetry);
+        nFaces          6600;
+        startFace       485280;
+    }
+    Outlet
+    {
+        type            patch;
+        nFaces          1620;
+        startFace       491880;
+    }
+    Inlet
+    {
+        type            patch;
+        nFaces          1620;
+        startFace       493500;
+    }
+    fluid_to_ciltop
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          3600;
+        startFace       495120;
+        sampleMode      nearestPatchFace;
+        sampleRegion    ciltop;
+        samplePatch     ciltop_to_fluid;
+    }
+    fluid_to_cilcen
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          600;
+        startFace       498720;
+        sampleMode      nearestPatchFace;
+        sampleRegion    cilcen;
+        samplePatch     cilcen_to_fluid;
+    }
+)
+
+// ************************************************************************* //

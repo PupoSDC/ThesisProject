@@ -17,31 +17,31 @@ FoamFile
 
 dimensions      [0 0 0 0 0 0 0];
 
-internalField   uniform 1;
+internalField   uniform 0;
 
 boundaryField
 {
-    LeftWedge
-    {
-        type            wedge;
-    }
-    RightWedge
-    {
-        type            wedge;
-    }
-    Inlet
+    Outterwall
     {
         type            zeroGradient;
+    }
+    symmetryleft
+    {
+        type            symmetry;
+    }
+    symmetryrigt
+    {
+        type            symmetry;
     }
     Outlet
     {
         type            zeroGradient;
     }
-    Outterwall
+    Inlet
     {
         type            zeroGradient;
     }
-    fluid_to_solid
+    fluid_to_cilcen
     {
         type            calculated;
         value           uniform 0;

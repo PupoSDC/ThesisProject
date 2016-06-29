@@ -1,0 +1,70 @@
+reset
+set term x11 1 noraise
+set multiplot layout 3,2 rowsfirst
+
+# --- GRAPH A
+set origin 0.0,0.33
+set title "Temperature"
+set ylabel 'Temperature [k]'
+set xlabel 'Iteration'
+plot  "< cat log | grep 'T   max/avg/min :'        | cut -d' ' -f8 "  title  'Tmax' with lines,\
+      "< cat log | grep 'T   max/avg/min :'        | cut -d' ' -f9 "  title  'Tavg' with lines,\
+      "< cat log | grep 'T   max/avg/min :'        | cut -d' ' -f10"  title  'Tmin' with lines,\
+      "< cat log | grep 'Tcilcen  max/avg/min :'   | cut -d' ' -f5 "  title  'Tcilcen' with lines,\
+      "< cat log | grep 'Tciltop  max/avg/min :'   | cut -d' ' -f5 "  title  'Tciltop' with lines
+
+# --- GRAPH B
+set origin 0.0,0.0
+set title "Mass flow Averages"
+set ylabel 'Mass flow [kg/s]'
+set xlabel 'Iteration'
+plot "< cat log | grep 'Inflow      : ' | cut -d' ' -f10" title  'Inflow' with lines,\
+     "< cat log | grep 'Outflow     : ' | cut -d' ' -f9"  title  'Outflow' with lines
+
+# --- GRAPH C
+set origin 0.0,0.66
+set title "Pressure"
+set ylabel 'Pressure [Pa]'
+set xlabel 'Iteration'
+plot "< cat log | grep 'P   max/avg/min : ' | cut -d' ' -f8"  title "Pmax" with lines,\
+     "< cat log | grep 'P   max/avg/min : ' | cut -d' ' -f9"  title "Pavg" with lines,\
+     "< cat log | grep 'P   max/avg/min : ' | cut -d' ' -f10" title "Pmin" with lines
+    
+# --- GRAPH D
+set origin 0.5,0.33
+set title "Density"
+set ylabel 'Density [kg/m^3]'
+set xlabel 'Iteration'
+plot "< cat log | grep 'rho max/avg/min : ' | cut -d' ' -f6" title "RHOmax" with lines,\
+     "< cat log | grep 'rho max/avg/min : ' | cut -d' ' -f7" title "RHOavg" with lines,\
+     "< cat log | grep 'rho max/avg/min : ' | cut -d' ' -f8" title "RHOmin" with lines
+
+
+# --- GRAPH E
+set origin 0.5,0.66
+set title "Dynamic Pressure"
+set ylabel 'P_rgh [Pa]'
+set xlabel 'Iteration'
+plot "< cat log | grep 'Prg max/avg/min : ' | cut -d' ' -f6" title "P_rgh_max" with lines,\
+     "< cat log | grep 'Prg max/avg/min : ' | cut -d' ' -f7" title "P_rgh_avg" with lines,\
+     "< cat log | grep 'Prg max/avg/min : ' | cut -d' ' -f8" title "P_rgh_min" with lines
+
+# --- GRAPH E
+
+set origin 0.5,0.0
+set logscale y
+set title "Residuals"
+set ylabel 'Residual'
+set xlabel 'Iteration'
+plot "< cat log | grep 'Solving for Ux' | cut -d' ' -f9 | tr -d ','" title 'Ux' with lines,\
+     "< cat log | grep 'Solving for Uz' | cut -d' ' -f9 | tr -d ','" title 'Uz' with lines,\
+     "< cat log | grep 'Solving for p'  | cut -d' ' -f9 | tr -d ','" title 'p' with lines,\
+     "< cat log | grep 'DILUPBiCG:  Solving for h' | cut -d' ' -f9 | tr -d ','" title 'h fluid' with lines,\
+     "< cat log | grep -A 1 'Solving for solid region ciltop' | cut -d' ' -f9 |  tr -d ',' | sed '/^-/ d' | grep -v -e '^$' " title 'hciltop' with lines,\
+     "< cat log | grep -A 1 'Solving for solid region cilcen' | cut -d' ' -f9 |  tr -d ',' | sed '/^-/ d' | grep -v -e '^$' " title 'hcilcen' with lines
+
+
+unset multiplot
+### End multiplot
+pause 1
+reread

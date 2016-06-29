@@ -26,8 +26,6 @@ thermoType
     energy          sensibleEnthalpy;
 }
 
-pRef            101325;
-
 mixture
 {
     specie

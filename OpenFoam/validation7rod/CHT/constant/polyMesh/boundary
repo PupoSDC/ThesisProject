@@ -1,0 +1,106 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  3.0.1                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       polyBoundaryMesh;
+    location    "constant/polyMesh";
+    object      boundary;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+13
+(
+    Outterwall
+    {
+        type            patch;
+        nFaces          1800;
+        startFace       534470;
+    }
+    ciltoptop
+    {
+        type            patch;
+        nFaces          180;
+        startFace       536270;
+    }
+    cilbottop
+    {
+        type            patch;
+        nFaces          180;
+        startFace       536450;
+    }
+    ciltopcen
+    {
+        type            patch;
+        nFaces          30;
+        startFace       536630;
+    }
+    cilbotcen
+    {
+        type            patch;
+        nFaces          30;
+        startFace       536660;
+    }
+    symmetryleft
+    {
+        type            symmetry;
+        inGroups        1(symmetry);
+        nFaces          10800;
+        startFace       536690;
+    }
+    symmetryrigt
+    {
+        type            symmetry;
+        inGroups        1(symmetry);
+        nFaces          6600;
+        startFace       547490;
+    }
+    symmetrytop1
+    {
+        type            symmetry;
+        inGroups        1(symmetry);
+        nFaces          1000;
+        startFace       554090;
+    }
+    symmetrycen1
+    {
+        type            symmetry;
+        inGroups        1(symmetry);
+        nFaces          500;
+        startFace       555090;
+    }
+    symmetrycen2
+    {
+        type            symmetry;
+        inGroups        1(symmetry);
+        nFaces          500;
+        startFace       555590;
+    }
+    Outlet
+    {
+        type            patch;
+        nFaces          1620;
+        startFace       556090;
+    }
+    Inlet
+    {
+        type            patch;
+        nFaces          1620;
+        startFace       557710;
+    }
+    defaultFaces
+    {
+        type            empty;
+        inGroups        1(empty);
+        nFaces          0;
+        startFace       559330;
+    }
+)
+
+// ************************************************************************* //

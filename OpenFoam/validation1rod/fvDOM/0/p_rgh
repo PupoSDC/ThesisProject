@@ -20,16 +20,11 @@ internalField   uniform 101325;
 
 boundaryField
 {
-
-    //Inlet       { type calculated; value $internalField; }
-    //Inlet       { type totalPressure; p0 uniform 101325; gamma 1.4;}
-    Inlet       { type fixedValue; value uniform 101325;}
-    Outlet      { type zeroGradient; }
-
-    Outterwall  { type fixedFluxPressure; value uniform 101325; }
-    Innerwall   { type fixedFluxPressure; value uniform 101325; }
-    LeftWedge   { type wedge; }
-    RightWedge  { type wedge; }
+    Inlet          { type prghTotalPressure; p0 uniform 101325; }
+    Outlet         { type zeroGradient; }
+    Outterwall     { type fixedFluxPressure; value uniform 101325; }
+    "fluid_to_.*"  { type fixedFluxPressure; value uniform 101325; }
+    ".*Wedge"      { type wedge; }
     
 }
 

@@ -15,68 +15,72 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-9
+10
 (
-    CHTLeftWedge
-    {
-        type            wedge;
-        inGroups        1(wedge);
-        nFaces          400;
-        startFace       8656;
-    }
-    CHTRightWedge
-    {
-        type            wedge;
-        inGroups        1(wedge);
-        nFaces          400;
-        startFace       9056;
-    }
-    LeftWedge
-    {
-        type            wedge;
-        inGroups        1(wedge);
-        nFaces          4000;
-        startFace       9456;
-    }
-    RightWedge
-    {
-        type            wedge;
-        inGroups        1(wedge);
-        nFaces          4000;
-        startFace       13456;
-    }
-    Inlet
+    Outterwall
     {
         type            patch;
-        nFaces          40;
-        startFace       17456;
+        nFaces          100;
+        startFace       10049;
+    }
+    cilcentop
+    {
+        type            patch;
+        nFaces          1;
+        startFace       10149;
+    }
+    cilcenbot
+    {
+        type            patch;
+        nFaces          1;
+        startFace       10150;
+    }
+    symmetryleft
+    {
+        type            symmetry;
+        inGroups        1(symmetry);
+        nFaces          5000;
+        startFace       10151;
+    }
+    symmetryrigt
+    {
+        type            symmetry;
+        inGroups        1(symmetry);
+        nFaces          5000;
+        startFace       15151;
+    }
+    symmetryleftcen
+    {
+        type            symmetry;
+        inGroups        1(symmetry);
+        nFaces          100;
+        startFace       20151;
+    }
+    symmetryrigtcen
+    {
+        type            symmetry;
+        inGroups        1(symmetry);
+        nFaces          100;
+        startFace       20251;
     }
     Outlet
     {
         type            patch;
-        nFaces          40;
-        startFace       17496;
+        nFaces          50;
+        startFace       20351;
     }
-    axis
+    Inlet
     {
-        type            empty;
-        inGroups        1(empty);
-        nFaces          0;
-        startFace       17536;
-    }
-    Outterwall
-    {
-        type            wall;
-        inGroups        1(wall);
-        nFaces          100;
-        startFace       17536;
+        type            patch;
+        nFaces          50;
+        startFace       20401;
     }
     defaultFaces
     {
         type            empty;
         inGroups        1(empty);
-        nFaces          8;
-        startFace       17636;
+        nFaces          0;
+        startFace       20451;
     }
 )
 

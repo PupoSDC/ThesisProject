@@ -1,0 +1,26 @@
+reset
+set term x11 1 noraise
+set multiplot layout 2,1 rowsfirst
+
+# --- GRAPH A
+set origin 0.0,0.0
+set title "Temperature"
+set ylabel 'Temperature [k]'
+set xlabel 'Iteration'
+plot "< cat log | grep 'T   max/avg/min :'   | cut -d' ' -f6 " title  'Tmax' with lines,\
+     "< cat log | grep 'T   max/avg/min :'   | cut -d' ' -f7 " title  'Tavg' with lines,\
+     "< cat log | grep 'T   max/avg/min :'   | cut -d' ' -f8 " title  'Tmin' with lines
+ 
+# --- GRAPH H
+set origin 0.0,0.5
+set logscale y
+set title "Residuals"
+set ylabel 'Residual'
+set xlabel 'Iteration'
+plot "< cat log | grep 'Solving for h'  | cut -d' ' -f9 | tr -d ','" title 'h' with lines
+
+
+unset multiplot
+### End multiplot
+pause 1
+reread

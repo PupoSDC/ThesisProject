@@ -1,0 +1,50 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  3.0.1                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volScalarField;
+    location    "3500/cilcen";
+    object      p;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [1 -1 -2 0 0 0 0];
+
+internalField   uniform 101325;
+
+boundaryField
+{
+    cilcentop
+    {
+        type            fixedValue;
+        value           uniform 101325;
+    }
+    cilcenbot
+    {
+        type            fixedValue;
+        value           uniform 101325;
+    }
+    symmetryleftcen
+    {
+        type            symmetry;
+    }
+    symmetryrigtcen
+    {
+        type            symmetry;
+    }
+    cilcen_to_fluid
+    {
+        type            fixedValue;
+        value           uniform 101325;
+    }
+}
+
+
+// ************************************************************************* //

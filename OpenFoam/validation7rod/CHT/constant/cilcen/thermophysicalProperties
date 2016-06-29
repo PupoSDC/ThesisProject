@@ -1,0 +1,54 @@
+/*--------------------------------*- C++ -*----------------------------------* \
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  3.0.1                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      thermophysicalProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+// Source: http://kanthal.com/en/products/material-datasheets/wire/na/nikrothal-8020-cb/
+
+thermoType
+{
+    type            heSolidThermo;
+    mixture         pureMixture;
+    transport       constIso;
+    thermo          hConst;
+    equationOfState rhoConst;
+    specie          specie;
+    energy          sensibleEnthalpy;
+}
+
+mixture
+{
+    specie
+    {
+        nMoles      1;
+        molWeight   12;
+    }
+
+    transport
+    {
+        kappa   15; //  [W/(m.K)]  15 [W/(m.K)]
+    }
+
+    thermodynamics
+    {
+        Hf      0;
+        Cp      500; // [J/(kg K)] 0.48 [kJ/(kg K)]
+    }
+
+    equationOfState
+    {
+        rho     7800;
+    }
+}
+
+// ************************************************************************* //

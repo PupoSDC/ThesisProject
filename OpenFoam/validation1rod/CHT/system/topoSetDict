@@ -17,38 +17,48 @@ FoamFile
 
 actions
 (
-    // solid
+    // cilcen
     {
-        name    solid;
+        name    cilcen;
         type    cellSet;
         action  new;
         source  boxToCell;
         sourceInfo
         {
-            box (0 -1 -1.5)(0.0032 1 0);
+          box (0 -1 -9) (0.0032 1 9);
         }
     }
     {
-        name    solid;
+        name    cilcen;
         type    cellZoneSet;
         action  new;
         source  setToCellZone;
         sourceInfo
         {
-            set solid;
+            set cilcen;
         }
     }
 
     // fluid
     {
         name    fluid;
+        type    cellZoneSet;
+        action  clear;
+    }
+    {
+        name    fluid;
         type    cellSet;
-        action  new;
-        source  boxToCell;
+        action  add;
+        source  cellToCell;
         sourceInfo
         {
-            box (0.0032 -1 -1.5)(1 1 0);
+            set cilcen;
         }
+    }
+    {
+        name    fluid;
+        type    cellSet;
+        action  invert;
     }
     {
         name    fluid;

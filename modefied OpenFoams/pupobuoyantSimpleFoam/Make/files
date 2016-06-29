@@ -1,0 +1,3 @@
+pupobuoyantSimpleFoam.C
+
+EXE = $(FOAM_APPBIN)/pupobuoyantSimpleFoam
