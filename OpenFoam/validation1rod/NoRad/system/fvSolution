@@ -21,8 +21,8 @@ solvers
     p_rgh
     {
         solver           GAMG;
-        tolerance        1e-7;
-        relTol           0.01;
+        tolerance        1e-9;
+        relTol           0.001;
 
         smoother         DICGaussSeidel;
 
@@ -36,8 +36,8 @@ solvers
     {
         solver          PBiCG;
         preconditioner  DILU;
-        tolerance       1e-7;
-        relTol          0.01;
+        tolerance       1e-9;
+        relTol          0.001;
     }
 
 }
@@ -56,10 +56,17 @@ SIMPLE
 
 relaxationFactors
 {
-    rho             1.0;
-    p_rgh           0.7;
-    U               0.3;
-    h               0.9;   
+      fields
+    {
+        rho             1.0;
+        p_rgh           0.7;
+        U               0.4;
+    }
+    equations
+    {
+        U               0.78;
+        h               0.9;
+    }
 }
 
 // ************************************************************************* //

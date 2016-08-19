@@ -1,0 +1,112 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.1.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      topoSetDict;
+}
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+actions
+(   
+    // cilcen
+    {
+        name    cilcen;
+        type    cellSet;
+        action  new;
+        source  cylinderToCell;
+        sourceInfo
+        {
+            p1       (0 0 -10); 
+            p2       (0 0  10); 
+            radius   0.006;
+        }
+    }
+    {
+        name    cilcen;
+        type    cellZoneSet;
+        action  new;
+        source  setToCellZone;
+        sourceInfo
+        {
+            set cilcen;
+        }
+    }
+    // ciltop
+    {
+        name    ciltop;
+        type    cellSet;
+        action  new;
+        source  cylinderToCell;
+        sourceInfo
+        {
+            p1       (0.01625 0 -10);
+            p2       (0.01625  0  10);
+            radius   0.006;
+        }
+    }
+    {
+        name    ciltop;
+        type    cellZoneSet;
+        action  new;
+        source  setToCellZone;
+        sourceInfo
+        {
+            set ciltop;
+        }
+    }
+
+    // Fluid
+    {
+        name    fluid;
+        type    cellZoneSet;
+        action  clear;
+    }
+    {
+        name    fluid;
+        type    cellSet;
+        action  add;
+        source  cellToCell;
+        sourceInfo
+        {
+            set cilcen;
+        }
+    }
+    {
+        name    fluid;
+        type    cellSet;
+        action  add;
+        source  cellToCell;
+        sourceInfo
+        {
+            set ciltop;
+        }
+    }
+    {
+        name    fluid;
+        type    cellSet;
+        action  invert;
+    }
+    {
+        name    fluid;
+        type    cellZoneSet;
+        action  new;
+        source  setToCellZone;
+        sourceInfo
+        {
+            set fluid;
+        }
+    }
+
+
+);
+
+// ************************************************************************* //

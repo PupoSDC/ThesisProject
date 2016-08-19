@@ -24,13 +24,13 @@ startTime       0;
 
 stopAt          endTime;
 
-endTime         1200;
+endTime         200000;
 
 deltaT          1;
 
 writeControl    timeStep;
 
-writeInterval   1500;
+writeInterval   100000;
 
 purgeWrite      1;
 
@@ -46,5 +46,9 @@ timePrecision   6;
 
 runTimeModifiable true;
 
+libs 
+( 
+	"libNAME.so"
+);
 
 // ************************************************************************* //

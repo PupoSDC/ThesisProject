@@ -21,7 +21,7 @@ solvers
     p_rgh
     {
         solver           GAMG;
-        tolerance        1e-7;
+        tolerance        1e-4;
         relTol           0.01;
 
         smoother         DICGaussSeidel;
