@@ -31,11 +31,11 @@ boundaryField
       type             externalWallHeatFluxTemperature;
       kappa            fluidThermo; 
       kappaMethod      fluidThermo;
-      q                uniform 264; 
+      q                uniform 3636; 
       value            uniform 293.7;
+      Tinf             uniform 293.7; 
+      Emissivity       uniform 0.96; 
    } 
-
-
 
    ".*Wedge"   { type wedge; }
 }

@@ -39,5 +39,5 @@ boundaryField
         value           uniform 0;
     }
 
-   //"symmetry.*"    { type wedge; }
+    ".*Wedge"   { type wedge; }
 }

@@ -118,11 +118,11 @@ createboundary("Outterwall",[[o2,o1]],l,"patch")
 createboundary("cilcentop",[[c0,a1,a2,c0]],l[0],"patch")
 createboundary("cilcenbot",[[c0,a2,a1,c0]],l[-1],"patch")
 
-createboundary("symmetryleft",[[o1,a1]],l,"symmetry")
-createboundary("symmetryrigt",[[a2,o2]],l,"symmetry")
+createboundary("leftWedge",[[o1,a1]],l,"wedge")
+createboundary("rigtWedge",[[a2,o2]],l,"wedge")
 
-createboundary("symmetryleftcen", [[a1,c0]],l,"symmetry" )
-createboundary("symmetryrigtcen", [[c0,a2]],l,"symmetry" )
+createboundary("leftcenWedge", [[a1,c0]],l,"wedge" )
+createboundary("rigtcenWedge", [[c0,a2]],l,"wedge" )
 
 createboundary("Outlet",[[a1,o1,o2,a2]],l[0],"patch")
 createboundary("Inlet",[[a2,o2,o1,a1]],l[-1],"patch")

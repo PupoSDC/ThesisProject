@@ -22,9 +22,9 @@ boundaryField
 {   
    Inlet         { type pressureInletVelocity; value uniform (0 0 0); }
    Outlet        { type inletOutlet; inletValue uniform (0 0 0); value uniform (0 0 0); }
-   "fluid_to_.*" { type fixedValue; value uniform (0 0 0); }
-   Outterwall    { type slip; }
-   ".*Wedge"     { type wedge; }
+   "fluid_to_.*" { type noSlip; }
+   Outterwall    { type   slip; }
+   ".*Wedge"     { type wedge;  }
 }
 
 // ************************************************************************* //

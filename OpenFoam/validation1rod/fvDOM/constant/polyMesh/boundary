@@ -1,7 +1,7 @@
 /*--------------------------------*- C++ -*----------------------------------*\
 | =========                 |                                                 |
 | \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
-|  \\    /   O peration     | Version:  3.0.1                                 |
+|  \\    /   O peration     | Version:  4.0                                   |
 |   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
 |    \\/     M anipulation  |                                                 |
 \*---------------------------------------------------------------------------*/
@@ -17,43 +17,45 @@ FoamFile
 
 6
 (
-    Outterwall
+    LeftWedge
     {
-        type            patch;
-        nFaces          100;
-        startFace       4875;
+        type            wedge;
+        inGroups        1(wedge);
+        nFaces          5000;
+        startFace       9850;
     }
-    symmetryleft1
+    RightWedge
     {
-        type            empty;
-        inGroups        1(empty);
-        nFaces          2500;
-        startFace       4975;
-    }
-    symmetryrigt1
-    {
-        type            empty;
-        inGroups        1(empty);
-        nFaces          2500;
-        startFace       7475;
-    }
-    Outlet
-    {
-        type            patch;
-        nFaces          25;
-        startFace       9975;
+        type            wedge;
+        inGroups        1(wedge);
+        nFaces          5000;
+        startFace       14850;
     }
     Inlet
     {
         type            patch;
-        nFaces          25;
-        startFace       10000;
+        nFaces          50;
+        startFace       19850;
     }
-    fluid_to_cilcen
+    Outlet
     {
         type            patch;
+        nFaces          50;
+        startFace       19900;
+    }
+    Outterwall
+    {
+        type            wall;
+        inGroups        1(wall);
         nFaces          100;
-        startFace       10025;
+        startFace       19950;
+    }
+    fluid_to_cencil
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          100;
+        startFace       20050;
     }
 )
 

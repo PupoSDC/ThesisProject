@@ -18,19 +18,19 @@ FoamFile
 
 application     buoyantSimpleFoam;
 
-startFrom       latestTime;
+startFrom       startTime;
 
 startTime       0;
 
 stopAt          endTime;
 
-endTime         100000;
+endTime         2000;
 
 deltaT          1;
 
 writeControl    timeStep;
 
-writeInterval   1000;
+writeInterval   2000;
 
 purgeWrite      1;
 
@@ -46,5 +46,9 @@ timePrecision   6;
 
 runTimeModifiable true;
 
+libs 
+( 
+	"libNAME.so"
+);
 
 // ************************************************************************* //

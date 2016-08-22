@@ -20,10 +20,11 @@ internalField   uniform (0 0 0);
 
 boundaryField
 {   
-    Inlet   {   type zeroGradient;   }
-    Outlet  {   type zeroGradient;   }
-    Innerwall   { type fixedValue;            value uniform (0 0 0);       }
-    Outterwall  { type fixedValue;            value uniform (0 0 0);       }
+   Inlet         { type pressureInletVelocity; value uniform (0 0 0); }
+   Outlet        { type inletOutlet; inletValue uniform (0 0 0); value uniform (0 0 0); }
+   "fluid_to_.*" { type noSlip; }
+   Outterwall    { type   slip; }
+   ".*Wedge"     { type  wedge; }
 }
 
 // ************************************************************************* //

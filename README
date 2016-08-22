@@ -1,6 +1,6 @@
 In these folders the case set ups for FINEOPEN and OPENFOAM  can be found. 
 
-OPENFOAM 3.01 was used.
+OPENFOAM 4.0 was used.
 
 modefied OPENFOAM's folder has a all the edited solvers i used for my simulations.
 

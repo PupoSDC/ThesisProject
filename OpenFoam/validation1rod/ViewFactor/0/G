@@ -30,7 +30,7 @@ boundaryField
         value           uniform 0;
     }
 
-    Innerwall      
+    "fluid_to_.*"
     {
         type            MarshakRadiation;
         T               T;
@@ -38,6 +38,8 @@ boundaryField
         emissivity      uniform 0.96;
         value           uniform 0;
     }
+
+    ".*Wedge"      { type wedge; } 
 }
 
 // ************************************************************************* //

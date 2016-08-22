@@ -30,7 +30,7 @@ boundaryField
         value           uniform 0;
     }
 
-    Innerwall
+    "fluid_to_.*"
     {
         type            greyDiffusiveRadiationViewFactor;
         emissivityMode  lookup;
@@ -38,4 +38,6 @@ boundaryField
         emissivity      uniform 0.96;
         value           uniform 0;
     }
+
+    ".*Wedge"      { type wedge; } 
 }

@@ -20,20 +20,20 @@ internalField   uniform 293.7;
 
 boundaryField
 {   
-    Inlet       { type fixedValue; value uniform 293.7; }
-    
-    Innerwall     
-    {
-        type            externalWallHeatFluxTemperature;
-        kappa           fluidThermo;
-        q               uniform 3636;
-        value           uniform 293.7;
-        kappaName       none;
-        Qr              Qr;
-    }
+
+   Inlet         { type totalTemperature; T0 uniform 293.7; gamma 1.4; }
+   Outlet        { type inletOutlet; inletValue uniform 293.7; value uniform 293.7; }
+   Outterwall    { type zeroGradient; }
    
-    Outlet      { type zeroGradient; }
-    Outterwall  { type zeroGradient; }
+   "fluid_to_.*"  
+   { 
+      type             externalWallHeatFluxTemperature;
+      kappaMethod      fluidThermo;
+      q                uniform 264; 
+      Qr               Qr;
+      value            uniform 293.7;
+   } 
+
+   ".*Wedge"   { type wedge; }
 }
 
-// ************************************************************************* //

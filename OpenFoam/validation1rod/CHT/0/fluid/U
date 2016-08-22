@@ -1,4 +1,18 @@
-FoamFile { version 2.0; format ascii; class volVectorField; object U; }
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  3.0.1                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volVectorField;
+    object      U;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 dimensions      [0 1 -1 0 0 0 0];
 
@@ -6,9 +20,11 @@ internalField   uniform (0 0 0);
 
 boundaryField
 {   
-   Inlet          { type outletInlet; outletValue uniform (0 0 0); value uniform (0 0 0); } //pressureInletVelocity; value uniform (0 0 0); }
-   Outlet         { type inletOutlet;  inletValue uniform (0 0 0); value uniform (0 0 0); }
-   "fluid_to_.*"  { type fixedValue; value uniform (0 0 0); }
-   Outterwall     { type slip; }
-   "symmetry.*"   { type symmetry; }
+   Inlet         { type zeroGradient; }
+   Outlet        { type inletOutlet; inletValue uniform (0 0 0); value uniform (0 0 0); }
+   "fluid_to_.*" { type noSlip; }
+   Outterwall    { type slip;   }
+   ".*Wedge"     { type wedge;  }
 }
+
+// ************************************************************************* //

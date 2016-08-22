@@ -17,17 +17,16 @@ FoamFile
 
 solvers
 {
-
     p_rgh
     {
         solver           GAMG;
-        tolerance        1e-7;
-        relTol           0.01;
+        tolerance        1e-9;
+        relTol           0.001;
 
         smoother         DICGaussSeidel;
 
         cacheAgglomeration    true;
-        nCellsInCoarsestLevel 100;
+        nCellsInCoarsestLevel 10;
         agglomerator          faceAreaPair;
         mergeLevels           1;
     }
@@ -36,30 +35,31 @@ solvers
     {
         solver          PBiCG;
         preconditioner  DILU;
-        tolerance       1e-7;
-        relTol          0.01;
+        tolerance       1e-9;
+        relTol          0.001;
     }
 
     Ii
     {
-        solver              GAMG;
-        tolerance           1e-7;
-        relTol              0.01;
-        smoother            symGaussSeidel;
-        cacheAgglomeration  true;
+        solver                  GAMG;
+        tolerance               1e-4;
+        relTol                  0;
+        smoother                symGaussSeidel;
+        cacheAgglomeration      true;
         nCellsInCoarsestLevel   10;
-        agglomerator        faceAreaPair;
-        mergeLevels         1;
-        maxIter             5;
-        nPreSweeps          0;
-        nPostSweeps         1;
+        agglomerator            faceAreaPair;
+        mergeLevels             1;
+        maxIter                 5;
+        nPreSweeps              0;
+        nPostSweeps             1;
     }
-    
+
 }
 
 SIMPLE
 {
     nNonOrthogonalCorrectors 0;
+    consistent      yes;
 
     residualControl
     {
@@ -71,10 +71,16 @@ SIMPLE
 
 relaxationFactors
 {
-    rho             1;
-    p_rgh           1;
-    U               0.3;
-    h               0.9;
+    fields
+    {
+        //rho             1.0;
+        //p_rgh           1;
+    }
+    equations
+    {
+        U               0.5;
+        ".*"            0.9;
+    }
 }
 
 // ************************************************************************* //

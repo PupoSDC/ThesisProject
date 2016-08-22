@@ -18,34 +18,33 @@ FoamFile
 
 application     buoyantSimpleFoam;
 
-startFrom       latestTime;
+startFrom       startTime;
 
 startTime       0;
 
 stopAt          endTime;
 
-endTime         10000;
+endTime         2000;
 
 deltaT          1;
 
 writeControl    timeStep;
 
-writeInterval   10000000;
+writeInterval   2000;
 
-purgeWrite      0;
+purgeWrite      1;
 
 writeFormat     ascii;
 
-writePrecision  12;
+writePrecision  8;
 
 writeCompression off;
 
-timeFormat       general;
+timeFormat      general;
 
-timePrecision    12;
+timePrecision   6;
 
 runTimeModifiable true;
-
 
 libs 
 ( 

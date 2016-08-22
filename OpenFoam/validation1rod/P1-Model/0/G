@@ -30,7 +30,7 @@ boundaryField
         value           uniform 0;
     }
 
-    Innerwall      
+    "fluid_to_.*"  
     {
         type            MarshakRadiation;
         T               T;
@@ -39,12 +39,8 @@ boundaryField
         value           uniform 0;
     }
 
-    LeftWedge   { type wedge; }
-    RightWedge  { type wedge; }
+   ".*Wedge"   { type wedge; }
     
-
-
-
 }
 
 // ************************************************************************* //

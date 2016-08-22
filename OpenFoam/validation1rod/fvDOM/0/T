@@ -32,9 +32,8 @@ boundaryField
       kappaMethod      fluidThermo;
       q                uniform 264; 
       Qr               Qr;
-      value            uniform 293.7
+      value            uniform 293.7;
    } 
-
 
    ".*Wedge"   { type wedge; }
 }

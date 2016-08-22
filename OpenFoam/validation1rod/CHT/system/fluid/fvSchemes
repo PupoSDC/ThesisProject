@@ -21,6 +21,8 @@ interpolationSchemes { default upwind phi; }
 
 gradSchemes          { default Gauss upwind phi; }
 
+//snGradSchemes        { default bounded Gauss upwind; }
+
 laplacianSchemes     { default Gauss linear corrected; }
 
 divSchemes           

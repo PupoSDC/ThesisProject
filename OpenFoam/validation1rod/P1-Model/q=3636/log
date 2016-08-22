@@ -1,0 +1,2465 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  4.0                                   |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 4.0-665f1db4c1f1
+Exec   : pupoBuoyantSimpleFoam
+Date   : Aug 22 2016
+Time   : 00:56:48
+Host   : "SC500"
+PID    : 19733
+Case   : /home/pedro/Documents/ThesisProject/OpenFoam/validation1rod/P1-Model
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+
+SIMPLE: convergence criteria
+    field p_rgh	 tolerance 1e-06
+    field Uz	 tolerance 1e-06
+    field h	 tolerance 1e-06
+
+Reading thermophysical properties
+
+Selecting thermodynamics package 
+{
+    type            heRhoThermo;
+    mixture         pureMixture;
+    transport       sutherland;
+    thermo          hConst;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleEnthalpy;
+}
+
+
+Reading g
+
+Reading hRef
+Calculating field g.h
+
+Selecting turbulence model type laminar
+No MRF models present
+
+Selecting radiationModel P1
+Selecting absorptionEmissionModel constantAbsorptionEmission
+Selecting scatterModel none
+ 
+rho max/avg/min : 1.2016452 1.2015414 1.2014377
+T   max/avg/min : 293.7 293.7 293.7
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101325 101325
+U   max/avg/min : 0 0 0
+ 
+No finite volume options present
+
+
+Starting Iteration loop
+
+Iteration Number = 1
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.009764874, Final residual = 1.3546237e-06, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 4.8698736e-07, Final residual = 7.7482914e-11, No Iterations 2
+DILUPBiCG:  Solving for Uz, Initial residual = 1, Final residual = 0.00034325924, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 1, Final residual = 0.00045976171, No Iterations 1
+GAMG:  Solving for G, Initial residual = 1, Final residual = 0.0057682807, No Iterations 1000
+GAMG:  Solving for p_rgh, Initial residual = 0.72410932, Final residual = 0.00027149974, No Iterations 3
+time step continuity errors : sum local = 6.5159359e-05, global = -2.8966418e-05, cumulative = -2.8966418e-05
+ExecutionTime = 1.07 s  ClockTime = 1 s
+Inflow      : -2.3932256e-07 [kg/s]
+Outflow     : -2.6348053e-07 [kg/s]
+EnergyInflow  : -0.070710769 [W]
+EnergyOutflow : -0.077848538 [W]
+rho max/avg/min : 1.2016452 1.1980051 1.1399242
+T   max/avg/min : 309.54886 294.59253 293.7
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.97 101324.1
+U   max/avg/min : 5.8461583e-05 -8.4728677e-05 -0.00086324971
+Prg max-min : 0.90124614
+ 
+Iteration Number = 2
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.36665756, Final residual = 0.00011401151, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 9.4633183e-05, Final residual = 2.4160705e-08, No Iterations 2
+DILUPBiCG:  Solving for Uz, Initial residual = 0.39706814, Final residual = 4.6588442e-05, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.2491465, Final residual = 6.4881575e-05, No Iterations 1
+GAMG:  Solving for p_rgh, Initial residual = 0.024210081, Final residual = 1.3248236e-05, No Iterations 4
+time step continuity errors : sum local = 4.6349274e-05, global = 5.5822371e-06, cumulative = -2.3384181e-05
+ExecutionTime = 1.11 s  ClockTime = 1 s
+Inflow      : -3.7491887e-07 [kg/s]
+Outflow     : -3.7026329e-07 [kg/s]
+EnergyInflow  : -0.11077435 [W]
+EnergyOutflow : -0.10939881 [W]
+rho max/avg/min : 1.2016452 1.1948086 1.1107579
+T   max/avg/min : 317.67756 295.4254 293.70001
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.95 101323.67
+U   max/avg/min : 0.00018350681 -0.00011650364 -0.00086931376
+Prg max-min : 1.3292423
+ 
+Iteration Number = 3
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.45497114, Final residual = 0.00017518803, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.00010687252, Final residual = 3.5303941e-08, No Iterations 2
+DILUPBiCG:  Solving for Uz, Initial residual = 0.20525553, Final residual = 1.7777718e-05, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.16124437, Final residual = 4.8163606e-05, No Iterations 1
+GAMG:  Solving for p_rgh, Initial residual = 0.011209955, Final residual = 1.0211517e-05, No Iterations 2
+time step continuity errors : sum local = 6.3300808e-05, global = -1.6287236e-05, cumulative = -3.9671418e-05
+ExecutionTime = 1.14 s  ClockTime = 1 s
+Inflow      : -2.8151212e-07 [kg/s]
+Outflow     : -2.9509566e-07 [kg/s]
+EnergyInflow  : -0.08317619 [W]
+EnergyOutflow : -0.087189297 [W]
+rho max/avg/min : 1.2016452 1.1916541 1.0894661
+T   max/avg/min : 323.88603 296.26299 293.70002
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.93 101323.36
+U   max/avg/min : 0.00036306619 -4.3263948e-05 -0.0006709626
+Prg max-min : 1.6408696
+ 
+Iteration Number = 4
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.28749829, Final residual = 8.1085697e-05, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 7.1295774e-05, Final residual = 2.291236e-08, No Iterations 2
+DILUPBiCG:  Solving for Uz, Initial residual = 0.17822228, Final residual = 4.6789059e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.11815649, Final residual = 4.5416331e-05, No Iterations 1
+GAMG:  Solving for p_rgh, Initial residual = 0.0062875717, Final residual = 2.799551e-06, No Iterations 3
+time step continuity errors : sum local = 2.4967539e-05, global = 5.6487419e-06, cumulative = -3.4022676e-05
+ExecutionTime = 1.18 s  ClockTime = 1 s
+Inflow      : -2.4409462e-07 [kg/s]
+Outflow     : -2.3938357e-07 [kg/s]
+EnergyInflow  : -0.072120734 [W]
+EnergyOutflow : -0.070727831 [W]
+rho max/avg/min : 1.2016451 1.1885092 1.0720679
+T   max/avg/min : 329.14226 297.1107 293.70003
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.9 101323.1
+U   max/avg/min : 0.00059534443 3.0751752e-05 -0.00051953226
+Prg max-min : 1.8956334
+ 
+Iteration Number = 5
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.53889011, Final residual = 9.4791921e-05, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 6.0844643e-05, Final residual = 1.5035962e-08, No Iterations 2
+DILUPBiCG:  Solving for Uz, Initial residual = 0.17601269, Final residual = 2.408239e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.093976039, Final residual = 4.709888e-05, No Iterations 1
+GAMG:  Solving for p_rgh, Initial residual = 0.0047973758, Final residual = 1.4878669e-06, No Iterations 3
+time step continuity errors : sum local = 1.7466657e-05, global = 6.4121479e-06, cumulative = -2.7610528e-05
+ExecutionTime = 1.21 s  ClockTime = 2 s
+Inflow      : -2.0113722e-07 [kg/s]
+Outflow     : -1.9578949e-07 [kg/s]
+EnergyInflow  : -0.059428445 [W]
+EnergyOutflow : -0.057846142 [W]
+rho max/avg/min : 1.2016451 1.1853657 1.0570947
+T   max/avg/min : 333.80407 297.96912 293.70003
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.88 101322.88
+U   max/avg/min : 0.00089104734 0.00013966513 -0.00040807277
+Prg max-min : 2.1150072
+ 
+Iteration Number = 6
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.49867246, Final residual = 7.1465483e-05, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 5.6546667e-05, Final residual = 1.304681e-08, No Iterations 2
+DILUPBiCG:  Solving for Uz, Initial residual = 0.20066815, Final residual = 4.2275908e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.078452264, Final residual = 5.0962763e-05, No Iterations 1
+GAMG:  Solving for p_rgh, Initial residual = 0.003930923, Final residual = 5.84711e-07, No Iterations 4
+time step continuity errors : sum local = 8.5464988e-06, global = -1.7069451e-06, cumulative = -2.9317473e-05
+ExecutionTime = 1.26 s  ClockTime = 2 s
+Inflow      : -1.6041255e-07 [kg/s]
+Outflow     : -1.6183614e-07 [kg/s]
+EnergyInflow  : -0.047395846 [W]
+EnergyOutflow : -0.047811945 [W]
+rho max/avg/min : 1.201645 1.1822213 1.0438157
+T   max/avg/min : 338.05033 298.83784 293.70004
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.86 101322.69
+U   max/avg/min : 0.0012408161 0.0002828807 -0.00033881499
+Prg max-min : 2.3092671
+ 
+Iteration Number = 7
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.44488316, Final residual = 6.1592607e-05, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 6.4450295e-05, Final residual = 1.3871919e-08, No Iterations 2
+DILUPBiCG:  Solving for Uz, Initial residual = 0.17680674, Final residual = 2.0865432e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.067593151, Final residual = 5.7055852e-05, No Iterations 1
+GAMG:  Solving for p_rgh, Initial residual = 0.0035820244, Final residual = 3.5128749e-06, No Iterations 3
+time step continuity errors : sum local = 6.153793e-05, global = 3.3179718e-05, cumulative = 3.8622447e-06
+ExecutionTime = 1.29 s  ClockTime = 2 s
+Inflow      : -1.6272719e-07 [kg/s]
+Outflow     : -1.3505533e-07 [kg/s]
+EnergyInflow  : -0.048079734 [W]
+EnergyOutflow : -0.039895493 [W]
+rho max/avg/min : 1.201645 1.1790758 1.0318115
+T   max/avg/min : 341.98325 299.71619 293.70004
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.83 101322.51
+U   max/avg/min : 0.0016633122 0.00046756536 -0.00034094938
+Prg max-min : 2.485049
+ 
+Iteration Number = 8
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.41346942, Final residual = 5.6072035e-05, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 7.3539099e-05, Final residual = 1.2707183e-08, No Iterations 2
+DILUPBiCG:  Solving for Uz, Initial residual = 0.17593296, Final residual = 2.5938395e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.059572825, Final residual = 1.4973158e-06, No Iterations 2
+GAMG:  Solving for p_rgh, Initial residual = 0.0030931035, Final residual = 6.4252866e-07, No Iterations 4
+time step continuity errors : sum local = 1.3027156e-05, global = -8.6079591e-07, cumulative = 3.0014488e-06
+ExecutionTime = 1.32 s  ClockTime = 2 s
+Inflow      : -1.1299752e-07 [kg/s]
+Outflow     : -1.1371542e-07 [kg/s]
+EnergyInflow  : -0.033386496 [W]
+EnergyOutflow : -0.033584492 [W]
+rho max/avg/min : 1.201645 1.1759252 1.020815
+T   max/avg/min : 345.66716 300.60451 293.70004
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.81 101322.35
+U   max/avg/min : 0.0021655951 0.00071441679 -0.0002806529
+Prg max-min : 2.646002
+ 
+Iteration Number = 9
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.38040634, Final residual = 5.2327687e-05, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 9.9206712e-05, Final residual = 9.27467e-09, No Iterations 2
+DILUPBiCG:  Solving for Uz, Initial residual = 0.16752887, Final residual = 2.8504726e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.053392006, Final residual = 1.7641642e-06, No Iterations 2
+GAMG:  Solving for p_rgh, Initial residual = 0.0030920017, Final residual = 1.6568594e-06, No Iterations 4
+time step continuity errors : sum local = 3.8621429e-05, global = 2.1101402e-05, cumulative = 2.4102851e-05
+ExecutionTime = 1.36 s  ClockTime = 2 s
+Inflow      : -1.1549799e-07 [kg/s]
+Outflow     : -9.7899434e-08 [kg/s]
+EnergyInflow  : -0.03412529 [W]
+EnergyOutflow : -0.028902528 [W]
+rho max/avg/min : 1.201645 1.1727739 1.0106332
+T   max/avg/min : 349.14965 301.50129 293.70005
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.79 101322.21
+U   max/avg/min : 0.00275925 0.0010278501 -0.00031831378
+Prg max-min : 2.7949722
+ 
+Iteration Number = 10
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.36702168, Final residual = 5.2504698e-05, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.00013035251, Final residual = 8.4366577e-09, No Iterations 2
+DILUPBiCG:  Solving for Uz, Initial residual = 0.16074943, Final residual = 3.3538579e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.048462947, Final residual = 2.5794666e-06, No Iterations 2
+GAMG:  Solving for G, Initial residual = 0.71917881, Final residual = 0.14541408, No Iterations 1000
+GAMG:  Solving for p_rgh, Initial residual = 0.0030374124, Final residual = 8.5425965e-07, No Iterations 4
+time step continuity errors : sum local = 2.2254356e-05, global = -2.4357231e-06, cumulative = 2.1667128e-05
+ExecutionTime = 2.38 s  ClockTime = 3 s
+Inflow      : -8.4004042e-08 [kg/s]
+Outflow     : -8.6035434e-08 [kg/s]
+EnergyInflow  : -0.024820019 [W]
+EnergyOutflow : -0.025383868 [W]
+rho max/avg/min : 1.2016448 1.1696226 1.0011307
+T   max/avg/min : 352.46372 302.40594 293.70007
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.76 101322.07
+U   max/avg/min : 0.0034650352 0.0014262502 -0.00031985714
+Prg max-min : 2.9340565
+ 
+Iteration Number = 11
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.26365407, Final residual = 3.9613219e-05, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.00018697114, Final residual = 8.495845e-09, No Iterations 2
+DILUPBiCG:  Solving for Uz, Initial residual = 0.15784962, Final residual = 4.2576683e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.058198269, Final residual = 3.4298879e-06, No Iterations 2
+GAMG:  Solving for p_rgh, Initial residual = 0.0043335018, Final residual = 2.5010424e-06, No Iterations 4
+time step continuity errors : sum local = 7.2425801e-05, global = 4.9229876e-05, cumulative = 7.0897004e-05
+ExecutionTime = 2.42 s  ClockTime = 3 s
+Inflow      : -1.2089462e-07 [kg/s]
+Outflow     : -7.9836932e-08 [kg/s]
+EnergyInflow  : -0.03571979 [W]
+EnergyOutflow : -0.023533014 [W]
+rho max/avg/min : 1.2016447 1.1673804 1.0073357
+T   max/avg/min : 350.29261 303.01413 293.7001
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.75 101322.16
+U   max/avg/min : 0.0043140772 0.0019174833 -0.00049145903
+Prg max-min : 2.8430109
+ 
+Iteration Number = 12
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.2685226, Final residual = 4.3288139e-05, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.00025620059, Final residual = 1.4362904e-08, No Iterations 2
+DILUPBiCG:  Solving for Uz, Initial residual = 0.15294565, Final residual = 5.4969691e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.030707714, Final residual = 6.3705621e-06, No Iterations 2
+GAMG:  Solving for p_rgh, Initial residual = 0.0035563977, Final residual = 1.5382938e-06, No Iterations 4
+time step continuity errors : sum local = 4.691543e-05, global = -5.1453722e-06, cumulative = 6.5751632e-05
+ExecutionTime = 2.46 s  ClockTime = 3 s
+Inflow      : -7.5764205e-08 [kg/s]
+Outflow     : -8.0055442e-08 [kg/s]
+EnergyInflow  : -0.022385459 [W]
+EnergyOutflow : -0.023570365 [W]
+rho max/avg/min : 1.2016442 1.1651238 1.006965
+T   max/avg/min : 350.42157 303.63783 293.70018
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.73 101322.15
+U   max/avg/min : 0.0053198237 0.0025274127 -0.0005905515
+Prg max-min : 2.848418
+ 
+Iteration Number = 13
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.20253595, Final residual = 3.5507615e-05, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.00037655356, Final residual = 1.7833296e-08, No Iterations 2
+DILUPBiCG:  Solving for Uz, Initial residual = 0.15257275, Final residual = 6.6289083e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.025548291, Final residual = 6.6246106e-06, No Iterations 2
+GAMG:  Solving for p_rgh, Initial residual = 0.0036015038, Final residual = 2.1407281e-06, No Iterations 4
+time step continuity errors : sum local = 6.9633455e-05, global = 4.2513226e-05, cumulative = 0.00010826486
+ExecutionTime = 2.49 s  ClockTime = 3 s
+Inflow      : -1.2372255e-07 [kg/s]
+Outflow     : -8.8266546e-08 [kg/s]
+EnergyInflow  : -0.036555337 [W]
+EnergyOutflow : -0.025958014 [W]
+rho max/avg/min : 1.2016437 1.1628815 1.0049055
+T   max/avg/min : 351.13973 304.26379 293.7003
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.72 101322.12
+U   max/avg/min : 0.0065302498 0.0032542161 -0.00090365062
+Prg max-min : 2.8781671
+ 
+Iteration Number = 14
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.21956153, Final residual = 4.362071e-05, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.00055809575, Final residual = 3.6952254e-08, No Iterations 2
+DILUPBiCG:  Solving for Uz, Initial residual = 0.14786662, Final residual = 9.1985311e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.024594999, Final residual = 9.9852925e-06, No Iterations 2
+GAMG:  Solving for p_rgh, Initial residual = 0.0037252251, Final residual = 1.9778586e-06, No Iterations 4
+time step continuity errors : sum local = 6.6497541e-05, global = -2.4237768e-06, cumulative = 0.00010584108
+ExecutionTime = 2.53 s  ClockTime = 3 s
+Inflow      : -1.036235e-07 [kg/s]
+Outflow     : -1.0564493e-07 [kg/s]
+EnergyInflow  : -0.030616828 [W]
+EnergyOutflow : -0.031038415 [W]
+rho max/avg/min : 1.2016422 1.1606534 1.0021558
+T   max/avg/min : 352.10317 304.89047 293.7005
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.7 101322.08
+U   max/avg/min : 0.0079642661 0.0041356727 -0.0012107346
+Prg max-min : 2.9184491
+ 
+Iteration Number = 15
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.18066228, Final residual = 4.1359716e-05, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.000661623, Final residual = 5.8078282e-08, No Iterations 2
+DILUPBiCG:  Solving for Uz, Initial residual = 0.14362468, Final residual = 6.7157309e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.02370898, Final residual = 1.4833641e-05, No Iterations 2
+GAMG:  Solving for p_rgh, Initial residual = 0.0039741959, Final residual = 8.1057981e-07, No Iterations 5
+time step continuity errors : sum local = 2.845161e-05, global = 2.342337e-05, cumulative = 0.00012926445
+ExecutionTime = 2.57 s  ClockTime = 3 s
+Inflow      : -1.5430176e-07 [kg/s]
+Outflow     : -1.3476669e-07 [kg/s]
+EnergyInflow  : -0.045590338 [W]
+EnergyOutflow : -0.039566467 [W]
+rho max/avg/min : 1.2016405 1.1584397 0.9990598
+T   max/avg/min : 353.19432 305.51725 293.70085
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.68 101322.04
+U   max/avg/min : 0.0096734008 0.0051667376 -0.0017267848
+Prg max-min : 2.9631371
+ 
+Iteration Number = 16
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.18646915, Final residual = 4.986773e-05, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.00099997508, Final residual = 9.409543e-08, No Iterations 2
+DILUPBiCG:  Solving for Uz, Initial residual = 0.13890273, Final residual = 1.2438526e-05, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.022861746, Final residual = 1.7433213e-05, No Iterations 3
+GAMG:  Solving for p_rgh, Initial residual = 0.0045519071, Final residual = 4.0392766e-06, No Iterations 4
+time step continuity errors : sum local = 0.00014455715, global = 4.7376613e-06, cumulative = 0.00013400211
+ExecutionTime = 2.6 s  ClockTime = 3 s
+Inflow      : -1.7414274e-07 [kg/s]
+Outflow     : -1.7019154e-07 [kg/s]
+EnergyInflow  : -0.051452598 [W]
+EnergyOutflow : -0.049924897 [W]
+rho max/avg/min : 1.2016351 1.1562346 0.99577604
+T   max/avg/min : 354.35904 306.14518 293.7016
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.67 101321.99
+U   max/avg/min : 0.011690355 0.00636618 -0.0024052249
+Prg max-min : 3.010866
+ 
+Iteration Number = 17
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.14339675, Final residual = 4.8509271e-05, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.0012597587, Final residual = 1.6524302e-07, No Iterations 2
+DILUPBiCG:  Solving for Uz, Initial residual = 0.13173395, Final residual = 9.2105235e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.022039076, Final residual = 2.2812476e-06, No Iterations 4
+GAMG:  Solving for p_rgh, Initial residual = 0.0050193645, Final residual = 1.150483e-06, No Iterations 5
+time step continuity errors : sum local = 4.1980002e-05, global = 1.3479795e-05, cumulative = 0.00014748191
+ExecutionTime = 2.64 s  ClockTime = 3 s
+Inflow      : -2.3951037e-07 [kg/s]
+Outflow     : -2.2826823e-07 [kg/s]
+EnergyInflow  : -0.070766261 [W]
+EnergyOutflow : -0.066930491 [W]
+rho max/avg/min : 1.2016276 1.1540425 0.99239302
+T   max/avg/min : 355.56704 306.77288 293.70291
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.65 101321.94
+U   max/avg/min : 0.014068419 0.007748885 -0.0032117304
+Prg max-min : 3.0597752
+ 
+Iteration Number = 18
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.14625607, Final residual = 6.051039e-05, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.0016409537, Final residual = 2.9706906e-07, No Iterations 2
+DILUPBiCG:  Solving for Uz, Initial residual = 0.12517563, Final residual = 1.228572e-05, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.02124356, Final residual = 4.7668615e-06, No Iterations 4
+GAMG:  Solving for p_rgh, Initial residual = 0.0060062199, Final residual = 1.7745576e-06, No Iterations 5
+time step continuity errors : sum local = 6.5481795e-05, global = 3.6260996e-05, cumulative = 0.0001837429
+ExecutionTime = 2.68 s  ClockTime = 3 s
+Inflow      : -3.1636394e-07 [kg/s]
+Outflow     : -2.8612229e-07 [kg/s]
+EnergyInflow  : -0.093473585 [W]
+EnergyOutflow : -0.083806453 [W]
+rho max/avg/min : 1.2016154 1.1518634 0.98895998
+T   max/avg/min : 356.80134 307.4002 293.70528
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.63 101321.89
+U   max/avg/min : 0.016838883 0.0093106706 -0.0042954501
+Prg max-min : 3.1097982
+ 
+Iteration Number = 19
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.12588136, Final residual = 6.3086092e-05, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.0018692393, Final residual = 5.2290844e-07, No Iterations 2
+DILUPBiCG:  Solving for Uz, Initial residual = 0.11639156, Final residual = 1.1618921e-05, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.020461654, Final residual = 1.2119203e-05, No Iterations 4
+GAMG:  Solving for p_rgh, Initial residual = 0.006805871, Final residual = 2.3282072e-06, No Iterations 5
+time step continuity errors : sum local = 8.6521004e-05, global = 1.388805e-05, cumulative = 0.00019763095
+ExecutionTime = 2.72 s  ClockTime = 3 s
+Inflow      : -3.4198276e-07 [kg/s]
+Outflow     : -3.3040013e-07 [kg/s]
+EnergyInflow  : -0.10104298 [W]
+EnergyOutflow : -0.096577192 [W]
+rho max/avg/min : 1.2016083 1.149699 0.98550821
+T   max/avg/min : 358.05105 308.02654 293.70902
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.62 101321.84
+U   max/avg/min : 0.02007221 0.011079495 -0.0055788727
+Prg max-min : 3.1598829
+ 
+Iteration Number = 20
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.1280849, Final residual = 7.3614766e-05, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.0022207851, Final residual = 7.4909418e-07, No Iterations 2
+DILUPBiCG:  Solving for Uz, Initial residual = 0.10800492, Final residual = 1.2005907e-05, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.019701487, Final residual = 6.9325058e-06, No Iterations 5
+GAMG:  Solving for G, Initial residual = 0.091092226, Final residual = 0.050323208, No Iterations 1000
+GAMG:  Solving for p_rgh, Initial residual = 0.0080696621, Final residual = 3.1716176e-06, No Iterations 5
+time step continuity errors : sum local = 0.00011944081, global = 3.6388967e-05, cumulative = 0.00023401992
+ExecutionTime = 3.72 s  ClockTime = 4 s
+Inflow      : -4.1119432e-07 [kg/s]
+Outflow     : -3.8084594e-07 [kg/s]
+EnergyInflow  : -0.12149238 [W]
+EnergyOutflow : -0.11104374 [W]
+rho max/avg/min : 1.2016032 1.1475467 0.9820568
+T   max/avg/min : 359.30942 308.65246 293.71029
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.6 101321.79
+U   max/avg/min : 0.023782934 0.013037149 -0.0071358799
+Prg max-min : 3.2098074
+ 
+Iteration Number = 21
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.11081185, Final residual = 7.5492192e-05, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.0030491809, Final residual = 3.2278426e-08, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.099693952, Final residual = 1.2648915e-05, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.019885984, Final residual = 9.2904104e-06, No Iterations 4
+GAMG:  Solving for p_rgh, Initial residual = 0.0087052293, Final residual = 8.1902593e-06, No Iterations 4
+time step continuity errors : sum local = 0.00031149336, global = 0.00010182145, cumulative = 0.00033584137
+ExecutionTime = 3.76 s  ClockTime = 4 s
+Inflow      : -4.9666847e-07 [kg/s]
+Outflow     : -4.1174944e-07 [kg/s]
+EnergyInflow  : -0.14674676 [W]
+EnergyOutflow : -0.11957461 [W]
+rho max/avg/min : 1.2015991 1.1455623 0.98120607
+T   max/avg/min : 359.62095 309.22327 293.71128
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.59 101321.78
+U   max/avg/min : 0.028001802 0.015192164 -0.0088612022
+Prg max-min : 3.2213002
+ 
+Iteration Number = 22
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.10878724, Final residual = 7.743065e-05, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.0034974564, Final residual = 1.7308388e-06, No Iterations 2
+DILUPBiCG:  Solving for Uz, Initial residual = 0.091342509, Final residual = 1.3356789e-05, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.016239969, Final residual = 1.0481121e-05, No Iterations 4
+GAMG:  Solving for p_rgh, Initial residual = 0.0090212537, Final residual = 6.1898359e-06, No Iterations 4
+time step continuity errors : sum local = 0.00023691364, global = 2.8762146e-05, cumulative = 0.00036460352
+ExecutionTime = 3.8 s  ClockTime = 4 s
+Inflow      : -3.8867489e-07 [kg/s]
+Outflow     : -3.6468728e-07 [kg/s]
+EnergyInflow  : -0.11483874 [W]
+EnergyOutflow : -0.1048731 [W]
+rho max/avg/min : 1.2015956 1.1435951 0.97919197
+T   max/avg/min : 360.36066 309.79302 293.71213
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.57 101321.75
+U   max/avg/min : 0.032751995 0.017570651 -0.011264297
+Prg max-min : 3.2496766
+ 
+Iteration Number = 23
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.094207132, Final residual = 7.3046638e-05, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.0034122213, Final residual = 8.546492e-08, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.083817701, Final residual = 1.4579534e-05, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.015682122, Final residual = 8.0294281e-06, No Iterations 4
+GAMG:  Solving for p_rgh, Initial residual = 0.0094473985, Final residual = 6.3562762e-06, No Iterations 4
+time step continuity errors : sum local = 0.00025240267, global = 0.00011258003, cumulative = 0.00047718355
+ExecutionTime = 3.83 s  ClockTime = 4 s
+Inflow      : -3.8983204e-07 [kg/s]
+Outflow     : -2.9594036e-07 [kg/s]
+EnergyInflow  : -0.11518063 [W]
+EnergyOutflow : -0.083516519 [W]
+rho max/avg/min : 1.2015927 1.1416533 0.97685928
+T   max/avg/min : 361.22119 310.35871 293.71284
+P   max/avg/min : 101324.91 101316.16 101307.42
+Prg max/avg/min : 101325 101324.56 101321.72
+U   max/avg/min : 0.038013139 0.020101407 -0.013817808
+Prg max-min : 3.2824122
+ 
+Iteration Number = 24
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.093715438, Final residual = 7.7479151e-05, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.0039666385, Final residual = 3.1825142e-06, No Iterations 2
+DILUPBiCG:  Solving for Uz, Initial residual = 0.077275768, Final residual = 1.4579523e-05, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.015124823, Final residual = 8.0598484e-06, No Iterations 4
+GAMG:  Solving for p_rgh, Initial residual = 0.0099124346, Final residual = 6.8732048e-06, No Iterations 4
+time step continuity errors : sum local = 0.000280167, global = 1.6175267e-05, cumulative = 0.00049335881
+ExecutionTime = 3.87 s  ClockTime = 4 s
+Inflow      : -1.3422824e-07 [kg/s]
+Outflow     : -1.2073808e-07 [kg/s]
+EnergyInflow  : -0.039659372 [W]
+EnergyOutflow : -0.030408264 [W]
+rho max/avg/min : 1.2015905 1.1397384 0.97438625
+T   max/avg/min : 362.13799 310.91961 293.71337
+P   max/avg/min : 101324.91 101316.16 101307.42
+Prg max/avg/min : 101325 101324.55 101321.68
+U   max/avg/min : 0.043835124 0.022862794 -0.016519183
+Prg max-min : 3.3170143
+ 
+Iteration Number = 25
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.081672101, Final residual = 7.3384834e-05, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.0052978421, Final residual = 1.6740882e-07, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.071016886, Final residual = 1.6136218e-05, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.014592241, Final residual = 5.6050582e-06, No Iterations 4
+GAMG:  Solving for p_rgh, Initial residual = 0.0089670999, Final residual = 4.966441e-06, No Iterations 4
+time step continuity errors : sum local = 0.00021594435, global = -3.6778452e-05, cumulative = 0.00045658036
+ExecutionTime = 3.91 s  ClockTime = 4 s
+Inflow      : 1.3130214e-07 [kg/s]
+Outflow     : 1.0062894e-07 [kg/s]
+EnergyInflow  : 0.03879482 [W]
+EnergyOutflow : 0.036642582 [W]
+rho max/avg/min : 1.2015879 1.137854 0.97183765
+T   max/avg/min : 363.08768 311.47471 293.71402
+P   max/avg/min : 101324.91 101316.16 101307.42
+Prg max/avg/min : 101325 101324.53 101321.65
+U   max/avg/min : 0.050146212 0.025787933 -0.019015455
+Prg max-min : 3.352636
+ 
+Iteration Number = 26
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.081914153, Final residual = 7.5826676e-05, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.0056463243, Final residual = 1.8169515e-07, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.06538025, Final residual = 1.5028378e-05, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.014067464, Final residual = 1.1380309e-05, No Iterations 4
+GAMG:  Solving for p_rgh, Initial residual = 0.0076471197, Final residual = 3.691304e-06, No Iterations 4
+time step continuity errors : sum local = 0.00017002945, global = -1.8971831e-05, cumulative = 0.00043760853
+ExecutionTime = 3.96 s  ClockTime = 4 s
+Inflow      : 4.8409563e-07 [kg/s]
+Outflow     : 4.6827313e-07 [kg/s]
+EnergyInflow  : 0.14303196 [W]
+EnergyOutflow : 0.14726534 [W]
+rho max/avg/min : 1.2015879 1.1360018 0.96924563
+T   max/avg/min : 364.05868 312.02345 293.71401
+P   max/avg/min : 101324.91 101316.16 101307.42
+Prg max/avg/min : 101325 101324.52 101321.61
+U   max/avg/min : 0.056964482 0.028880345 -0.021405483
+Prg max-min : 3.3891485
+ 
+Iteration Number = 27
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.071565094, Final residual = 7.0758714e-05, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.0056824526, Final residual = 3.9250094e-07, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.060515684, Final residual = 1.5173205e-05, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.01356662, Final residual = 3.8964596e-06, No Iterations 5
+GAMG:  Solving for p_rgh, Initial residual = 0.0072840555, Final residual = 4.6860044e-06, No Iterations 4
+time step continuity errors : sum local = 0.00023364892, global = 9.8605935e-05, cumulative = 0.00053621447
+ExecutionTime = 3.99 s  ClockTime = 4 s
+Inflow      : 8.7367847e-07 [kg/s]
+Outflow     : 9.5591575e-07 [kg/s]
+EnergyInflow  : 0.25813896 [W]
+EnergyOutflow : 0.29382548 [W]
+rho max/avg/min : 1.2015882 1.1341818 0.96663082
+T   max/avg/min : 365.04349 312.5657 293.71394
+P   max/avg/min : 101324.91 101316.16 101307.42
+Prg max/avg/min : 101325 101324.51 101321.58
+U   max/avg/min : 0.064196188 0.03213327 -0.023516339
+Prg max-min : 3.4257378
+ 
+Iteration Number = 28
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.067918185, Final residual = 2.0897331e-07, No Iterations 4
+DILUPBiCG:  Solving for Uy, Initial residual = 0.0056592449, Final residual = 3.2703446e-07, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.055767237, Final residual = 1.40576e-05, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.013080533, Final residual = 6.6116081e-07, No Iterations 6
+GAMG:  Solving for p_rgh, Initial residual = 0.0059156689, Final residual = 3.5255604e-06, No Iterations 4
+time step continuity errors : sum local = 0.00019066865, global = -2.5131707e-05, cumulative = 0.00051108276
+ExecutionTime = 4.03 s  ClockTime = 4 s
+Inflow      : 1.5767137e-06 [kg/s]
+Outflow     : 1.5557538e-06 [kg/s]
+EnergyInflow  : 0.46585929 [W]
+EnergyOutflow : 0.47395488 [W]
+rho max/avg/min : 1.2015897 1.1323967 0.96400621
+T   max/avg/min : 366.03737 313.10071 293.71357
+P   max/avg/min : 101324.91 101316.16 101307.42
+Prg max/avg/min : 101325 101324.49 101321.54
+U   max/avg/min : 0.071875969 0.035554774 -0.025506292
+Prg max-min : 3.4625796
+ 
+Iteration Number = 29
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.062016759, Final residual = 4.2158809e-06, No Iterations 3
+DILUPBiCG:  Solving for Uy, Initial residual = 0.0068745521, Final residual = 9.6861925e-07, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.053297585, Final residual = 1.3925881e-05, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.012624871, Final residual = 5.3429039e-07, No Iterations 6
+GAMG:  Solving for p_rgh, Initial residual = 0.0066013116, Final residual = 3.8703565e-06, No Iterations 4
+time step continuity errors : sum local = 0.00020430702, global = 1.6655574e-05, cumulative = 0.00052773833
+ExecutionTime = 4.07 s  ClockTime = 4 s
+Inflow      : 2.2755761e-06 [kg/s]
+Outflow     : 2.2894668e-06 [kg/s]
+EnergyInflow  : 0.67234672 [W]
+EnergyOutflow : 0.69416875 [W]
+rho max/avg/min : 1.2015948 1.1306487 0.96137965
+T   max/avg/min : 367.03741 313.62779 293.71234
+P   max/avg/min : 101324.91 101316.17 101307.42
+Prg max/avg/min : 101325 101324.48 101321.5
+U   max/avg/min : 0.080009375 0.039099569 -0.027180928
+Prg max-min : 3.4990698
+ 
+Iteration Number = 30
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.056088034, Final residual = 3.17487e-06, No Iterations 3
+DILUPBiCG:  Solving for Uy, Initial residual = 0.0077877665, Final residual = 7.5607594e-06, No Iterations 2
+DILUPBiCG:  Solving for Uz, Initial residual = 0.048556315, Final residual = 1.2255332e-05, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.012176396, Final residual = 1.1558063e-06, No Iterations 6
+GAMG:  Solving for G, Initial residual = 0.10463745, Final residual = 0.045116018, No Iterations 1000
+GAMG:  Solving for p_rgh, Initial residual = 0.0066511726, Final residual = 5.2681345e-06, No Iterations 4
+time step continuity errors : sum local = 0.00024310789, global = 1.4003768e-05, cumulative = 0.0005417421
+ExecutionTime = 5.1 s  ClockTime = 5 s
+Inflow      : 3.1985941e-06 [kg/s]
+Outflow     : 3.2102732e-06 [kg/s]
+EnergyInflow  : 0.94506364 [W]
+EnergyOutflow : 0.97022363 [W]
+rho max/avg/min : 1.2016068 1.1289396 0.95875736
+T   max/avg/min : 368.04131 314.1464 293.70939
+P   max/avg/min : 101324.91 101316.16 101307.42
+Prg max/avg/min : 101325 101324.46 101321.46
+U   max/avg/min : 0.088484752 0.042785563 -0.028859136
+Prg max-min : 3.5363225
+ 
+Iteration Number = 31
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.053936385, Final residual = 3.2122221e-06, No Iterations 3
+DILUPBiCG:  Solving for Uy, Initial residual = 0.0083073935, Final residual = 3.3424148e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.04781913, Final residual = 1.2703853e-05, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.012901004, Final residual = 2.2429915e-06, No Iterations 6
+GAMG:  Solving for p_rgh, Initial residual = 0.00817948, Final residual = 4.373045e-06, No Iterations 4
+time step continuity errors : sum local = 0.0001768507, global = 4.138963e-05, cumulative = 0.00058313173
+ExecutionTime = 5.14 s  ClockTime = 5 s
+Inflow      : 4.2536777e-06 [kg/s]
+Outflow     : 4.2881966e-06 [kg/s]
+EnergyInflow  : 1.256801 [W]
+EnergyOutflow : 1.2932213 [W]
+rho max/avg/min : 1.2016318 1.127438 0.95908414
+T   max/avg/min : 367.9159 314.59403 293.70328
+P   max/avg/min : 101324.91 101316.17 101307.43
+Prg max/avg/min : 101325 101324.45 101321.47
+U   max/avg/min : 0.09729294 0.046583374 -0.03008822
+Prg max-min : 3.5297312
+ 
+Iteration Number = 32
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.051702827, Final residual = 2.9677124e-06, No Iterations 3
+DILUPBiCG:  Solving for Uy, Initial residual = 0.009425792, Final residual = 7.0424432e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.043485944, Final residual = 1.1134458e-05, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.0097257761, Final residual = 4.9412868e-06, No Iterations 5
+GAMG:  Solving for p_rgh, Initial residual = 0.012554351, Final residual = 6.9524278e-06, No Iterations 4
+time step continuity errors : sum local = 0.00025282, global = 1.1947247e-05, cumulative = 0.00059507898
+ExecutionTime = 5.18 s  ClockTime = 5 s
+Inflow      : 5.5354201e-06 [kg/s]
+Outflow     : 5.5453841e-06 [kg/s]
+EnergyInflow  : 1.6355074 [W]
+EnergyOutflow : 1.6699012 [W]
+rho max/avg/min : 1.2016415 1.1259754 0.95808679
+T   max/avg/min : 368.29891 315.03405 293.70091
+P   max/avg/min : 101324.91 101316.16 101307.42
+Prg max/avg/min : 101325 101324.44 101321.46
+U   max/avg/min : 0.10638553 0.050506286 -0.030980623
+Prg max-min : 3.5442216
+ 
+Iteration Number = 33
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.049264525, Final residual = 1.7231448e-05, No Iterations 3
+DILUPBiCG:  Solving for Uy, Initial residual = 0.0093884276, Final residual = 4.1227588e-07, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.044607582, Final residual = 1.3271266e-05, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.0092965731, Final residual = 6.7403968e-06, No Iterations 6
+GAMG:  Solving for p_rgh, Initial residual = 0.013113982, Final residual = 7.0694133e-06, No Iterations 4
+time step continuity errors : sum local = 0.00023149056, global = -2.2975629e-05, cumulative = 0.00057210335
+ExecutionTime = 5.22 s  ClockTime = 6 s
+Inflow      : 6.9779476e-06 [kg/s]
+Outflow     : 6.9587859e-06 [kg/s]
+EnergyInflow  : 2.0617197 [W]
+EnergyOutflow : 2.0933205 [W]
+rho max/avg/min : 1.2016447 1.1245602 0.95671612
+T   max/avg/min : 368.82655 315.46318 293.70013
+P   max/avg/min : 101324.91 101316.17 101307.43
+Prg max/avg/min : 101325 101324.43 101321.44
+U   max/avg/min : 0.11575424 0.054513581 -0.031500883
+Prg max-min : 3.5606955
+ 
+Iteration Number = 34
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.048327277, Final residual = 2.7569326e-06, No Iterations 3
+DILUPBiCG:  Solving for Uy, Initial residual = 0.0097719529, Final residual = 7.0539142e-07, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.040103961, Final residual = 1.1680712e-05, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.0089843505, Final residual = 1.2058017e-06, No Iterations 8
+GAMG:  Solving for p_rgh, Initial residual = 0.015002382, Final residual = 9.1008976e-06, No Iterations 4
+time step continuity errors : sum local = 0.00026748825, global = -1.1030466e-05, cumulative = 0.00056107288
+ExecutionTime = 5.26 s  ClockTime = 6 s
+Inflow      : 8.63134e-06 [kg/s]
+Outflow     : 8.6221406e-06 [kg/s]
+EnergyInflow  : 2.5502347 [W]
+EnergyOutflow : 2.5911766 [W]
+rho max/avg/min : 1.2016456 1.1231942 0.95516998
+T   max/avg/min : 369.42359 315.88064 293.69991
+P   max/avg/min : 101324.91 101316.16 101307.42
+Prg max/avg/min : 101325 101324.42 101321.41
+U   max/avg/min : 0.12535282 0.058636693 -0.031682085
+Prg max-min : 3.5861386
+ 
+Iteration Number = 35
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.050644143, Final residual = 7.7584248e-06, No Iterations 3
+DILUPBiCG:  Solving for Uy, Initial residual = 0.0093614314, Final residual = 1.3874382e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.042979109, Final residual = 1.5647031e-05, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.0086775229, Final residual = 8.1462036e-06, No Iterations 5
+GAMG:  Solving for p_rgh, Initial residual = 0.019066082, Final residual = 1.3085761e-05, No Iterations 4
+time step continuity errors : sum local = 0.00034910403, global = -5.3526446e-05, cumulative = 0.00050754644
+ExecutionTime = 5.29 s  ClockTime = 6 s
+Inflow      : 1.0486773e-05 [kg/s]
+Outflow     : 1.0442132e-05 [kg/s]
+EnergyInflow  : 3.098445 [W]
+EnergyOutflow : 3.1358889 [W]
+rho max/avg/min : 1.2016458 1.1218795 0.95352148
+T   max/avg/min : 370.06226 316.28574 293.69974
+P   max/avg/min : 101324.91 101316.16 101307.43
+Prg max/avg/min : 101325 101324.41 101321.39
+U   max/avg/min : 0.13516008 0.062840568 -0.031834387
+Prg max-min : 3.6060204
+ 
+Iteration Number = 36
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.047264279, Final residual = 2.6548949e-06, No Iterations 3
+DILUPBiCG:  Solving for Uy, Initial residual = 0.0098018959, Final residual = 4.9642657e-07, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.038454459, Final residual = 1.4000821e-05, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.0083826341, Final residual = 6.1455816e-06, No Iterations 5
+GAMG:  Solving for p_rgh, Initial residual = 0.02504922, Final residual = 9.9315057e-06, No Iterations 4
+time step continuity errors : sum local = 0.00024613312, global = -4.7231427e-05, cumulative = 0.00046031501
+ExecutionTime = 5.34 s  ClockTime = 6 s
+Inflow      : 1.2417385e-05 [kg/s]
+Outflow     : 1.2377994e-05 [kg/s]
+EnergyInflow  : 3.6688679 [W]
+EnergyOutflow : 3.7156849 [W]
+rho max/avg/min : 1.2016459 1.1206139 0.95180711
+T   max/avg/min : 370.72882 316.67894 293.69949
+P   max/avg/min : 101324.91 101316.16 101307.42
+Prg max/avg/min : 101325 101324.4 101321.37
+U   max/avg/min : 0.14511933 0.06706146 -0.031666098
+Prg max-min : 3.6333571
+ 
+Iteration Number = 37
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.056766324, Final residual = 3.764075e-06, No Iterations 3
+DILUPBiCG:  Solving for Uy, Initial residual = 0.011135029, Final residual = 9.0122828e-07, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.039365572, Final residual = 1.706092e-05, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.008062778, Final residual = 5.8447553e-06, No Iterations 5
+GAMG:  Solving for p_rgh, Initial residual = 0.02418581, Final residual = 8.9699699e-06, No Iterations 4
+time step continuity errors : sum local = 0.00021044958, global = 5.8440467e-05, cumulative = 0.00051875548
+ExecutionTime = 5.37 s  ClockTime = 6 s
+Inflow      : 1.4366087e-05 [kg/s]
+Outflow     : 1.4414827e-05 [kg/s]
+EnergyInflow  : 4.2446358 [W]
+EnergyOutflow : 4.3257399 [W]
+rho max/avg/min : 1.2016459 1.1194003 0.95004849
+T   max/avg/min : 371.41506 317.05937 293.69922
+P   max/avg/min : 101324.91 101316.16 101307.43
+Prg max/avg/min : 101325 101324.39 101321.34
+U   max/avg/min : 0.15521902 0.071318682 -0.030933135
+Prg max-min : 3.656495
+ 
+Iteration Number = 38
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.045774902, Final residual = 2.6309674e-06, No Iterations 3
+DILUPBiCG:  Solving for Uy, Initial residual = 0.011991405, Final residual = 1.0545264e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.036184851, Final residual = 1.5833639e-05, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.0077502936, Final residual = 2.3666293e-06, No Iterations 6
+GAMG:  Solving for p_rgh, Initial residual = 0.023977523, Final residual = 1.210089e-05, No Iterations 4
+time step continuity errors : sum local = 0.00026780062, global = 1.5236455e-06, cumulative = 0.00052027912
+ExecutionTime = 5.41 s  ClockTime = 6 s
+Inflow      : 1.6751866e-05 [kg/s]
+Outflow     : 1.6753137e-05 [kg/s]
+EnergyInflow  : 4.9495433 [W]
+EnergyOutflow : 5.0253756 [W]
+rho max/avg/min : 1.2016459 1.1182378 0.94825947
+T   max/avg/min : 372.1158 317.42719 293.69892
+P   max/avg/min : 101324.91 101316.16 101307.42
+Prg max/avg/min : 101325 101324.37 101321.31
+U   max/avg/min : 0.16547753 0.075683002 -0.029604716
+Prg max-min : 3.6878866
+ 
+Iteration Number = 39
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.055815053, Final residual = 3.8701012e-06, No Iterations 3
+DILUPBiCG:  Solving for Uy, Initial residual = 0.013754024, Final residual = 5.6458667e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.038517965, Final residual = 2.1491256e-05, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.0074413723, Final residual = 5.3758866e-06, No Iterations 5
+GAMG:  Solving for p_rgh, Initial residual = 0.029314269, Final residual = 9.6020095e-06, No Iterations 4
+time step continuity errors : sum local = 0.0002049928, global = -8.0690888e-05, cumulative = 0.00043958824
+ExecutionTime = 5.44 s  ClockTime = 6 s
+Inflow      : 1.9246754e-05 [kg/s]
+Outflow     : 1.9179458e-05 [kg/s]
+EnergyInflow  : 5.6866882 [W]
+EnergyOutflow : 5.7514567 [W]
+rho max/avg/min : 1.2016459 1.1171272 0.94645052
+T   max/avg/min : 372.827 317.78206 293.69856
+P   max/avg/min : 101324.91 101316.16 101307.42
+Prg max/avg/min : 101325 101324.36 101321.29
+U   max/avg/min : 0.17584556 0.080090158 -0.02801996
+Prg max-min : 3.7113521
+ 
+Iteration Number = 40
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.040794486, Final residual = 2.2157246e-06, No Iterations 3
+DILUPBiCG:  Solving for Uy, Initial residual = 0.013803494, Final residual = 8.8660091e-07, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.034368776, Final residual = 1.8003651e-05, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.0071360302, Final residual = 3.8454832e-06, No Iterations 5
+GAMG:  Solving for G, Initial residual = 0.081024199, Final residual = 0.039820083, No Iterations 1000
+GAMG:  Solving for p_rgh, Initial residual = 0.036276034, Final residual = 3.0433975e-05, No Iterations 3
+time step continuity errors : sum local = 0.00061655508, global = 0.00022970109, cumulative = 0.00066928933
+ExecutionTime = 6.44 s  ClockTime = 7 s
+Inflow      : 2.1405651e-05 [kg/s]
+Outflow     : 2.1597222e-05 [kg/s]
+EnergyInflow  : 6.3245607 [W]
+EnergyOutflow : 6.4755677 [W]
+rho max/avg/min : 1.2016459 1.1160677 0.94462844
+T   max/avg/min : 373.54615 318.12414 293.69822
+P   max/avg/min : 101324.91 101316.16 101307.42
+Prg max/avg/min : 101325 101324.35 101321.26
+U   max/avg/min : 0.18628475 0.084393371 -0.026083758
+Prg max-min : 3.7398991
+ 
+Iteration Number = 41
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.046520076, Final residual = 4.6058207e-05, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.015228077, Final residual = 7.5768127e-07, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.032966291, Final residual = 1.7543522e-05, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.0073502407, Final residual = 2.8678758e-07, No Iterations 10
+GAMG:  Solving for p_rgh, Initial residual = 0.032519207, Final residual = 2.4273205e-05, No Iterations 3
+time step continuity errors : sum local = 0.00047045656, global = 7.6912226e-05, cumulative = 0.00074620155
+ExecutionTime = 6.48 s  ClockTime = 7 s
+Inflow      : 2.3969625e-05 [kg/s]
+Outflow     : 2.403377e-05 [kg/s]
+EnergyInflow  : 7.0821183 [W]
+EnergyOutflow : 7.2054001 [W]
+rho max/avg/min : 1.2016459 1.1151568 0.94468252
+T   max/avg/min : 373.52476 318.41558 293.69786
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.34 101321.25
+U   max/avg/min : 0.19686239 0.088808361 -0.023790569
+Prg max-min : 3.7443215
+ 
+Iteration Number = 42
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.030114227, Final residual = 1.5135378e-05, No Iterations 3
+DILUPBiCG:  Solving for Uy, Initial residual = 0.016273596, Final residual = 1.4943433e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.033871172, Final residual = 2.0259228e-05, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.0057034297, Final residual = 1.515492e-06, No Iterations 8
+GAMG:  Solving for p_rgh, Initial residual = 0.034557939, Final residual = 2.1912755e-05, No Iterations 3
+time step continuity errors : sum local = 0.00040238249, global = -2.1730666e-05, cumulative = 0.00072447089
+ExecutionTime = 6.51 s  ClockTime = 7 s
+Inflow      : 2.6732828e-05 [kg/s]
+Outflow     : 2.6714705e-05 [kg/s]
+EnergyInflow  : 7.8985402 [W]
+EnergyOutflow : 8.0075773 [W]
+rho max/avg/min : 1.2016459 1.1142937 0.94388242
+T   max/avg/min : 373.84136 318.69553 293.69744
+P   max/avg/min : 101324.91 101316.15 101307.41
+Prg max/avg/min : 101325 101324.33 101321.24
+U   max/avg/min : 0.20756419 0.09326225 -0.020909618
+Prg max-min : 3.7572025
+ 
+Iteration Number = 43
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.035412442, Final residual = 2.9265906e-06, No Iterations 3
+DILUPBiCG:  Solving for Uy, Initial residual = 0.015795801, Final residual = 6.1274984e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.031459229, Final residual = 1.7579121e-05, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.0054324293, Final residual = 1.4568853e-06, No Iterations 8
+GAMG:  Solving for p_rgh, Initial residual = 0.035482833, Final residual = 1.8082702e-05, No Iterations 3
+time step continuity errors : sum local = 0.00030306148, global = -0.00013467237, cumulative = 0.00058979852
+ExecutionTime = 6.55 s  ClockTime = 7 s
+Inflow      : 2.8982478e-05 [kg/s]
+Outflow     : 2.8870161e-05 [kg/s]
+EnergyInflow  : 8.5632267 [W]
+EnergyOutflow : 8.653984 [W]
+rho max/avg/min : 1.2016459 1.113478 0.94283604
+T   max/avg/min : 374.25626 318.96336 293.69703
+P   max/avg/min : 101324.91 101316.15 101307.41
+Prg max/avg/min : 101325 101324.33 101321.23
+U   max/avg/min : 0.2183645 0.09757314 -0.017979752
+Prg max-min : 3.7722304
+ 
+Iteration Number = 44
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.031352794, Final residual = 1.4822311e-06, No Iterations 3
+DILUPBiCG:  Solving for Uy, Initial residual = 0.015960882, Final residual = 1.4200561e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.028317782, Final residual = 1.4874476e-05, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.0051922298, Final residual = 1.1135364e-06, No Iterations 8
+GAMG:  Solving for p_rgh, Initial residual = 0.029675088, Final residual = 1.2621865e-05, No Iterations 4
+time step continuity errors : sum local = 0.00020042614, global = 5.3806648e-05, cumulative = 0.00064360517
+ExecutionTime = 6.59 s  ClockTime = 7 s
+Inflow      : 3.1208673e-05 [kg/s]
+Outflow     : 3.1253548e-05 [kg/s]
+EnergyInflow  : 9.2209833 [W]
+EnergyOutflow : 9.3676148 [W]
+rho max/avg/min : 1.2016459 1.1127077 0.94167193
+T   max/avg/min : 374.71892 319.21933 293.69661
+P   max/avg/min : 101324.91 101316.15 101307.4
+Prg max/avg/min : 101325 101324.32 101321.2
+U   max/avg/min : 0.22930554 0.10189715 -0.014310875
+Prg max-min : 3.7962826
+ 
+Iteration Number = 45
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.029506502, Final residual = 1.2502588e-06, No Iterations 3
+DILUPBiCG:  Solving for Uy, Initial residual = 0.016905514, Final residual = 1.9292834e-07, No Iterations 4
+DILUPBiCG:  Solving for Uz, Initial residual = 0.029310141, Final residual = 1.6094281e-05, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.0049637048, Final residual = 3.946361e-06, No Iterations 7
+GAMG:  Solving for p_rgh, Initial residual = 0.029926363, Final residual = 1.3841494e-05, No Iterations 3
+time step continuity errors : sum local = 0.00020850862, global = 8.3606525e-07, cumulative = 0.00064444123
+ExecutionTime = 6.62 s  ClockTime = 7 s
+Inflow      : 3.366135e-05 [kg/s]
+Outflow     : 3.3662047e-05 [kg/s]
+EnergyInflow  : 9.9456566 [W]
+EnergyOutflow : 10.088289 [W]
+rho max/avg/min : 1.2016458 1.11198 0.94043682
+T   max/avg/min : 375.21102 319.46403 293.69614
+P   max/avg/min : 101324.91 101316.15 101307.4
+Prg max/avg/min : 101325 101324.31 101321.18
+U   max/avg/min : 0.24036247 0.10626263 -0.010240575
+Prg max-min : 3.8163296
+ 
+Iteration Number = 46
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.030005333, Final residual = 1.7627852e-06, No Iterations 3
+DILUPBiCG:  Solving for Uy, Initial residual = 0.016291831, Final residual = 1.072618e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.027520703, Final residual = 1.4815674e-05, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.0047419799, Final residual = 1.8593658e-06, No Iterations 7
+GAMG:  Solving for p_rgh, Initial residual = 0.04235204, Final residual = 2.0214722e-05, No Iterations 3
+time step continuity errors : sum local = 0.00028652885, global = -0.00013338747, cumulative = 0.00051105377
+ExecutionTime = 6.66 s  ClockTime = 7 s
+Inflow      : 3.5965686e-05 [kg/s]
+Outflow     : 3.5854441e-05 [kg/s]
+EnergyInflow  : 10.626501 [W]
+EnergyOutflow : 10.744523 [W]
+rho max/avg/min : 1.2016458 1.1112902 0.93915606
+T   max/avg/min : 375.72271 319.69863 293.69566
+P   max/avg/min : 101324.91 101316.15 101307.4
+Prg max/avg/min : 101325 101324.3 101321.16
+U   max/avg/min : 0.25151562 0.11055136 -0.0051617571
+Prg max-min : 3.8372226
+ 
+Iteration Number = 47
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.030836032, Final residual = 3.0602012e-05, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.015446059, Final residual = 1.0699537e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.025927481, Final residual = 1.3513632e-05, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.0045247861, Final residual = 4.0166708e-06, No Iterations 5
+GAMG:  Solving for p_rgh, Initial residual = 0.024672917, Final residual = 1.0817801e-05, No Iterations 4
+time step continuity errors : sum local = 0.00014700261, global = -4.6032239e-05, cumulative = 0.00046502153
+ExecutionTime = 6.7 s  ClockTime = 7 s
+Inflow      : 3.7905392e-05 [kg/s]
+Outflow     : 3.7867002e-05 [kg/s]
+EnergyInflow  : 11.199611 [W]
+EnergyOutflow : 11.34713 [W]
+rho max/avg/min : 1.2016458 1.1106373 0.93784234
+T   max/avg/min : 376.249 319.92332 293.69517
+P   max/avg/min : 101324.91 101316.15 101307.4
+Prg max/avg/min : 101325 101324.3 101321.14
+U   max/avg/min : 0.26272436 0.11469349 -0.00033257493
+Prg max-min : 3.8549285
+ 
+Iteration Number = 48
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.03048721, Final residual = 1.5484344e-06, No Iterations 3
+DILUPBiCG:  Solving for Uy, Initial residual = 0.014575827, Final residual = 9.228256e-07, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.022898209, Final residual = 1.1134597e-05, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.0043278495, Final residual = 1.4258571e-06, No Iterations 6
+GAMG:  Solving for p_rgh, Initial residual = 0.019991171, Final residual = 1.3815533e-05, No Iterations 3
+time step continuity errors : sum local = 0.00018425123, global = 9.9480202e-05, cumulative = 0.00056450173
+ExecutionTime = 6.74 s  ClockTime = 7 s
+Inflow      : 3.9694446e-05 [kg/s]
+Outflow     : 3.9777413e-05 [kg/s]
+EnergyInflow  : 11.728208 [W]
+EnergyOutflow : 11.918683 [W]
+rho max/avg/min : 1.2016458 1.1100176 0.93650694
+T   max/avg/min : 376.78552 320.13894 293.69467
+P   max/avg/min : 101324.91 101316.15 101307.4
+Prg max/avg/min : 101325 101324.29 101321.12
+U   max/avg/min : 0.27410894 0.11874771 0
+Prg max-min : 3.8788395
+ 
+Iteration Number = 49
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.029384745, Final residual = 1.1125937e-06, No Iterations 3
+DILUPBiCG:  Solving for Uy, Initial residual = 0.015411176, Final residual = 9.3818791e-07, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.02263761, Final residual = 1.1107462e-05, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.0041357093, Final residual = 1.2522391e-06, No Iterations 6
+GAMG:  Solving for p_rgh, Initial residual = 0.018205838, Final residual = 1.1163621e-05, No Iterations 3
+time step continuity errors : sum local = 0.00014606234, global = -2.2506672e-05, cumulative = 0.00054199506
+ExecutionTime = 6.77 s  ClockTime = 7 s
+Inflow      : 4.1594824e-05 [kg/s]
+Outflow     : 4.1576053e-05 [kg/s]
+EnergyInflow  : 12.289698 [W]
+EnergyOutflow : 12.456384 [W]
+rho max/avg/min : 1.2016458 1.1094275 0.93515607
+T   max/avg/min : 377.32978 320.34637 293.69414
+P   max/avg/min : 101324.91 101316.15 101307.39
+Prg max/avg/min : 101325 101324.28 101321.1
+U   max/avg/min : 0.28558179 0.12278679 0
+Prg max-min : 3.9009562
+ 
+Iteration Number = 50
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.029100019, Final residual = 9.1414603e-07, No Iterations 3
+DILUPBiCG:  Solving for Uy, Initial residual = 0.016365894, Final residual = 1.3075515e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.021628262, Final residual = 1.0625627e-05, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.0039465107, Final residual = 3.2277009e-06, No Iterations 5
+GAMG:  Solving for G, Initial residual = 0.075793893, Final residual = 0.035499507, No Iterations 1000
+GAMG:  Solving for p_rgh, Initial residual = 0.016845581, Final residual = 3.9597373e-06, No Iterations 4
+time step continuity errors : sum local = 5.08802e-05, global = -7.4391936e-06, cumulative = 0.00053455586
+ExecutionTime = 7.78 s  ClockTime = 8 s
+Inflow      : 4.3007605e-05 [kg/s]
+Outflow     : 4.3001401e-05 [kg/s]
+EnergyInflow  : 12.707122 [W]
+EnergyOutflow : 12.882864 [W]
+rho max/avg/min : 1.2016458 1.108865 0.93379558
+T   max/avg/min : 377.87952 320.54605 293.6936
+P   max/avg/min : 101324.91 101316.15 101307.4
+Prg max/avg/min : 101325 101324.28 101321.08
+U   max/avg/min : 0.29703748 0.12657558 0
+Prg max-min : 3.9121915
+ 
+Iteration Number = 51
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.026590872, Final residual = 9.0263199e-07, No Iterations 3
+DILUPBiCG:  Solving for Uy, Initial residual = 0.016543864, Final residual = 8.3294594e-07, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.016833517, Final residual = 6.9541725e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.0041104251, Final residual = 2.0161121e-06, No Iterations 5
+GAMG:  Solving for p_rgh, Initial residual = 0.014758463, Final residual = 1.3940653e-05, No Iterations 3
+time step continuity errors : sum local = 0.00017643755, global = 7.173672e-05, cumulative = 0.00060629258
+ExecutionTime = 7.81 s  ClockTime = 8 s
+Inflow      : 4.4099456e-05 [kg/s]
+Outflow     : 4.4159284e-05 [kg/s]
+EnergyInflow  : 13.029722 [W]
+EnergyOutflow : 13.229499 [W]
+rho max/avg/min : 1.2016458 1.1084076 0.93399664
+T   max/avg/min : 377.79821 320.70711 293.69307
+P   max/avg/min : 101324.91 101316.15 101307.4
+Prg max/avg/min : 101325 101324.28 101321.08
+U   max/avg/min : 0.3084764 0.13018136 0
+Prg max-min : 3.9142614
+ 
+Iteration Number = 52
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.02669272, Final residual = 1.4326698e-06, No Iterations 3
+DILUPBiCG:  Solving for Uy, Initial residual = 0.016971039, Final residual = 1.1174995e-05, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.017184488, Final residual = 7.8352825e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.0031168734, Final residual = 2.8712294e-06, No Iterations 5
+GAMG:  Solving for p_rgh, Initial residual = 0.014035162, Final residual = 4.7060065e-06, No Iterations 4
+time step continuity errors : sum local = 5.9257749e-05, global = -1.4982072e-05, cumulative = 0.00059131051
+ExecutionTime = 7.85 s  ClockTime = 8 s
+Inflow      : 4.5130043e-05 [kg/s]
+Outflow     : 4.5117548e-05 [kg/s]
+EnergyInflow  : 13.334222 [W]
+EnergyOutflow : 13.516546 [W]
+rho max/avg/min : 1.2016458 1.1079714 0.93348913
+T   max/avg/min : 378.00359 320.86255 293.69252
+P   max/avg/min : 101324.91 101316.15 101307.4
+Prg max/avg/min : 101325 101324.27 101321.08
+U   max/avg/min : 0.31990043 0.13369744 0
+Prg max-min : 3.9175894
+ 
+Iteration Number = 53
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.02529437, Final residual = 1.869596e-06, No Iterations 3
+DILUPBiCG:  Solving for Uy, Initial residual = 0.017389665, Final residual = 1.7784699e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.014801587, Final residual = 6.0461717e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.0029420305, Final residual = 2.4723089e-06, No Iterations 5
+GAMG:  Solving for p_rgh, Initial residual = 0.013207752, Final residual = 2.599418e-06, No Iterations 4
+time step continuity errors : sum local = 3.2452278e-05, global = -1.5626369e-06, cumulative = 0.00058974788
+ExecutionTime = 7.89 s  ClockTime = 8 s
+Inflow      : 4.5945127e-05 [kg/s]
+Outflow     : 4.5943824e-05 [kg/s]
+EnergyInflow  : 13.575048 [W]
+EnergyOutflow : 13.764208 [W]
+rho max/avg/min : 1.2016458 1.1075582 0.93277703
+T   max/avg/min : 378.29218 321.01139 293.69198
+P   max/avg/min : 101324.91 101316.15 101307.4
+Prg max/avg/min : 101325 101324.27 101321.07
+U   max/avg/min : 0.33125564 0.13706537 0
+Prg max-min : 3.9291823
+ 
+Iteration Number = 54
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.024430458, Final residual = 2.3725432e-05, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.018060662, Final residual = 9.2083737e-07, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.01415214, Final residual = 6.0761075e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.0028151229, Final residual = 2.0607276e-06, No Iterations 5
+GAMG:  Solving for p_rgh, Initial residual = 0.012759063, Final residual = 8.1959812e-06, No Iterations 4
+time step continuity errors : sum local = 0.00010189245, global = 1.3448144e-05, cumulative = 0.00060319602
+ExecutionTime = 7.92 s  ClockTime = 8 s
+Inflow      : 4.6689373e-05 [kg/s]
+Outflow     : 4.6700588e-05 [kg/s]
+EnergyInflow  : 13.794945 [W]
+EnergyOutflow : 13.991088 [W]
+rho max/avg/min : 1.2016458 1.1071665 0.93196618
+T   max/avg/min : 378.6213 321.15385 293.69142
+P   max/avg/min : 101324.91 101316.15 101307.4
+Prg max/avg/min : 101325 101324.27 101321.06
+U   max/avg/min : 0.34253199 0.14034738 0
+Prg max-min : 3.9400538
+ 
+Iteration Number = 55
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.023483033, Final residual = 2.0524408e-05, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.018580422, Final residual = 4.6231879e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.013134616, Final residual = 5.4057247e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.0026965142, Final residual = 2.3443193e-06, No Iterations 5
+GAMG:  Solving for p_rgh, Initial residual = 0.0123629, Final residual = 5.8013975e-06, No Iterations 4
+time step continuity errors : sum local = 7.1778135e-05, global = 2.906482e-06, cumulative = 0.0006061025
+ExecutionTime = 7.97 s  ClockTime = 8 s
+Inflow      : 4.7332197e-05 [kg/s]
+Outflow     : 4.7334621e-05 [kg/s]
+EnergyInflow  : 13.984875 [W]
+EnergyOutflow : 14.181545 [W]
+rho max/avg/min : 1.2016458 1.1067952 0.93109608
+T   max/avg/min : 378.97513 321.29022 293.69087
+P   max/avg/min : 101324.91 101316.15 101307.4
+Prg max/avg/min : 101325 101324.26 101321.05
+U   max/avg/min : 0.35368243 0.14351173 0
+Prg max-min : 3.9517631
+ 
+Iteration Number = 56
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.022875311, Final residual = 1.8298071e-05, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.017996893, Final residual = 1.377608e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.012202461, Final residual = 5.0322007e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.0025880107, Final residual = 2.2002017e-06, No Iterations 5
+GAMG:  Solving for p_rgh, Initial residual = 0.011870259, Final residual = 3.4136759e-06, No Iterations 4
+time step continuity errors : sum local = 4.2081483e-05, global = -2.2293166e-05, cumulative = 0.00058380934
+ExecutionTime = 8 s  ClockTime = 8 s
+Inflow      : 4.7898542e-05 [kg/s]
+Outflow     : 4.787995e-05 [kg/s]
+EnergyInflow  : 14.152209 [W]
+EnergyOutflow : 14.345712 [W]
+rho max/avg/min : 1.2016458 1.1064432 0.93018637
+T   max/avg/min : 379.34576 321.4208 293.69032
+P   max/avg/min : 101324.91 101316.15 101307.4
+Prg max/avg/min : 101325 101324.26 101321.03
+U   max/avg/min : 0.36475286 0.14657484 0
+Prg max-min : 3.9646717
+ 
+Iteration Number = 57
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.021383917, Final residual = 1.7088168e-05, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.019259095, Final residual = 8.2681574e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.011510595, Final residual = 4.7034643e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.0024884349, Final residual = 1.9027843e-06, No Iterations 5
+GAMG:  Solving for p_rgh, Initial residual = 0.011405814, Final residual = 2.5353907e-06, No Iterations 4
+time step continuity errors : sum local = 3.1147415e-05, global = 6.6396048e-06, cumulative = 0.00059044894
+ExecutionTime = 8.04 s  ClockTime = 8 s
+Inflow      : 4.8400394e-05 [kg/s]
+Outflow     : 4.8405931e-05 [kg/s]
+EnergyInflow  : 14.300487 [W]
+EnergyOutflow : 14.504123 [W]
+rho max/avg/min : 1.2016458 1.1061092 0.92924893
+T   max/avg/min : 379.72845 321.54588 293.68978
+P   max/avg/min : 101324.91 101316.15 101307.4
+Prg max/avg/min : 101325 101324.26 101321.02
+U   max/avg/min : 0.37567332 0.14956315 0
+Prg max-min : 3.9787122
+ 
+Iteration Number = 58
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.021098331, Final residual = 1.5529176e-05, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.019551009, Final residual = 2.5247782e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.011079593, Final residual = 4.603353e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.0023962221, Final residual = 1.7081385e-06, No Iterations 5
+GAMG:  Solving for p_rgh, Initial residual = 0.010821564, Final residual = 5.2271952e-06, No Iterations 4
+time step continuity errors : sum local = 6.4041366e-05, global = -7.6272492e-07, cumulative = 0.00058968622
+ExecutionTime = 8.08 s  ClockTime = 8 s
+Inflow      : 4.8826367e-05 [kg/s]
+Outflow     : 4.8825731e-05 [kg/s]
+EnergyInflow  : 14.426346 [W]
+EnergyOutflow : 14.631109 [W]
+rho max/avg/min : 1.2016458 1.1057923 0.9282918
+T   max/avg/min : 380.11998 321.66575 293.68925
+P   max/avg/min : 101324.91 101316.15 101307.4
+Prg max/avg/min : 101325 101324.26 101321.01
+U   max/avg/min : 0.38642396 0.15245318 0
+Prg max-min : 3.9906883
+ 
+Iteration Number = 59
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.02028597, Final residual = 1.5693753e-05, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.0209851, Final residual = 1.6388788e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.010194147, Final residual = 4.2445633e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.0023115432, Final residual = 1.4790363e-06, No Iterations 5
+GAMG:  Solving for p_rgh, Initial residual = 0.010350691, Final residual = 3.907883e-06, No Iterations 4
+time step continuity errors : sum local = 4.7728862e-05, global = 2.8599198e-05, cumulative = 0.00061828541
+ExecutionTime = 8.12 s  ClockTime = 8 s
+Inflow      : 4.9218283e-05 [kg/s]
+Outflow     : 4.9242134e-05 [kg/s]
+EnergyInflow  : 14.542142 [W]
+EnergyOutflow : 14.757051 [W]
+rho max/avg/min : 1.2016458 1.1054914 0.92732075
+T   max/avg/min : 380.51803 321.78068 293.68874
+P   max/avg/min : 101324.91 101316.15 101307.4
+Prg max/avg/min : 101325 101324.25 101320.99
+U   max/avg/min : 0.39714944 0.15527375 0
+Prg max-min : 4.0067518
+ 
+Iteration Number = 60
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.019298535, Final residual = 1.4409196e-05, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.020555809, Final residual = 3.3871518e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.010134946, Final residual = 4.2566231e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.0022326909, Final residual = 1.4307978e-06, No Iterations 5
+GAMG:  Solving for G, Initial residual = 0.04999431, Final residual = 0.033845773, No Iterations 1000
+GAMG:  Solving for p_rgh, Initial residual = 0.0098233658, Final residual = 3.701824e-06, No Iterations 4
+time step continuity errors : sum local = 4.5133549e-05, global = 1.3864758e-06, cumulative = 0.00061967189
+ExecutionTime = 9.1 s  ClockTime = 9 s
+Inflow      : 4.9594513e-05 [kg/s]
+Outflow     : 4.9595669e-05 [kg/s]
+EnergyInflow  : 14.653304 [W]
+EnergyOutflow : 14.864355 [W]
+rho max/avg/min : 1.2016458 1.1052056 0.92633976
+T   max/avg/min : 380.92099 321.89094 293.68824
+P   max/avg/min : 101324.91 101316.16 101307.4
+Prg max/avg/min : 101325 101324.25 101320.98
+U   max/avg/min : 0.40790037 0.15801645 0
+Prg max-min : 4.0184178
+ 
+Iteration Number = 61
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.018639997, Final residual = 1.4126941e-05, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.020288979, Final residual = 1.8496206e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.0093016146, Final residual = 4.2843996e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.0023519988, Final residual = 1.3705135e-06, No Iterations 5
+GAMG:  Solving for p_rgh, Initial residual = 0.0094943571, Final residual = 3.0375092e-06, No Iterations 4
+time step continuity errors : sum local = 3.6904193e-05, global = 2.6234746e-05, cumulative = 0.00064590664
+ExecutionTime = 9.13 s  ClockTime = 9 s
+Inflow      : 4.9904229e-05 [kg/s]
+Outflow     : 4.9926109e-05 [kg/s]
+EnergyInflow  : 14.744813 [W]
+EnergyOutflow : 14.964769 [W]
+rho max/avg/min : 1.2016458 1.1049858 0.9264421
+T   max/avg/min : 380.87892 321.97601 293.68778
+P   max/avg/min : 101324.91 101316.15 101307.4
+Prg max/avg/min : 101325 101324.25 101320.98
+U   max/avg/min : 0.41849101 0.16068217 0
+Prg max-min : 4.0186834
+ 
+Iteration Number = 62
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.017908183, Final residual = 1.4067318e-05, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.019982089, Final residual = 1.3621304e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.0091839694, Final residual = 3.9451638e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.0017893802, Final residual = 1.1518412e-06, No Iterations 5
+GAMG:  Solving for p_rgh, Initial residual = 0.0089382556, Final residual = 2.9795652e-06, No Iterations 4
+time step continuity errors : sum local = 3.6141172e-05, global = -2.2588573e-05, cumulative = 0.00062331806
+ExecutionTime = 9.16 s  ClockTime = 9 s
+Inflow      : 5.0246897e-05 [kg/s]
+Outflow     : 5.0228058e-05 [kg/s]
+EnergyInflow  : 14.846059 [W]
+EnergyOutflow : 15.05669 [W]
+rho max/avg/min : 1.2016458 1.1047784 0.92605232
+T   max/avg/min : 381.03923 322.05748 293.68733
+P   max/avg/min : 101324.91 101316.15 101307.4
+Prg max/avg/min : 101325 101324.25 101320.97
+U   max/avg/min : 0.42890768 0.16329182 0
+Prg max-min : 4.0228848
+ 
+Iteration Number = 63
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.017143773, Final residual = 1.2832495e-05, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.020699945, Final residual = 1.207875e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.0087356514, Final residual = 4.2157188e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.0017117835, Final residual = 1.2643855e-06, No Iterations 5
+GAMG:  Solving for p_rgh, Initial residual = 0.0085829885, Final residual = 2.2785006e-06, No Iterations 4
+time step continuity errors : sum local = 2.7548366e-05, global = 3.6278784e-06, cumulative = 0.00062694594
+ExecutionTime = 9.2 s  ClockTime = 10 s
+Inflow      : 5.0492973e-05 [kg/s]
+Outflow     : 5.0495999e-05 [kg/s]
+EnergyInflow  : 14.918765 [W]
+EnergyOutflow : 15.138475 [W]
+rho max/avg/min : 1.2016458 1.1045847 0.92552025
+T   max/avg/min : 381.25829 322.13469 293.68692
+P   max/avg/min : 101324.91 101316.16 101307.4
+Prg max/avg/min : 101325 101324.25 101320.97
+U   max/avg/min : 0.43921353 0.16582412 0
+Prg max-min : 4.0311034
+ 
+Iteration Number = 64
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.01668376, Final residual = 1.3038202e-05, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.02256472, Final residual = 2.3321995e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.0083197561, Final residual = 5.0425891e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.0016556933, Final residual = 1.1085949e-06, No Iterations 5
+GAMG:  Solving for p_rgh, Initial residual = 0.0081405759, Final residual = 9.9457053e-07, No Iterations 4
+time step continuity errors : sum local = 1.19955e-05, global = -1.6485824e-06, cumulative = 0.00062529736
+ExecutionTime = 9.24 s  ClockTime = 10 s
+Inflow      : 5.0750431e-05 [kg/s]
+Outflow     : 5.0749056e-05 [kg/s]
+EnergyInflow  : 14.994834 [W]
+EnergyOutflow : 15.215772 [W]
+rho max/avg/min : 1.2016458 1.104404 0.92492007
+T   max/avg/min : 381.50568 322.20775 293.68652
+P   max/avg/min : 101324.91 101316.15 101307.4
+Prg max/avg/min : 101325 101324.24 101320.96
+U   max/avg/min : 0.44934446 0.16829561 0
+Prg max-min : 4.0392307
+ 
+Iteration Number = 65
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.015933032, Final residual = 1.2440896e-05, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.02110694, Final residual = 7.7151444e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.0081293276, Final residual = 5.0958148e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.0016028549, Final residual = 1.5878303e-06, No Iterations 5
+GAMG:  Solving for p_rgh, Initial residual = 0.0078100668, Final residual = 3.0044836e-06, No Iterations 4
+time step continuity errors : sum local = 3.6161188e-05, global = 1.1296579e-05, cumulative = 0.00063659394
+ExecutionTime = 9.28 s  ClockTime = 10 s
+Inflow      : 5.0957629e-05 [kg/s]
+Outflow     : 5.0967051e-05 [kg/s]
+EnergyInflow  : 15.056053 [W]
+EnergyOutflow : 15.282612 [W]
+rho max/avg/min : 1.2016458 1.1042353 0.92427878
+T   max/avg/min : 381.77038 322.27694 293.6862
+P   max/avg/min : 101324.91 101316.16 101307.4
+Prg max/avg/min : 101325 101324.24 101320.95
+U   max/avg/min : 0.45929052 0.17070243 0
+Prg max-min : 4.0489041
+ 
+Iteration Number = 66
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.015364228, Final residual = 1.2065533e-05, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.021505907, Final residual = 8.84531e-07, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.0077032973, Final residual = 8.3849802e-08, No Iterations 3
+DILUPBiCG:  Solving for h, Initial residual = 0.0015532713, Final residual = 1.417784e-06, No Iterations 5
+GAMG:  Solving for p_rgh, Initial residual = 0.0074373579, Final residual = 1.8218083e-06, No Iterations 4
+time step continuity errors : sum local = 2.1858228e-05, global = -2.4623429e-06, cumulative = 0.00063413159
+ExecutionTime = 9.32 s  ClockTime = 10 s
+Inflow      : 5.1183052e-05 [kg/s]
+Outflow     : 5.1180998e-05 [kg/s]
+EnergyInflow  : 15.122657 [W]
+EnergyOutflow : 15.348168 [W]
+rho max/avg/min : 1.2016458 1.1040781 0.92361163
+T   max/avg/min : 382.04615 322.34241 293.68601
+P   max/avg/min : 101324.91 101316.15 101307.4
+Prg max/avg/min : 101325 101324.24 101320.94
+U   max/avg/min : 0.46905552 0.17305261 0
+Prg max-min : 4.058249
+ 
+Iteration Number = 67
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.014902998, Final residual = 1.1706166e-05, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.020043817, Final residual = 9.7142182e-07, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.0075848096, Final residual = 2.8507493e-07, No Iterations 3
+DILUPBiCG:  Solving for h, Initial residual = 0.0015063711, Final residual = 1.0936801e-06, No Iterations 5
+GAMG:  Solving for p_rgh, Initial residual = 0.0071313933, Final residual = 3.5785629e-06, No Iterations 4
+time step continuity errors : sum local = 4.2867454e-05, global = 1.2693988e-05, cumulative = 0.00064682558
+ExecutionTime = 9.36 s  ClockTime = 10 s
+Inflow      : 5.1343022e-05 [kg/s]
+Outflow     : 5.1353608e-05 [kg/s]
+EnergyInflow  : 15.169922 [W]
+EnergyOutflow : 15.401423 [W]
+rho max/avg/min : 1.2016458 1.1039314 0.92292631
+T   max/avg/min : 382.32984 322.40441 293.6859
+P   max/avg/min : 101324.91 101316.16 101307.4
+Prg max/avg/min : 101325 101324.24 101320.93
+U   max/avg/min : 0.47862905 0.17533999 0
+Prg max-min : 4.0683793
+ 
+Iteration Number = 68
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.014869561, Final residual = 1.1671259e-05, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.020792794, Final residual = 1.5454159e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.0071486388, Final residual = 7.7613394e-08, No Iterations 3
+DILUPBiCG:  Solving for h, Initial residual = 0.0014622667, Final residual = 2.1439209e-07, No Iterations 6
+GAMG:  Solving for p_rgh, Initial residual = 0.006807492, Final residual = 2.8444232e-06, No Iterations 4
+time step continuity errors : sum local = 3.3973228e-05, global = -1.0553483e-05, cumulative = 0.0006362721
+ExecutionTime = 9.39 s  ClockTime = 10 s
+Inflow      : 5.1543696e-05 [kg/s]
+Outflow     : 5.1534894e-05 [kg/s]
+EnergyInflow  : 15.229214 [W]
+EnergyOutflow : 15.457148 [W]
+rho max/avg/min : 1.2016458 1.1037948 0.92222895
+T   max/avg/min : 382.61895 322.46311 293.68582
+P   max/avg/min : 101324.91 101316.15 101307.4
+Prg max/avg/min : 101325 101324.24 101320.92
+U   max/avg/min : 0.48800975 0.17757894 0
+Prg max-min : 4.0786533
+ 
+Iteration Number = 69
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.013334663, Final residual = 1.0725619e-05, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.020448779, Final residual = 1.3232453e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.0071439024, Final residual = 2.0780851e-07, No Iterations 3
+DILUPBiCG:  Solving for h, Initial residual = 0.0014201603, Final residual = 2.6681522e-07, No Iterations 6
+GAMG:  Solving for p_rgh, Initial residual = 0.0065334651, Final residual = 3.2698048e-06, No Iterations 4
+time step continuity errors : sum local = 3.8979507e-05, global = -3.4953711e-06, cumulative = 0.00063277673
+ExecutionTime = 9.43 s  ClockTime = 10 s
+Inflow      : 5.1674916e-05 [kg/s]
+Outflow     : 5.1672e-05 [kg/s]
+EnergyInflow  : 15.267984 [W]
+EnergyOutflow : 15.499727 [W]
+rho max/avg/min : 1.2016458 1.1036673 0.9215232
+T   max/avg/min : 382.91197 322.51875 293.68577
+P   max/avg/min : 101324.91 101316.16 101307.4
+Prg max/avg/min : 101325 101324.24 101320.91
+U   max/avg/min : 0.49719985 0.17975512 0
+Prg max-min : 4.088499
+ 
+Iteration Number = 70
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.014184077, Final residual = 1.1304184e-05, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.020415726, Final residual = 1.9190061e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.0066579223, Final residual = 7.230592e-08, No Iterations 3
+DILUPBiCG:  Solving for h, Initial residual = 0.0013807281, Final residual = 9.5439035e-07, No Iterations 5
+GAMG:  Solving for G, Initial residual = 0.039693737, Final residual = 0.033323107, No Iterations 1000
+GAMG:  Solving for p_rgh, Initial residual = 0.0062606343, Final residual = 3.0238857e-06, No Iterations 4
+time step continuity errors : sum local = 3.5922855e-05, global = -1.1340944e-05, cumulative = 0.00062143578
+ExecutionTime = 10.41 s  ClockTime = 11 s
+Inflow      : 5.1823772e-05 [kg/s]
+Outflow     : 5.1814314e-05 [kg/s]
+EnergyInflow  : 15.311966 [W]
+EnergyOutflow : 15.543769 [W]
+rho max/avg/min : 1.2016458 1.1035484 0.92081277
+T   max/avg/min : 383.2074 322.57154 293.68573
+P   max/avg/min : 101324.91 101316.16 101307.4
+Prg max/avg/min : 101325 101324.23 101320.9
+U   max/avg/min : 0.5062507 0.18188401 0
+Prg max-min : 4.0995231
+ 
+Iteration Number = 71
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.012773351, Final residual = 9.8765395e-06, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.019948033, Final residual = 6.1515888e-08, No Iterations 4
+DILUPBiCG:  Solving for Uz, Initial residual = 0.0067103698, Final residual = 1.5368675e-07, No Iterations 3
+DILUPBiCG:  Solving for h, Initial residual = 0.0014704729, Final residual = 3.1684086e-07, No Iterations 6
+GAMG:  Solving for p_rgh, Initial residual = 0.0061254711, Final residual = 2.7320349e-06, No Iterations 4
+time step continuity errors : sum local = 3.2404812e-05, global = -2.8283167e-06, cumulative = 0.00061860747
+ExecutionTime = 10.44 s  ClockTime = 11 s
+Inflow      : 5.193389e-05 [kg/s]
+Outflow     : 5.1931531e-05 [kg/s]
+EnergyInflow  : 15.344501 [W]
+EnergyOutflow : 15.580311 [W]
+rho max/avg/min : 1.2016458 1.103472 0.92090739
+T   max/avg/min : 383.16802 322.6076 293.68571
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.23 101320.9
+U   max/avg/min : 0.51515479 0.18396077 0
+Prg max-min : 4.0971982
+ 
+Iteration Number = 72
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.01323979, Final residual = 1.0492916e-05, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.020194698, Final residual = 1.6428968e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.0062278526, Final residual = 6.4548736e-08, No Iterations 3
+DILUPBiCG:  Solving for h, Initial residual = 0.0011112756, Final residual = 2.5244651e-07, No Iterations 6
+GAMG:  Solving for p_rgh, Initial residual = 0.0058480143, Final residual = 2.9132248e-06, No Iterations 4
+time step continuity errors : sum local = 3.4425694e-05, global = -1.1438849e-05, cumulative = 0.00060716862
+ExecutionTime = 10.48 s  ClockTime = 11 s
+Inflow      : 5.2049643e-05 [kg/s]
+Outflow     : 5.2040103e-05 [kg/s]
+EnergyInflow  : 15.378702 [W]
+EnergyOutflow : 15.614212 [W]
+rho max/avg/min : 1.2016458 1.1034025 0.92064043
+T   max/avg/min : 383.27914 322.6415 293.68569
+P   max/avg/min : 101324.91 101316.16 101307.4
+Prg max/avg/min : 101325 101324.23 101320.89
+U   max/avg/min : 0.52386685 0.18598459 0
+Prg max-min : 4.1016136
+ 
+Iteration Number = 73
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.01180503, Final residual = 9.1397641e-06, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.018390851, Final residual = 6.2444835e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.0062508543, Final residual = 9.4512369e-08, No Iterations 3
+DILUPBiCG:  Solving for h, Initial residual = 0.0010649389, Final residual = 9.1276926e-07, No Iterations 5
+GAMG:  Solving for p_rgh, Initial residual = 0.0056036573, Final residual = 2.2004895e-06, No Iterations 4
+time step continuity errors : sum local = 2.5957875e-05, global = 1.4072268e-06, cumulative = 0.00060857585
+ExecutionTime = 10.52 s  ClockTime = 11 s
+Inflow      : 5.2130846e-05 [kg/s]
+Outflow     : 5.213202e-05 [kg/s]
+EnergyInflow  : 15.402695 [W]
+EnergyOutflow : 15.643116 [W]
+rho max/avg/min : 1.2016458 1.1033408 0.92027087
+T   max/avg/min : 383.43305 322.67281 293.68567
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.23 101320.89
+U   max/avg/min : 0.53252529 0.1879635 0
+Prg max-min : 4.1064615
+ 
+Iteration Number = 74
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.012432365, Final residual = 1.0267539e-05, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.018336799, Final residual = 2.3734509e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.0058541668, Final residual = 5.8655362e-08, No Iterations 3
+DILUPBiCG:  Solving for h, Initial residual = 0.0010344675, Final residual = 3.0270799e-07, No Iterations 6
+GAMG:  Solving for p_rgh, Initial residual = 0.0053970312, Final residual = 1.8743973e-06, No Iterations 4
+time step continuity errors : sum local = 2.204606e-05, global = -8.682186e-06, cumulative = 0.00059989366
+ExecutionTime = 10.55 s  ClockTime = 11 s
+Inflow      : 5.2224938e-05 [kg/s]
+Outflow     : 5.2217697e-05 [kg/s]
+EnergyInflow  : 15.430495 [W]
+EnergyOutflow : 15.670109 [W]
+rho max/avg/min : 1.2016458 1.1032865 0.91985358
+T   max/avg/min : 383.607 322.70156 293.68565
+P   max/avg/min : 101324.91 101316.16 101307.4
+Prg max/avg/min : 101325 101324.23 101320.88
+U   max/avg/min : 0.54138917 0.18989411 0
+Prg max-min : 4.1128921
+ 
+Iteration Number = 75
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.011302293, Final residual = 8.8054874e-06, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.018623153, Final residual = 4.988021e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.0058580419, Final residual = 6.7622534e-08, No Iterations 3
+DILUPBiCG:  Solving for h, Initial residual = 0.0010055865, Final residual = 1.5483678e-07, No Iterations 6
+GAMG:  Solving for p_rgh, Initial residual = 0.0051941406, Final residual = 4.9415136e-06, No Iterations 3
+time step continuity errors : sum local = 5.8012862e-05, global = -1.2894502e-05, cumulative = 0.00058699916
+ExecutionTime = 10.59 s  ClockTime = 11 s
+Inflow      : 5.2301347e-05 [kg/s]
+Outflow     : 5.2290593e-05 [kg/s]
+EnergyInflow  : 15.453071 [W]
+EnergyOutflow : 15.693255 [W]
+rho max/avg/min : 1.2016458 1.1032391 0.91940862
+T   max/avg/min : 383.79265 322.72792 293.68564
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.23 101320.88
+U   max/avg/min : 0.55008554 0.19178666 0
+Prg max-min : 4.1192072
+ 
+Iteration Number = 76
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.011920728, Final residual = 8.8910135e-06, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.018133467, Final residual = 1.3292436e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.0055625371, Final residual = 5.5590306e-08, No Iterations 3
+DILUPBiCG:  Solving for h, Initial residual = 0.000978539, Final residual = 4.9034941e-08, No Iterations 7
+GAMG:  Solving for p_rgh, Initial residual = 0.005028569, Final residual = 9.9709941e-07, No Iterations 4
+time step continuity errors : sum local = 1.1672911e-05, global = 6.4579597e-06, cumulative = 0.00059345712
+ExecutionTime = 10.63 s  ClockTime = 11 s
+Inflow      : 5.2352516e-05 [kg/s]
+Outflow     : 5.2357902e-05 [kg/s]
+EnergyInflow  : 15.46819 [W]
+EnergyOutflow : 15.714672 [W]
+rho max/avg/min : 1.2016458 1.1031983 0.91894671
+T   max/avg/min : 383.98556 322.752 293.68563
+P   max/avg/min : 101324.91 101316.16 101307.4
+Prg max/avg/min : 101325 101324.23 101320.87
+U   max/avg/min : 0.55861633 0.1936236 0
+Prg max-min : 4.1256861
+ 
+Iteration Number = 77
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.010359424, Final residual = 1.0061037e-05, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.018744011, Final residual = 9.9448713e-07, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.0054253484, Final residual = 5.1570331e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.00095223029, Final residual = 3.0507176e-07, No Iterations 6
+GAMG:  Solving for p_rgh, Initial residual = 0.0048418823, Final residual = 1.8476476e-06, No Iterations 4
+time step continuity errors : sum local = 2.1586849e-05, global = 1.85484e-06, cumulative = 0.00059531196
+ExecutionTime = 10.67 s  ClockTime = 11 s
+Inflow      : 5.2405918e-05 [kg/s]
+Outflow     : 5.2407465e-05 [kg/s]
+EnergyInflow  : 15.483968 [W]
+EnergyOutflow : 15.730774 [W]
+rho max/avg/min : 1.2016458 1.1031634 0.91847418
+T   max/avg/min : 384.18311 322.77399 293.68563
+P   max/avg/min : 101324.91 101316.16 101307.4
+Prg max/avg/min : 101325 101324.23 101320.86
+U   max/avg/min : 0.56698044 0.19542353 0
+Prg max-min : 4.1331454
+ 
+Iteration Number = 78
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.011525435, Final residual = 1.1967015e-08, No Iterations 4
+DILUPBiCG:  Solving for Uy, Initial residual = 0.019418408, Final residual = 1.5816284e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.0052908141, Final residual = 4.9264072e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.00092777422, Final residual = 1.5552499e-07, No Iterations 6
+GAMG:  Solving for p_rgh, Initial residual = 0.0046651898, Final residual = 9.515489e-07, No Iterations 4
+time step continuity errors : sum local = 1.1094611e-05, global = 2.528225e-06, cumulative = 0.00059784018
+ExecutionTime = 10.7 s  ClockTime = 11 s
+Inflow      : 5.2459407e-05 [kg/s]
+Outflow     : 5.2461516e-05 [kg/s]
+EnergyInflow  : 15.499772 [W]
+EnergyOutflow : 15.748148 [W]
+rho max/avg/min : 1.2016458 1.1031341 0.91799506
+T   max/avg/min : 384.38362 322.794 293.68562
+P   max/avg/min : 101324.91 101316.16 101307.4
+Prg max/avg/min : 101325 101324.23 101320.86
+U   max/avg/min : 0.57516801 0.19718401 0
+Prg max-min : 4.1397046
+ 
+Iteration Number = 79
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.0098826068, Final residual = 7.6493341e-06, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.018416525, Final residual = 2.6420109e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.0051425276, Final residual = 4.3916819e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.00090441063, Final residual = 3.5094826e-07, No Iterations 6
+GAMG:  Solving for p_rgh, Initial residual = 0.0045140565, Final residual = 1.8047007e-06, No Iterations 4
+time step continuity errors : sum local = 2.0994918e-05, global = 6.220071e-06, cumulative = 0.00060406025
+ExecutionTime = 10.74 s  ClockTime = 11 s
+Inflow      : 5.2492373e-05 [kg/s]
+Outflow     : 5.2497561e-05 [kg/s]
+EnergyInflow  : 15.509512 [W]
+EnergyOutflow : 15.76014 [W]
+rho max/avg/min : 1.2016458 1.1031099 0.91751205
+T   max/avg/min : 384.58598 322.81216 293.68562
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.23 101320.85
+U   max/avg/min : 0.58318805 0.1989014 0
+Prg max-min : 4.1472647
+ 
+Iteration Number = 80
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.010696888, Final residual = 2.092366e-06, No Iterations 3
+DILUPBiCG:  Solving for Uy, Initial residual = 0.01909057, Final residual = 1.9490873e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.0049951905, Final residual = 4.1778166e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.00088218154, Final residual = 8.411986e-07, No Iterations 6
+GAMG:  Solving for G, Initial residual = 0.036416897, Final residual = 0.031964316, No Iterations 1000
+GAMG:  Solving for p_rgh, Initial residual = 0.0043773261, Final residual = 1.079492e-06, No Iterations 4
+time step continuity errors : sum local = 1.2529581e-05, global = 3.2121288e-06, cumulative = 0.00060727238
+ExecutionTime = 11.73 s  ClockTime = 12 s
+Inflow      : 5.2533792e-05 [kg/s]
+Outflow     : 5.253647e-05 [kg/s]
+EnergyInflow  : 15.52175 [W]
+EnergyOutflow : 15.772918 [W]
+rho max/avg/min : 1.2016458 1.1030905 0.91702831
+T   max/avg/min : 384.78885 322.82857 293.68561
+P   max/avg/min : 101324.91 101316.16 101307.4
+Prg max/avg/min : 101325 101324.23 101320.84
+U   max/avg/min : 0.59103733 0.20058182 0
+Prg max-min : 4.1539259
+ 
+Iteration Number = 81
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.009378603, Final residual = 7.2790584e-06, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.018891711, Final residual = 1.0825903e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.004884769, Final residual = 3.6063009e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.00094417895, Final residual = 5.4807994e-07, No Iterations 6
+GAMG:  Solving for p_rgh, Initial residual = 0.0043286823, Final residual = 2.0247377e-06, No Iterations 4
+time step continuity errors : sum local = 2.3456826e-05, global = 3.4492552e-06, cumulative = 0.00061072164
+ExecutionTime = 11.77 s  ClockTime = 12 s
+Inflow      : 5.2557113e-05 [kg/s]
+Outflow     : 5.255999e-05 [kg/s]
+EnergyInflow  : 15.52864 [W]
+EnergyOutflow : 15.781081 [W]
+rho max/avg/min : 1.2016458 1.1030971 0.91711839
+T   max/avg/min : 384.75106 322.83457 293.68561
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.23 101320.84
+U   max/avg/min : 0.59871879 0.20222448 0
+Prg max-min : 4.153057
+ 
+Iteration Number = 82
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.0099553486, Final residual = 4.5115617e-06, No Iterations 3
+DILUPBiCG:  Solving for Uy, Initial residual = 0.018567105, Final residual = 1.0874834e-05, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.0047485853, Final residual = 3.5789424e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.00071809414, Final residual = 2.2577123e-07, No Iterations 6
+GAMG:  Solving for p_rgh, Initial residual = 0.0041264942, Final residual = 1.0765745e-06, No Iterations 4
+time step continuity errors : sum local = 1.2443968e-05, global = 1.5927016e-06, cumulative = 0.00061231434
+ExecutionTime = 11.81 s  ClockTime = 12 s
+Inflow      : 5.2585489e-05 [kg/s]
+Outflow     : 5.2586818e-05 [kg/s]
+EnergyInflow  : 15.537024 [W]
+EnergyOutflow : 15.790171 [W]
+rho max/avg/min : 1.2016458 1.1031074 0.91695468
+T   max/avg/min : 384.81975 322.83928 293.68561
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.23 101320.84
+U   max/avg/min : 0.60622994 0.20383148 0
+Prg max-min : 4.1552146
+ 
+Iteration Number = 83
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.0091400917, Final residual = 7.03317e-06, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.017975265, Final residual = 6.8735927e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.0046345621, Final residual = 3.2536079e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.00068820493, Final residual = 2.2448571e-07, No Iterations 6
+GAMG:  Solving for p_rgh, Initial residual = 0.0039971468, Final residual = 1.7293871e-06, No Iterations 4
+time step continuity errors : sum local = 1.9951882e-05, global = 1.3354657e-06, cumulative = 0.00061364981
+ExecutionTime = 11.85 s  ClockTime = 12 s
+Inflow      : 5.2598709e-05 [kg/s]
+Outflow     : 5.2599823e-05 [kg/s]
+EnergyInflow  : 15.54093 [W]
+EnergyOutflow : 15.795133 [W]
+rho max/avg/min : 1.2016458 1.1031221 0.91672025
+T   max/avg/min : 384.91816 322.84241 293.68561
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.23 101320.84
+U   max/avg/min : 0.61357728 0.20540266 0
+Prg max-min : 4.1589596
+ 
+Iteration Number = 84
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.0092219437, Final residual = 8.6955037e-06, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.018245006, Final residual = 9.6507564e-07, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.0045148325, Final residual = 3.1729902e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.00067082097, Final residual = 1.6316441e-08, No Iterations 7
+GAMG:  Solving for p_rgh, Initial residual = 0.0038599185, Final residual = 1.1940616e-06, No Iterations 4
+time step continuity errors : sum local = 1.3741493e-05, global = -1.5691042e-06, cumulative = 0.0006120807
+ExecutionTime = 11.88 s  ClockTime = 12 s
+Inflow      : 5.2621576e-05 [kg/s]
+Outflow     : 5.2620267e-05 [kg/s]
+EnergyInflow  : 15.547687 [W]
+EnergyOutflow : 15.802237 [W]
+rho max/avg/min : 1.2016458 1.103141 0.91645439
+T   max/avg/min : 385.02982 322.844 293.68561
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.23 101320.83
+U   max/avg/min : 0.62076366 0.20694229 0
+Prg max-min : 4.1627162
+ 
+Iteration Number = 85
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.0089864494, Final residual = 3.1806201e-06, No Iterations 3
+DILUPBiCG:  Solving for Uy, Initial residual = 0.018982338, Final residual = 9.3694032e-07, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.0044188821, Final residual = 2.8730059e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.00065444511, Final residual = 3.5429877e-07, No Iterations 6
+GAMG:  Solving for p_rgh, Initial residual = 0.003751197, Final residual = 3.5765595e-06, No Iterations 3
+time step continuity errors : sum local = 4.1089985e-05, global = -7.0993315e-06, cumulative = 0.00060498137
+ExecutionTime = 11.92 s  ClockTime = 12 s
+Inflow      : 5.263165e-05 [kg/s]
+Outflow     : 5.2625729e-05 [kg/s]
+EnergyInflow  : 15.550663 [W]
+EnergyOutflow : 15.804857 [W]
+rho max/avg/min : 1.2016458 1.1031638 0.91617138
+T   max/avg/min : 385.14876 322.84415 293.68561
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.23 101320.83
+U   max/avg/min : 0.62778297 0.20844972 0
+Prg max-min : 4.1670533
+ 
+Iteration Number = 86
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.0087306119, Final residual = 7.1378814e-06, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.019288431, Final residual = 1.5431943e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.0043080611, Final residual = 2.7820017e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.00063924742, Final residual = 4.7082035e-07, No Iterations 6
+GAMG:  Solving for p_rgh, Initial residual = 0.0036490305, Final residual = 6.7381317e-07, No Iterations 4
+time step continuity errors : sum local = 7.7211706e-06, global = 1.4642712e-06, cumulative = 0.00060644564
+ExecutionTime = 11.96 s  ClockTime = 12 s
+Inflow      : 5.2635509e-05 [kg/s]
+Outflow     : 5.263673e-05 [kg/s]
+EnergyInflow  : 15.551803 [W]
+EnergyOutflow : 15.809068 [W]
+rho max/avg/min : 1.2016458 1.1031902 0.91587875
+T   max/avg/min : 385.27182 322.84293 293.68561
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.23 101320.83
+U   max/avg/min : 0.63469495 0.20991986 0
+Prg max-min : 4.171218
+ 
+Iteration Number = 87
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.0086879037, Final residual = 1.1513347e-06, No Iterations 3
+DILUPBiCG:  Solving for Uy, Initial residual = 0.01947908, Final residual = 1.1321346e-05, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.004170321, Final residual = 2.5602355e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.00062451478, Final residual = 2.1182032e-07, No Iterations 6
+GAMG:  Solving for p_rgh, Initial residual = 0.0035359037, Final residual = 1.4943447e-06, No Iterations 4
+time step continuity errors : sum local = 1.7102791e-05, global = 5.1854011e-06, cumulative = 0.00061163104
+ExecutionTime = 12 s  ClockTime = 12 s
+Inflow      : 5.2631909e-05 [kg/s]
+Outflow     : 5.2636234e-05 [kg/s]
+EnergyInflow  : 15.55074 [W]
+EnergyOutflow : 15.809831 [W]
+rho max/avg/min : 1.2016458 1.1032199 0.91558053
+T   max/avg/min : 385.3973 322.84046 293.68561
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.23 101320.82
+U   max/avg/min : 0.64152879 0.21136109 0
+Prg max-min : 4.1758661
+ 
+Iteration Number = 88
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.0082262661, Final residual = 6.3986501e-06, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.019500378, Final residual = 3.0507401e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.004111963, Final residual = 2.5219133e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.00061074365, Final residual = 1.4278879e-07, No Iterations 6
+GAMG:  Solving for p_rgh, Initial residual = 0.0034173893, Final residual = 5.0860761e-07, No Iterations 4
+time step continuity errors : sum local = 5.8081021e-06, global = 1.2169069e-06, cumulative = 0.00061284795
+ExecutionTime = 12.03 s  ClockTime = 12 s
+Inflow      : 5.2637192e-05 [kg/s]
+Outflow     : 5.2638207e-05 [kg/s]
+EnergyInflow  : 15.552301 [W]
+EnergyOutflow : 15.811284 [W]
+rho max/avg/min : 1.2016458 1.1032527 0.91527947
+T   max/avg/min : 385.52407 322.83682 293.68561
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.23 101320.82
+U   max/avg/min : 0.64839921 0.21277264 0
+Prg max-min : 4.1801557
+ 
+Iteration Number = 89
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.0081567195, Final residual = 3.175282e-07, No Iterations 3
+DILUPBiCG:  Solving for Uy, Initial residual = 0.018711565, Final residual = 8.9725384e-07, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.0039692816, Final residual = 2.3067057e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.00059777241, Final residual = 4.4916462e-07, No Iterations 6
+GAMG:  Solving for p_rgh, Initial residual = 0.0033279466, Final residual = 3.3211127e-06, No Iterations 3
+time step continuity errors : sum local = 3.7857711e-05, global = -1.8759757e-05, cumulative = 0.00059408819
+ExecutionTime = 12.07 s  ClockTime = 12 s
+Inflow      : 5.2650094e-05 [kg/s]
+Outflow     : 5.2634448e-05 [kg/s]
+EnergyInflow  : 15.556113 [W]
+EnergyOutflow : 15.811004 [W]
+rho max/avg/min : 1.2016458 1.1032883 0.91497786
+T   max/avg/min : 385.65116 322.83207 293.68561
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.23 101320.81
+U   max/avg/min : 0.65538949 0.21416006 0
+Prg max-min : 4.1848762
+ 
+Iteration Number = 90
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.0080444145, Final residual = 5.9404682e-06, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.019345275, Final residual = 1.30458e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.0039210774, Final residual = 2.2531743e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.00058564185, Final residual = 1.9285017e-07, No Iterations 6
+GAMG:  Solving for G, Initial residual = 0.033724833, Final residual = 0.032330083, No Iterations 1000
+GAMG:  Solving for p_rgh, Initial residual = 0.0032282982, Final residual = 1.2550016e-06, No Iterations 4
+time step continuity errors : sum local = 1.4280056e-05, global = -5.5558582e-06, cumulative = 0.00058853233
+ExecutionTime = 13.05 s  ClockTime = 13 s
+Inflow      : 5.2640398e-05 [kg/s]
+Outflow     : 5.2635764e-05 [kg/s]
+EnergyInflow  : 15.553248 [W]
+EnergyOutflow : 15.812178 [W]
+rho max/avg/min : 1.2016458 1.1033266 0.91467767
+T   max/avg/min : 385.77772 322.82626 293.68561
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.23 101320.81
+U   max/avg/min : 0.66223249 0.2155123 0
+Prg max-min : 4.1890102
+ 
+Iteration Number = 91
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.0078993466, Final residual = 1.0774726e-06, No Iterations 3
+DILUPBiCG:  Solving for Uy, Initial residual = 0.019630951, Final residual = 9.4953869e-07, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.0037822826, Final residual = 2.113215e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.00062208415, Final residual = 1.5720711e-08, No Iterations 7
+GAMG:  Solving for p_rgh, Initial residual = 0.0032095612, Final residual = 6.8396043e-07, No Iterations 4
+time step continuity errors : sum local = 7.7660843e-06, global = -4.3851692e-06, cumulative = 0.00058414716
+ExecutionTime = 13.09 s  ClockTime = 13 s
+Inflow      : 5.2627157e-05 [kg/s]
+Outflow     : 5.26235e-05 [kg/s]
+EnergyInflow  : 15.549336 [W]
+EnergyOutflow : 15.809297 [W]
+rho max/avg/min : 1.2016458 1.1033783 0.91474248
+T   max/avg/min : 385.75039 322.81496 293.68561
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.23 101320.81
+U   max/avg/min : 0.6689326 0.21683623 0
+Prg max-min : 4.1884608
+ 
+Iteration Number = 92
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.0080527143, Final residual = 8.0506205e-06, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.019309872, Final residual = 8.3653398e-07, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.0037375641, Final residual = 2.0566956e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.00049139619, Final residual = 1.6072521e-07, No Iterations 6
+GAMG:  Solving for p_rgh, Initial residual = 0.003086718, Final residual = 7.3612463e-07, No Iterations 4
+time step continuity errors : sum local = 8.3483881e-06, global = -1.7374229e-06, cumulative = 0.00058240974
+ExecutionTime = 13.12 s  ClockTime = 13 s
+Inflow      : 5.2626084e-05 [kg/s]
+Outflow     : 5.2624635e-05 [kg/s]
+EnergyInflow  : 15.549018 [W]
+EnergyOutflow : 15.810348 [W]
+rho max/avg/min : 1.2016458 1.103432 0.91464879
+T   max/avg/min : 385.7899 322.80287 293.68562
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.23 101320.81
+U   max/avg/min : 0.67554115 0.21814113 0
+Prg max-min : 4.1896275
+ 
+Iteration Number = 93
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.0074125744, Final residual = 1.5194674e-06, No Iterations 3
+DILUPBiCG:  Solving for Uy, Initial residual = 0.018804886, Final residual = 1.6215293e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.0036181843, Final residual = 1.8861365e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.00047431079, Final residual = 7.796742e-08, No Iterations 6
+GAMG:  Solving for p_rgh, Initial residual = 0.0030077502, Final residual = 2.7761099e-06, No Iterations 3
+time step continuity errors : sum local = 3.1412769e-05, global = -7.1372461e-06, cumulative = 0.0005752725
+ExecutionTime = 13.16 s  ClockTime = 13 s
+Inflow      : 5.2613978e-05 [kg/s]
+Outflow     : 5.2608026e-05 [kg/s]
+EnergyInflow  : 15.545442 [W]
+EnergyOutflow : 15.80611 [W]
+rho max/avg/min : 1.2016458 1.103488 0.91451262
+T   max/avg/min : 385.84735 322.78987 293.68562
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.23 101320.81
+U   max/avg/min : 0.68208189 0.21941362 0
+Prg max-min : 4.191871
+ 
+Iteration Number = 94
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.0073638851, Final residual = 6.0229906e-06, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.018662147, Final residual = 2.2914328e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.0035718211, Final residual = 1.8790418e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.00046495039, Final residual = 1.1389491e-08, No Iterations 7
+GAMG:  Solving for p_rgh, Initial residual = 0.0029088166, Final residual = 8.5904167e-07, No Iterations 4
+time step continuity errors : sum local = 9.7003727e-06, global = -2.1129134e-06, cumulative = 0.00057315958
+ExecutionTime = 13.2 s  ClockTime = 14 s
+Inflow      : 5.2607598e-05 [kg/s]
+Outflow     : 5.2605836e-05 [kg/s]
+EnergyInflow  : 15.543557 [W]
+EnergyOutflow : 15.806094 [W]
+rho max/avg/min : 1.2016458 1.1035463 0.91435863
+T   max/avg/min : 385.91233 322.77598 293.68562
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.23 101320.8
+U   max/avg/min : 0.68848567 0.22066456 0
+Prg max-min : 4.1940352
+ 
+Iteration Number = 95
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.0070974517, Final residual = 4.8979687e-07, No Iterations 3
+DILUPBiCG:  Solving for Uy, Initial residual = 0.020093604, Final residual = 3.7250232e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.0034704391, Final residual = 1.7175499e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.00045615029, Final residual = 1.2854245e-07, No Iterations 6
+GAMG:  Solving for p_rgh, Initial residual = 0.0028444875, Final residual = 7.0431153e-07, No Iterations 4
+time step continuity errors : sum local = 7.9415476e-06, global = -1.4629613e-06, cumulative = 0.00057169662
+ExecutionTime = 13.24 s  ClockTime = 14 s
+Inflow      : 5.2590998e-05 [kg/s]
+Outflow     : 5.2589778e-05 [kg/s]
+EnergyInflow  : 15.538652 [W]
+EnergyOutflow : 15.801952 [W]
+rho max/avg/min : 1.2016458 1.1036066 0.91419588
+T   max/avg/min : 385.98103 322.76126 293.68562
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.23 101320.8
+U   max/avg/min : 0.69474463 0.22188879 0
+Prg max-min : 4.1965851
+ 
+Iteration Number = 96
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.007127927, Final residual = 6.5757979e-06, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.019385295, Final residual = 9.0017457e-07, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.0034165278, Final residual = 1.7154848e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.00044815347, Final residual = 1.0105386e-07, No Iterations 6
+GAMG:  Solving for p_rgh, Initial residual = 0.0027554174, Final residual = 1.2831097e-06, No Iterations 4
+time step continuity errors : sum local = 1.4442402e-05, global = 1.5730118e-07, cumulative = 0.00057185392
+ExecutionTime = 13.27 s  ClockTime = 14 s
+Inflow      : 5.2581459e-05 [kg/s]
+Outflow     : 5.258159e-05 [kg/s]
+EnergyInflow  : 15.535834 [W]
+EnergyOutflow : 15.800108 [W]
+rho max/avg/min : 1.2016458 1.1036687 0.91402893
+T   max/avg/min : 386.05153 322.74577 293.68563
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.23 101320.8
+U   max/avg/min : 0.70085353 0.22309141 0
+Prg max-min : 4.1990519
+ 
+Iteration Number = 97
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.006672891, Final residual = 6.1131419e-06, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.019968748, Final residual = 3.7929711e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.0033247259, Final residual = 1.6448854e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.00044073924, Final residual = 1.0415023e-08, No Iterations 7
+GAMG:  Solving for p_rgh, Initial residual = 0.0026894525, Final residual = 2.0987024e-06, No Iterations 3
+time step continuity errors : sum local = 2.3586341e-05, global = -1.036686e-05, cumulative = 0.00056148706
+ExecutionTime = 13.3 s  ClockTime = 14 s
+Inflow      : 5.2580936e-05 [kg/s]
+Outflow     : 5.257229e-05 [kg/s]
+EnergyInflow  : 15.535679 [W]
+EnergyOutflow : 15.797905 [W]
+rho max/avg/min : 1.2016458 1.1037326 0.91386045
+T   max/avg/min : 386.1227 322.72957 293.68563
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.23 101320.8
+U   max/avg/min : 0.70682486 0.2242744 0
+Prg max-min : 4.2016621
+ 
+Iteration Number = 98
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.0067446193, Final residual = 5.2872355e-06, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.020682275, Final residual = 9.1770138e-07, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.0032406939, Final residual = 1.5449904e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.00043388955, Final residual = 1.3740625e-07, No Iterations 6
+GAMG:  Solving for p_rgh, Initial residual = 0.0026161362, Final residual = 6.4350525e-07, No Iterations 4
+time step continuity errors : sum local = 7.2208761e-06, global = 5.6840054e-06, cumulative = 0.00056717107
+ExecutionTime = 13.35 s  ClockTime = 14 s
+Inflow      : 5.2555981e-05 [kg/s]
+Outflow     : 5.2560721e-05 [kg/s]
+EnergyInflow  : 15.528306 [W]
+EnergyOutflow : 15.795005 [W]
+rho max/avg/min : 1.2016458 1.103798 0.91369242
+T   max/avg/min : 386.19371 322.71268 293.68563
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.23 101320.79
+U   max/avg/min : 0.71266286 0.22543015 0
+Prg max-min : 4.2041845
+ 
+Iteration Number = 99
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.0066621764, Final residual = 5.4054255e-07, No Iterations 3
+DILUPBiCG:  Solving for Uy, Initial residual = 0.019808024, Final residual = 1.1336822e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.0031894918, Final residual = 1.5062798e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.00042733474, Final residual = 7.1514716e-08, No Iterations 6
+GAMG:  Solving for p_rgh, Initial residual = 0.0025802063, Final residual = 2.1118901e-06, No Iterations 3
+time step continuity errors : sum local = 2.3656163e-05, global = -5.8643196e-06, cumulative = 0.00056130675
+ExecutionTime = 13.38 s  ClockTime = 14 s
+Inflow      : 5.255522e-05 [kg/s]
+Outflow     : 5.2550329e-05 [kg/s]
+EnergyInflow  : 15.528081 [W]
+EnergyOutflow : 15.79242 [W]
+rho max/avg/min : 1.2016458 1.1038649 0.91352585
+T   max/avg/min : 386.26413 322.69517 293.68564
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.23 101320.79
+U   max/avg/min : 0.71835982 0.22657198 0
+Prg max-min : 4.206673
+ 
+Iteration Number = 100
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.0062395014, Final residual = 2.6227694e-07, No Iterations 3
+DILUPBiCG:  Solving for Uy, Initial residual = 0.019723246, Final residual = 1.3512469e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.0030976111, Final residual = 1.4073701e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.00042118712, Final residual = 3.4782075e-07, No Iterations 5
+GAMG:  Solving for G, Initial residual = 0.033197611, Final residual = 0.031602054, No Iterations 1000
+GAMG:  Solving for p_rgh, Initial residual = 0.0025055111, Final residual = 1.0900283e-06, No Iterations 4
+time step continuity errors : sum local = 1.2187699e-05, global = -5.6144992e-06, cumulative = 0.00055569225
+ExecutionTime = 14.35 s  ClockTime = 15 s
+Inflow      : 5.2545059e-05 [kg/s]
+Outflow     : 5.2540377e-05 [kg/s]
+EnergyInflow  : 15.525079 [W]
+EnergyOutflow : 15.789925 [W]
+rho max/avg/min : 1.2016458 1.1039332 0.91336195
+T   max/avg/min : 386.33344 322.67706 293.68564
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.23 101320.79
+U   max/avg/min : 0.72392222 0.22768727 0
+Prg max-min : 4.2090686
+ 
+Iteration Number = 101
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.0062508318, Final residual = 5.4384262e-07, No Iterations 3
+DILUPBiCG:  Solving for Uy, Initial residual = 0.01883002, Final residual = 1.5358036e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.003046972, Final residual = 1.3778525e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.00044229673, Final residual = 1.0276111e-07, No Iterations 6
+GAMG:  Solving for p_rgh, Initial residual = 0.002486142, Final residual = 4.9508337e-07, No Iterations 4
+time step continuity errors : sum local = 5.5247054e-06, global = -3.9675988e-07, cumulative = 0.00055529549
+ExecutionTime = 14.39 s  ClockTime = 15 s
+Inflow      : 5.2527151e-05 [kg/s]
+Outflow     : 5.2526821e-05 [kg/s]
+EnergyInflow  : 15.519788 [W]
+EnergyOutflow : 15.786341 [W]
+rho max/avg/min : 1.2016458 1.1040068 0.91340562
+T   max/avg/min : 386.31497 322.65666 293.68564
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.23 101320.79
+U   max/avg/min : 0.72934689 0.22878067 0
+Prg max-min : 4.2085556
+ 
+Iteration Number = 102
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.0061032435, Final residual = 8.0252903e-07, No Iterations 3
+DILUPBiCG:  Solving for Uy, Initial residual = 0.02057629, Final residual = 1.4420071e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.0029529642, Final residual = 1.3401219e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.00037008948, Final residual = 6.9939284e-08, No Iterations 6
+GAMG:  Solving for p_rgh, Initial residual = 0.0023988828, Final residual = 6.7926083e-07, No Iterations 4
+time step continuity errors : sum local = 7.5715978e-06, global = 2.5410734e-06, cumulative = 0.00055783656
+ExecutionTime = 14.43 s  ClockTime = 15 s
+Inflow      : 5.2516113e-05 [kg/s]
+Outflow     : 5.2518232e-05 [kg/s]
+EnergyInflow  : 15.516526 [W]
+EnergyOutflow : 15.784214 [W]
+rho max/avg/min : 1.2016458 1.1040813 0.91336213
+T   max/avg/min : 386.33336 322.63581 293.68565
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.23 101320.79
+U   max/avg/min : 0.73462543 0.22985988 0
+Prg max-min : 4.2092512
+ 
+Iteration Number = 103
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.0057507679, Final residual = 2.8422779e-07, No Iterations 3
+DILUPBiCG:  Solving for Uy, Initial residual = 0.020262875, Final residual = 3.8175889e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.0029072865, Final residual = 1.4067747e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.00036148343, Final residual = 2.9560333e-07, No Iterations 5
+GAMG:  Solving for p_rgh, Initial residual = 0.0023394002, Final residual = 1.9984129e-06, No Iterations 3
+time step continuity errors : sum local = 2.2233939e-05, global = 4.0298898e-08, cumulative = 0.00055787686
+ExecutionTime = 14.47 s  ClockTime = 15 s
+Inflow      : 5.2509842e-05 [kg/s]
+Outflow     : 5.2509876e-05 [kg/s]
+EnergyInflow  : 15.514674 [W]
+EnergyOutflow : 15.782136 [W]
+rho max/avg/min : 1.2016458 1.104157 0.91329688
+T   max/avg/min : 386.36097 322.61445 293.68565
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.23 101320.79
+U   max/avg/min : 0.73977321 0.23092093 0
+Prg max-min : 4.2103529
+ 
+Iteration Number = 104
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.0057817914, Final residual = 2.2934637e-07, No Iterations 3
+DILUPBiCG:  Solving for Uy, Initial residual = 0.020226408, Final residual = 2.4454654e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.0028201884, Final residual = 1.3130901e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.00035751809, Final residual = 9.4146048e-08, No Iterations 6
+GAMG:  Solving for p_rgh, Initial residual = 0.0022789958, Final residual = 8.7129185e-07, No Iterations 4
+time step continuity errors : sum local = 9.6779033e-06, global = 9.13813e-07, cumulative = 0.00055879067
+ExecutionTime = 14.51 s  ClockTime = 15 s
+Inflow      : 5.2501114e-05 [kg/s]
+Outflow     : 5.2501877e-05 [kg/s]
+EnergyInflow  : 15.512095 [W]
+EnergyOutflow : 15.780142 [W]
+rho max/avg/min : 1.2016458 1.1042338 0.91322359
+T   max/avg/min : 386.39197 322.59262 293.68565
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.23 101320.79
+U   max/avg/min : 0.74479277 0.23196087 0
+Prg max-min : 4.2114706
+ 
+Iteration Number = 105
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.0055654152, Final residual = 2.7783087e-07, No Iterations 3
+DILUPBiCG:  Solving for Uy, Initial residual = 0.020599497, Final residual = 1.7331602e-07, No Iterations 4
+DILUPBiCG:  Solving for Uz, Initial residual = 0.0027773559, Final residual = 1.256253e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.00035391966, Final residual = 5.2896553e-08, No Iterations 6
+GAMG:  Solving for p_rgh, Initial residual = 0.0022318635, Final residual = 4.6664109e-07, No Iterations 4
+time step continuity errors : sum local = 5.1753225e-06, global = 1.1775593e-07, cumulative = 0.00055890843
+ExecutionTime = 14.56 s  ClockTime = 15 s
+Inflow      : 5.2496147e-05 [kg/s]
+Outflow     : 5.2496245e-05 [kg/s]
+EnergyInflow  : 15.510627 [W]
+EnergyOutflow : 15.778819 [W]
+rho max/avg/min : 1.2016458 1.1043114 0.91314735
+T   max/avg/min : 386.42424 322.57036 293.68566
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.23 101320.78
+U   max/avg/min : 0.74967972 0.23298427 0
+Prg max-min : 4.2126923
+ 
+Iteration Number = 106
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.0054477598, Final residual = 1.2729381e-07, No Iterations 3
+DILUPBiCG:  Solving for Uy, Initial residual = 0.021421783, Final residual = 2.7661416e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.0026974756, Final residual = 1.2916114e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.00035077736, Final residual = 3.2735323e-07, No Iterations 5
+GAMG:  Solving for p_rgh, Initial residual = 0.0021736289, Final residual = 1.9979084e-06, No Iterations 3
+time step continuity errors : sum local = 2.2115686e-05, global = -6.7576527e-06, cumulative = 0.00055215078
+ExecutionTime = 14.6 s  ClockTime = 15 s
+Inflow      : 5.2493933e-05 [kg/s]
+Outflow     : 5.2488297e-05 [kg/s]
+EnergyInflow  : 15.509973 [W]
+EnergyOutflow : 15.776788 [W]
+rho max/avg/min : 1.2016458 1.1043899 0.91307069
+T   max/avg/min : 386.45668 322.54767 293.68566
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.23 101320.78
+U   max/avg/min : 0.75494896 0.23399157 0
+Prg max-min : 4.2138212
+ 
+Iteration Number = 107
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.0052940953, Final residual = 5.3077004e-09, No Iterations 4
+DILUPBiCG:  Solving for Uy, Initial residual = 0.021556662, Final residual = 1.238469e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.0026505836, Final residual = 1.2701381e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.00034802343, Final residual = 2.8109632e-07, No Iterations 5
+GAMG:  Solving for p_rgh, Initial residual = 0.0021356027, Final residual = 3.1313856e-07, No Iterations 4
+time step continuity errors : sum local = 3.4620969e-06, global = 1.5631087e-06, cumulative = 0.00055371389
+ExecutionTime = 14.64 s  ClockTime = 15 s
+Inflow      : 5.248181e-05 [kg/s]
+Outflow     : 5.2483113e-05 [kg/s]
+EnergyInflow  : 15.506391 [W]
+EnergyOutflow : 15.775553 [W]
+rho max/avg/min : 1.2016458 1.1044691 0.91299517
+T   max/avg/min : 386.48864 322.52461 293.68566
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.23 101320.78
+U   max/avg/min : 0.76021946 0.23498059 0
+Prg max-min : 4.2149724
+ 
+Iteration Number = 108
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.0053464805, Final residual = 4.8108664e-06, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.021371304, Final residual = 9.5937274e-07, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.0025838883, Final residual = 1.3031793e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.00034543938, Final residual = 2.3138267e-07, No Iterations 5
+GAMG:  Solving for p_rgh, Initial residual = 0.0020915982, Final residual = 1.8292816e-06, No Iterations 3
+time step continuity errors : sum local = 2.0186213e-05, global = -8.4820088e-06, cumulative = 0.00054523188
+ExecutionTime = 14.68 s  ClockTime = 15 s
+Inflow      : 5.2485639e-05 [kg/s]
+Outflow     : 5.2478565e-05 [kg/s]
+EnergyInflow  : 15.507522 [W]
+EnergyOutflow : 15.774481 [W]
+rho max/avg/min : 1.2016458 1.1045491 0.91292188
+T   max/avg/min : 386.51967 322.50119 293.68566
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.23 101320.78
+U   max/avg/min : 0.76536986 0.23595759 0
+Prg max-min : 4.2161172
+ 
+Iteration Number = 109
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.0046373968, Final residual = 1.4985465e-07, No Iterations 3
+DILUPBiCG:  Solving for Uy, Initial residual = 0.020907875, Final residual = 3.0228909e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.002538479, Final residual = 1.333021e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.00034308896, Final residual = 2.5709188e-07, No Iterations 5
+GAMG:  Solving for p_rgh, Initial residual = 0.0020417064, Final residual = 6.950089e-07, No Iterations 4
+time step continuity errors : sum local = 7.6567706e-06, global = -2.9038368e-06, cumulative = 0.00054232804
+ExecutionTime = 14.71 s  ClockTime = 15 s
+Inflow      : 5.2475567e-05 [kg/s]
+Outflow     : 5.2473145e-05 [kg/s]
+EnergyInflow  : 15.504546 [W]
+EnergyOutflow : 15.773141 [W]
+rho max/avg/min : 1.2016458 1.1046296 0.91285138
+T   max/avg/min : 386.54952 322.47745 293.68567
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.24 101320.78
+U   max/avg/min : 0.77040246 0.23691292 0
+Prg max-min : 4.2172304
+ 
+Iteration Number = 110
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.0053425036, Final residual = 5.2979326e-09, No Iterations 4
+DILUPBiCG:  Solving for Uy, Initial residual = 0.020844785, Final residual = 2.2905809e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.0024823714, Final residual = 1.2430825e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.00034091924, Final residual = 3.1121604e-07, No Iterations 5
+GAMG:  Solving for G, Initial residual = 0.031898402, Final residual = 0.031497922, No Iterations 1000
+GAMG:  Solving for p_rgh, Initial residual = 0.0020005853, Final residual = 8.4171788e-07, No Iterations 4
+time step continuity errors : sum local = 9.25819e-06, global = 2.7550917e-06, cumulative = 0.00054508313
+ExecutionTime = 15.78 s  ClockTime = 16 s
+Inflow      : 5.2470437e-05 [kg/s]
+Outflow     : 5.2472734e-05 [kg/s]
+EnergyInflow  : 15.503031 [W]
+EnergyOutflow : 15.773274 [W]
+rho max/avg/min : 1.2016458 1.1047107 0.91278414
+T   max/avg/min : 386.578 322.45341 293.68567
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.24 101320.78
+U   max/avg/min : 0.77530585 0.2378553 0
+Prg max-min : 4.2183183
+ 
+Iteration Number = 111
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.0044756729, Final residual = 4.3598662e-06, No Iterations 2
+DILUPBiCG:  Solving for Uy, Initial residual = 0.02104446, Final residual = 1.8581928e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.0024345865, Final residual = 1.5468897e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.00035546003, Final residual = 2.8719867e-07, No Iterations 5
+GAMG:  Solving for p_rgh, Initial residual = 0.0019664291, Final residual = 7.8735461e-07, No Iterations 4
+time step continuity errors : sum local = 8.6477449e-06, global = -8.4305626e-07, cumulative = 0.00054424008
+ExecutionTime = 15.81 s  ClockTime = 16 s
+Inflow      : 5.2473217e-05 [kg/s]
+Outflow     : 5.2472514e-05 [kg/s]
+EnergyInflow  : 15.503852 [W]
+EnergyOutflow : 15.773449 [W]
+rho max/avg/min : 1.2016458 1.1047928 0.9128223
+T   max/avg/min : 386.56184 322.42881 293.68567
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.24 101320.78
+U   max/avg/min : 0.78009501 0.23878587 0
+Prg max-min : 4.2178508
+ 
+Iteration Number = 112
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.004831724, Final residual = 2.2587796e-07, No Iterations 3
+DILUPBiCG:  Solving for Uy, Initial residual = 0.02066153, Final residual = 4.181427e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.0023608981, Final residual = 1.3373807e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.00031592062, Final residual = 5.3427533e-08, No Iterations 6
+GAMG:  Solving for p_rgh, Initial residual = 0.0019152951, Final residual = 6.8066091e-07, No Iterations 4
+time step continuity errors : sum local = 7.4620562e-06, global = 1.2330132e-06, cumulative = 0.00054547309
+ExecutionTime = 15.85 s  ClockTime = 16 s
+Inflow      : 5.2473415e-05 [kg/s]
+Outflow     : 5.2474444e-05 [kg/s]
+EnergyInflow  : 15.503911 [W]
+EnergyOutflow : 15.774245 [W]
+rho max/avg/min : 1.2016458 1.1048754 0.9128193
+T   max/avg/min : 386.56311 322.40397 293.68567
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.24 101320.78
+U   max/avg/min : 0.78477155 0.23970014 0
+Prg max-min : 4.2180303
+ 
+Iteration Number = 113
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.004476757, Final residual = 1.0274838e-07, No Iterations 3
+DILUPBiCG:  Solving for Uy, Initial residual = 0.021345351, Final residual = 1.426107e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.0023209173, Final residual = 1.4916635e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.00031251304, Final residual = 2.226581e-07, No Iterations 5
+GAMG:  Solving for p_rgh, Initial residual = 0.0018679529, Final residual = 9.8450927e-07, No Iterations 4
+time step continuity errors : sum local = 1.0773915e-05, global = 2.2099384e-06, cumulative = 0.00054768303
+ExecutionTime = 15.89 s  ClockTime = 16 s
+Inflow      : 5.2476455e-05 [kg/s]
+Outflow     : 5.2478298e-05 [kg/s]
+EnergyInflow  : 15.504809 [W]
+EnergyOutflow : 15.775589 [W]
+rho max/avg/min : 1.2016458 1.1049583 0.9128075
+T   max/avg/min : 386.5681 322.37888 293.68568
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.24 101320.78
+U   max/avg/min : 0.78932959 0.24060239 0
+Prg max-min : 4.218156
+ 
+Iteration Number = 114
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.00432728, Final residual = 9.2516212e-08, No Iterations 3
+DILUPBiCG:  Solving for Uy, Initial residual = 0.02062231, Final residual = 1.9066715e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.0022536526, Final residual = 1.4789166e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.00031206681, Final residual = 2.0379317e-07, No Iterations 5
+GAMG:  Solving for p_rgh, Initial residual = 0.0018249193, Final residual = 1.7883553e-06, No Iterations 3
+time step continuity errors : sum local = 1.9538674e-05, global = -3.5345444e-06, cumulative = 0.00054414848
+ExecutionTime = 15.93 s  ClockTime = 16 s
+Inflow      : 5.2484121e-05 [kg/s]
+Outflow     : 5.2481173e-05 [kg/s]
+EnergyInflow  : 15.507074 [W]
+EnergyOutflow : 15.776624 [W]
+rho max/avg/min : 1.2016458 1.1050416 0.91279377
+T   max/avg/min : 386.57392 322.35356 293.68568
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.24 101320.78
+U   max/avg/min : 0.79376957 0.24149049 0
+Prg max-min : 4.2184971
+ 
+Iteration Number = 115
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.0041397257, Final residual = 8.9033243e-08, No Iterations 3
+DILUPBiCG:  Solving for Uy, Initial residual = 0.020484611, Final residual = 1.4961047e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.0022177402, Final residual = 1.5643804e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.00031221107, Final residual = 2.1922888e-07, No Iterations 5
+GAMG:  Solving for p_rgh, Initial residual = 0.0017790678, Final residual = 7.3048389e-07, No Iterations 4
+time step continuity errors : sum local = 7.9673247e-06, global = -3.8710038e-07, cumulative = 0.00054376138
+ExecutionTime = 15.97 s  ClockTime = 16 s
+Inflow      : 5.2488423e-05 [kg/s]
+Outflow     : 5.24881e-05 [kg/s]
+EnergyInflow  : 15.508345 [W]
+EnergyOutflow : 15.778847 [W]
+rho max/avg/min : 1.2016458 1.1051252 0.91278061
+T   max/avg/min : 386.57949 322.32803 293.68568
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.24 101320.78
+U   max/avg/min : 0.79809281 0.24236439 0
+Prg max-min : 4.2186951
+ 
+Iteration Number = 116
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.0043028642, Final residual = 1.5006969e-07, No Iterations 3
+DILUPBiCG:  Solving for Uy, Initial residual = 0.020530624, Final residual = 1.5249728e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.0021570591, Final residual = 1.5629193e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.0003124182, Final residual = 2.2949678e-07, No Iterations 5
+GAMG:  Solving for p_rgh, Initial residual = 0.0017433963, Final residual = 2.8064771e-07, No Iterations 4
+time step continuity errors : sum local = 3.0562185e-06, global = -5.1855348e-07, cumulative = 0.00054324283
+ExecutionTime = 16.01 s  ClockTime = 16 s
+Inflow      : 5.2493443e-05 [kg/s]
+Outflow     : 5.2493011e-05 [kg/s]
+EnergyInflow  : 15.509828 [W]
+EnergyOutflow : 15.780462 [W]
+rho max/avg/min : 1.2016458 1.1052091 0.91276928
+T   max/avg/min : 386.58429 322.30232 293.68568
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.24 101320.78
+U   max/avg/min : 0.80229964 0.24322462 0
+Prg max-min : 4.2189567
+ 
+Iteration Number = 117
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.0039994259, Final residual = 1.2812448e-07, No Iterations 3
+DILUPBiCG:  Solving for Uy, Initial residual = 0.019497336, Final residual = 1.3101659e-07, No Iterations 4
+DILUPBiCG:  Solving for Uz, Initial residual = 0.0021176326, Final residual = 1.6706183e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.00031286525, Final residual = 2.2529369e-07, No Iterations 5
+GAMG:  Solving for p_rgh, Initial residual = 0.0016982881, Final residual = 1.1776668e-06, No Iterations 3
+time step continuity errors : sum local = 1.279939e-05, global = -5.1779439e-06, cumulative = 0.00053806489
+ExecutionTime = 16.04 s  ClockTime = 16 s
+Inflow      : 5.2507124e-05 [kg/s]
+Outflow     : 5.2502806e-05 [kg/s]
+EnergyInflow  : 15.51387 [W]
+EnergyOutflow : 15.78351 [W]
+rho max/avg/min : 1.2016458 1.1052931 0.9127605
+T   max/avg/min : 386.58801 322.27643 293.68568
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.24 101320.78
+U   max/avg/min : 0.8063915 0.2440756 0
+Prg max-min : 4.2191497
+ 
+Iteration Number = 118
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.0043490444, Final residual = 2.9804784e-07, No Iterations 3
+DILUPBiCG:  Solving for Uy, Initial residual = 0.021554657, Final residual = 4.1998241e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.0020791267, Final residual = 1.7751867e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.00031342348, Final residual = 2.465334e-07, No Iterations 5
+GAMG:  Solving for p_rgh, Initial residual = 0.0016729435, Final residual = 1.5730872e-06, No Iterations 3
+time step continuity errors : sum local = 1.7087348e-05, global = 6.9883058e-07, cumulative = 0.00053876372
+ExecutionTime = 16.08 s  ClockTime = 16 s
+Inflow      : 5.2510786e-05 [kg/s]
+Outflow     : 5.2511369e-05 [kg/s]
+EnergyInflow  : 15.514952 [W]
+EnergyOutflow : 15.786183 [W]
+rho max/avg/min : 1.2016458 1.1053774 0.91275472
+T   max/avg/min : 386.59046 322.25038 293.68569
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.24 101320.78
+U   max/avg/min : 0.81035461 0.24491046 0
+Prg max-min : 4.219184
+ 
+Iteration Number = 119
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.0038783483, Final residual = 3.6686004e-07, No Iterations 3
+DILUPBiCG:  Solving for Uy, Initial residual = 0.021341049, Final residual = 2.1972941e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.0020228335, Final residual = 1.7719045e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.0003139547, Final residual = 3.1016238e-07, No Iterations 5
+GAMG:  Solving for p_rgh, Initial residual = 0.0016267376, Final residual = 1.1838019e-06, No Iterations 3
+time step continuity errors : sum local = 1.2836223e-05, global = 4.6097807e-06, cumulative = 0.0005433735
+ExecutionTime = 16.12 s  ClockTime = 16 s
+Inflow      : 5.2518237e-05 [kg/s]
+Outflow     : 5.2522081e-05 [kg/s]
+EnergyInflow  : 15.517154 [W]
+EnergyOutflow : 15.789475 [W]
+rho max/avg/min : 1.2016458 1.1054618 0.91275224
+T   max/avg/min : 386.5915 322.22419 293.68569
+P   max/avg/min : 101324.91 101316.16 101307.41
+Prg max/avg/min : 101325 101324.24 101320.78
+U   max/avg/min : 0.81421068 0.24573324 0
+Prg max-min : 4.2194699
+ 
+Iteration Number = 120
+
+DILUPBiCG:  Solving for Ux, Initial residual = 0.0037227219, Final residual = 8.6097232e-08, No Iterations 3
+DILUPBiCG:  Solving for Uy, Initial residual = 0.019497872, Final residual = 1.2255924e-06, No Iterations 3
+DILUPBiCG:  Solving for Uz, Initial residual = 0.0020000728, Final residual = 1.8963292e-06, No Iterations 2
+DILUPBiCG:  Solving for h, Initial residual = 0.00031453034, Final residual = 2.4808299e-07, No Iterations 5

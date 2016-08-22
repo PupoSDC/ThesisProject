@@ -1,3 +1,0 @@
-pupobuoyantPimpleFoam.C
-
-EXE = $(FOAM_APPBIN)/pupobuoyantPimpleFoam

@@ -21,7 +21,7 @@ boundaryField
 {
     "cilcentop"         { type zeroGradient; }
     "cilcenbot"         { type zeroGradient; }
-    "symmetry.*"        { type symmetry; }  
+    ".*Wedge"           { type wedge; }
 
     ".*_to_fluid"                  
     {

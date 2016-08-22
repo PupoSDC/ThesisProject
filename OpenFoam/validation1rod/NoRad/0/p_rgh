@@ -24,8 +24,7 @@ boundaryField
     Outlet         { type outletPrghPressure; value uniform 101325; }
     Outterwall     { type fixedFluxPressure;  value uniform 101325; }
     "fluid_to_.*"  { type fixedFluxPressure;  value uniform 101325; }
-    ".*Wedge"      { type wedge; }
-    
+    ".*Wedge"      { type wedge; }    
 }
 
 // ************************************************************************* //

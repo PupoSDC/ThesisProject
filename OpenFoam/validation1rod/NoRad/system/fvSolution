@@ -45,6 +45,7 @@ solvers
 SIMPLE
 {
     nNonOrthogonalCorrectors 0;
+    consistent      yes;
 
     residualControl
     {
@@ -56,16 +57,15 @@ SIMPLE
 
 relaxationFactors
 {
-      fields
+    fields
     {
-        rho             1.0;
-        p_rgh           0.7;
-        U               0.4;
+        //rho             1.0;
+        //p_rgh           1;
     }
     equations
     {
-        U               0.78;
-        h               0.9;
+        U               0.5;
+        ".*"            0.9;
     }
 }
 
