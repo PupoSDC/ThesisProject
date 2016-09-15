@@ -1,1 +1,1 @@
-LIB = $(FOAM_USER_LIBBIN)/libNAME
+LIB = $(FOAM_USER_LIBBIN)/OutletPressurelib

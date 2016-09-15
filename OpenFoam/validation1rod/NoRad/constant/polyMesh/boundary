@@ -45,8 +45,8 @@ FoamFile
     }
     Outterwall
     {
-        type            symmetry;
-        inGroups        1(symmetry);
+        type            wall;
+        inGroups        1(wall);
         nFaces          100;
         startFace       19950;
     }
