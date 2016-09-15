@@ -27,15 +27,14 @@ boundaryField
      
    "fluid_to_.*"  
    { 
-      type             externalWallHeatFluxTemperature;
-      kappa            fluidThermo; 
-      kappaMethod      fluidThermo;
-      q                uniform 3636; 
-      value            uniform 293.7;
-      Tinf             uniform 293.7; 
-      Emissivity       uniform 0.96; 
+        type            compressible::turbulentTemperatureRadCoupledMixed;
+        Tnbr            T;
+        kappaMethod     fluidThermo;
+        QrNbr           none;
+        Qr              none; //Qr;
+        value           uniform 293.7;
    } 
 
-   ".*Wedge"   { type wedge; }
+   ".*Wedge"   { type symmetry; }
 }
 

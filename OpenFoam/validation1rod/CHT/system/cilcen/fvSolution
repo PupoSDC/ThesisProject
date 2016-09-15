@@ -20,7 +20,7 @@ solvers
     {
         solver           PCG;
         preconditioner   DIC;
-        tolerance        1e-09;
+        tolerance        1e-06;
         relTol           1e-5;
     }
 }
@@ -30,9 +30,16 @@ SIMPLE
     nNonOrthogonalCorrectors 0;
     residualControl
     {
-        h               1e-5;
+        h               1e-6;
     }
 }
 
+relaxationFactors
+{
+    equations
+    {
+        ".*"            1.0;
+    }
+}
 
 // ************************************************************************* //

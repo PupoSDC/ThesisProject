@@ -96,12 +96,12 @@ exps   = [1,0.1]                  # Number of points in the solid mesh and their
 
 #points for the center cylinder
 c0 = [0,0]
-a1 = [r,0]
-a2 = [r*math.cos(dg), r*math.sin(dg)]
+a1 = [ r*math.cos(dg/2), -r*math.sin(dg/2)]
+a2 = [ r*math.cos(dg/2),  r*math.sin(dg/2)]
 
 #points for the outter wall
-o1 = [R,0]
-o2 = [ R *math.cos(dg),  R *math.sin(dg)]
+o1 = [ R*math.cos(dg/2), -R*math.sin(dg/2)]
+o2 = [ R*math.cos(dg/2),  R*math.sin(dg/2)]
 
 #Define Hexblocks input
 for x in xrange(0,len(l)-1):
@@ -118,17 +118,17 @@ createboundary("Outterwall",[[o2,o1]],l,"patch")
 createboundary("cilcentop",[[c0,a1,a2,c0]],l[0],"patch")
 createboundary("cilcenbot",[[c0,a2,a1,c0]],l[-1],"patch")
 
-createboundary("leftWedge",[[o1,a1]],l,"wedge")
-createboundary("rigtWedge",[[a2,o2]],l,"wedge")
+createboundary("leftWedge",[[o1,a1]],l,"symmetry")
+createboundary("rigtWedge",[[a2,o2]],l,"symmetry")
 
-createboundary("leftcenWedge", [[a1,c0]],l,"wedge" )
-createboundary("rigtcenWedge", [[c0,a2]],l,"wedge" )
+createboundary("leftcenWedge", [[a1,c0]],l,"symmetry" )
+createboundary("rigtcenWedge", [[c0,a2]],l,"symmetry" )
 
 createboundary("Outlet",[[a1,o1,o2,a2]],l[0],"patch")
 createboundary("Inlet",[[a2,o2,o1,a1]],l[-1],"patch")
 
 writeblockmeshdict(pointlist,hexblocks,arclist,boundlist,mergepatches)
 os.system("blockMesh")
-os.system("checkMesh")
+#os.system("checkMesh")
 os.system("topoSet")
 os.system("splitMeshRegions -cellZones -overwrite")

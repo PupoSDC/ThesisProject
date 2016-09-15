@@ -10,5 +10,5 @@ boundaryField
     Outlet          { type calculated; value uniform 101325; }
     Outterwall      { type calculated; value uniform 101325; }
     "fluid_to_.*"   { type calculated; value uniform 101325; }
-    ".*Wedge"       { type wedge; }
+    ".*Wedge"       { type symmetry; }
 }

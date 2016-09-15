@@ -20,11 +20,11 @@ internalField   uniform 101325;
 
 boundaryField
 {
-    Inlet          { type prghTotalPressure; p0 uniform 101325; }
-    Outlet         { type zeroGradient; }
-    Outterwall     { type fixedFluxPressure; value uniform 101325; }
-    "fluid_to_.*"  { type fixedFluxPressure; value uniform 101325; }
-    "symmetry.*"    { type symmetry; }     
+    Inlet          { type prghTotalPressure;     p0 uniform 101325; }
+    Outlet         { type outletPrghPressure; value uniform 101325; }
+    Outterwall     { type fixedFluxPressure;  value uniform 101325; }
+    "fluid_to_.*"  { type fixedFluxPressure;  value uniform 101325; }
+    "symmetry.*"   { type symmetry; }     
 }
 
 // ************************************************************************* //

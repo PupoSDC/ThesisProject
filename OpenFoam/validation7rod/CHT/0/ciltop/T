@@ -17,24 +17,23 @@ FoamFile
 
 dimensions      [0 0 0 1 0 0 0];
 
-internalField   uniform 520;
+internalField   uniform 340;
 
 boundaryField
 {
-    "axis.*"                { type empty; }
-    "symmetry.*"            { type symmetry; }
-    "cilbot.*"              { type zeroGradient; }
-    "ciltop.*"              { type zeroGradient; }
-
+    "axis.*"       { type empty; }
+    "symmetry.*"   { type symmetry; }
+    "cilbot.*"     { type zeroGradient; }
+    "ciltop.*"     { type zeroGradient; }
+    
     ".*_to_fluid"                    
     {
         type            compressible::turbulentTemperatureRadCoupledMixed;
         Tnbr            T;
-        kappa           solidThermo;
-        QrNbr           Qr;
+        kappaMethod     solidThermo;
+        QrNbr           none; //Qr;
         Qr              none;
-        kappaName       none;
-        value           uniform 300;
+        value           uniform 340;
     }
 }
 

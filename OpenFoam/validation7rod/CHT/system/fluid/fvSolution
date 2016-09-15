@@ -18,11 +18,11 @@ FoamFile
 solvers
 {
 
-    p_rgh
+    "(p_rgh|G)"
     {
         solver           GAMG;
-        tolerance        1e-7;
-        relTol           0.01;
+        tolerance        1e-9;
+        relTol           0.001;
 
         smoother         DICGaussSeidel;
 
@@ -36,8 +36,8 @@ solvers
     {
         solver          PBiCG;
         preconditioner  DILU;
-        tolerance       1e-7;
-        relTol          0.01;
+        tolerance       1e-9;
+        relTol          0.001;
     }
 
     Ii
@@ -60,6 +60,7 @@ solvers
 SIMPLE
 {
     nNonOrthogonalCorrectors 0;
+    consistent      yes;
 
     residualControl
     {
@@ -71,9 +72,16 @@ SIMPLE
 
 relaxationFactors
 {
-    p_rgh           1.0;
-    U               0.3;
-    h               0.7;   
+    fields
+    {
+        //rho             1.0;
+        //p_rgh           1;
+    }
+    equations
+    {
+        U               0.3;
+        ".*"            0.8;
+    }
 }
 
 // ************************************************************************* //

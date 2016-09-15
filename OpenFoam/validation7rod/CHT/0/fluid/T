@@ -22,18 +22,18 @@ boundaryField
 {   
 
    Inlet         { type totalTemperature; T0 uniform 300; gamma 1.4; }
-   Outlet        { type inletOutlet; inletValue uniform 300; value uniform 293.7; }
+   Outlet        { type inletOutlet; inletValue uniform 300; value uniform 300; }
    Outterwall    { type zeroGradient; }
    
    "fluid_to_.*"                
     {
         type            compressible::turbulentTemperatureRadCoupledMixed;
         Tnbr            T;
-        kappa           fluidThermo;
+        kappaMethod     fluidThermo;
         QrNbr           none;
-        Qr              Qr;
+        Qr              none; //Qr;
         kappaName       none;
-        value           uniform 293.7;
+        value           uniform 340;
     }
 
    "symmetry.*"    { type symmetry; }

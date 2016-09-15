@@ -36,7 +36,7 @@ sourcecen
         // q'' = 3636 W/m^2  ==> q''' = 2295028 W/m^3
         injectionRateSuSp
         {
-           h (80000 0);  
+           h (65000 0);  
         }
     }
 }

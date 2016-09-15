@@ -1,7 +1,7 @@
 /*--------------------------------*- C++ -*----------------------------------*\
 | =========                 |                                                 |
 | \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
-|  \\    /   O peration     | Version:  3.0.1                                 |
+|  \\    /   O peration     | Version:  4.0                                   |
 |   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
 |    \\/     M anipulation  |                                                 |
 \*---------------------------------------------------------------------------*/
@@ -20,86 +20,86 @@ FoamFile
     Outterwall
     {
         type            patch;
-        nFaces          1800;
-        startFace       534470;
+        nFaces          360;
+        startFace       53230;
     }
     ciltoptop
     {
         type            patch;
         nFaces          180;
-        startFace       536270;
+        startFace       53590;
     }
     cilbottop
     {
         type            patch;
         nFaces          180;
-        startFace       536450;
+        startFace       53770;
     }
     ciltopcen
     {
         type            patch;
         nFaces          30;
-        startFace       536630;
+        startFace       53950;
     }
     cilbotcen
     {
         type            patch;
         nFaces          30;
-        startFace       536660;
+        startFace       53980;
     }
     symmetryleft
     {
         type            symmetry;
         inGroups        1(symmetry);
-        nFaces          10800;
-        startFace       536690;
+        nFaces          960;
+        startFace       54010;
     }
     symmetryrigt
     {
         type            symmetry;
         inGroups        1(symmetry);
-        nFaces          6600;
-        startFace       547490;
+        nFaces          720;
+        startFace       54970;
     }
     symmetrytop1
     {
         type            symmetry;
         inGroups        1(symmetry);
-        nFaces          1000;
-        startFace       554090;
+        nFaces          200;
+        startFace       55690;
     }
     symmetrycen1
     {
         type            symmetry;
         inGroups        1(symmetry);
-        nFaces          500;
-        startFace       555090;
+        nFaces          100;
+        startFace       55890;
     }
     symmetrycen2
     {
         type            symmetry;
         inGroups        1(symmetry);
-        nFaces          500;
-        startFace       555590;
+        nFaces          100;
+        startFace       55990;
     }
     Outlet
     {
         type            patch;
-        nFaces          1620;
-        startFace       556090;
+        nFaces          720;
+        startFace       56090;
     }
     Inlet
     {
         type            patch;
-        nFaces          1620;
-        startFace       557710;
+        nFaces          720;
+        startFace       56810;
     }
     defaultFaces
     {
         type            empty;
         inGroups        1(empty);
         nFaces          0;
-        startFace       559330;
+        startFace       57530;
     }
 )
 

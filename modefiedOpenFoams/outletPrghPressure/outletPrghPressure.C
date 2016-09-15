@@ -121,21 +121,6 @@ Foam::outletPrghPressure::outletPrghPressure
 
 // * * * * * * * * * * * * * * * Member Functions  * * * * * * * * * * * * * //
 
-void Foam::outletPrghPressure::updateCoeffs
-(
-    const scalarField& snGradp
-)
-{
-    if (updated())
-    {
-        return;
-    }
-
-    gradient() = snGradp;
-    fixedGradientFvPatchScalarField::updateCoeffs();
-}
-
-
 void Foam::outletPrghPressure::updateCoeffs()
 {
     if (updated())
@@ -146,20 +131,10 @@ void Foam::outletPrghPressure::updateCoeffs()
     const scalarField& snGradRhop =
         patch().lookupPatchField<surfaceScalarField, scalar>("snGradRho");
 
-    const uniformDimensionedVectorField& g =
-        db().lookupObject<uniformDimensionedVectorField>("g");
+    const scalarField& ghfp =
+        patch().lookupPatchField<surfaceScalarField, scalar>("ghf");
 
-    const uniformDimensionedScalarField& hRef =
-        db().lookupObject<uniformDimensionedScalarField>("hRef");
-
-    dimensionedScalar ghRef
-    (
-        mag(g.value()) > SMALL
-      ? g & (cmptMag(g.value())/mag(g.value()))*hRef
-      : dimensionedScalar("ghRef", g.dimensions()*dimLength, 0)
-    );
-
-    gradient() =  -1.0 * snGradRhop * ((g.value() & patch().Cf()) - ghRef.value());
+    gradient() = -1.0 * snGradRhop * ghfp;
 }
 
 
@@ -171,7 +146,6 @@ void Foam::outletPrghPressure::write(Ostream& os) const
 
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
-
 namespace Foam
 {
     makePatchTypeField

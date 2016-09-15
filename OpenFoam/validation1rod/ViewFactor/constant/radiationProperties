@@ -18,7 +18,7 @@ radiationModel  viewFactor;
 
 viewFactorCoeffs
 {
-    smoothing false; //Smooth view factor matrix (use when in a close surface to force Sum(Fij = 1)
+    smoothing true; //Smooth view factor matrix (use when in a close surface to force Sum(Fij = 1)
     constantEmissivity true; //constant emissivity on surfaces.
 }
 

@@ -89,11 +89,11 @@ R      = 54.5/2                   # Radius of outside cylinder
 d      = 1                        # Boundary layer minimum thickness for outside cylinder
 dg     = math.pi*30/180           # Degree of the mesh (45o)
 pepdis = 32.5/2                   # Distance between 2 cylinders
-l      = [1000,0]                 # Levels of the Mesh
-lf     = [[100],[1]]              # Mesh points and grading for the fluid mesh levels [50],[1]
-ls     = [[100],[1]]              # Mesh points and grading for the solid mesh levels
+l      = [200,0]                 # Levels of the Mesh
+lf     = [[20],[1]]              # Mesh points and grading for the fluid mesh levels [50],[1]
+ls     = [[20],[1]]              # Mesh points and grading for the solid mesh levels
 lpi    = 36                       # number of mesh points per pi(180o)
-expf   = [27,12]                  # Number of points in the mesh and their refinement [27,12]
+expf   = [12,12]                  # Number of points in the mesh and their refinement [27,12]
 exps   = [5,0.1]                  # Number of points in the solid mesh and their refinement   
 
 #points for the center cylinder

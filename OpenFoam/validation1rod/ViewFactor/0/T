@@ -29,7 +29,7 @@ boundaryField
    { 
       type             externalWallHeatFluxTemperature;
       kappaMethod      fluidThermo;
-      q                uniform 264; 
+      q                uniform 3636; 
       Qr               Qr;
       value            uniform 293.7;
    } 

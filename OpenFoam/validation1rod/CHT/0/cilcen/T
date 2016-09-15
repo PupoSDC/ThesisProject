@@ -15,20 +15,20 @@ FoamFile
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 dimensions      [0 0 0 1 0 0 0];
-internalField   uniform 360;
+internalField   uniform 293.7;
 
 boundaryField
 {
     "cilcentop"         { type zeroGradient; }
     "cilcenbot"         { type zeroGradient; }
-    ".*Wedge"           { type wedge; }
+    ".*Wedge"           { type symmetry; }
 
     ".*_to_fluid"                  
     {
         type            compressible::turbulentTemperatureRadCoupledMixed;
         Tnbr            T;
-        kappa           solidThermo;
-        QrNbr           Qr;
+        kappaMethod     solidThermo;
+        QrNbr           none; //Qr;
         Qr              none;
         kappaName       none;
         value           uniform 293.7;

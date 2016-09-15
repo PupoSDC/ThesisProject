@@ -6,5 +6,5 @@ boundaryField
 {
     "cil.*"       { type fixedValue; value uniform 101325;}
     ".*_to_fluid" { type fixedValue; value uniform 101325;}   
-    ".*Wedge"     { type wedge; }
+    ".*Wedge"     { type symmetry; }
 }

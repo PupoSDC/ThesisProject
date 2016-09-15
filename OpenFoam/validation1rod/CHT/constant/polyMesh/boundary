@@ -1,0 +1,87 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  4.0                                   |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       polyBoundaryMesh;
+    location    "constant/polyMesh";
+    object      boundary;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+10
+(
+    Outterwall
+    {
+        type            patch;
+        nFaces          100;
+        startFace       10049;
+    }
+    cilcentop
+    {
+        type            patch;
+        nFaces          1;
+        startFace       10149;
+    }
+    cilcenbot
+    {
+        type            patch;
+        nFaces          1;
+        startFace       10150;
+    }
+    leftWedge
+    {
+        type            symmetry;
+        inGroups        1(symmetry);
+        nFaces          5000;
+        startFace       10151;
+    }
+    rigtWedge
+    {
+        type            symmetry;
+        inGroups        1(symmetry);
+        nFaces          5000;
+        startFace       15151;
+    }
+    leftcenWedge
+    {
+        type            symmetry;
+        inGroups        1(symmetry);
+        nFaces          100;
+        startFace       20151;
+    }
+    rigtcenWedge
+    {
+        type            symmetry;
+        inGroups        1(symmetry);
+        nFaces          100;
+        startFace       20251;
+    }
+    Outlet
+    {
+        type            patch;
+        nFaces          50;
+        startFace       20351;
+    }
+    Inlet
+    {
+        type            patch;
+        nFaces          50;
+        startFace       20401;
+    }
+    defaultFaces
+    {
+        type            empty;
+        inGroups        1(empty);
+        nFaces          0;
+        startFace       20451;
+    }
+)
+
+// ************************************************************************* //

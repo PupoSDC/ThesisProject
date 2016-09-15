@@ -15,7 +15,7 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-radiationModel  fvDOM;
+radiationModel  none; //fvDOM;
 
 fvDOMCoeffs
 {

@@ -1,0 +1,13 @@
+FoamFile { version 2.0; format ascii; class volScalarField; object p_rgh; }
+
+dimensions      [1 -1 -2 0 0 0 0];
+
+internalField   uniform 101325;
+
+boundaryField
+{
+    Inlet          { type prghTotalPressure;     p0 uniform 101325; }
+    Outlet         { type outletPrghPressure; value uniform 101324.99; }//5 - 0.0015272571; }
+    Outterwall     { type fixedFluxPressure;  value uniform 101325; }
+    "fluid_to_.*"  { type fixedFluxPressure;  value uniform 101325; }
+    "symmetry.*"   { type symmetry; }

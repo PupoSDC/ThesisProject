@@ -1,7 +1,7 @@
 /*--------------------------------*- C++ -*----------------------------------*\
 | =========                 |                                                 |
 | \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
-|  \\    /   O peration     | Version:  3.0.1                                 |
+|  \\    /   O peration     | Version:  4.0                                   |
 |   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
 |    \\/     M anipulation  |                                                 |
 \*---------------------------------------------------------------------------*/
@@ -20,41 +20,41 @@ FoamFile
     Outterwall
     {
         type            patch;
-        nFaces          1800;
-        startFace       472680;
+        nFaces          360;
+        startFace       41040;
     }
     symmetryleft
     {
         type            symmetry;
         inGroups        1(symmetry);
-        nFaces          10800;
-        startFace       474480;
+        nFaces          960;
+        startFace       41400;
     }
     symmetryrigt
     {
         type            symmetry;
         inGroups        1(symmetry);
-        nFaces          6600;
-        startFace       485280;
+        nFaces          720;
+        startFace       42360;
     }
     Outlet
     {
         type            patch;
-        nFaces          1620;
-        startFace       491880;
+        nFaces          720;
+        startFace       43080;
     }
     Inlet
     {
         type            patch;
-        nFaces          1620;
-        startFace       493500;
+        nFaces          720;
+        startFace       43800;
     }
     fluid_to_ciltop
     {
         type            mappedWall;
         inGroups        1(wall);
-        nFaces          3600;
-        startFace       495120;
+        nFaces          720;
+        startFace       44520;
         sampleMode      nearestPatchFace;
         sampleRegion    ciltop;
         samplePatch     ciltop_to_fluid;
@@ -63,8 +63,8 @@ FoamFile
     {
         type            mappedWall;
         inGroups        1(wall);
-        nFaces          600;
-        startFace       498720;
+        nFaces          120;
+        startFace       45240;
         sampleMode      nearestPatchFace;
         sampleRegion    cilcen;
         samplePatch     cilcen_to_fluid;

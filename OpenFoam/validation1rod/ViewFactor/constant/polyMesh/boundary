@@ -15,47 +15,40 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-6
+5
 (
-    LeftWedge
-    {
-        type            wedge;
-        inGroups        1(wedge);
-        nFaces          5000;
-        startFace       9850;
-    }
-    RightWedge
-    {
-        type            wedge;
-        inGroups        1(wedge);
-        nFaces          5000;
-        startFace       14850;
-    }
     Inlet
     {
         type            patch;
-        nFaces          50;
-        startFace       19850;
+        nFaces          1000;
+        startFace       287000;
     }
     Outlet
     {
         type            patch;
-        nFaces          50;
-        startFace       19900;
+        nFaces          1000;
+        startFace       288000;
     }
     Outterwall
     {
         type            wall;
         inGroups        1(wall);
-        nFaces          100;
-        startFace       19950;
+        nFaces          2000;
+        startFace       289000;
     }
-    fluid_to_cencil
+    fluid_to_cilcen
     {
         type            wall;
         inGroups        1(wall);
-        nFaces          100;
-        startFace       20050;
+        nFaces          2000;
+        startFace       291000;
+    }
+    defaultFaces
+    {
+        type            empty;
+        inGroups        1(empty);
+        nFaces          20000;
+        startFace       293000;
     }
 )
 

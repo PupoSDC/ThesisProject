@@ -20,12 +20,10 @@ internalField   uniform (0 0 0);
 
 boundaryField
 {   
-  Inlet          { type pressureInletVelocity; value uniform (0 0 0); }
-  Outlet         { type inletOutlet; inletValue uniform (0 0 0); value uniform (0 0 0); }
-    
-
-  "fluid_to_.*" { type fixedValue; value uniform (0 0 0); }
-  Outterwall    { type fixedValue; value uniform (0 0 0); }
+  Inlet         { type outletInlet; outletValue uniform (0 0 0); value uniform (0 0 0); }
+  Outlet        { type inletOutlet; inletValue uniform (0 0 0); value uniform (0 0 0); }
+  "fluid_to_.*" { type noSlip; }
+  Outterwall    { type noSlip; }
   "symmetry.*"  { type symmetry; }
 }
 

@@ -30,7 +30,7 @@ deltaT          1;
 
 writeControl    timeStep;
 
-writeInterval   2000;
+writeInterval   2001;
 
 purgeWrite      1;
 
@@ -46,5 +46,8 @@ timePrecision   6;
 
 runTimeModifiable true;
 
-
+libs 
+( 
+	"libNAME.so"
+);
 // ************************************************************************* //

@@ -16,7 +16,7 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-application     PupoCHTFOAM;
+application     buoyantSimpleFoam;
 
 startFrom       startTime;
 
@@ -24,13 +24,13 @@ startTime       0;
 
 stopAt          endTime;
 
-endTime         1000000;
+endTime         200000;
 
 deltaT          1;
 
 writeControl    timeStep;
 
-writeInterval   1000;
+writeInterval   2000;
 
 purgeWrite      1;
 
@@ -46,5 +46,9 @@ timePrecision   6;
 
 runTimeModifiable true;
 
+libs 
+( 
+	"libNAME.so"
+);
 
 // ************************************************************************* //

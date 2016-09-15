@@ -21,30 +21,25 @@ writePatchViewFactors     true;
 Outterwall
 {
     nFacesInCoarsestLevel     10;
-    featureAngle              10;
+    featureAngle              36;
 }
 
 "fluid_to_.*"
 {
-    nFacesInCoarsestLevel     10;
-    featureAngle              10;
+    nFacesInCoarsestLevel     2000;
+    featureAngle              36;
 }
 
 Inlet
 {
-    nFacesInCoarsestLevel     10;
-    featureAngle              10;
+    nFacesInCoarsestLevel     20;
+    featureAngle              0;
 }
 
 Outlet
 {
-    nFacesInCoarsestLevel     10;
-    featureAngle              10;
+    nFacesInCoarsestLevel     20;
+    featureAngle              0;
 }
 
-".*Wedge"
-{
-   nFacesInCoarsestLevel     10;
-   featureAngle              10;
-}
 // ************************************************************************* //

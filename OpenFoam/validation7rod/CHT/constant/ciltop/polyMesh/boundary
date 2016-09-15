@@ -1,7 +1,7 @@
 /*--------------------------------*- C++ -*----------------------------------*\
 | =========                 |                                                 |
 | \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
-|  \\    /   O peration     | Version:  3.0.1                                 |
+|  \\    /   O peration     | Version:  4.0                                   |
 |   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
 |    \\/     M anipulation  |                                                 |
 \*---------------------------------------------------------------------------*/
@@ -21,27 +21,27 @@ FoamFile
     {
         type            patch;
         nFaces          180;
-        startFace       49720;
+        startFace       9800;
     }
     cilbottop
     {
         type            patch;
         nFaces          180;
-        startFace       49900;
+        startFace       9980;
     }
     symmetrytop1
     {
         type            symmetry;
         inGroups        1(symmetry);
-        nFaces          1000;
-        startFace       50080;
+        nFaces          200;
+        startFace       10160;
     }
     ciltop_to_fluid
     {
         type            mappedWall;
         inGroups        1(wall);
-        nFaces          3600;
-        startFace       51080;
+        nFaces          720;
+        startFace       10360;
         sampleMode      nearestPatchFace;
         sampleRegion    fluid;
         samplePatch     fluid_to_ciltop;

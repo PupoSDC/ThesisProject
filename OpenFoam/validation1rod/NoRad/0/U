@@ -23,7 +23,7 @@ boundaryField
    Inlet         { type zeroGradient; }
    Outlet        { type inletOutlet; inletValue uniform (0 0 0); value uniform (0 0 0); }
    "fluid_to_.*" { type noSlip; }
-   Outterwall    { type slip;   }
+   Outterwall    { type noSlip; }
    ".*Wedge"     { type wedge;  }
 }
 
