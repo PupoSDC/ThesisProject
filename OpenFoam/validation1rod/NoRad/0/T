@@ -27,12 +27,10 @@ boundaryField
      
    "fluid_to_.*"     
    {
-        type            externalWallHeatFluxTemperature;
+        type            radiatingWall;
         kappaMethod     fluidThermo;
-        q               uniform 264;
+        q               uniform 3636;
         value           uniform 293.7;
-        kappaName       none;
-        Qr              none;
         Tinf            uniform 293.7; 
         Emissivity      uniform 0.96;
     }

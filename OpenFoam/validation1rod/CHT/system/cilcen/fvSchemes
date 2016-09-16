@@ -13,8 +13,8 @@ FoamFile
     object      fvSchemes;
 }
 
-ddtSchemes           { default steadyState; }
-interpolationSchemes { default upwind phi; }
+ddtSchemes           { default steadyState;      }
+interpolationSchemes { default upwind phi;       }
 gradSchemes          { default Gauss upwind phi; }
 laplacianSchemes     { default Gauss linear corrected; laplacian(alpha,h) Gauss linear uncorrected; }
 divSchemes           { default bounded Gauss upwind; }

@@ -156,21 +156,13 @@ radiatingWallFvPatchScalarField
     }
     else
     {
-        FatalErrorIn
-        (
-            "radiatingWallFvPatchScalarField::"
-            "radiatingWallFvPatchScalarField\n"
-            "(\n"
-            "    const fvPatch& p,\n"
-            "    const DimensionedField<scalar, volMesh>& iF,\n"
-            "    const dictionary& dict\n"
-            ")\n"
-        )   << "\n patch type '" << p.type()
-            << "' either q or h and Ta were not found '"
-            << "\n for patch " << p.name()
-            << " of field " << dimensionedInternalField().name()
-            << " in file " << dimensionedInternalField().objectPath()
-            << exit(FatalError);
+          FatalErrorInFunction
+                << "\n patch type '" << p.type()
+                << "' either q or h and Ta were not found '"
+                << "\n for patch " << p.name()
+                << " of field " << internalField().name()
+                << " in file " << internalField().objectPath()
+                << exit(FatalError);
     }
 
     fvPatchScalarField::operator=(scalarField("value", dict, p.size()));
@@ -292,13 +284,6 @@ void Foam::radiatingWallFvPatchScalarField::updateCoeffs()
         QrPrevious_ = Qr;
     }
 
-    FatalErrorIn
-    (
-        "radiatingWallFvPatchScalarField"
-        "::updateCoeffs()"
-    )   << "Illegal heat flux mode " << operationModeNames[mode_]
-        << exit(FatalError);
-
     switch (mode_)
     {
         case fixedHeatFlux:
@@ -358,10 +343,9 @@ void Foam::radiatingWallFvPatchScalarField::updateCoeffs()
     if (debug)
     {
         scalar Q = gSum(kappa(Tp)*patch().magSf()*snGrad());
-
         Info<< patch().boundaryMesh().mesh().name() << ':'
             << patch().name() << ':'
-            << this->dimensionedInternalField().name() << " :"
+            << this->internalField().name() << " :"
             << " heat transfer rate:" << Q
             << " walltemperature "
             << " min:" << gMin(*this)

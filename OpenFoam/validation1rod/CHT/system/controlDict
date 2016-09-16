@@ -48,6 +48,7 @@ runTimeModifiable true;
 
 libs 
 ( 
-	"libNAME.so"
+	"OutletPressurelib.so"
 );
+
 // ************************************************************************* //
