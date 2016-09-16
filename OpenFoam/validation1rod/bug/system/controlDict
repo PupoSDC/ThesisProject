@@ -20,19 +20,19 @@ application     buoyantSimpleFoam;
 
 startFrom       startTime;
 
-startTime       3000;
+startTime       0;
 
 stopAt          endTime;
 
-endTime         6000;
+endTime         10000;
 
 deltaT          1;
 
 writeControl    timeStep;
 
-writeInterval   3000;
+writeInterval  11000;
 
-purgeWrite      0;
+purgeWrite      1;
 
 writeFormat     ascii;
 
@@ -48,7 +48,7 @@ runTimeModifiable true;
 
 libs 
 ( 
-	"libNAME.so"
+	"OutletPressurelib.so"
 );
 
 // ************************************************************************* //

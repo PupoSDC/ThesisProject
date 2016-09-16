@@ -1,5 +1,5 @@
 reset
-set term x11 1 noraise
+set term wxt 1 noraise
 set multiplot layout 4,2 rowsfirst
 
 # --- GRAPH A

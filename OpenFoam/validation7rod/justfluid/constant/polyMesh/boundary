@@ -20,46 +20,46 @@ FoamFile
     Outterwall
     {
         type            patch;
-        nFaces          1800;
-        startFace       472680;
+        nFaces          3600;
+        startFace       946980;
     }
     symmetryleft
     {
         type            symmetry;
         inGroups        1(symmetry);
-        nFaces          10800;
-        startFace       474480;
+        nFaces          21600;
+        startFace       950580;
     }
     symmetryrigt
     {
         type            symmetry;
         inGroups        1(symmetry);
-        nFaces          6600;
-        startFace       485280;
+        nFaces          13200;
+        startFace       972180;
     }
     Outlet
     {
         type            patch;
         nFaces          1620;
-        startFace       491880;
+        startFace       985380;
     }
     Inlet
     {
         type            patch;
         nFaces          1620;
-        startFace       493500;
+        startFace       987000;
     }
     fluid_to_cilcen
     {
         type            patch;
-        nFaces          600;
-        startFace       495120;
+        nFaces          1200;
+        startFace       988620;
     }
     fluid_to_ciltop
     {
         type            patch;
-        nFaces          3600;
-        startFace       495720;
+        nFaces          7200;
+        startFace       989820;
     }
 )
 
