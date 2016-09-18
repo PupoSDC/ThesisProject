@@ -32,7 +32,7 @@ Description
 #include "fvCFD.H"
 #include "solidThermo.H"
 #include "simpleControl.H"
-#include "fvIOoptionList.H"
+#include "fvOptions.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -1,1 +1,0 @@
-../radiatingWallFvPatchScalarField.C
