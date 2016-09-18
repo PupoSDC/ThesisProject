@@ -1,3 +1,0 @@
-heatConductingFoam.C
-
-EXE = $(FOAM_APPBIN)/heatConductingFoam

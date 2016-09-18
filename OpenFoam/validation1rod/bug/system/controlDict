@@ -16,39 +16,39 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-application     buoyantSimpleFoam;
+application       buoyantSimpleFoam;
 
-startFrom       startTime;
+startFrom         startTime;
 
-startTime       0;
+startTime         0;
 
-stopAt          endTime;
+stopAt            endTime;
 
-endTime         10000;
+endTime           10000;
 
-deltaT          1;
+deltaT            1;
 
-writeControl    timeStep;
+writeControl      timeStep;
 
-writeInterval  11000;
+writeInterval     1000;
 
-purgeWrite      1;
+purgeWrite        1;
 
-writeFormat     ascii;
+writeFormat       ascii;
 
-writePrecision  8;
+writePrecision    8;
 
-writeCompression off;
+writeCompression  off;
 
-timeFormat      general;
+timeFormat        general;
 
-timePrecision   6;
+timePrecision     6;
 
 runTimeModifiable true;
 
 libs 
 ( 
 	"OutletPressurelib.so"
+	"radiatingWall.so"
 );
-
 // ************************************************************************* //

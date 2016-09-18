@@ -88,15 +88,16 @@ def writeblockmeshdict(pointlist,hexblocks,arclist,boundlist,mergepatches):
 pointlist, arclist, hexblocks, boundlist, mergepatches = ([] for i in range(5))
     
 r      = 6                        # Radius of cylinders
-R      = 54.5/2                   # Radius of outside cylinder
+R      = 154.5/2                   # Radius of outside cylinder
 d      = 1                        # Boundary layer minimum thickness for outside cylinder
 dg     = math.pi*30/180           # Degree of the mesh (45o)
 pepdis = 32.5/2                   # Distance between 2 cylinders
-l      = [1000,100,0]                  # Levels of the Mesh
-lf     = [[100,100],[1,10]]               # Mesh points and grading for the fluid mesh levels [50],[1]
-ls     = [[100,100],[1,10]]               # Mesh points and grading for the solid mesh levels
-lpi    = 36                       # number of mesh points per pi(180o)
-expf   = [27,12]                  # Number of points in the mesh and their refinement [27,12]
+l      = [1000,0]                 # Levels of the Mesh
+lf     = [[100,100],[1,10]]       # Mesh points and grading for the fluid mesh levels [50],[1]
+ls     = [[100,100],[1,10]]       # Mesh points and grading for the solid mesh levels
+lpi    = 36                       # Number of mesh points per pi(180o)
+expf   = [15,12]                  # Number of points in the mesh and their refinement [27,12]
+expo   = [15,0.1]                  # Number of points in the mesh and their refinement (outer wall)
 exps   = [5,0.1]                  # Number of points in the solid mesh and their refinement   
 
 #points for the center cylinder
@@ -133,8 +134,8 @@ for x in xrange(0,len(l)-1):
     createHexBlock(p3,s3,s2,p4,l[x],l[x+1], [expf[0],lpi/3,lf[0][x]], [expf[1],1,lf[1][x]] )  # boundary layer top cilinder
     createHexBlock(p4,s2,s1,p5,l[x],l[x+1], [expf[0],lpi/6,lf[0][x]], [expf[1],1,lf[1][x]] )  # boundary layer top cilinder
 
-    createHexBlock(o3,s4,s5,o1,l[x],l[x+1], [expf[0],lpi/6,lf[0][x]], [expf[1],1,lf[1][x]] )  # boundary layer outter wall
-    createHexBlock(o2,s3,s4,o3,l[x],l[x+1], [expf[0],lpi/3,lf[0][x]], [expf[1],1,lf[1][x]] )  # boundary layer outter wall   
+    createHexBlock(o3,s4,s5,o1,l[x],l[x+1], [expo[0],lpi/6,lf[0][x]], [expo[1],1,lf[1][x]] )  # boundary layer outter wall
+    createHexBlock(o2,s3,s4,o3,l[x],l[x+1], [expo[0],lpi/3,lf[0][x]], [expo[1],1,lf[1][x]] )  # boundary layer outter wall   
 
 #Define arcs
 for z in l:

@@ -30,7 +30,7 @@ deltaT          1;
 
 writeControl    timeStep;
 
-writeInterval   1000;
+writeInterval   500;
 
 purgeWrite      1;
 
@@ -49,6 +49,7 @@ runTimeModifiable true;
 libs 
 ( 
 	"OutletPressurelib.so"
+	"radiatingWall.so"
 );
 
 // ************************************************************************* //

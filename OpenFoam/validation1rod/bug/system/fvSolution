@@ -27,7 +27,7 @@ solvers
         smoother         DICGaussSeidel;
 
         cacheAgglomeration    true;
-        nCellsInCoarsestLevel 10;
+        nCellsInCoarsestLevel 1;
         agglomerator          faceAreaPair;
         mergeLevels           1;
     }

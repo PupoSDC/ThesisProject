@@ -1,3 +1,0 @@
-outletPrghPressure.C
-
-LIB = $(FOAM_USER_LIBBIN)/OutletPressurelib
