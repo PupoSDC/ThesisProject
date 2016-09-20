@@ -21,41 +21,41 @@ FoamFile
     {
         type            wedge;
         inGroups        1(wedge);
-        nFaces          1;
-        startFace       0;
+        nFaces          10000;
+        startFace       19800;
     }
     RightWedge
     {
         type            wedge;
         inGroups        1(wedge);
-        nFaces          1;
-        startFace       1;
+        nFaces          10000;
+        startFace       29800;
     }
     Inlet
     {
         type            patch;
-        nFaces          1;
-        startFace       2;
+        nFaces          100;
+        startFace       39800;
     }
     Outlet
     {
         type            patch;
-        nFaces          1;
-        startFace       3;
+        nFaces          100;
+        startFace       39900;
     }
     Outterwall
     {
         type            wall;
         inGroups        1(wall);
-        nFaces          1;
-        startFace       4;
+        nFaces          100;
+        startFace       40000;
     }
     fluid_to_cencil
     {
         type            wall;
         inGroups        1(wall);
-        nFaces          1;
-        startFace       5;
+        nFaces          100;
+        startFace       40100;
     }
 )
 

@@ -29,7 +29,7 @@ boundaryField
    {
         type            radiatingWall;
         kappaMethod     fluidThermo;
-        q               uniform 00;
+        q               uniform 100;
         value           uniform 300;
     }
 
