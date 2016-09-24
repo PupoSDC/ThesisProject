@@ -1,0 +1,50 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  3.0.1                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      blockMeshDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+convertToMeters 1;
+
+vertices 
+( 
+    ( 0.0     0     0 )    // vertex number 0 
+    ( 0.1     0     0 )    // vertex number 1 
+    ( 0.1  0.01     0 )    // vertex number 2 
+    ( 0.0  0.01     0 )    // vertex number 3 
+    ( 0.0     0     1 )    // vertex number 4 
+    ( 0.1     0     1 )    // vertex number 5 
+    ( 0.1  0.01     1 )    // vertex number 6 
+    ( 0.0  0.01     1 )    // vertex number 7 
+);
+ 
+blocks
+(
+    hex (0 1 2 3 4 5 6 7) (100 1 100) simpleGrading ( 1 1 1)
+);
+ 
+edges();
+ 
+boundary
+(
+    symmetryfront   { type symmetry; faces ((0 1 5 4)); }
+    symmetryback    { type symmetry; faces ((3 7 6 2)); }
+
+    Inlet           { type patch; faces ((0 3 2 1)); }
+    Outlet          { type patch; faces ((4 5 6 7)); }
+
+    leftwall        { type wall;  faces ((0 4 7 3)); }
+    rigtwall        { type wall;  faces ((1 2 6 5)); } 
+);
+ 
+mergePatchPairs();
