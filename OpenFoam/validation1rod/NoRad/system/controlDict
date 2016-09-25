@@ -49,7 +49,7 @@ runTimeModifiable true;
 libs 
 ( 
 	"OutletPressurelib.so"
-	"radiatingwall.so"
+	"radiatingWall.so"
 );
 
 // ************************************************************************* //
