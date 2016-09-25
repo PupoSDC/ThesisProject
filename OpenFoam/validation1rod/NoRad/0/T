@@ -25,15 +25,15 @@ boundaryField
    Outlet        { type inletOutlet; inletValue uniform 293.7; value uniform 293.7; }
    Outterwall    { type zeroGradient; }
      
-   "fluid_to_.*" { type zeroGradient; }     
-   /*{
+   "fluid_to_.*"    
+   {
         type            radiatingWall;
         kappaMethod     fluidThermo;
-        q               uniform 3636;
+        q               uniform 264;
         value           uniform 293.7;
         Tinf            uniform 293.7; 
         Emissivity      uniform 0.96;
-    }*/
+    }
 
    ".*Wedge"   { type wedge; }
 }
