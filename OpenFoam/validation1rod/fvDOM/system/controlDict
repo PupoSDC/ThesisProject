@@ -46,9 +46,11 @@ timePrecision   6;
 
 runTimeModifiable true;
 
+
 libs 
 ( 
-	"libNAME.so"
+	"OutletPressurelib.so"
+	"radiatingwall.so"
 );
 
 // ************************************************************************* //
