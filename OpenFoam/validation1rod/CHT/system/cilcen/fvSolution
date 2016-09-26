@@ -38,7 +38,7 @@ relaxationFactors
 {
     equations
     {
-        ".*"            1.0;
+        ".*"            0.3;
     }
 }
 

@@ -20,35 +20,35 @@ FoamFile
     cilcentop
     {
         type            patch;
-        nFaces          1;
-        startFace       99;
+        nFaces          10;
+        startFace       1890;
     }
     cilcenbot
     {
         type            patch;
-        nFaces          1;
-        startFace       100;
+        nFaces          10;
+        startFace       1900;
     }
     leftcenWedge
     {
         type            symmetry;
         inGroups        1(symmetry);
-        nFaces          100;
-        startFace       101;
+        nFaces          1000;
+        startFace       1910;
     }
     rigtcenWedge
     {
         type            symmetry;
         inGroups        1(symmetry);
-        nFaces          100;
-        startFace       201;
+        nFaces          1000;
+        startFace       2910;
     }
     cilcen_to_fluid
     {
         type            mappedWall;
         inGroups        1(wall);
         nFaces          100;
-        startFace       301;
+        startFace       3910;
         sampleMode      nearestPatchFace;
         sampleRegion    fluid;
         samplePatch     fluid_to_cilcen;

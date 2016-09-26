@@ -92,7 +92,7 @@ l      = [1500,0]                 # Levels of the Mesh
 lf     = [[100],[1]]              # Mesh points and grading for the fluid mesh levels 
 ls     = [[100],[1]]              # Mesh points and grading for the solid mesh levels
 expf   = [50,107]                 # Number of points in the fluid mesh and their refinement 
-exps   = [1,0.1]                  # Number of points in the solid mesh and their refinement 
+exps   = [10,0.1]                  # Number of points in the solid mesh and their refinement 
 
 #points for the center cylinder
 c0 = [0,0]

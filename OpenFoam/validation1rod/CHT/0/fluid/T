@@ -31,7 +31,7 @@ boundaryField
         Tnbr            T;
         kappaMethod     fluidThermo;
         QrNbr           none;
-        Qr              none; //Qr;
+        Qr              Qr;
         value           uniform 293.7;
    } 
 

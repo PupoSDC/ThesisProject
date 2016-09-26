@@ -16,5 +16,5 @@ FoamFile
 ddtSchemes           { default steadyState;      }
 interpolationSchemes { default linear;       }
 gradSchemes          { default Gauss linear; }
-laplacianSchemes     { default Gauss linear corrected; laplacian(alpha,h) Gauss linear uncorrected; }
-divSchemes           { default bounded Gauss upwind; }
+laplacianSchemes     { default Gauss linear orthogonal; } //laplacian(alpha,h) Gauss linear uncorrected; }
+divSchemes           { default bounded Gauss linear; }
