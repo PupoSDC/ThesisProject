@@ -17,17 +17,17 @@ FoamFile
 
 ddtSchemes           { default steadyState; }
 
-interpolationSchemes { default upwind phi; } 
+gradSchemes          { default Gauss linear; }
 
-gradSchemes          { default Gauss upwind phi; }
+interpolationSchemes { default linearUpwind phi Gauss linear; } 
 
-snGradSchemes        { default corrected; }
+snGradSchemes        { default orthogonal; }
 
-laplacianSchemes     { default Gauss linear corrected; }
+laplacianSchemes     { default Gauss linear orthogonal; }
 
 divSchemes           
 { 
-    default bounded Gauss upwind;
+    default bounded Gauss linearUpwind phi;
     div(((rho*nuEff)*dev2(T(grad(U))))) Gauss linear;
 }
 
