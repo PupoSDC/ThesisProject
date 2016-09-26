@@ -20,7 +20,7 @@ solvers
     p_rgh
     {
         solver           GAMG;
-        tolerance        1e-9;
+        tolerance        1e-6;
         relTol           0.001;
 
         smoother         DICGaussSeidel;
@@ -35,7 +35,7 @@ solvers
     {
         solver          PBiCG;
         preconditioner  DILU;
-        tolerance       1e-9;
+        tolerance       1e-8;
         relTol          0.001;
     }
 
@@ -78,7 +78,7 @@ relaxationFactors
     }
     equations
     {
-        U               0.5;
+        U               0.4;
         ".*"            0.9;
     }
 }
