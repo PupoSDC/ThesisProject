@@ -20,8 +20,8 @@ solvers
     {
         solver           PCG;
         preconditioner   DIC;
-        tolerance        1e-06;
-        relTol           1e-5;
+        tolerance        1e-08;
+        relTol           0.001;
     }
 }
 
@@ -38,7 +38,7 @@ relaxationFactors
 {
     equations
     {
-        ".*"            0.3;
+        ".*"            1.0;
     }
 }
 

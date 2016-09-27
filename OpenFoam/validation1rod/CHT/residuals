@@ -75,7 +75,7 @@ plot "< cat log | grep 'U   max/avg/min :'   | cut -d' ' -f8  " title  'Umax' wi
     
 # --- GRAPH H
 set origin 0.5,0.25
-set yrange [*:*]
+set yrange [0.000001:1]
 set logscale y
 set title "Residuals"
 set ylabel 'Residual'

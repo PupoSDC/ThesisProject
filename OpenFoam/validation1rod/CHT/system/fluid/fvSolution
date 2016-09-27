@@ -43,7 +43,7 @@ solvers
     Ii
     {
         solver                  GAMG;
-        tolerance               1e-4;
+        tolerance               1e-6;
         relTol                  0;
         smoother                symGaussSeidel;
         cacheAgglomeration      true;
@@ -80,8 +80,8 @@ relaxationFactors
     }
     equations
     {
-        U               0.3;
-        ".*"            0.7;
+        U               0.2;
+        ".*"            0.5;
     }
 }
 
