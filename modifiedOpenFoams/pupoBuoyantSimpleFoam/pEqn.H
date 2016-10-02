@@ -30,6 +30,7 @@
         );
 
         p_rghEqn.setReference(pRefCell, getRefCellValue(p_rgh, pRefCell));
+        p_rghEqn.relax();
         p_rghEqn.solve();
 
         if (simple.finalNonOrthogonalIter())
@@ -54,4 +55,6 @@
 
     rho = thermo.rho();
     rho.relax();
+    snGradRho = fvc::snGrad(rho);
+ 
 }

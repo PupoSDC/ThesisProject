@@ -10,6 +10,7 @@ tmp<fvVectorMatrix> tUEqn
  ==
     fvOptions(rho, U)
 );
+
 fvVectorMatrix& UEqn = tUEqn.ref();
 
 UEqn.relax();

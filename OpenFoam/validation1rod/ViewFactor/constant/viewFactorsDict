@@ -20,7 +20,7 @@ writePatchViewFactors     true;
 
 Outterwall
 {
-    nFacesInCoarsestLevel     10;
+    nFacesInCoarsestLevel     20;
     featureAngle              36;
 }
 

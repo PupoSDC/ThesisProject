@@ -33,7 +33,5 @@ boundaryField
       Qr               Qr;
       value            uniform 293.7;
    } 
-
-   ".*Wedge"   { type wedge; }
 }
 

@@ -81,6 +81,15 @@ def writeblockmeshdict(pointlist,hexblocks,arclist,boundlist,mergepatches):
     blockMeshDict.close()
     return;
 
+def quadraticformula(a,b,c):
+    d = b**2-4*a*c # discriminant
+    if d < 0:
+        print ("This equation has no real solution")
+    elif d == 0:
+        return [(-b+math.sqrt(b**2-4*a*c))/2*a]
+    else:
+        return [(-b+math.sqrt((b**2)-(4*(a*c))))/(2*a), (-b-math.sqrt((b**2)-(4*(a*c))))/(2*a) ]
+
 #######################################################################
 ## Script #############################################################
 #######################################################################
@@ -88,7 +97,7 @@ def writeblockmeshdict(pointlist,hexblocks,arclist,boundlist,mergepatches):
 pointlist, arclist, hexblocks, boundlist, mergepatches = ([] for i in range(5))
     
 r      = 6                        # Radius of cylinders
-R      = 154.5/2                   # Radius of outside cylinder
+R      = 54.5/2                   # Radius of outside cylinder
 d      = 1                        # Boundary layer minimum thickness for outside cylinder
 dg     = math.pi*30/180           # Degree of the mesh (45o)
 pepdis = 32.5/2                   # Distance between 2 cylinders
@@ -96,8 +105,8 @@ l      = [1000,0]                 # Levels of the Mesh
 lf     = [[100,100],[1,10]]       # Mesh points and grading for the fluid mesh levels [50],[1]
 ls     = [[100,100],[1,10]]       # Mesh points and grading for the solid mesh levels
 lpi    = 36                       # Number of mesh points per pi(180o)
-expf   = [15,12]                  # Number of points in the mesh and their refinement [27,12]
-expo   = [15,0.1]                  # Number of points in the mesh and their refinement (outer wall)
+expf   = [12,2.85]                # Number of points in the mesh and their refinement [27,12]
+expo   = [24,8.95]                  # Number of points in the mesh and their refinement (outer wall)
 exps   = [5,0.1]                  # Number of points in the solid mesh and their refinement   
 
 #points for the center cylinder
@@ -122,8 +131,13 @@ s5 = [pepdis*3/2 , 0]
 
 #points for the outter wall
 o1 = [R,0]
-o2 = [ R *math.cos(dg),  R *math.sin(dg)]
-o3 = [math.sqrt(R ** 2 - (pepdis/2*math.tan(dg)) ** 2),  pepdis/2*math.tan(dg)]
+o2 = [ R *math.cos(dg),   R *math.sin(dg)]
+
+h = quadraticformula(1+1/(math.tan(dg)**2),2*pepdis/math.tan(dg),pepdis**2-R**2)
+
+o3 = [ math.sqrt( R ** 2 - h[0] ** 2) ,h[0]]
+
+print h
 
 #Define Hexblocks input
 for x in xrange(0,len(l)-1):
@@ -151,8 +165,8 @@ for z in l:
 
 createboundary("Outterwall",[[o2,o3],[o3,o1]],l,"patch")
 # 
-createboundary("symmetryleft",[[s1,a1],[p5,s1],[s5,p1],[o1,s5]],l,"symmetry")
-createboundary("symmetryrigt",[[a2,s2],[s2,s3],[s3,o2]],l,"symmetry")
+createboundary("symmetryleft",[[s1,a1],[p5,s1],[s5,p1],[o1,s5]],l,"symmetryPlane")
+createboundary("symmetryrigt",[[a2,s2],[s2,s3],[s3,o2]],l,"symmetryPlane")
 
 createboundary("Outlet",[[a1,s1,s2,a2],[p5,p4,s2,s1],[p4,p3,s3,s2],
    [p3,p2,s4,s3],[p2,p1,s5,s4],[s4,o3,o2,s3],[o1,o3,s4,s5],],l[0],"patch")
@@ -165,4 +179,4 @@ createboundary("fluid_to_ciltop",[[p1,p2],[p2,p3],[p3,p4],[p4,p5]],l,"patch")
 
 writeblockmeshdict(pointlist,hexblocks,arclist,boundlist,mergepatches)
 os.system("blockMesh")
-os.system("checkMesh")
+#os.system("checkMesh")

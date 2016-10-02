@@ -27,13 +27,13 @@ boundaryField
 
    "fluid_to_.*"
    {
-        type            radiatingWall;
-        kappaMethod     fluidThermo;
-        q               uniform 100;
-        value           uniform 300;
-        Qr              none;
+        type             externalWallHeatFluxTemperature;
+        kappaMethod      fluidThermo;
+        q                uniform 100; 
+        //Qr               Qr;
+        value            uniform 300;
     }
 
-   "symmetry.*"   { type symmetry; }
+   "symmetry.*"   { type symmetryPlane; }
 }
 

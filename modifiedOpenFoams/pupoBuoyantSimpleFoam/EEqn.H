@@ -21,7 +21,8 @@
 
     fvOptions.correct(he);
 
+    he.relax();
+
     thermo.correct();
     radiation->correct();
-    snGradRho = fvc::snGrad(rho);
 }

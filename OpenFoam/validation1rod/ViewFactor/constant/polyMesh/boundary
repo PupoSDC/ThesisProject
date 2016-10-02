@@ -15,40 +15,33 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-5
+4
 (
     Inlet
     {
         type            patch;
         nFaces          1000;
-        startFace       287000;
+        startFace       297000;
     }
     Outlet
     {
         type            patch;
         nFaces          1000;
-        startFace       288000;
+        startFace       298000;
     }
     Outterwall
     {
         type            wall;
         inGroups        1(wall);
         nFaces          2000;
-        startFace       289000;
+        startFace       299000;
     }
     fluid_to_cilcen
     {
         type            wall;
         inGroups        1(wall);
         nFaces          2000;
-        startFace       291000;
-    }
-    defaultFaces
-    {
-        type            empty;
-        inGroups        1(empty);
-        nFaces          20000;
-        startFace       293000;
+        startFace       301000;
     }
 )
 

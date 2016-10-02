@@ -19,12 +19,10 @@ solvers
 {
     p_rgh
     {
-        solver           GAMG;
-        tolerance        1e-6;
-        relTol           0.001;
-
-        smoother         DICGaussSeidel;
-
+        solver                GAMG;
+        tolerance             1e-6;
+        relTol                0.001;
+        smoother              DICGaussSeidel;
         cacheAgglomeration    true;
         nCellsInCoarsestLevel 10;
         agglomerator          faceAreaPair;
