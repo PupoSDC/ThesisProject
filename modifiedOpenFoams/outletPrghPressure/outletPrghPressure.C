@@ -134,7 +134,8 @@ void Foam::outletPrghPressure::updateCoeffs()
     const scalarField& ghfp =
         patch().lookupPatchField<surfaceScalarField, scalar>("ghf");
 
-    gradient() = - 1.0 * snGradRhop * ghfp;
+    //gradient() = - 1.0 * snGradRhop * ghfp;
+    gradient() = mag(snGradRhop) * ghfp;
 }
 
 
