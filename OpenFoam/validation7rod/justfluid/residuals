@@ -24,13 +24,13 @@ plot "< cat log | grep 'rho max/avg/min : ' | cut -d' ' -f4" title "RHOmax" with
 
 # --- GRAPH C
 set origin 0.0,0.75
-set title "Pressure"
-set ylabel 'Pressure [Pa]'
-set yrange [101310:101350]
+set title "snGradRho"
+set ylabel '????'
+set yrange [*:*]
 set xlabel 'Iteration'
-plot "< cat log | grep 'P   max/avg/min : ' | cut -d' ' -f6" title "Pmax" with lines,\
-     "< cat log | grep 'P   max/avg/min : ' | cut -d' ' -f7" title "Pavg" with lines,\
-     "< cat log | grep 'P   max/avg/min : ' | cut -d' ' -f8" title "Pmin" with lines
+plot "< cat log | grep 'sngrad(rho) : ' | cut -d' ' -f3" title "Pmax" with lines,\
+     "< cat log | grep 'sngrad(rho) : ' | cut -d' ' -f4" title "Pavg" with lines,\
+     "< cat log | grep 'sngrad(rho) : ' | cut -d' ' -f5" title "Pmin" with lines
 
 # --- GRAPH D
 set origin 0.5,0.75

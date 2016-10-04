@@ -21,15 +21,15 @@ internalField   uniform 300;
 boundaryField
 {   
 
-   Inlet         { type totalTemperature; T0 uniform 300; gamma 1.4; }
-   Outlet        { type inletOutlet; inletValue uniform 300; value uniform 300; }
+   Inlet         { type totalTemperature; T0 uniform 300; gamma 1.4;}
+   Outlet        { type inletOutlet; inletValue uniform 300; value uniform 320; }
    Outterwall    { type zeroGradient; }
 
    "fluid_to_.*"
    {
         type             externalWallHeatFluxTemperature;
         kappaMethod      fluidThermo;
-        q                uniform 100; 
+        q                uniform 50; 
         //Qr               Qr;
         value            uniform 300;
     }

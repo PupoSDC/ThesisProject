@@ -34,11 +34,6 @@ surfaceScalarField phi
     linearInterpolate(rho*U) & mesh.Sf()
 );
 
-surfaceScalarField snGradRho
-(
-    IOobject("snGradRho",runTime.timeName(),mesh,IOobject::READ_IF_PRESENT,IOobject::AUTO_WRITE),
-    fvc::snGrad(rho)
-);
 
 autoPtr<compressible::turbulenceModel> turbulence
 (
@@ -65,12 +60,10 @@ mesh.setFluxRequired(p_rgh.name());
 label inlet  = mesh.boundaryMesh().findPatchID("Inlet"); 
 label outlet = mesh.boundaryMesh().findPatchID("Outlet");
     
-Info<< " " << endl;
-Info<< "rho max/avg/min : " << gMax(thermo.rho())   << " " << gAverage(thermo.rho())   << " " << gMin(thermo.rho())   << endl;
-Info<< "T   max/avg/min : " << gMax(thermo.T())     << " " << gAverage(thermo.T())     << " " << gMin(thermo.T())     << endl;
-Info<< "P   max/avg/min : " << gMax(thermo.p())     << " " << gAverage(thermo.p())     << " " << gMin(thermo.p())     << endl;
-Info<< "Prg max/avg/min : " << gMax(p_rgh)          << " " << gAverage(p_rgh)          << " " << gMin(p_rgh)          << endl;
-Info<< "U   max/avg/min : " << max(U.component(2)).value() << " " <<  average(U.component(2)).value() << " " <<  min(U.component(2)).value() << endl;
-Info<< " " << endl;
-Info<< "sngrad(rho) :" << gMax(snGradRho.boundaryField()[outlet]) << " " << gAverage(snGradRho.boundaryField()[outlet]) << " " << gMin(snGradRho.boundaryField()[outlet]) << endl;
+Info<< "rho max/avg/min : " << gMax(thermo.rho())   << " " << gAverage(thermo.rho())    << " " << gMin(thermo.rho())   << endl;
+Info<< "T   max/avg/min : " << gMax(thermo.T())     << " " << gAverage(thermo.T())      << " " << gMin(thermo.T())     << endl;
+Info<< "P   max/avg/min : " << gMax(thermo.p())     << " " << gAverage(thermo.p())      << " " << gMin(thermo.p())     << endl;
+Info<< "Prg max/avg/min : " << gMax(p_rgh)          << " " << gAverage(p_rgh)           << " " << gMin(p_rgh)          << endl;
+Info<< "U   max/avg/min : " << gMax(U).component(2) << " " << gAverage(U).component(2)  << " " << gMin(U).component(2) << endl;
+Info<< "Prg max-min : "  << gMax(p_rgh)  -  gMin(p_rgh)        << endl;
 Info<< " " << endl;

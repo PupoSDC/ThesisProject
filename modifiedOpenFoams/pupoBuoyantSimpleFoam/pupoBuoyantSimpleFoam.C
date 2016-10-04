@@ -75,22 +75,19 @@ int main(int argc, char *argv[])
 
         Info<< "ExecutionTime = " << runTime.elapsedCpuTime() << " s"  << "  ClockTime = " << runTime.elapsedClockTime() << " s"  << endl;
 
-        Info<< "Inflow      : "   << -1.0* sum(phi.boundaryField()[inlet])   <<" [kg/s]" << endl;
-        Info<< "Outflow     : "   <<       sum(phi.boundaryField()[outlet])  <<" [kg/s]" <<  endl;
+        Info<< "Inflow      : "   << -1.0* gSum(phi.boundaryField()[inlet])   <<" [kg/s]" << endl;
+        Info<< "Outflow     : "   <<       gSum(phi.boundaryField()[outlet])  <<" [kg/s]" <<  endl;
 
-        Info<< "EnergyInflow  : " << -1.0* sum( phi.boundaryField()[inlet]  * ( thermo.he().boundaryField()[inlet]  + 0.5*magSqr(U.boundaryField()[inlet])  ) )   <<" [W]" <<  endl;
-        Info<< "EnergyOutflow : " <<       sum( phi.boundaryField()[outlet] * ( thermo.he().boundaryField()[outlet] + 0.5*magSqr(U.boundaryField()[outlet]) ) )   <<" [W]" <<  endl;   
-        Info<< "EnergyBalance : " <<       sum( phi.boundaryField()[outlet] * ( thermo.he().boundaryField()[outlet] + 0.5*magSqr(U.boundaryField()[outlet]) ) ) 
-                                     +1.0* sum( phi.boundaryField()[inlet]  * ( thermo.he().boundaryField()[inlet]  + 0.5*magSqr(U.boundaryField()[inlet])  ) )   <<" [W]" <<  endl;
+        Info<< "EnergyInflow  : " << -1.0* gSum( phi.boundaryField()[inlet]  * ( thermo.he().boundaryField()[inlet]  +  0.5*magSqr(U.boundaryField()[inlet])  ) )   <<" [W]" <<  endl;
+        Info<< "EnergyOutflow : " <<       gSum( phi.boundaryField()[outlet] * ( thermo.he().boundaryField()[outlet] +  0.5*magSqr(U.boundaryField()[outlet]) ) )   <<" [W]" <<  endl;   
+        Info<< "EnergyBalance : " <<       gSum( phi.boundaryField()[outlet] * ( thermo.he().boundaryField()[outlet] +  0.5*magSqr(U.boundaryField()[outlet]) ) ) 
+                                     +1.0* gSum( phi.boundaryField()[inlet]  * ( thermo.he().boundaryField()[inlet]  +  0.5*magSqr(U.boundaryField()[inlet])  ) )   <<" [W]" <<  endl;
 
-        Info<< "rho max/avg/min : " << gMax(thermo.rho())   << " " << gAverage(thermo.rho())    << " " << gMin(thermo.rho())  << endl;
-        Info<< "T   max/avg/min : " << gMax(thermo.T())     << " " << gAverage(thermo.T())      << " " << gMin(thermo.T())    << endl;
-        Info<< "P   max/avg/min : " << gMax(thermo.p())     << " " << gAverage(thermo.p())      << " " << gMin(thermo.p())    << endl;
-        Info<< "Prg max/avg/min : " << gMax(p_rgh)          << " " << gAverage(p_rgh)           << " " << gMin(p_rgh)         << endl;
-        Info<< "U   max/avg/min : " << gMax(U.component(2)) << " " << gAverage(U.component(2))  << " " << gMin(U.component(2) << endl;
-        Info<< "Prg max-min : "  << gMax(p_rgh)  -  gMin(p_rgh)        << endl;
-        Info<< " " << endl;
-        Info<< "sngrad(rho) :" << gMax(snGradRho.boundaryField()[outlet]) << " " << gAverage(snGradRho.boundaryField()[outlet]) << " " << gMin(snGradRho.boundaryField()[outlet]) << endl;
+        Info<< "rho max/avg/min : " << gMax(thermo.rho())   << " " << gAverage(thermo.rho())    << " " << gMin(thermo.rho())   << endl;
+        Info<< "T   max/avg/min : " << gMax(thermo.T())     << " " << gAverage(thermo.T())      << " " << gMin(thermo.T())     << endl;
+        Info<< "P   max/avg/min : " << gMax(thermo.p())     << " " << gAverage(thermo.p())      << " " << gMin(thermo.p())     << endl;
+        Info<< "Prg max/avg/min : " << gMax(p_rgh)          << " " << gAverage(p_rgh)           << " " << gMin(p_rgh)          << endl;
+        Info<< "U   max/avg/min : " << gMax(U).component(2) << " " << gAverage(U).component(2)  << " " << gMin(U).component(2) << endl;
         Info<< " " << endl;
     }
 

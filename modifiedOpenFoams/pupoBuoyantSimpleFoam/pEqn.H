@@ -55,6 +55,4 @@
 
     rho = thermo.rho();
     rho.relax();
-    snGradRho = fvc::snGrad(rho);
- 
 }
