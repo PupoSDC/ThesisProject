@@ -42,8 +42,10 @@ autoPtr<compressible::turbulenceModel> turbulence
 volScalarField p_rgh
 (
     IOobject("p_rgh",runTime.timeName(),mesh,IOobject::MUST_READ,IOobject::AUTO_WRITE),
-    p - rho*gh
+    mesh
 );
+
+p_rgh = p - rho*gh; 
 
 label pRefCell = 0;
 scalar pRefValue = 0.0;
