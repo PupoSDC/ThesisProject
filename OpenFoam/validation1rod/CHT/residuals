@@ -49,8 +49,8 @@ set title "Mass flow"
 set ylabel 'Mass flow [kg/s]'
 set yrange [*:*]
 set xlabel 'Iteration'
-plot "< cat log | grep 'Inflow      : ' | cut -d' ' -f10" title  'Inflow' with lines,\
-     "< cat log | grep 'Outflow     : ' | cut -d' ' -f9"  title  'Outflow' with lines
+plot "< cat log | grep 'Inflow      : ' | cut -d' ' -f9" title  'Inflow' with lines,\
+     "< cat log | grep 'Outflow     : ' | cut -d' ' -f8" title  'Outflow' with lines
 
 # --- GRAPH F
 set origin 0.0,0.0

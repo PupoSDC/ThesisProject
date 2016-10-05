@@ -36,7 +36,7 @@ source1
         // q'' = 3636 W/m^2  ==> q''' = 2295028 W/m^3
         injectionRateSuSp
         {
-           h (2295028 0);  
+           h (165000 0);  
         }
     } 
 } 

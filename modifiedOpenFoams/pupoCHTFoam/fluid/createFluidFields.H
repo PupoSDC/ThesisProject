@@ -157,24 +157,6 @@ forAll(fluidRegions, i)
         )
     );
 
-    Info<< "    Adding to snGradRhoFluid" << endl;
-    snGradRhoFluid.set
-    (
-        i,
-        new surfaceScalarField
-        (
-            IOobject
-            (
-                "snGradRho",
-                runTime.timeName(),
-                fluidRegions[i],
-                IOobject::READ_IF_PRESENT,
-                IOobject::AUTO_WRITE
-            ),
-            fvc::snGrad(rhoFluid[i])
-        )
-    );
-
     Info<< "    Adding to turbulence" << endl;
     turbulence.set
     (

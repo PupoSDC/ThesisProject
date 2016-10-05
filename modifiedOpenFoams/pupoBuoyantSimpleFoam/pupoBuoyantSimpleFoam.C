@@ -74,9 +74,8 @@ int main(int argc, char *argv[])
 
         Info<< "ExecutionTime = " << runTime.elapsedCpuTime() << " s"  << "  ClockTime = " << runTime.elapsedClockTime() << " s"  << endl;
 
-        Info<< "Inflow      : "   << -1.0* gSum(phi.boundaryField()[inlet])   <<" [kg/s]" << endl;
-        Info<< "Outflow     : "   <<       gSum(phi.boundaryField()[outlet])  <<" [kg/s]" <<  endl;
-
+        Info<< "Inflow      : "   << -1.0* gSum( phi.boundaryField()[inlet]  )   <<" [kg/s]" << endl;
+        Info<< "Outflow     : "   <<       gSum( phi.boundaryField()[outlet] )  <<" [kg/s]" <<  endl;
         Info<< "EnergyInflow  : " << -1.0* gSum( phi.boundaryField()[inlet]  * ( thermo.he().boundaryField()[inlet]  +  0.5*magSqr(U.boundaryField()[inlet])  ) )   <<" [W]" <<  endl;
         Info<< "EnergyOutflow : " <<       gSum( phi.boundaryField()[outlet] * ( thermo.he().boundaryField()[outlet] +  0.5*magSqr(U.boundaryField()[outlet]) ) )   <<" [W]" <<  endl;   
         Info<< "EnergyBalance : " <<       gSum( phi.boundaryField()[outlet] * ( thermo.he().boundaryField()[outlet] +  0.5*magSqr(U.boundaryField()[outlet]) ) ) 

@@ -24,6 +24,10 @@ Solver for the solid domain only
 
 Solver for the fluid domain only
 
+## pupoBuoyantPimpleFoam
+
+Solver for the fluid domain only, time dependent
+
 ## pupoCHTFoam
 
 CHT solver

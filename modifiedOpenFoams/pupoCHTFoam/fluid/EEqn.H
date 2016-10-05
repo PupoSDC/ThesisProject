@@ -26,6 +26,4 @@
 
     thermo.correct();
     rad.correct();
-    snGradRho = fvc::snGrad(rho);
-
 }

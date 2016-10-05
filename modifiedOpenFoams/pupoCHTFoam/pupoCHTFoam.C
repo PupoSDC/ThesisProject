@@ -59,7 +59,7 @@ int main(int argc, char *argv[])
 fvMesh& mesh = fluidRegions[0];
 
     label inlet;
-    label outlet;
+    label outlet; 
 
     while (runTime.loop())
     {
@@ -77,21 +77,21 @@ fvMesh& mesh = fluidRegions[0];
 
             Info<< "ExecutionTime = " << runTime.elapsedCpuTime() << " s"  << "  ClockTime = " << runTime.elapsedClockTime() << " s"  << endl;
 
-            Info<<  fluidRegions[i].name() <<"  Inflow      : "   << -1.0* sum( phi.boundaryField()[inlet])   <<" [kg/s]" << endl;
-            Info<<  fluidRegions[i].name() <<"  Outflow     : "   <<       sum( phi.boundaryField()[outlet])  <<" [kg/s]" <<  endl;
-            Info<<  fluidRegions[i].name() <<"  EnergyInflow  : " << -1.0* sum( phi.boundaryField()[inlet]  * ( thermo.he().boundaryField()[inlet]  + 0.5*magSqr(U.boundaryField()[inlet])  ) )   <<" [W]"  <<  endl;
-            Info<<  fluidRegions[i].name() <<"  EnergyOutflow : " <<       sum( phi.boundaryField()[outlet] * ( thermo.he().boundaryField()[outlet] + 0.5*magSqr(U.boundaryField()[outlet]) ) )   <<" [W]"  <<  endl;   
-            Info<<  fluidRegions[i].name() <<"  EnergyBalance : " <<       sum( phi.boundaryField()[outlet] * ( thermo.he().boundaryField()[outlet] + 0.5*magSqr(U.boundaryField()[outlet]) ) ) 
-                                                                     +1.0* sum( phi.boundaryField()[inlet]  * ( thermo.he().boundaryField()[inlet]  + 0.5*magSqr(U.boundaryField()[inlet])  ) )   <<" [W]"  <<  endl;
+            Info <<  fluidRegions[i].name() <<" Inflow      : "   << -1.0* gSum( phi.boundaryField()[inlet]  )   <<" [kg/s]" << endl;
+            Info <<  fluidRegions[i].name() <<" Outflow     : "   <<       gSum( phi.boundaryField()[outlet] )  <<" [kg/s]" <<  endl;
+            Info <<  fluidRegions[i].name() <<" EnergyInflow  : " << -1.0* gSum( phi.boundaryField()[inlet]  * ( thermo.he().boundaryField()[inlet]  +  0.5*magSqr(U.boundaryField()[inlet])  ) )   <<" [W]" <<  endl;
+            Info <<  fluidRegions[i].name() <<" EnergyOutflow : " <<       gSum( phi.boundaryField()[outlet] * ( thermo.he().boundaryField()[outlet] +  0.5*magSqr(U.boundaryField()[outlet]) ) )   <<" [W]" <<  endl;   
+            Info <<  fluidRegions[i].name() <<" EnergyBalance : " <<       gSum( phi.boundaryField()[outlet] * ( thermo.he().boundaryField()[outlet] +  0.5*magSqr(U.boundaryField()[outlet]) ) ) 
+                                                                     +1.0* gSum( phi.boundaryField()[inlet]  * ( thermo.he().boundaryField()[inlet]  +  0.5*magSqr(U.boundaryField()[inlet])  ) )   <<" [W]" <<  endl;
+                                                         
+            Info<<  fluidRegions[i].name() <<"  rho max/avg/min : " << gMax(thermo.rho())    << " " << gAverage(thermo.rho())    << " " << gMin(thermo.rho())   << endl;
+            Info<<  fluidRegions[i].name() <<"  T   max/avg/min : " << gMax(thermo.T())      << " " << gAverage(thermo.T())      << " " << gMin(thermo.T())     << endl;
+            Info<<  fluidRegions[i].name() <<"  P   max/avg/min : " << gMax(thermo.p())      << " " << gAverage(thermo.p())      << " " << gMin(thermo.p())     << endl;
+            Info<<  fluidRegions[i].name() <<"  Prg max/avg/min : " << gMax(p_rgh)           << " " << gAverage(p_rgh)           << " " << gMin(p_rgh)          << endl;
+            Info<<  fluidRegions[i].name() <<"  U   max/avg/min : " << gMax(U).component(2)  << " " << gAverage(U).component(2)  << " " << gMin(U).component(2) << endl;
 
-            Info<<  fluidRegions[i].name() <<"  rho max/avg/min : " << gMax(thermo.rho()) << " " << gAverage(thermo.rho()) << " " << gMin(thermo.rho()) << endl;
-            Info<<  fluidRegions[i].name() <<"  T   max/avg/min : " << gMax(thermo.T())   << " " << gAverage(thermo.T())   << " " << gMin(thermo.T())   << endl;
-            Info<<  fluidRegions[i].name() <<"  P   max/avg/min : " << gMax(thermo.p())   << " " << gAverage(thermo.p())   << " " << gMin(thermo.p())   << endl;
-            Info<<  fluidRegions[i].name() <<"  Prg max/avg/min : " << gMax(p_rgh)        << " " << gAverage(p_rgh)        << " " << gMin(p_rgh)        << endl;
-            Info<<  fluidRegions[i].name() <<"  U   max/avg/min : " << max(U.component(2)).value() << " " <<  average(U.component(2)).value() << " " <<  min(U.component(2)).value() << endl;
-
-            Info<<  fluidRegions[i].name() <<"  K average:  " << average(thermo.kappa()).value()  << endl;
-            Info<<  fluidRegions[i].name() <<"  nu average: " << average(thermo.nu()).value()     << endl;  
+            //Info<<  fluidRegions[i].name() <<"  K average:  " << gAverage(thermo.kappa())  << endl;
+            //Info<<  fluidRegions[i].name() <<"  nu average: " << gAverage(thermo.nu())     << endl;  
         }
 
         forAll(solidRegions, i)
