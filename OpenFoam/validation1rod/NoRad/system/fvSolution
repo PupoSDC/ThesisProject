@@ -22,7 +22,7 @@ solvers
     {
         solver           GAMG;
         tolerance        1e-6;
-        relTol           0.001;
+        relTol           1e-3;
 
         smoother         DICGaussSeidel;
 
@@ -37,7 +37,7 @@ solvers
         solver          PBiCG;
         preconditioner  DILU;
         tolerance       1e-8;
-        relTol          0.001;
+        relTol          1e-3;
     }
 
 }
@@ -45,7 +45,6 @@ solvers
 SIMPLE
 {
     nNonOrthogonalCorrectors   0;
-    consistent                 yes;
 
     residualControl
     {
@@ -59,13 +58,15 @@ relaxationFactors
 {
     fields
     {
-        //rho             1.0;
-        //p_rgh           1;
+        rho             1.0;
+        U               1.0; 
+        h               1.0;
+        p_rgh           0.8;
     }
     equations
     {
-        U               0.4;
-        ".*"            0.9;
+        U               0.6;
+        h               0.9;
     }
 }
 

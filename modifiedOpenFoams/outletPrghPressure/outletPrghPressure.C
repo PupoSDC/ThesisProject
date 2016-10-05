@@ -128,17 +128,16 @@ void Foam::outletPrghPressure::updateCoeffs()
         return;
     }
 
-    const scalarField& snGradRhop =
-        patch().lookupPatchField<volScalarField, scalar>("rho").snGrad();
+    const fvPatchField<scalar>& rhop =
+        patch().lookupPatchField<volScalarField, scalar>("rho"); 
 
     const scalarField& ghfp =
         patch().lookupPatchField<surfaceScalarField, scalar>("ghf");
 
-    gradient() = - 1.0 * mag(snGradRhop) * ghfp;
+    gradient() =  -1.0 * rhop.snGrad() * ghfp; 
 
-    Info << "sngrad(rho) : " << gMax(snGradRhop) << " " << gAverage(snGradRhop) << " " << gMin(snGradRhop) << endl;
+    Info << "sngrad(rho) : " << gMax(rhop.snGrad()) << " " << gAverage(rhop.snGrad()) << " " << gMin(rhop.snGrad()) <<endl;
 }
-
 
 void Foam::outletPrghPressure::write(Ostream& os) const
 {
@@ -156,6 +155,5 @@ namespace Foam
         outletPrghPressure
     );
 }
-
 
 // ************************************************************************* //

@@ -29,7 +29,7 @@ boundaryField
    {
         type            radiatingWall;
         kappaMethod     fluidThermo;
-        q               uniform 3636; //264;
+        q               uniform 264; //264;
         value           uniform 293.7;
         Tinf            uniform 293.7; 
         Emissivity      uniform 0.96;

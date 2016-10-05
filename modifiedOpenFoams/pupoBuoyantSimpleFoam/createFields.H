@@ -11,7 +11,7 @@ dimensionedScalar RperfectGas ("RperfectGas",dimensionSet(0,2,-2,-1,0,0,0),scala
 #include "readhRef.H"
 #include "gh.H"
 
-thermo.p()  = thermo.p() * Foam::exp( gh / RperfectGas / thermo.T() ); 
+thermo.p() = thermo.p() * Foam::exp( gh / RperfectGas / thermo.T() ); 
 thermo.correct();
 
 volScalarField& p = thermo.p();
@@ -34,7 +34,6 @@ surfaceScalarField phi
     linearInterpolate(rho*U) & mesh.Sf()
 );
 
-
 autoPtr<compressible::turbulenceModel> turbulence
 (
     compressible::turbulenceModel::New(rho,U,phi,thermo)
@@ -43,10 +42,8 @@ autoPtr<compressible::turbulenceModel> turbulence
 volScalarField p_rgh
 (
     IOobject("p_rgh",runTime.timeName(),mesh,IOobject::MUST_READ,IOobject::AUTO_WRITE),
-    mesh
+    p - rho*gh
 );
-
-p_rgh = p - rho*gh;
 
 label pRefCell = 0;
 scalar pRefValue = 0.0;

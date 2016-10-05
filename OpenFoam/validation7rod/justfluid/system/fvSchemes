@@ -17,9 +17,9 @@ FoamFile
 
 ddtSchemes           { default steadyState; }
 
-gradSchemes          { default Gauss linear; }
+gradSchemes          { default Gauss upwind phi;} //linear; }
 
-interpolationSchemes { default linearUpwind phi Gauss linear; } 
+interpolationSchemes { default linearUpwind phi Gauss upwind phi; } 
 
 snGradSchemes        { default corrected; }
 

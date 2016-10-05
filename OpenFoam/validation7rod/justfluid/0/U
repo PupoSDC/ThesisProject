@@ -21,7 +21,7 @@ internalField   uniform (0 0 0);
 boundaryField
 {   
    Inlet         { type pressureInletOutletVelocity;             value uniform (0 0 0); }
-   Outlet        { type inletOutlet; inletValue uniform (0 0 0); value uniform (0 0 0); }
+   Outlet        { type zeroGradient; }
    "fluid_to_.*" { type noSlip; }
    Outterwall    { type noSlip; }
    "symmetry.*"  { type symmetryPlane; }

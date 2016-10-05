@@ -23,14 +23,14 @@ plot "< cat log | grep 'rho max/avg/min : ' | cut -d' ' -f4" title "RHOmax" with
      "< cat log | grep 'rho max/avg/min : ' | cut -d' ' -f6" title "RHOmin" with lines
 
 # --- GRAPH C
-set origin 0.0,0.75
-set title "Pressure"
-set ylabel 'Pressure [Pa]'
-set yrange [101310:101350]
-set xlabel 'Iteration'
-plot "< cat log | grep 'P   max/avg/min : ' | cut -d' ' -f6" title "Pmax" with lines,\
-     "< cat log | grep 'P   max/avg/min : ' | cut -d' ' -f7" title "Pavg" with lines,\
-     "< cat log | grep 'P   max/avg/min : ' | cut -d' ' -f8" title "Pmin" with lines
+#set origin 0.0,0.75
+#set title "Density surface normal gradient"
+#set ylabel 'grad(rho) [kg m^4]'
+#set yrange [-0.0002:0.0002]
+#set xlabel 'Iteration'
+#plot "< cat log | grep 'sngrad(rho) : ' | cut -d' ' -f3" title "Pmax" with lines,\
+#     "< cat log | grep 'sngrad(rho) : ' | cut -d' ' -f4" title "Pavg" with lines,\
+#     "< cat log | grep 'sngrad(rho) : ' | cut -d' ' -f5" title "Pmin" with lines
 
 # --- GRAPH D
 set origin 0.5,0.75
@@ -75,7 +75,7 @@ plot "< cat log | grep 'U   max/avg/min :'   | cut -d' ' -f6 " title  'Umax' wit
     
 # --- GRAPH H
 set origin 0.5,0.25
-set yrange [*:*]
+set yrange [0.000001:1]
 set logscale y
 set title "Residuals"
 set ylabel 'Residual'
