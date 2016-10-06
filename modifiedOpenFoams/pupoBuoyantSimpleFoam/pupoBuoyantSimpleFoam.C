@@ -47,6 +47,10 @@ int main(int argc, char *argv[])
     #include "createTime.H"
     #include "createMesh.H"
     #include "createControl.H"
+
+    label inlet  = mesh.boundaryMesh().findPatchID("Inlet"); 
+    label outlet = mesh.boundaryMesh().findPatchID("Outlet");
+
     #include "createFields.H"
     #include "createFvOptions.H"
     #include "initContinuityErrs.H"
@@ -86,6 +90,7 @@ int main(int argc, char *argv[])
         Info<< "P   max/avg/min : " << gMax(thermo.p())     << " " << gAverage(thermo.p())      << " " << gMin(thermo.p())     << endl;
         Info<< "Prg max/avg/min : " << gMax(p_rgh)          << " " << gAverage(p_rgh)           << " " << gMin(p_rgh)          << endl;
         Info<< "U   max/avg/min : " << gMax(U).component(2) << " " << gAverage(U).component(2)  << " " << gMin(U).component(2) << endl;
+        Info<< "Prg max-min : "  << gMax(p_rgh)  -  gMin(p_rgh) << endl;      
         Info<< " " << endl;
     }
 

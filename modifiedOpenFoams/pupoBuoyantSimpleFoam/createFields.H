@@ -55,9 +55,6 @@ mesh.setFluxRequired(p_rgh.name());
 
 #include "createMRF.H"
 #include "createRadiationModel.H"
-
-label inlet  = mesh.boundaryMesh().findPatchID("Inlet"); 
-label outlet = mesh.boundaryMesh().findPatchID("Outlet");
     
 Info<< "rho max/avg/min : " << gMax(thermo.rho())   << " " << gAverage(thermo.rho())    << " " << gMin(thermo.rho())   << endl;
 Info<< "T   max/avg/min : " << gMax(thermo.T())     << " " << gAverage(thermo.T())      << " " << gMin(thermo.T())     << endl;

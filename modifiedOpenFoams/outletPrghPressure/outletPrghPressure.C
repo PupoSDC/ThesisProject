@@ -48,19 +48,26 @@ Foam::outletPrghPressure::outletPrghPressure
 :
     fixedGradientFvPatchScalarField(p, iF)
 {
-    if (dict.found("value") && dict.found("gradient"))
-    {
-        fvPatchField<scalar>::operator=
-        (
-            scalarField("value", dict, p.size())
-        );
-        gradient() = scalarField("gradient", dict, p.size());
-    }
-    else
-    {
-        fvPatchField<scalar>::operator=(patchInternalField());
-        gradient() = 0.0;
-    }
+
+    const fvPatchField<scalar>& rhop =
+        patch().lookupPatchField<volScalarField, scalar>("rho"); 
+
+    const scalarField& ghfp =
+        patch().lookupPatchField<surfaceScalarField, scalar>("ghf");
+
+    const fvPatchField<scalar>& pp =
+        patch().lookupPatchField<volScalarField, scalar>("p");
+
+    const fvPatchField<scalar>& ghp =
+        patch().lookupPatchField<volScalarField, scalar>("gh");
+
+    fvPatchField<scalar>::operator=( 
+          pp.patchInternalField() 
+        - rhop.patchInternalField() * ghp.patchInternalField()
+    );
+
+    gradient() =  -1.0 * rhop.snGrad() * ghfp; 
+   
 }
 
 
