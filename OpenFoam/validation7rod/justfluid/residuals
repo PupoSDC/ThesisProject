@@ -22,16 +22,6 @@ plot "< cat log | grep 'rho max/avg/min : ' | cut -d' ' -f4" title "RHOmax" with
      "< cat log | grep 'rho max/avg/min : ' | cut -d' ' -f5" title "RHOavg" with lines,\
      "< cat log | grep 'rho max/avg/min : ' | cut -d' ' -f6" title "RHOmin" with lines
 
-# --- GRAPH C
-set origin 0.0,0.75
-set title "Density surface normal gradient"
-set ylabel 'grad(rho) [kg m^4]'
-set yrange [-0.0002:0.0002]
-set xlabel 'Iteration'
-plot "< cat log | grep 'sngrad(rho) : ' | cut -d' ' -f3" title "Pmax" with lines,\
-     "< cat log | grep 'sngrad(rho) : ' | cut -d' ' -f4" title "Pavg" with lines,\
-     "< cat log | grep 'sngrad(rho) : ' | cut -d' ' -f5" title "Pmin" with lines
-
 # --- GRAPH D
 set origin 0.5,0.75
 set title "Hidrostatic Pressure"
@@ -57,11 +47,11 @@ set title "Energy flow "
 set ylabel 'Power [W]'
 set yrange [*:*]
 set xlabel 'Iteration'
-plot "< cat log | grep  'EnergyBalance : ' | cut -d' ' -f3 " using ($1*72) title  'Energy flow' with lines,\
-     264*1.5*0.0032*2*3.1415926 title "energy at wall"
-
-#plot "< cat log | grep 'EnergyInflow  : ' | cut -d' ' -f4 "  title  'Inflow' with lines,\
-#     "< cat log | grep 'EnergyOutflow : ' | cut -d' ' -f3 " title  'Outflow' with lines
+#plot "< cat log | grep  'EnergyBalance : ' | cut -d' ' -f3 " using ($1*12) title  'Energy flow' with lines,\
+#     100*1*0.006*2*3.1415926*7 title "energy at wall"
+#
+plot "< cat log | grep 'EnergyInflow  : ' | cut -d' ' -f4 "  title  'Inflow' with lines,\
+     "< cat log | grep 'EnergyOutflow : ' | cut -d' ' -f3 " title  'Outflow' with lines
 
 # --- GRAPH G
 set origin 0.0,0.25

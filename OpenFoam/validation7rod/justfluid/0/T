@@ -16,20 +16,20 @@ FoamFile
 
 dimensions      [0 0 0 1 0 0 0];
 
-internalField   uniform 293.7;
+internalField   uniform 300;
 
 boundaryField
 {   
 
-   Inlet         { type totalTemperature; T0 uniform 293.7; gamma 1.4; }
-   Outlet        { type inletOutlet; inletValue uniform 293.7; value uniform 293.7; }
-   Outterwall    { type zeroGradient; }
+   Inlet         { type totalTemperature; T0 uniform 300; gamma 1.4; }
+   Outlet        { type inletOutlet; inletValue uniform 300; value uniform 300; }
+   ".*wall"      { type zeroGradient; }
 
    "fluid_to_.*"
    {
         type             externalWallHeatFluxTemperature;
         kappaMethod      fluidThermo;
-        q                uniform 264; 
+        q                uniform 100; 
         //Qr               Qr;
         value            uniform 300;
     }

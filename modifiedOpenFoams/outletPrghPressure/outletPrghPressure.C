@@ -48,26 +48,35 @@ Foam::outletPrghPressure::outletPrghPressure
 :
     fixedGradientFvPatchScalarField(p, iF)
 {
+    if (dict.found("value") && dict.found("gradient"))
+    {
+         fvPatchField<scalar>::operator=
+         (
+             scalarField("value", dict, p.size())
+         );
+         gradient() = scalarField("gradient", dict, p.size());
+    }
+    else
+    {
+        const fvPatchField<scalar>& rhop =
+            patch().lookupPatchField<volScalarField, scalar>("rho"); 
 
-    const fvPatchField<scalar>& rhop =
-        patch().lookupPatchField<volScalarField, scalar>("rho"); 
+        const scalarField& ghfp =
+            patch().lookupPatchField<surfaceScalarField, scalar>("ghf");
 
-    const scalarField& ghfp =
-        patch().lookupPatchField<surfaceScalarField, scalar>("ghf");
+        const fvPatchField<scalar>& pp =
+            patch().lookupPatchField<volScalarField, scalar>("p");
 
-    const fvPatchField<scalar>& pp =
-        patch().lookupPatchField<volScalarField, scalar>("p");
+        const fvPatchField<scalar>& ghp =
+            patch().lookupPatchField<volScalarField, scalar>("gh");
 
-    const fvPatchField<scalar>& ghp =
-        patch().lookupPatchField<volScalarField, scalar>("gh");
+        fvPatchField<scalar>::operator=( 
+              pp.patchInternalField() 
+            - rhop.patchInternalField() * ghp.patchInternalField()
+        );
 
-    fvPatchField<scalar>::operator=( 
-          pp.patchInternalField() 
-        - rhop.patchInternalField() * ghp.patchInternalField()
-    );
-
-    gradient() =  -1.0 * rhop.snGrad() * ghfp; 
-   
+        gradient() =  -1.0 * rhop.snGrad() * ghfp; 
+    }
 }
 
 
@@ -138,12 +147,16 @@ void Foam::outletPrghPressure::updateCoeffs()
     const fvPatchField<scalar>& rhop =
         patch().lookupPatchField<volScalarField, scalar>("rho"); 
 
+    const fvPatchField<scalar>& psip =
+        patch().lookupPatchField<volScalarField, scalar>("psi"); 
+
+
     const scalarField& ghfp =
         patch().lookupPatchField<surfaceScalarField, scalar>("ghf");
 
-    gradient() =  -1.0 * rhop.snGrad() * ghfp; 
+    //gradient() =  -1.0 * rhop.snGrad() * ghfp; 
 
-    Info << "sngrad(rho) : " << gMax(rhop.snGrad()) << " " << gAverage(rhop.snGrad()) << " " << gMin(rhop.snGrad()) <<endl;
+    gradient() = -1.0 * ghfp * psip * rhop * -9.81  ;
 }
 
 void Foam::outletPrghPressure::write(Ostream& os) const

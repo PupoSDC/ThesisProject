@@ -28,11 +28,18 @@ volScalarField rho
     thermo.rho()
 );
 
+volScalarField psi
+(
+    IOobject("psi",runTime.timeName(),mesh,IOobject::READ_IF_PRESENT,IOobject::AUTO_WRITE),
+    thermo.psi()
+);
+
 surfaceScalarField phi
 (
     IOobject("phi",runTime.timeName(),mesh,IOobject::READ_IF_PRESENT,IOobject::AUTO_WRITE),
     linearInterpolate(rho*U) & mesh.Sf()
 );
+
 
 autoPtr<compressible::turbulenceModel> turbulence
 (

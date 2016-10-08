@@ -1,5 +1,6 @@
 {
     rho = thermo.rho();
+    psi = thermo.psi();
     rho.relax();
 
     volScalarField rAU("rAU", 1.0/UEqn.A());
@@ -54,5 +55,6 @@
     p = p_rgh + rho*gh;
 
     rho = thermo.rho();
+    psi = thermo.psi();
     rho.relax();
 }
