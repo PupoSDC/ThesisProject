@@ -61,21 +61,21 @@ Foam::outletPrghPressure::outletPrghPressure
         const fvPatchField<scalar>& rhop =
             patch().lookupPatchField<volScalarField, scalar>("rho"); 
 
+        const fvPatchField<scalar>& psip =
+            patch().lookupPatchField<volScalarField, scalar>("psi"); 
+
         const scalarField& ghfp =
-            patch().lookupPatchField<surfaceScalarField, scalar>("ghf");
+            patch().lookupPatchField<surfaceScalarField, scalar>("ghf");   
 
         const fvPatchField<scalar>& pp =
             patch().lookupPatchField<volScalarField, scalar>("p");
 
-        const fvPatchField<scalar>& ghp =
-            patch().lookupPatchField<volScalarField, scalar>("gh");
-
         fvPatchField<scalar>::operator=( 
-              pp.patchInternalField() 
-            - rhop.patchInternalField() * ghp.patchInternalField()
+            pp.patchInternalField() - rhop * ghfp
         );
 
-        gradient() =  -1.0 * rhop.snGrad() * ghfp; 
+        //gradient() = -1.0 * rhop.snGrad() * ghfp;
+        gradient() = -1.0 * ghfp * psip * rhop * -9.81 ; 
     }
 }
 
@@ -150,13 +150,12 @@ void Foam::outletPrghPressure::updateCoeffs()
     const fvPatchField<scalar>& psip =
         patch().lookupPatchField<volScalarField, scalar>("psi"); 
 
-
     const scalarField& ghfp =
         patch().lookupPatchField<surfaceScalarField, scalar>("ghf");
 
     //gradient() =  -1.0 * rhop.snGrad() * ghfp; 
 
-    gradient() = -1.0 * ghfp * psip * rhop * -9.81  ;
+    gradient() = -1.0 * ghfp * psip * rhop * -9.81 ;
 }
 
 void Foam::outletPrghPressure::write(Ostream& os) const

@@ -3,14 +3,14 @@
     rhoThermo& thermo = thermoFluid[i];
     thermo.validate(args.executable(), "h", "e");
 
-    volScalarField& rho                = rhoFluid[i];
-    volVectorField& U                  = UFluid[i];
+    volScalarField&     rho            = rhoFluid[i];
+    volVectorField&     U              = UFluid[i];
     surfaceScalarField& phi            = phiFluid[i];
+    volScalarField      psi            = psiFluid[i];
 
     compressible::turbulenceModel& turb = turbulence[i];
 
     volScalarField& p = thermo.p();
-    const volScalarField& psi = thermo.psi();
 
     IOMRFZoneList& MRF = MRFfluid[i];
     fv::options& fvOptions = fluidFvOptions[i];

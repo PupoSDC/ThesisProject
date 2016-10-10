@@ -1,5 +1,5 @@
 reset
-set term x11 1 noraise
+set term wxt 1 noraise
 set multiplot layout 4,2 rowsfirst
 
 # --- GRAPH A
@@ -23,14 +23,14 @@ plot "< cat log | grep 'rho max/avg/min : ' | cut -d' ' -f4" title "RHOmax" with
      "< cat log | grep 'rho max/avg/min : ' | cut -d' ' -f6" title "RHOmin" with lines
 
 # --- GRAPH C
-#set origin 0.0,0.75
-#set title "Density surface normal gradient"
-#set ylabel 'grad(rho) [kg m^4]'
-#set yrange [-0.0002:0.0002]
-#set xlabel 'Iteration'
-#plot "< cat log | grep 'sngrad(rho) : ' | cut -d' ' -f3" title "Pmax" with lines,\
-#     "< cat log | grep 'sngrad(rho) : ' | cut -d' ' -f4" title "Pavg" with lines,\
-#     "< cat log | grep 'sngrad(rho) : ' | cut -d' ' -f5" title "Pmin" with lines
+set origin 0.0,0.75
+set title "Pressure"
+set ylabel 'Pressure [Pa]'
+set yrange [101310:101350]
+set xlabel 'Iteration'
+plot "< cat log | grep 'P   max/avg/min : ' | cut -d' ' -f6" title "Pmax" with lines,\
+     "< cat log | grep 'P   max/avg/min : ' | cut -d' ' -f7" title "Pavg" with lines,\
+     "< cat log | grep 'P   max/avg/min : ' | cut -d' ' -f8" title "Pmin" with lines
 
 # --- GRAPH D
 set origin 0.5,0.75
@@ -57,11 +57,8 @@ set title "Energy flow "
 set ylabel 'Power [W]'
 set yrange [*:*]
 set xlabel 'Iteration'
-plot "< cat log | grep  'EnergyBalance : ' | cut -d' ' -f3 " using ($1*72) title  'Energy flow' with lines,\
-     264*1.5*0.0032*2*3.1415926 title "energy at wall"
-
-#plot "< cat log | grep 'EnergyInflow  : ' | cut -d' ' -f4 "  title  'Inflow' with lines,\
-#     "< cat log | grep 'EnergyOutflow : ' | cut -d' ' -f3 " title  'Outflow' with lines
+plot "< cat log | grep 'EnergyInflow  : ' | cut -d' ' -f4 " title  'Inflow' with lines,\
+     "< cat log | grep 'EnergyOutflow : ' | cut -d' ' -f3 " title  'Outflow' with lines
 
 # --- GRAPH G
 set origin 0.0,0.25

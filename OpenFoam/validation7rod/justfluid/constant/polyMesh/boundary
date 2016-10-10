@@ -8,7 +8,7 @@
 FoamFile
 {
     version     2.0;
-    format      binary;
+    format      ascii;
     class       polyBoundaryMesh;
     location    "constant/polyMesh";
     object      boundary;
@@ -21,45 +21,45 @@ FoamFile
     {
         type            patch;
         nFaces          1800;
-        startFace       541346;
+        startFace       546528;
     }
     symmetryleft
     {
         type            symmetryPlane;
         inGroups        1(symmetryPlane);
-        nFaces          12100;
-        startFace       543146;
+        nFaces          12000;
+        startFace       548328;
     }
     symmetryrigt
     {
         type            symmetryPlane;
         inGroups        1(symmetryPlane);
-        nFaces          7900;
-        startFace       555246;
+        nFaces          8400;
+        startFace       560328;
     }
     Outlet
     {
         type            patch;
-        nFaces          1854;
-        startFace       563146;
+        nFaces          1872;
+        startFace       568728;
     }
     Inlet
     {
         type            patch;
-        nFaces          1854;
-        startFace       565000;
+        nFaces          1872;
+        startFace       570600;
     }
     fluid_to_cilcen
     {
         type            patch;
         nFaces          600;
-        startFace       566854;
+        startFace       572472;
     }
     fluid_to_ciltop
     {
         type            patch;
         nFaces          3600;
-        startFace       567454;
+        startFace       573072;
     }
 )
 

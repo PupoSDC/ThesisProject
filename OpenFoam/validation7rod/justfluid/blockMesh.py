@@ -97,16 +97,16 @@ def quadraticformula(a,b,c):
 pointlist, arclist, hexblocks, boundlist, mergepatches = ([] for i in range(5))
     
 r      = 6                        # Radius of cylinders
-R      = 254.5/2                  # Radius of outside cylinder
+R      = 54.5/2                   # Radius of outside cylinder
 d      = 1                        # Boundary layer minimum thickness for outside cylinder
 dg     = math.pi*30/180           # Degree of the mesh (45o)
 pepdis = 32.5/2                   # Distance between 2 cylinders
-l      = [1000,0]                 # Levels of the Mesh
-lf     = [[100],[1]]              # Mesh points and grading for the fluid mesh levels [50],[1]
-ls     = [[100],[1]]              # Mesh points and grading for the solid mesh levels
+l      = [1000,0]            # Levels of the Mesh
+lf     = [[100],[10]]        # Mesh points and grading for the fluid mesh levels [50],[1]
+ls     = [[100],[10]]         # Mesh points and grading for the solid mesh levels
 lpi    = 36                       # Number of mesh points per pi(180o)
-expf   = [12,2.85]                # Number of points in the mesh and their refinement [27,12] [12,2.85]    
-expo   = [40,0.05]                # Number of points in the mesh and their refinement (outer wall) [24,8.95] 
+expf   = [24,2.85]                # Number of points in the mesh and their refinement [27,12] [12,2.85]    
+expo   = [48,8.95]                # Number of points in the mesh and their refinement (outer wall) [24,8.95] 
 exps   = [5,0.1]                  # Number of points in the solid mesh and their refinement   
 
 #points for the center cylinder
@@ -132,10 +132,10 @@ s5 = [pepdis*3/2 , 0]
 #points for the outter wall
 o1 = [R,0]
 o2 = [ R *math.cos(dg),   R *math.sin(dg)]
-o3 = [ R *math.cos(dg/2),   R *math.sin(dg/2)]
+#o3 = [ R *math.cos(dg/2),   R *math.sin(dg/2)]
 h = quadraticformula(1+1/(math.tan(dg)**2),2*pepdis/math.tan(dg),pepdis**2-R**2)
 
-#o3 = [ math.sqrt( R ** 2 - h[0] ** 2) ,h[0]]
+o3 = [ math.sqrt( R ** 2 - h[0] ** 2) ,h[0]]
 
 print h
 
@@ -180,3 +180,8 @@ createboundary("fluid_to_ciltop",[[p1,p2],[p2,p3],[p3,p4],[p4,p5]],l,"patch")
 writeblockmeshdict(pointlist,hexblocks,arclist,boundlist,mergepatches)
 os.system("blockMesh")
 #os.system("checkMesh")
+
+#fluid_to_cilcen { type patch; faces ((0 3 33 30));}
+#fluid_to_ciltop { type patch; faces ((8 11 37 34)(11 17 39 37)(17 20 40 39)(20 22 41 40));}
+#cenunheatwall { type patch; faces ((4 7 3 0));}
+#topunheatwall { type patch; faces ((12 15 11 8)(15 19 17 11)(19 21 20 17)(21 23 22 20)); }

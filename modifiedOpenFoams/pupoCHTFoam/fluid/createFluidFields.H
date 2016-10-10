@@ -2,6 +2,7 @@
 PtrList<rhoThermo> thermoFluid(fluidRegions.size());
 PtrList<volScalarField> rhoFluid(fluidRegions.size());
 PtrList<volVectorField> UFluid(fluidRegions.size());
+PtrList<volScalarField> psiFluid(fluidRegions.size());
 PtrList<surfaceScalarField> phiFluid(fluidRegions.size());
 PtrList<surfaceScalarField> snGradRhoFluid(fluidRegions.size());
 PtrList<uniformDimensionedVectorField> gFluid(fluidRegions.size());
@@ -138,6 +139,26 @@ forAll(fluidRegions, i)
             fluidRegions[i]
         )
     );
+
+    Info<< "    Adding to psiFluid" << endl;
+    psiFluid.set
+    (
+        i,
+        new volScalarField
+        (
+            IOobject
+            (
+                "psi",
+                runTime.timeName(),
+                fluidRegions[i],
+                IOobject::READ_IF_PRESENT,
+                IOobject::AUTO_WRITE
+            ),
+            thermoFluid[i].psi()
+        )
+    );
+
+
 
     Info<< "    Adding to phiFluid" << endl;
     phiFluid.set

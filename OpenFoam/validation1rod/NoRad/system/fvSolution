@@ -44,7 +44,7 @@ solvers
 
 SIMPLE
 {
-    nNonOrthogonalCorrectors   1;
+    nNonOrthogonalCorrectors   0;
 
     residualControl
     {

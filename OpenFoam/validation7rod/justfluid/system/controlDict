@@ -24,7 +24,7 @@ startTime       0;
 
 stopAt          endTime;
 
-endTime         100000;
+endTime         800000;
 
 deltaT          1;
 
@@ -34,9 +34,9 @@ writeInterval   1000;
 
 purgeWrite      1;
 
-writeFormat     binary;
+writeFormat     ascii; //binary;
 
-writePrecision  8;
+writePrecision  16;
 
 writeCompression off;
 

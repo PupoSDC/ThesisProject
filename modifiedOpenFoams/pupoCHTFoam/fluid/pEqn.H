@@ -1,5 +1,6 @@
 {
     rho = thermo.rho();
+    psi = thermo.psi();
     rho = max(rho, rhoMin[i]);
     rho = min(rho, rhoMax[i]);
     rho.relax();
@@ -64,6 +65,7 @@
     #include "continuityErrs.H"
 
     rho = thermo.rho();
+    psi = thermo.psi();
     rho = max(rho, rhoMin[i]);
     rho = min(rho, rhoMax[i]);
     rho.relax();
