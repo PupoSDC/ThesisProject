@@ -1,7 +1,7 @@
 {
     volScalarField& he  = thermo.he();
     volScalarField& rho = thermo.rho();
-
+    
     fvScalarMatrix EEqn
     (
         fvm::div(phi, he) 

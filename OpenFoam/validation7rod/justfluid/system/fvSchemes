@@ -27,7 +27,7 @@ laplacianSchemes     { default Gauss linear  corrected; }
 
 divSchemes           
 { 
-    default bounded Gauss linearUpwind phi;
+    default bounded Gauss upwind; //linearUpwind phi;
     div(((rho*nuEff)*dev2(T(grad(U))))) Gauss linear;
 }
 

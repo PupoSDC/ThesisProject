@@ -8,7 +8,7 @@ boundaryField
 {
     Inlet           { type calculated; value uniform 101325; }
     Outlet          { type calculated; value uniform 101325; }
-    Outterwall      { type calculated; value uniform 101325; }
+    ".*wall"        { type calculated; value uniform 101325; }
     "fluid_to_.*"   { type calculated; value uniform 101325; }
     "symmetry.*"    { type symmetryPlane; }
 }
