@@ -49,8 +49,8 @@ set title "Mass flow"
 set ylabel 'Mass flow [kg/s]'
 set yrange [*:*]
 set xlabel 'Iteration'
-plot "< cat log | grep 'Inflow      : ' | cut -d' ' -f9" title  'Inflow' with lines,\
-     "< cat log | grep 'Outflow     : ' | cut -d' ' -f8" title  'Outflow' with lines
+plot "< cat log | grep 'Inflow      : ' | cut -d' ' -f10" title  'Inflow' with lines,\
+     "< cat log | grep 'Outflow     : ' | cut -d' ' -f9"  title  'Outflow' with lines
 
 # --- GRAPH F
 set origin 0.0,0.0
@@ -60,8 +60,6 @@ set yrange [*:*]
 set xlabel 'Iteration'
 plot "< cat log | grep  'EnergyBalance : ' | cut -d' ' -f4 " using ($1*72) title  'Energy flow' with lines,\
      264*1.5*0.0032*2*3.1415926 title "energy at wall"
-
-
 
 # --- GRAPH G
 set origin 0.0,0.25
