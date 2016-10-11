@@ -23,7 +23,7 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "radiatingWallFvPatchScalarField.H"
+#include "radiatingWall.H"
 #include "addToRunTimeSelectionTable.H"
 #include "fvPatchFieldMapper.H"
 #include "volFields.H"
@@ -37,7 +37,7 @@ namespace Foam
     const char*
     NamedEnum
     <
-        radiatingWallFvPatchScalarField::operationMode,
+        radiatingWall::operationMode,
         3
     >::names[] =
     {
@@ -50,15 +50,14 @@ namespace Foam
 
 const Foam::NamedEnum
 <
-    Foam::radiatingWallFvPatchScalarField::operationMode,
+    Foam::radiatingWall::operationMode,
     3
-> Foam::radiatingWallFvPatchScalarField::operationModeNames;
+> Foam::radiatingWall::operationModeNames;
 
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 
-Foam::radiatingWallFvPatchScalarField::
-radiatingWallFvPatchScalarField
+Foam::radiatingWall::radiatingWall
 (
     const fvPatch& p,
     const DimensionedField<scalar, volMesh>& iF
@@ -84,10 +83,9 @@ radiatingWallFvPatchScalarField
 }
 
 
-Foam::radiatingWallFvPatchScalarField::
-radiatingWallFvPatchScalarField
+Foam::radiatingWall::radiatingWall
 (
-    const radiatingWallFvPatchScalarField& ptf,
+    const radiatingWall& ptf,
     const fvPatch& p,
     const DimensionedField<scalar, volMesh>& iF,
     const fvPatchFieldMapper& mapper
@@ -109,8 +107,7 @@ radiatingWallFvPatchScalarField
 {}
 
 
-Foam::radiatingWallFvPatchScalarField::
-radiatingWallFvPatchScalarField
+Foam::radiatingWall::radiatingWall
 (
     const fvPatch& p,
     const DimensionedField<scalar, volMesh>& iF,
@@ -189,10 +186,9 @@ radiatingWallFvPatchScalarField
 }
 
 
-Foam::radiatingWallFvPatchScalarField::
-radiatingWallFvPatchScalarField
+Foam::radiatingWall::radiatingWall
 (
-    const radiatingWallFvPatchScalarField& tppsf
+    const radiatingWall& tppsf
 )
 :
     mixedFvPatchScalarField(tppsf),
@@ -210,10 +206,9 @@ radiatingWallFvPatchScalarField
 {}
 
 
-Foam::radiatingWallFvPatchScalarField::
-radiatingWallFvPatchScalarField
+Foam::radiatingWall::radiatingWall
 (
-    const radiatingWallFvPatchScalarField& tppsf,
+    const radiatingWall& tppsf,
     const DimensionedField<scalar, volMesh>& iF
 )
 :
@@ -234,7 +229,7 @@ radiatingWallFvPatchScalarField
 
 // * * * * * * * * * * * * * * * Member Functions  * * * * * * * * * * * * * //
 
-void Foam::radiatingWallFvPatchScalarField::autoMap
+void Foam::radiatingWall::autoMap
 (
     const fvPatchFieldMapper& m
 )
@@ -247,7 +242,7 @@ void Foam::radiatingWallFvPatchScalarField::autoMap
 }
 
 
-void Foam::radiatingWallFvPatchScalarField::rmap
+void Foam::radiatingWall::rmap
 (
     const fvPatchScalarField& ptf,
     const labelList& addr
@@ -255,8 +250,8 @@ void Foam::radiatingWallFvPatchScalarField::rmap
 {
     mixedFvPatchScalarField::rmap(ptf, addr);
 
-    const radiatingWallFvPatchScalarField& tiptf =
-        refCast<const radiatingWallFvPatchScalarField>(ptf);
+    const radiatingWall& tiptf =
+        refCast<const radiatingWall>(ptf);
 
     q_.rmap(tiptf.q_, addr);
     h_.rmap(tiptf.h_, addr);
@@ -265,7 +260,7 @@ void Foam::radiatingWallFvPatchScalarField::rmap
 }
 
 
-void Foam::radiatingWallFvPatchScalarField::updateCoeffs()
+void Foam::radiatingWall::updateCoeffs()
 {
     if (updated())
     {
@@ -331,7 +326,7 @@ void Foam::radiatingWallFvPatchScalarField::updateCoeffs()
         {
             FatalErrorIn
             (
-                "radiatingWallFvPatchScalarField"
+                "radiatingWall"
                 "::updateCoeffs()"
             )   << "Illegal heat flux mode " << operationModeNames[mode_]
                 << exit(FatalError);
@@ -356,7 +351,7 @@ void Foam::radiatingWallFvPatchScalarField::updateCoeffs()
 }
 
 
-void Foam::radiatingWallFvPatchScalarField::write
+void Foam::radiatingWall::write
 (
     Ostream& os
 ) const
@@ -396,7 +391,7 @@ void Foam::radiatingWallFvPatchScalarField::write
         {
             FatalErrorIn
             (
-                "void radiatingWallFvPatchScalarField::write"
+                "void radiatingWall::write"
                 "("
                     "Ostream& os"
                 ") const"
@@ -414,7 +409,7 @@ namespace Foam
     makePatchTypeField
     (
         fvPatchScalarField,
-        radiatingWallFvPatchScalarField
+        radiatingWall
     );
 }
 

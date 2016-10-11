@@ -38,8 +38,8 @@ SourceFiles
     outletPrghPressure.C
 \*---------------------------------------------------------------------------*/
 
-#ifndef outletPrghPressures_H
-#define outletPrghPressures_H
+#ifndef outletPrghPressure_H
+#define outletPrghPressure_H
 
 #include "fvPatchFields.H"
 #include "fixedGradientFvPatchFields.H"

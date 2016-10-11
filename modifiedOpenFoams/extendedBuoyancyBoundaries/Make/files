@@ -1,0 +1,5 @@
+totalPressureVelocity.C
+outletPrghPressure.C 
+radiatingWall.C
+
+LIB = $(FOAM_USER_LIBBIN)/extendedBuoyancyBoundaries

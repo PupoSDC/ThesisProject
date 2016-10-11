@@ -22,7 +22,7 @@ License
     along with OpenFOAM.  If not, see <http://www.gnu.org/licenses/>.
 
 Class
-    Foam::radiatingWallFvPatchScalarField
+    Foam::radiatingWall
 
 Group
     grpThermoBoundaryConditions grpWallBoundaryConditions
@@ -87,7 +87,7 @@ Note
   - kappa entries can be: fluidThermo, solidThermo or lookup
 
 SourceFiles
-    radiatingWallFvPatchScalarField.C
+    radiatingWall.C
 
 \*---------------------------------------------------------------------------*/
 
@@ -104,10 +104,10 @@ namespace Foam
 {
 
 /*---------------------------------------------------------------------------*\
-      Class radiatingWallFvPatchScalarField Declaration
+      Class radiatingWall Declaration
 \*---------------------------------------------------------------------------*/
 
-class radiatingWallFvPatchScalarField
+class radiatingWall
 :
     public mixedFvPatchScalarField,
     public temperatureCoupledBase
@@ -175,14 +175,14 @@ public:
     // Constructors
 
         //- Construct from patch and internal field
-        radiatingWallFvPatchScalarField
+        radiatingWall
         (
             const fvPatch&,
             const DimensionedField<scalar, volMesh>&
         );
 
         //- Construct from patch, internal field and dictionary
-        radiatingWallFvPatchScalarField
+        radiatingWall
         (
             const fvPatch&,
             const DimensionedField<scalar, volMesh>&,
@@ -190,20 +190,20 @@ public:
         );
 
         //- Construct by mapping given
-        // radiatingWallFvPatchScalarField
+        // radiatingWall
         // onto a new patch
-        radiatingWallFvPatchScalarField
+        radiatingWall
         (
-            const radiatingWallFvPatchScalarField&,
+            const radiatingWall&,
             const fvPatch&,
             const DimensionedField<scalar, volMesh>&,
             const fvPatchFieldMapper&
         );
 
         //- Construct as copy
-        radiatingWallFvPatchScalarField
+        radiatingWall
         (
-            const radiatingWallFvPatchScalarField&
+            const radiatingWall&
         );
 
         //- Construct and return a clone
@@ -211,14 +211,14 @@ public:
         {
             return tmp<fvPatchScalarField>
             (
-                new radiatingWallFvPatchScalarField(*this)
+                new radiatingWall(*this)
             );
         }
 
         //- Construct as copy setting internal field reference
-        radiatingWallFvPatchScalarField
+        radiatingWall
         (
-            const radiatingWallFvPatchScalarField&,
+            const radiatingWall&,
             const DimensionedField<scalar, volMesh>&
         );
 
@@ -230,7 +230,7 @@ public:
         {
             return tmp<fvPatchScalarField>
             (
-                new radiatingWallFvPatchScalarField(*this, iF)
+                new radiatingWall(*this, iF)
             );
         }
 

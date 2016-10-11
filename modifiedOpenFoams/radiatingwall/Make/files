@@ -1,3 +1,0 @@
-radiatingWallFvPatchScalarField.C
-
-LIB = $(FOAM_USER_LIBBIN)/radiatingWall
