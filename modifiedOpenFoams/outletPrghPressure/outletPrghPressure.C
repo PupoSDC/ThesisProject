@@ -155,7 +155,7 @@ void Foam::outletPrghPressure::updateCoeffs()
 
     //gradient() =  -1.0 * rhop.snGrad() * ghfp; 
 
-    gradient() = -1.0 * ghfp * psip * rhop * -9.81 ;
+    gradient() =  -1.0 * ghfp * psip * rhop * -9.81 ;
 }
 
 void Foam::outletPrghPressure::write(Ostream& os) const
