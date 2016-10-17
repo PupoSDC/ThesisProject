@@ -13,17 +13,36 @@ FoamFile
     location    "system";
     object      fvSchemes;
 }
-// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 ddtSchemes           { default steadyState; }
 
-gradSchemes          { default Gauss upwind phi;} //linear; }
+gradSchemes          { default Gauss linear; } 
 
-interpolationSchemes { default linearUpwind phi Gauss upwind phi; } 
+interpolationSchemes { default linear; } 
 
 snGradSchemes        { default corrected; }
 
-laplacianSchemes     { default Gauss linear  corrected; }
+laplacianSchemes     { default Gauss linear corrected; }
+
+divSchemes           
+{ 
+    default bounded Gauss linear; 
+    div(((rho*nuEff)*dev2(T(grad(U))))) Gauss linear;
+}
+
+/*************************************************************************/
+
+
+ddtSchemes           { default steadyState; }
+
+gradSchemes          { default Gauss upwind phi;} 
+
+interpolationSchemes { default linearUpwind phi Gauss linear; } 
+
+snGradSchemes        { default corrected; }
+
+laplacianSchemes     { default Gauss linear corrected; }
 
 divSchemes           
 { 
@@ -31,4 +50,4 @@ divSchemes
     div(((rho*nuEff)*dev2(T(grad(U))))) Gauss linear;
 }
 
-// ************************************************************************* //
+// *************************************************************************//

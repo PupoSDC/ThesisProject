@@ -81,7 +81,7 @@ relaxationFactors
     }
     equations
     {
-        U               0.5;
+        U               0.6;
         h               0.9;
     }
 }

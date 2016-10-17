@@ -15,7 +15,7 @@ FoamFile
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 dimensions      [0 0 0 1 0 0 0];
-internalField   uniform 300;
+internalField   uniform 320;
 
 boundaryField
 {
@@ -31,6 +31,6 @@ boundaryField
         QrNbr           Qr;
         Qr              none;
         kappaName       none;
-        value           uniform 293.7;
+        value           uniform 320;
     }
 }

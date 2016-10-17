@@ -24,15 +24,15 @@ startTime       0;
 
 stopAt          endTime;
 
-endTime         800000;
+endTime         6000;
 
 deltaT          1;
 
 writeControl    timeStep;
 
-writeInterval   1000;
+writeInterval   502300;
 
-purgeWrite      1;
+purgeWrite      0;
 
 writeFormat     ascii; //binary;
 
@@ -48,8 +48,7 @@ runTimeModifiable true;
 
 libs 
 ( 
-	"OutletPressurelib.so"
-	"radiatingWall.so"
+	"extendedBuoyancyBoundaries.so"
 );
 
 // ************************************************************************* //
